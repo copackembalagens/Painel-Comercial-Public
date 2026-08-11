@@ -1,11 +1,280 @@
 {
-  "gerado_em_utc": null,
-  "comissao": {"linhas": [], "meta": {"total_frete_planilha": 0, "total_frete_corrigido": 0, "diferenca_frete": 0, "total_linhas_processadas": 0, "linhas_sem_data_valida": []}},
-  "metas": [],
-  "performance_kommo": {"por_funil": [], "motivos_perda": [], "total_leads": 0, "total_pipelines": 0},
-  "auditoria_cliente_novo": {"status": "pendente", "motivo": "aguardando primeira publicacao automatica (02h)"},
-  "bonus_clientes_novos": {"status": "pendente", "motivo": "aguardando primeira publicacao automatica (02h)"},
-  "retencao": {"status": "pendente", "motivo": "aguardando primeira publicacao automatica (02h)"},
-  "gratificacao": {"status": "pendente", "motivo": "aguardando primeira publicacao automatica (02h)"},
-  "omie_erros_empresa": []
+  "gerado_em_utc": "2026-08-11T12:01:00.034559Z",
+  "metas": [
+    {
+      "mes": "2026-01",
+      "meta_canal": 500000.0,
+      "realizado_canal": 391294.76,
+      "atingimento_pct": 78.3,
+      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
+    },
+    {
+      "mes": "2026-02",
+      "meta_canal": 500000.0,
+      "realizado_canal": 497350.23,
+      "atingimento_pct": 99.5,
+      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
+    },
+    {
+      "mes": "2026-03",
+      "meta_canal": 500000.0,
+      "realizado_canal": 398778.39,
+      "atingimento_pct": 79.8,
+      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
+    },
+    {
+      "mes": "2026-04",
+      "meta_canal": 500000.0,
+      "realizado_canal": 379020.28,
+      "atingimento_pct": 75.8,
+      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
+    },
+    {
+      "mes": "2026-05",
+      "meta_canal": 500000.0,
+      "realizado_canal": 397671.67,
+      "atingimento_pct": 79.5,
+      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
+    },
+    {
+      "mes": "2026-06",
+      "meta_canal": 500000.0,
+      "realizado_canal": 445744.03,
+      "atingimento_pct": 89.1,
+      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
+    },
+    {
+      "mes": "2026-07",
+      "meta_canal": 500000.0,
+      "realizado_canal": 418799.8,
+      "atingimento_pct": 83.8,
+      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
+    },
+    {
+      "mes": "2026-08",
+      "meta_canal": 500000.0,
+      "realizado_canal": 139807.07,
+      "atingimento_pct": 28.0,
+      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
+    }
+  ],
+  "performance_kommo": {
+    "por_funil": [
+      {
+        "funil": "Amostras",
+        "ganhas": 1,
+        "perdidas": 0,
+        "em_aberto": 13,
+        "valor_ganho": 1.0,
+        "valor_perdido": 0.0,
+        "taxa_conversao_pct": 100.0
+      },
+      {
+        "funil": "Funil Atendimento",
+        "ganhas": 43,
+        "perdidas": 32,
+        "em_aberto": 60,
+        "valor_ganho": 26491.0,
+        "valor_perdido": 880.0,
+        "taxa_conversao_pct": 57.3
+      },
+      {
+        "funil": "Funil Eduardo",
+        "ganhas": 337,
+        "perdidas": 5418,
+        "em_aberto": 480,
+        "valor_ganho": 452093.0,
+        "valor_perdido": 6267706.0,
+        "taxa_conversao_pct": 5.9
+      },
+      {
+        "funil": "Funil Joice",
+        "ganhas": 292,
+        "perdidas": 5970,
+        "em_aberto": 525,
+        "valor_ganho": 384162.0,
+        "valor_perdido": 739708.0,
+        "taxa_conversao_pct": 4.7
+      },
+      {
+        "funil": "Funil Rubs",
+        "ganhas": 315,
+        "perdidas": 6759,
+        "em_aberto": 473,
+        "valor_ganho": 346731.0,
+        "valor_perdido": 1157401.0,
+        "taxa_conversao_pct": 4.5
+      },
+      {
+        "funil": "Funil de vendas",
+        "ganhas": 0,
+        "perdidas": 17,
+        "em_aberto": 0,
+        "valor_ganho": 0.0,
+        "valor_perdido": 0.0,
+        "taxa_conversao_pct": 0.0
+      },
+      {
+        "funil": "Lançamento Site",
+        "ganhas": 0,
+        "perdidas": 0,
+        "em_aberto": 2,
+        "valor_ganho": 0.0,
+        "valor_perdido": 0.0,
+        "taxa_conversao_pct": null
+      },
+      {
+        "funil": "Ocorrências",
+        "ganhas": 1,
+        "perdidas": 12,
+        "em_aberto": 66,
+        "valor_ganho": 12466.0,
+        "valor_perdido": 0.0,
+        "taxa_conversao_pct": 7.7
+      },
+      {
+        "funil": "PAGAMENTOS [KF5]",
+        "ganhas": 8,
+        "perdidas": 0,
+        "em_aberto": 961,
+        "valor_ganho": 0.0,
+        "valor_perdido": 0.0,
+        "taxa_conversao_pct": 100.0
+      },
+      {
+        "funil": "Pós venda",
+        "ganhas": 157,
+        "perdidas": 11,
+        "em_aberto": 285,
+        "valor_ganho": 187013.0,
+        "valor_perdido": 3770.0,
+        "taxa_conversao_pct": 93.5
+      },
+      {
+        "funil": "Supervisão",
+        "ganhas": 7,
+        "perdidas": 31,
+        "em_aberto": 58,
+        "valor_ganho": 67140.0,
+        "valor_perdido": 15227.0,
+        "taxa_conversao_pct": 18.4
+      }
+    ],
+    "motivos_perda": [
+      {
+        "motivo": "Não tem interesse",
+        "qtd": 11933,
+        "valor": 7675117.0
+      },
+      {
+        "motivo": "Não responde - antes proposta",
+        "qtd": 3268,
+        "valor": 85161.0
+      },
+      {
+        "motivo": "Contato Não Comercial",
+        "qtd": 1026,
+        "valor": 48387.0
+      },
+      {
+        "motivo": "Lead Duplicado",
+        "qtd": 832,
+        "valor": 0.0
+      },
+      {
+        "motivo": "O produto não é a necessidade",
+        "qtd": 421,
+        "valor": 5905.0
+      },
+      {
+        "motivo": "Quantidade mínima",
+        "qtd": 168,
+        "valor": 1240.0
+      },
+      {
+        "motivo": "Volumetria específica",
+        "qtd": 117,
+        "valor": 831.0
+      },
+      {
+        "motivo": "Prazo de produção",
+        "qtd": 116,
+        "valor": 29499.0
+      },
+      {
+        "motivo": "Não responde -pós proposta",
+        "qtd": 93,
+        "valor": 279578.0
+      },
+      {
+        "motivo": "Sem motivo registrado",
+        "qtd": 87,
+        "valor": 5850.0
+      },
+      {
+        "motivo": "Logística",
+        "qtd": 60,
+        "valor": 0.0
+      },
+      {
+        "motivo": "Tempo de Atendimento",
+        "qtd": 59,
+        "valor": 0.0
+      },
+      {
+        "motivo": "Preço",
+        "qtd": 26,
+        "valor": 31742.0
+      },
+      {
+        "motivo": "Comprado do concorrente",
+        "qtd": 23,
+        "valor": 14794.0
+      },
+      {
+        "motivo": "Seladora - Investimento",
+        "qtd": 17,
+        "valor": 4048.0
+      },
+      {
+        "motivo": "Condições de pagamento",
+        "qtd": 2,
+        "valor": 2540.0
+      },
+      {
+        "motivo": "Frete",
+        "qtd": 2,
+        "valor": 0.0
+      }
+    ],
+    "total_leads": 22334,
+    "total_pipelines": 14
+  },
+  "auditoria_cliente_novo": {
+    "status": "pendente",
+    "motivo": "depende de mapear o codigo de vendedor da NF-e OMIE para o nome real (nao confirmado contra a API real ainda)"
+  },
+  "bonus_clientes_novos": {
+    "status": "pendente",
+    "motivo": "depende da auditoria de cliente novo acima"
+  },
+  "retencao": {
+    "status": "pendente",
+    "motivo": "depende da auditoria de cliente novo (historico de compra por CNPJ) - proxima iteracao"
+  },
+  "gratificacao": {
+    "status": "pendente",
+    "motivo": "depende de ingestao de Ordens de Servico do OMIE (ainda nao implementada em ingest/omie_faturamento.py)"
+  },
+  "omie_erros_empresa": [],
+  "comissao": {
+    "linhas": [],
+    "meta": {
+      "total_frete_planilha": 76173.1,
+      "total_frete_corrigido": 240449.96,
+      "diferenca_frete": 164276.86,
+      "total_linhas_processadas": 9556,
+      "linhas_sem_data_valida": []
+    }
+  }
 }
