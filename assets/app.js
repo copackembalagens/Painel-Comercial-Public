@@ -1,8 +1,19 @@
 /* Painel Comercial Copack - Camada 3 (Apresentacao)
- * Le APENAS a base consolidada (../dados/consolidado.json), gerada pela
- * Camada 2 (calc/consolidar.py) no repo privado e publicada aqui pelo job
- * das 02h. Nenhum calculo de comissao/meta/etc acontece nesta tela -
- * evita divergencia entre as 6 areas (regra da secao 7 do projeto).
+ * Le APENAS a base consolidada (../dados/consolidado_<area>.json - um
+ * arquivo por area, ja filtrado por vendedor pelo calc/consolidar.py),
+ * gerada pela Camada 2 no repo privado e publicada aqui pelo job das 02h.
+ * Nenhum calculo de comissao/meta/etc acontece nesta tela.
+ *
+ * Acesso: senha por painel (GitHub Pages nao tem controle de acesso por
+ * e-mail como o Cloudflare Access, entao usamos uma senha por area,
+ * comparada por hash SHA-256 no navegador). AVISO DE SEGURANCA HONESTO:
+ * isso NAO e autenticacao real - e uma barreira de conveniencia contra
+ * acesso casual. Por isso o arquivo de dados de cada area (consolidado_
+ * eduardo.json etc.) ja vem filtrado so com a comissao daquela pessoa -
+ * mesmo que alguem pule a tela de senha e busque o JSON direto pela URL,
+ * nao ve a comissao dos colegas (ver calc/consolidar.py, gravar_
+ * arquivos_por_area). O painel Gerencial continua sendo o unico com
+ * visao de todo mundo.
  */
 
 const ESTADO = { mes: null, vendedor: null, ordenacao: {} };
@@ -28,9 +39,53 @@ function fmtData(iso) {
 }
 
 async function carregarDados() {
-  const resp = await fetch("../dados/consolidado.json", { cache: "no-store" });
+  const arquivo = window.AREA_CONFIG.arquivoDados || "gerencial";
+  const resp = await fetch(`../dados/consolidado_${arquivo}.json`, { cache: "no-store" });
   if (!resp.ok) throw new Error("Nao foi possivel carregar os dados (" + resp.status + ")");
   return resp.json();
+}
+
+async function sha256Hex(texto) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(texto));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+function chaveSessao() {
+  return `painel-copack-auth-${window.AREA_CONFIG.arquivoDados}`;
+}
+
+function jaAutenticado() {
+  return sessionStorage.getItem(chaveSessao()) === "ok";
+}
+
+function montarTelaLogin() {
+  const cfg = window.AREA_CONFIG;
+  document.body.innerHTML = `
+    <div class="login-box">
+      <div class="folha-grande"></div>
+      <h1 style="color:#7A7021;margin-bottom:0.25rem;">Painel Comercial Copack</h1>
+      <p style="color:#555;margin-bottom:0;">Área: <strong>${cfg.nomeExibicao}</strong></p>
+      <input type="password" id="campo-senha" placeholder="Senha desta área"
+             style="width:100%;padding:0.6rem;border-radius:6px;border:1px solid #E0DFD8;font-family:inherit;font-size:0.95rem;margin-top:1rem;box-sizing:border-box;">
+      <button id="btn-entrar" class="btn-exportar" style="width:100%;margin-top:0.75rem;padding:0.6rem;">Entrar</button>
+      <p id="erro-senha" style="color:#C62828;font-size:0.85rem;min-height:1.2em;margin-top:0.5rem;"></p>
+      <p class="aviso">Acesso restrito à equipe Copack. Fale com a gerência se não souber a senha.</p>
+    </div>`;
+
+  const campo = document.getElementById("campo-senha");
+  const erro = document.getElementById("erro-senha");
+  const tentar = async () => {
+    const hash = await sha256Hex(campo.value);
+    if (hash === cfg.senhaHash) {
+      sessionStorage.setItem(chaveSessao(), "ok");
+      iniciarPainel();
+    } else {
+      erro.textContent = "Senha incorreta.";
+    }
+  };
+  document.getElementById("btn-entrar").addEventListener("click", tentar);
+  campo.addEventListener("keydown", e => { if (e.key === "Enter") tentar(); });
+  campo.focus();
 }
 
 function badgeAtingimento(pct) {
@@ -287,12 +342,34 @@ function montarShell() {
   renderAbaAtiva();
 }
 
-(async function init() {
+function montarEsqueletoDOM() {
+  document.body.innerHTML = `
+    <header class="app-header">
+      <div class="marca"><span class="folha"></span> Painel Comercial Copack <span class="area-atual" id="area-atual"></span></div>
+      <div class="atualizado-em" id="atualizado-em"></div>
+    </header>
+    <nav class="tabs" id="tabs"></nav>
+    <main>
+      <div class="filtros" id="filtros"></div>
+      <div id="conteudo"></div>
+    </main>`;
+}
+
+async function iniciarPainel() {
+  montarEsqueletoDOM();
   try {
     CONSOLIDADO = await carregarDados();
     montarShell();
   } catch (e) {
     document.getElementById("conteudo").innerHTML =
       `<div class="pendente"><strong>Não foi possível carregar os dados</strong>${e.message}. Tente recarregar a página em alguns minutos.</div>`;
+  }
+}
+
+(function init() {
+  if (jaAutenticado()) {
+    iniciarPainel();
+  } else {
+    montarTelaLogin();
   }
 })();
