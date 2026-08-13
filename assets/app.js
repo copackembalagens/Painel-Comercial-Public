@@ -515,6 +515,28 @@ function abaMetas(container) {
     ]);
   }
 
+  // Frete (pedido do usuario, 13/08/2026): "quero que traga o valor de
+  // frete em cada painel: gerencial, rubs, eduardo, joice, para que eles
+  // vejam o quanto o frete representa no faturamento". valor_frete/
+  // faturamento_bruto/pct_frete_sobre_faturamento vem de consolidar.
+  // monta_lista_metas - ja calculado sobre a mesma base do painel
+  // (canal inteiro no gerencial, so a propria carteira no individual,
+  // porque 'metas' ja vem filtrado por vendedor la no backend).
+  if (ultimo && ultimo.valor_frete != null) {
+    renderCards(container, [
+      {
+        rotulo: `Frete (${ultimo.mes})`,
+        valor: fmtMoeda(ultimo.valor_frete),
+        tooltip: `Frete de ${ultimo.mes}: ${fmtMoeda(ultimo.valor_frete)} sobre um faturamento bruto de ${fmtMoeda(ultimo.faturamento_bruto || 0)}`,
+      },
+      {
+        rotulo: "Frete sobre faturamento",
+        valor: `${ultimo.pct_frete_sobre_faturamento ?? 0}%`,
+        tooltip: "Percentual do faturamento bruto (valor total das NF-e/OS, antes de deduções) consumido pelo frete no mês.",
+      },
+    ]);
+  }
+
   // Card "faturamento total da empresa" (pedido do usuario, 13/08/2026,
   // AJUSTADO em 13/08/2026: so no Gerencial - nos paineis individuais
   // (Joice/Rubs/Eduardo) deve aparecer so o resultado da propria pessoa,
@@ -567,6 +589,8 @@ function abaMetas(container) {
       { chave: "meta_recorrentes", rotulo: "Meta recorrentes (75%)", render: r => fmtMoeda(r.meta_recorrentes ?? 0) },
       { chave: "atingimento_recorrentes_pct", rotulo: "Ating. recorrentes", render: r => badgeAtingimento(r.atingimento_recorrentes_pct) },
       { chave: "atingimento_pct", rotulo: "Atingimento total", render: r => badgeAtingimento(r.atingimento_pct) },
+      { chave: "valor_frete", rotulo: "Frete", render: r => fmtMoeda(r.valor_frete || 0) },
+      { chave: "pct_frete_sobre_faturamento", rotulo: "Frete / faturamento", render: r => `${r.pct_frete_sobre_faturamento ?? 0}%` },
     ],
     linhas: metas,
   });
@@ -649,13 +673,58 @@ function abaKommo(container) {
   // o recorte por mes que consolidar.calcular_performance_kommo ja gera.
   // Sem leads naquele mes -> estrutura vazia (nao cai pro total geral, que
   // enganaria o filtro selecionado).
-  const vazio = { por_funil: [], motivos_perda: [], total_leads: 0, total_pipelines: perf.total_pipelines };
+  const vazio = {
+    por_funil: [], motivos_perda: [], por_etapa: [], por_produto: [],
+    total_leads: 0, total_pipelines: perf.total_pipelines,
+    resumo: { total_leads: 0, taxa_conversao_pct: null, total_ganho: 0, total_perdido: 0,
+              valor_ganho: 0, valor_perdido: 0,
+              leads_em_aberto: { quantidade: 0, valor: 0, pct_quantidade_sobre_total: null, pct_valor_sobre_total: null } },
+  };
   const dados = ESTADO.mes ? ((perf.por_mes && perf.por_mes[ESTADO.mes]) || vazio) : perf;
+  const resumo = dados.resumo || vazio.resumo;
+  const aberto = resumo.leads_em_aberto || vazio.resumo.leads_em_aberto;
 
+  // Resumo geral (pedido do usuario, 13/08/2026): "Total de leads em
+  // estado, taxa de conversao, total ganho, total perdido, valor ganho e
+  // quantidade ganha".
   renderCards(container, [
-    { rotulo: `Total de leads${ESTADO.mes ? " em " + ESTADO.mes : ""}`, valor: dados.total_leads.toLocaleString("pt-BR") },
+    { rotulo: `Total de leads${ESTADO.mes ? " em " + ESTADO.mes : ""}`, valor: resumo.total_leads.toLocaleString("pt-BR") },
+    { rotulo: "Taxa de conversão geral", valor: resumo.taxa_conversao_pct != null ? resumo.taxa_conversao_pct + "%" : "-",
+      tooltip: "Ganhas / (Ganhas + Perdidas) entre os leads já fechados." },
+    { rotulo: "Total ganho", valor: `${resumo.total_ganho} (${fmtMoeda(resumo.valor_ganho)})` },
+    { rotulo: "Total perdido", valor: `${resumo.total_perdido} (${fmtMoeda(resumo.valor_perdido)})` },
     { rotulo: "Funis monitorados", valor: dados.total_pipelines },
   ]);
+
+  // Leads em aberto (pedido: "total de leads em aberto" + "taxa de
+  // conversao por quantidade de leads em aberto, valor e quantidade").
+  // Lead em aberto ainda nao fechou, entao nao tem taxa de conversao
+  // propria ainda - o que da pra mostrar e o quanto ele representa do
+  // total (em quantidade e em valor), que e o numero util aqui.
+  renderCards(container, [
+    { rotulo: "Leads em aberto", valor: aberto.quantidade.toLocaleString("pt-BR"),
+      tooltip: `${aberto.pct_quantidade_sobre_total ?? 0}% do total de leads (em quantidade).` },
+    { rotulo: "Valor em aberto", valor: fmtMoeda(aberto.valor),
+      tooltip: `${aberto.pct_valor_sobre_total ?? 0}% do valor total de leads.` },
+  ]);
+
+  // Leads novos do mes atual (pedido: "leads novos referente ao mes
+  // atual" + taxa de conversao por quantidade/valor). Usa perf (nao
+  // dados) porque "mes atual" e um recorte fixo baseado na data real de
+  // hoje, independente do filtro de Mes selecionado na tela - mostrar
+  // sempre o mesmo numero, com uma nota se o filtro escolhido for outro
+  // mes, evita a falsa impressao de que o card mudou por causa do filtro.
+  const novosMes = perf.leads_novos_mes_atual;
+  if (novosMes) {
+    const filtroDiferente = ESTADO.mes && ESTADO.mes !== novosMes.mes;
+    renderCards(container, [
+      { rotulo: `Leads novos em ${novosMes.mes}`, valor: novosMes.quantidade.toLocaleString("pt-BR"),
+        tooltip: `${fmtMoeda(novosMes.valor)} (${novosMes.pct_quantidade_sobre_total ?? 0}% da quantidade e ${novosMes.pct_valor_sobre_total ?? 0}% do valor do total de leads).${filtroDiferente ? " Este card sempre mostra o mês atual, independente do filtro de Mês selecionado." : ""}` },
+      { rotulo: "Conversão dos leads novos do mês", valor: novosMes.taxa_conversao_pct != null ? novosMes.taxa_conversao_pct + "%" : "-",
+        tooltip: `${novosMes.ganhas} ganhas, ${novosMes.perdidas} perdidas, ${novosMes.em_aberto} ainda em aberto.` },
+    ]);
+  }
+
   renderTabela(container, {
     id: "kommo-funis", titulo: "Ganhas / perdidas por funil",
     colunas: [
@@ -668,6 +737,39 @@ function abaKommo(container) {
     ],
     linhas: dados.por_funil,
   });
+
+  // Valor por etapa (pedido: "valor total gerado por etapa de cada
+  // funil"). Etapa = onde o lead esta agora (nome vindo do cadastro real
+  // de etapas do Kommo, ver consolidar._mapa_etapas).
+  renderTabela(container, {
+    id: "kommo-etapas", titulo: "Valor por etapa de cada funil",
+    colunas: [
+      { chave: "funil", rotulo: "Funil" },
+      { chave: "etapa", rotulo: "Etapa" },
+      { chave: "quantidade", rotulo: "Quantidade" },
+      { chave: "valor", rotulo: "Valor", render: r => fmtMoeda(r.valor) },
+    ],
+    linhas: dados.por_etapa || [],
+  });
+
+  // Ganhas/perdidas por produto (pedido: "quantidade de vendas ganhas e
+  // perdidas por produto, com valor e taxa de conversao"). Campo
+  // 'produto' ainda nao confirmado contra o Kommo real da Copack - ver
+  // nota em ingest/kommo_funil.py:_extrair_produto. Se tudo cair em "Sem
+  // produto informado", e sinal de que o nome do campo la e diferente.
+  renderTabela(container, {
+    id: "kommo-produtos", titulo: "Ganhas / perdidas por produto",
+    colunas: [
+      { chave: "produto", rotulo: "Produto" },
+      { chave: "ganhas", rotulo: "Ganhas" },
+      { chave: "perdidas", rotulo: "Perdidas" },
+      { chave: "taxa_conversao_pct", rotulo: "Conversão", render: r => r.taxa_conversao_pct != null ? r.taxa_conversao_pct + "%" : "-" },
+      { chave: "valor_ganho", rotulo: "Valor ganho", render: r => fmtMoeda(r.valor_ganho) },
+      { chave: "valor_perdido", rotulo: "Valor perdido", render: r => fmtMoeda(r.valor_perdido) },
+    ],
+    linhas: dados.por_produto || [],
+  });
+
   renderTabela(container, {
     id: "kommo-motivos", titulo: "Motivos de perda",
     colunas: [
@@ -686,6 +788,14 @@ function abaKommo(container) {
   const motivoTop = dados.motivos_perda.slice().sort((a, b) => b.qtd - a.qtd)[0];
   if (motivoTop) {
     itensAnalise.push(`Principal motivo de perda: <strong>${motivoTop.motivo}</strong> (${motivoTop.qtd} casos, ${fmtMoeda(motivoTop.valor)} perdidos).`);
+  }
+  const produtoTop = (dados.por_produto || []).slice().filter(p => p.produto !== "Sem produto informado" && p.taxa_conversao_pct != null).sort((a, b) => b.taxa_conversao_pct - a.taxa_conversao_pct)[0];
+  if (produtoTop) {
+    itensAnalise.push(`Produto com maior conversão: <strong>${produtoTop.produto}</strong>, ${produtoTop.taxa_conversao_pct}% (${produtoTop.ganhas} ganhas, ${fmtMoeda(produtoTop.valor_ganho)}).`);
+  }
+  const etapaTop = (dados.por_etapa || []).slice().sort((a, b) => b.valor - a.valor)[0];
+  if (etapaTop) {
+    itensAnalise.push(`Maior valor parado numa etapa: <strong>${etapaTop.etapa}</strong> (${etapaTop.funil}), ${fmtMoeda(etapaTop.valor)} em ${etapaTop.quantidade} leads.`);
   }
   renderAnalisesRapidas(container, itensAnalise);
 }
