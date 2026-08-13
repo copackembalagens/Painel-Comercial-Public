@@ -187,6 +187,16 @@ main {
 
 .btn-exportar:hover { opacity: 0.85; }
 
+/* Tabelas largas (muitas colunas, ex.: Metas com o detalhamento
+   novos/recorrentes) rolam horizontalmente dentro do proprio cartao em
+   vez de empurrar a pagina inteira pra fora da margem (bug reportado
+   pelo usuario, 13/08/2026 - coluna "Atingimento total" ficava cortada
+   fora da area visivel). */
+.tabela-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 table.dados {
   width: 100%;
   border-collapse: collapse;

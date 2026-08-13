@@ -118,15 +118,24 @@ function renderTabela(container, opts) {
 
   const el = document.createElement("div");
   el.className = "painel-tabela";
+  // Tabelas com muitas colunas (ex.: Metas com o detalhamento
+  // novos/recorrentes, secao 4.8) sao mais largas que o cartao - sem um
+  // wrapper com scroll proprio, o navegador empurra a tabela inteira pra
+  // fora da margem da pagina em vez de dar scroll (bug reportado pelo
+  // usuario, 13/08/2026: coluna "Atingimento total" ficava fora da
+  // margem). O wrapper .tabela-scroll isola o scroll horizontal so na
+  // tabela - o titulo e o botao de exportar continuam fixos.
   el.innerHTML = `
     <div class="cabecalho-tabela">
       <h3>${titulo}</h3>
       <button class="btn-exportar" data-export="${id}">Exportar Excel</button>
     </div>
-    <table class="dados" data-tabela="${id}">
-      <thead><tr>${thead}</tr></thead>
-      <tbody>${tbody || `<tr><td colspan="${colunas.length}">Sem dados para o filtro atual.</td></tr>`}</tbody>
-    </table>`;
+    <div class="tabela-scroll">
+      <table class="dados" data-tabela="${id}">
+        <thead><tr>${thead}</tr></thead>
+        <tbody>${tbody || `<tr><td colspan="${colunas.length}">Sem dados para o filtro atual.</td></tr>`}</tbody>
+      </table>
+    </div>`;
   container.appendChild(el);
 
   el.querySelectorAll("th[data-col]").forEach(th => {
