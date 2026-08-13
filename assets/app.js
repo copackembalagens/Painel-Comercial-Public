@@ -254,6 +254,40 @@ function abaComissao(container) {
       linhas: linhasBonus,
     });
   }
+
+  // Auditoria "cliente marcado como novo mas é recorrente" (secao 4.3(a)
+  // do documento do projeto - pedido explicito do usuario, 13/08/2026):
+  // vendas lancadas no OMIE sob um codigo de vendedor "- Clientes Novos"
+  // que a auditoria por CNPJ/CPF desconfirma (o cliente ja tinha comprado
+  // antes). Essas vendas NAO entram no calculo de bonus (o bonus so usa a
+  // classificacao real auditada) - esta tabela existe so para o vendedor
+  // enxergar QUAIS vendas foram lancadas errado no OMIE e corrigir na
+  // origem, e para explicar por que o faturamento de "clientes novos"
+  // pode estar mais baixo do que ele esperava.
+  const auditoriaNovoIncorreto = CONSOLIDADO.auditoria_novo_incorreto || {};
+  let linhasAuditoriaNovo = Object.entries(auditoriaNovoIncorreto).flatMap(
+    ([vendedor, casos]) => casos.map(c => ({ vendedor, ...c }))
+  );
+  if (linhasAuditoriaNovo.length) {
+    renderCards(container, [
+      { rotulo: 'Vendas marcadas "cliente novo" que a auditoria não confirma', valor: linhasAuditoriaNovo.length, classe: "atencao" },
+    ]);
+    renderTabela(container, {
+      id: "auditoria-novo-incorreto", titulo: "Auditoria: clientes marcados como novos mas são recorrentes (CNPJ/CPF já tinha comprado antes)",
+      colunas: [
+        ...(window.AREA_CONFIG.vendedorFiltro ? [] : [{ chave: "vendedor", rotulo: "Vendedor" }]),
+        { chave: "numero_nf", rotulo: "NF/OS" },
+        { chave: "data_emissao", rotulo: "Data" },
+        { chave: "razao_social_cliente", rotulo: "Cliente" },
+        { chave: "cnpj_cliente", rotulo: "CNPJ/CPF" },
+        { chave: "faturamento_real", rotulo: "Faturamento", render: r => fmtMoeda(r.faturamento_real) },
+        { chave: "dono_cliente", rotulo: "Dono real do cliente (1ª compra)" },
+        { chave: "classificacao_informada", rotulo: "Lançado como" },
+        { chave: "classificacao_real", rotulo: "Auditoria (CNPJ/CPF) mostra" },
+      ],
+      linhas: linhasAuditoriaNovo,
+    });
+  }
 }
 
 function abaMetas(container) {
