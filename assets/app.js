@@ -192,52 +192,108 @@ function abaComissao(container) {
     { rotulo: "Linhas sem data de pagamento válida", valor: CONSOLIDADO.comissao.meta.linhas_sem_data_valida.length, classe: CONSOLIDADO.comissao.meta.linhas_sem_data_valida.length ? "atencao" : "ok" },
   ]);
 
+  // Piso aplicado (R$150k) so existe para a Kenia, que nao tem painel
+  // individual - so aparece na visao Gerencial (vendedorFiltro null). Nos
+  // paineis individuais (Joice/Rubs/Eduardo) essa coluna nao se aplica.
+  const colunasComissao = [
+    { chave: "vendedor", rotulo: "Vendedor" },
+    { chave: "mes", rotulo: "Mês" },
+    { chave: "recebido", rotulo: "Recebido (corrigido)", render: r => fmtMoeda(r.recebido) },
+  ];
+  if (!window.AREA_CONFIG.vendedorFiltro) {
+    colunasComissao.push({ chave: "piso_aplicado", rotulo: "Piso aplicado", render: r => fmtMoeda(r.piso_aplicado) });
+  }
+  colunasComissao.push(
+    { chave: "base_comissao", rotulo: "Base de cálculo", render: r => fmtMoeda(r.base_comissao) },
+    { chave: "comissao", rotulo: "Comissão (1%)", render: r => fmtMoeda(r.comissao) },
+  );
+
   renderTabela(container, {
     id: "comissao", titulo: "Extrato de comissão por mês",
-    colunas: [
-      { chave: "vendedor", rotulo: "Vendedor" },
-      { chave: "mes", rotulo: "Mês" },
-      { chave: "recebido", rotulo: "Recebido (corrigido)", render: r => fmtMoeda(r.recebido) },
-      { chave: "piso_aplicado", rotulo: "Piso aplicado", render: r => fmtMoeda(r.piso_aplicado) },
-      { chave: "base_comissao", rotulo: "Base de cálculo", render: r => fmtMoeda(r.base_comissao) },
-      { chave: "comissao", rotulo: "Comissão (1%)", render: r => fmtMoeda(r.comissao) },
-    ],
+    colunas: colunasComissao,
     linhas,
   });
+
+  // Bonus de clientes novos (secao 4.5): CONSOLIDADO.bonus_clientes_novos e
+  // sempre {vendedor: [{mes, faturamento_clientes_novos, bonus}]} - no
+  // painel individual so vem a chave do proprio vendedor; no Gerencial vem
+  // todo mundo (Eduardo/Joice/Rubs/Kenia).
+  const bonusPorVendedor = CONSOLIDADO.bonus_clientes_novos || {};
+  let linhasBonus = Object.entries(bonusPorVendedor).flatMap(
+    ([vendedor, lista]) => lista.map(l => ({ vendedor, ...l }))
+  );
+  if (ESTADO.mes) linhasBonus = linhasBonus.filter(l => l.mes === ESTADO.mes);
+  if (linhasBonus.length) {
+    const totalBonusUltimoMes = (() => {
+      const ultimoMesBonus = linhasBonus.map(l => l.mes).sort().pop();
+      return linhasBonus.filter(l => l.mes === ultimoMesBonus).reduce((s, l) => s + l.bonus, 0);
+    })();
+    renderCards(container, [
+      { rotulo: "Bônus de clientes novos (último mês)", valor: fmtMoeda(totalBonusUltimoMes), classe: totalBonusUltimoMes ? "ok" : "" },
+    ]);
+    renderTabela(container, {
+      id: "bonus-clientes-novos", titulo: "Bônus de clientes novos faturados por mês",
+      colunas: [
+        ...(window.AREA_CONFIG.vendedorFiltro ? [] : [{ chave: "vendedor", rotulo: "Vendedor" }]),
+        { chave: "mes", rotulo: "Mês" },
+        { chave: "faturamento_clientes_novos", rotulo: "Faturamento clientes novos", render: r => fmtMoeda(r.faturamento_clientes_novos) },
+        { chave: "bonus", rotulo: "Bônus", render: r => fmtMoeda(r.bonus) },
+      ],
+      linhas: linhasBonus,
+    });
+  }
 }
 
 function abaMetas(container) {
+  // No painel individual (Joice/Rubs/Eduardo), CONSOLIDADO.metas ja vem
+  // filtrado do backend (consolidar.gravar_arquivos_por_area) so com a
+  // meta e as vendas do proprio vendedor - o painel nao faz nenhum
+  // filtro extra aqui, so escolhe os rotulos certos.
+  const individual = !!window.AREA_CONFIG.vendedorFiltro;
   let metas = CONSOLIDADO.metas.slice();
   if (ESTADO.mes) metas = metas.filter(m => m.mes === ESTADO.mes);
   const ultimo = metas.slice(-1)[0];
   if (ultimo) {
     renderCards(container, [
-      { rotulo: `Meta do canal (${ultimo.mes})`, valor: fmtMoeda(ultimo.meta_canal) },
+      { rotulo: `${individual ? "Minha meta" : "Meta do canal"} (${ultimo.mes})`, valor: fmtMoeda(ultimo.meta_canal) },
       { rotulo: "Realizado", valor: fmtMoeda(ultimo.realizado_canal) },
       { rotulo: "Atingimento", valor: badgeAtingimento(ultimo.atingimento_pct) },
+      { rotulo: "Mix clientes novos", valor: `${ultimo.mix_novos_pct ?? 0}%` },
     ]);
   }
   renderTabela(container, {
-    id: "metas", titulo: "Metas por mês (canal online)",
+    id: "metas", titulo: individual ? "Minhas metas por mês" : "Metas por mês (canal online)",
     colunas: [
       { chave: "mes", rotulo: "Mês" },
-      { chave: "meta_canal", rotulo: "Meta", render: r => fmtMoeda(r.meta_canal) },
+      { chave: "meta_canal", rotulo: individual ? "Meta" : "Meta do canal", render: r => fmtMoeda(r.meta_canal) },
       { chave: "realizado_canal", rotulo: "Realizado", render: r => fmtMoeda(r.realizado_canal) },
+      { chave: "realizado_novos", rotulo: "Clientes novos", render: r => fmtMoeda(r.realizado_novos) },
+      { chave: "realizado_recorrentes", rotulo: "Clientes recorrentes", render: r => fmtMoeda(r.realizado_recorrentes) },
       { chave: "atingimento_pct", rotulo: "Atingimento", render: r => badgeAtingimento(r.atingimento_pct) },
     ],
     linhas: metas,
   });
-  const nota = document.createElement("p");
-  nota.className = "pendente";
-  nota.innerHTML = "<strong>Mix 25% novos / 75% recorrentes</strong>ainda não é exibido por mês/vendedor — depende da auditoria de cliente novo (próxima iteração).";
-  container.appendChild(nota);
+  const algumNaoAuditado = metas.some(m => (m.realizado_nao_auditado || 0) > 0);
+  if (algumNaoAuditado) {
+    const nota = document.createElement("p");
+    nota.className = "pendente";
+    nota.innerHTML = "<strong>Observação:</strong> parte do faturamento (ordens de serviço, que não trazem CNPJ do cliente na API do OMIE) entra no valor \"Realizado\" mas não é classificado como novo/recorrente — a soma de \"Clientes novos\" + \"Clientes recorrentes\" pode ficar um pouco abaixo do Realizado por esse motivo.";
+    container.appendChild(nota);
+  }
 }
 
 function abaKommo(container) {
   const perf = CONSOLIDADO.performance_kommo;
+  // Filtro de mes (4.11: responsivo a tudo, nao so cards de resumo) - usa
+  // o recorte por mes que consolidar.calcular_performance_kommo ja gera.
+  // Sem leads naquele mes -> estrutura vazia (nao cai pro total geral, que
+  // enganaria o filtro selecionado).
+  const vazio = { por_funil: [], motivos_perda: [], total_leads: 0, total_pipelines: perf.total_pipelines };
+  const dados = ESTADO.mes ? ((perf.por_mes && perf.por_mes[ESTADO.mes]) || vazio) : perf;
+
   renderCards(container, [
-    { rotulo: "Total de leads (2026)", valor: perf.total_leads.toLocaleString("pt-BR") },
-    { rotulo: "Funis monitorados", valor: perf.total_pipelines },
+    { rotulo: `Total de leads${ESTADO.mes ? " em " + ESTADO.mes : ""}`, valor: dados.total_leads.toLocaleString("pt-BR") },
+    { rotulo: "Funis monitorados", valor: dados.total_pipelines },
   ]);
   renderTabela(container, {
     id: "kommo-funis", titulo: "Ganhas / perdidas por funil",
@@ -249,7 +305,7 @@ function abaKommo(container) {
       { chave: "taxa_conversao_pct", rotulo: "Conversão", render: r => r.taxa_conversao_pct != null ? r.taxa_conversao_pct + "%" : "-" },
       { chave: "valor_ganho", rotulo: "Valor ganho", render: r => fmtMoeda(r.valor_ganho) },
     ],
-    linhas: perf.por_funil,
+    linhas: dados.por_funil,
   });
   renderTabela(container, {
     id: "kommo-motivos", titulo: "Motivos de perda",
@@ -258,17 +314,106 @@ function abaKommo(container) {
       { chave: "qtd", rotulo: "Quantidade" },
       { chave: "valor", rotulo: "Valor perdido", render: r => fmtMoeda(r.valor) },
     ],
-    linhas: perf.motivos_perda,
+    linhas: dados.motivos_perda,
   });
+}
+
+function abaGratificacao(container) {
+  // Tabela B (secao 4.5): valor unico do canal, mesmo pra Francyne e
+  // Geovana (a regra e sobre o faturamento total do canal, nao por
+  // pessoa) - ver calc/consolidar.calcular_gratificacao.
+  let linhas = (CONSOLIDADO.gratificacao || []).slice();
+  if (ESTADO.mes) linhas = linhas.filter(l => l.mes === ESTADO.mes);
+  const ultimo = linhas.slice(-1)[0];
+  if (ultimo) {
+    renderCards(container, [
+      { rotulo: `Faturamento do canal (${ultimo.mes})`, valor: fmtMoeda(ultimo.faturamento_canal) },
+      { rotulo: "Gratificação", valor: fmtMoeda(ultimo.gratificacao), classe: ultimo.gratificacao ? "ok" : "" },
+    ]);
+  }
+  renderTabela(container, {
+    id: "gratificacao", titulo: "Gratificação por mês (canal online)",
+    colunas: [
+      { chave: "mes", rotulo: "Mês" },
+      { chave: "faturamento_canal", rotulo: "Faturamento do canal (base)", render: r => fmtMoeda(r.faturamento_canal) },
+      { chave: "gratificacao", rotulo: "Gratificação", render: r => fmtMoeda(r.gratificacao) },
+    ],
+    linhas,
+  });
+}
+
+function tabelaClientesRisco(container, id, titulo, linhas) {
+  renderTabela(container, {
+    id, titulo,
+    colunas: [
+      { chave: "razao_social_cliente", rotulo: "Cliente", render: r => r.razao_social_cliente || r.cnpj_cliente },
+      { chave: "vendedor", rotulo: "Vendedor" },
+      { chave: "ultima_compra", rotulo: "Última compra" },
+      { chave: "dias_desde_ultima_compra", rotulo: "Dias sem comprar" },
+      { chave: "intervalo_medio_dias", rotulo: "Intervalo médio (dias)", render: r => r.intervalo_medio_dias ?? "-" },
+      { chave: "score_risco", rotulo: "Score de risco", render: r => r.score_risco != null ? `${r.score_risco}x` : "-" },
+      { chave: "valor_total_historico", rotulo: "Valor histórico", render: r => fmtMoeda(r.valor_total_historico) },
+    ],
+    linhas,
+  });
+}
+
+// Retencao/Reativacao (secao 4.9) sao um retrato do estado ATUAL da
+// carteira (score de risco calculado com base em "hoje") - nao uma serie
+// mensal como Comissao/Metas/Kommo, entao o filtro de mes nao se aplica
+// aqui por natureza do dado (nao ha "retencao de fevereiro").
+function abaRetencao(container) {
+  const ret = CONSOLIDADO.retencao;
+  renderCards(container, [
+    { rotulo: "Clientes na carteira", valor: ret.carteira_tamanho },
+    { rotulo: "Clientes em risco", valor: ret.qtd_clientes_em_risco, classe: ret.qtd_clientes_em_risco ? "atencao" : "ok" },
+    { rotulo: "Valor total em risco", valor: fmtMoeda(ret.valor_total_em_risco) },
+  ]);
+  tabelaClientesRisco(container, "retencao-top10", "Top 10 maiores clientes em risco", ret.top10_maiores_em_risco);
+  tabelaClientesRisco(container, "retencao-acao", "Lista de ação priorizada", ret.lista_acao_priorizada);
+
+  const casos = (CONSOLIDADO.auditoria_cliente_novo || {}).casos_tomada_cliente || [];
+  if (casos.length) {
+    renderTabela(container, {
+      id: "tomada-cliente", titulo: "Casos de tomada de cliente",
+      colunas: [
+        { chave: "razao_social_cliente", rotulo: "Cliente", render: r => r.razao_social_cliente || r.cnpj_cliente },
+        { chave: "vendedor_original", rotulo: "Vendedor original" },
+        { chave: "vendedor_atual", rotulo: "Vendedor atual" },
+        { chave: "data_primeira_venda", rotulo: "Data 1ª venda" },
+        { chave: "data_mudanca", rotulo: "Data da mudança" },
+      ],
+      linhas: casos,
+    });
+  }
+  if (ret.clientes_sem_historico_suficiente) {
+    const nota = document.createElement("p");
+    nota.className = "pendente";
+    nota.innerHTML = `<strong>Observação:</strong> ${ret.clientes_sem_historico_suficiente} cliente(s) com apenas 1 compra no histórico não entram no score de risco (é preciso pelo menos 2 compras para calcular o intervalo médio do próprio cliente).`;
+    container.appendChild(nota);
+  }
+}
+
+function abaReativacao(container) {
+  const ret = CONSOLIDADO.retencao;
+  renderCards(container, [
+    { rotulo: "Clientes a reativar", valor: ret.clientes_a_reativar.length },
+    { rotulo: "Taxa de reativação histórica", valor: ret.taxa_reativacao_pct != null ? ret.taxa_reativacao_pct + "%" : "-" },
+  ]);
+  tabelaClientesRisco(container, "reativacao-lista", "Clientes a reativar (ordenado por score de risco)", ret.clientes_a_reativar);
+  const nota = document.createElement("p");
+  nota.className = "pendente";
+  nota.innerHTML = "<strong>Sobre a taxa de reativação:</strong> é uma estimativa a partir do histórico de compras (episódios em que o cliente ficou acima do próprio padrão e depois voltou a comprar) - não vem de um registro de contato/campanha de reativação.";
+  container.appendChild(nota);
 }
 
 const RENDER_ABA = {
   comissao: abaComissao,
   metas: abaMetas,
   kommo: abaKommo,
-  retencao: c => renderPendente(c, CONSOLIDADO.retencao),
-  reativacao: c => renderPendente(c, CONSOLIDADO.retencao),
-  gratificacao: c => renderPendente(c, CONSOLIDADO.gratificacao),
+  retencao: abaRetencao,
+  reativacao: abaReativacao,
+  gratificacao: abaGratificacao,
 };
 
 /* ---------- filtros ---------- */
@@ -276,6 +421,10 @@ function mesesDisponiveis() {
   const s = new Set();
   (CONSOLIDADO.comissao.linhas || []).forEach(l => s.add(l.mes));
   (CONSOLIDADO.metas || []).forEach(m => s.add(m.mes));
+  (CONSOLIDADO.gratificacao || []).forEach(g => s.add(g.mes));
+  Object.values(CONSOLIDADO.bonus_clientes_novos || {}).forEach(lista => lista.forEach(l => s.add(l.mes)));
+  const perf = CONSOLIDADO.performance_kommo;
+  if (perf && perf.por_mes) Object.keys(perf.por_mes).forEach(m => s.add(m));
   return Array.from(s).filter(Boolean).sort();
 }
 
