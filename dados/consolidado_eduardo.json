@@ -1,271 +1,670 @@
 {
-  "gerado_em_utc": "2026-08-13T09:03:09.277679Z",
-  "metas": [
-    {
-      "mes": "2026-01",
-      "meta_canal": 500000.0,
-      "realizado_canal": 686674.58,
-      "atingimento_pct": 137.3,
-      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
-    },
-    {
-      "mes": "2026-02",
-      "meta_canal": 500000.0,
-      "realizado_canal": 733758.55,
-      "atingimento_pct": 146.8,
-      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
-    },
-    {
-      "mes": "2026-03",
-      "meta_canal": 500000.0,
-      "realizado_canal": 648950.5,
-      "atingimento_pct": 129.8,
-      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
-    },
-    {
-      "mes": "2026-04",
-      "meta_canal": 500000.0,
-      "realizado_canal": 695242.33,
-      "atingimento_pct": 139.0,
-      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
-    },
-    {
-      "mes": "2026-05",
-      "meta_canal": 500000.0,
-      "realizado_canal": 695646.77,
-      "atingimento_pct": 139.1,
-      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
-    },
-    {
-      "mes": "2026-06",
-      "meta_canal": 500000.0,
-      "realizado_canal": 729148.53,
-      "atingimento_pct": 145.8,
-      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
-    },
-    {
-      "mes": "2026-07",
-      "meta_canal": 500000.0,
-      "realizado_canal": 695290.55,
-      "atingimento_pct": 139.1,
-      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
-    },
-    {
-      "mes": "2026-08",
-      "meta_canal": 500000.0,
-      "realizado_canal": 309281.57,
-      "atingimento_pct": 61.9,
-      "mix_novos_recorrentes": "pendente_mapeamento_vendedor"
-    }
-  ],
+  "gerado_em_utc": "2026-08-13T11:54:56.278291Z",
+  "metas": [],
   "performance_kommo": {
     "por_funil": [
       {
-        "funil": "Amostras",
-        "ganhas": 1,
-        "perdidas": 0,
-        "em_aberto": 13,
-        "valor_ganho": 1.0,
-        "valor_perdido": 0.0,
-        "taxa_conversao_pct": 100.0
-      },
-      {
-        "funil": "Funil Atendimento",
-        "ganhas": 43,
-        "perdidas": 32,
-        "em_aberto": 64,
-        "valor_ganho": 26491.0,
-        "valor_perdido": 880.0,
-        "taxa_conversao_pct": 57.3
-      },
-      {
         "funil": "Funil Eduardo",
         "ganhas": 343,
-        "perdidas": 5423,
+        "perdidas": 5425,
         "em_aberto": 524,
         "valor_ganho": 456104.0,
         "valor_perdido": 6252701.0,
         "taxa_conversao_pct": 5.9
-      },
-      {
-        "funil": "Funil Joice",
-        "ganhas": 300,
-        "perdidas": 5983,
-        "em_aberto": 557,
-        "valor_ganho": 395245.0,
-        "valor_perdido": 738908.0,
-        "taxa_conversao_pct": 4.8
-      },
-      {
-        "funil": "Funil Rubs",
-        "ganhas": 320,
-        "perdidas": 6790,
-        "em_aberto": 493,
-        "valor_ganho": 357225.0,
-        "valor_perdido": 1160631.0,
-        "taxa_conversao_pct": 4.5
-      },
-      {
-        "funil": "Funil de vendas",
-        "ganhas": 0,
-        "perdidas": 17,
-        "em_aberto": 0,
-        "valor_ganho": 0.0,
-        "valor_perdido": 0.0,
-        "taxa_conversao_pct": 0.0
-      },
-      {
-        "funil": "Lançamento Site",
-        "ganhas": 0,
-        "perdidas": 0,
-        "em_aberto": 2,
-        "valor_ganho": 0.0,
-        "valor_perdido": 0.0,
-        "taxa_conversao_pct": null
-      },
-      {
-        "funil": "Ocorrências",
-        "ganhas": 1,
-        "perdidas": 12,
-        "em_aberto": 67,
-        "valor_ganho": 12466.0,
-        "valor_perdido": 0.0,
-        "taxa_conversao_pct": 7.7
-      },
-      {
-        "funil": "PAGAMENTOS [KF5]",
-        "ganhas": 7,
-        "perdidas": 0,
-        "em_aberto": 994,
-        "valor_ganho": 0.0,
-        "valor_perdido": 0.0,
-        "taxa_conversao_pct": 100.0
-      },
-      {
-        "funil": "Pós venda",
-        "ganhas": 156,
-        "perdidas": 11,
-        "em_aberto": 303,
-        "valor_ganho": 186402.0,
-        "valor_perdido": 3770.0,
-        "taxa_conversao_pct": 93.4
-      },
-      {
-        "funil": "Supervisão",
-        "ganhas": 7,
-        "perdidas": 31,
-        "em_aberto": 58,
-        "valor_ganho": 67140.0,
-        "valor_perdido": 15227.0,
-        "taxa_conversao_pct": 18.4
       }
     ],
     "motivos_perda": [
       {
         "motivo": "Não tem interesse",
-        "qtd": 11933,
-        "valor": 7656647.0
-      },
-      {
-        "motivo": "Não responde - antes proposta",
-        "qtd": 3268,
-        "valor": 85001.0
+        "qtd": 4234,
+        "valor": 6215054.0
       },
       {
         "motivo": "Contato Não Comercial",
-        "qtd": 1030,
-        "valor": 48387.0
+        "qtd": 401,
+        "valor": 937.0
       },
       {
         "motivo": "Lead Duplicado",
-        "qtd": 867,
+        "qtd": 313,
         "valor": 0.0
       },
       {
         "motivo": "O produto não é a necessidade",
-        "qtd": 424,
-        "valor": 5905.0
-      },
-      {
-        "motivo": "Quantidade mínima",
-        "qtd": 168,
-        "valor": 1240.0
+        "qtd": 240,
+        "valor": 830.0
       },
       {
         "motivo": "Volumetria específica",
-        "qtd": 119,
-        "valor": 831.0
+        "qtd": 78,
+        "valor": 1.0
+      },
+      {
+        "motivo": "Quantidade mínima",
+        "qtd": 71,
+        "valor": 1240.0
       },
       {
         "motivo": "Prazo de produção",
-        "qtd": 119,
-        "valor": 29499.0
-      },
-      {
-        "motivo": "Não responde -pós proposta",
-        "qtd": 95,
-        "valor": 287393.0
-      },
-      {
-        "motivo": "Sem motivo registrado",
-        "qtd": 87,
-        "valor": 5850.0
-      },
-      {
-        "motivo": "Logística",
-        "qtd": 60,
-        "valor": 0.0
-      },
-      {
-        "motivo": "Tempo de Atendimento",
-        "qtd": 59,
-        "valor": 0.0
+        "qtd": 51,
+        "valor": 23479.0
       },
       {
         "motivo": "Preço",
-        "qtd": 26,
-        "valor": 31582.0
+        "qtd": 9,
+        "valor": 3950.0
       },
       {
-        "motivo": "Comprado do concorrente",
-        "qtd": 23,
-        "valor": 13194.0
+        "motivo": "Sem motivo registrado",
+        "qtd": 9,
+        "valor": 710.0
+      },
+      {
+        "motivo": "Logística",
+        "qtd": 6,
+        "valor": 0.0
       },
       {
         "motivo": "Seladora - Investimento",
-        "qtd": 17,
-        "valor": 4048.0
+        "qtd": 6,
+        "valor": 0.0
+      },
+      {
+        "motivo": "Comprado do concorrente",
+        "qtd": 4,
+        "valor": 4400.0
+      },
+      {
+        "motivo": "Não responde - antes proposta",
+        "qtd": 1,
+        "valor": 0.0
       },
       {
         "motivo": "Condições de pagamento",
-        "qtd": 2,
-        "valor": 2540.0
+        "qtd": 1,
+        "valor": 2100.0
       },
       {
-        "motivo": "Frete",
-        "qtd": 2,
+        "motivo": "Não responde -pós proposta",
+        "qtd": 1,
         "valor": 0.0
       }
     ],
-    "total_leads": 22552,
-    "total_pipelines": 14
+    "total_leads": 6292,
+    "total_pipelines": 1,
+    "por_mes": {
+      "2026-01": {
+        "por_funil": [
+          {
+            "funil": "Funil Eduardo",
+            "ganhas": 30,
+            "perdidas": 583,
+            "em_aberto": 76,
+            "valor_ganho": 32760.0,
+            "valor_perdido": 12002.0,
+            "taxa_conversao_pct": 4.9
+          }
+        ],
+        "motivos_perda": [
+          {
+            "motivo": "Não tem interesse",
+            "qtd": 453,
+            "valor": 7353.0
+          },
+          {
+            "motivo": "Contato Não Comercial",
+            "qtd": 72,
+            "valor": 0.0
+          },
+          {
+            "motivo": "O produto não é a necessidade",
+            "qtd": 32,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Quantidade mínima",
+            "qtd": 11,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Volumetria específica",
+            "qtd": 10,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Prazo de produção",
+            "qtd": 3,
+            "valor": 699.0
+          },
+          {
+            "motivo": "Logística",
+            "qtd": 1,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Preço",
+            "qtd": 1,
+            "valor": 3950.0
+          }
+        ],
+        "total_leads": 689,
+        "total_pipelines": 1
+      },
+      "2026-02": {
+        "por_funil": [
+          {
+            "funil": "Funil Eduardo",
+            "ganhas": 37,
+            "perdidas": 794,
+            "em_aberto": 28,
+            "valor_ganho": 24491.0,
+            "valor_perdido": 37154.0,
+            "taxa_conversao_pct": 4.5
+          }
+        ],
+        "motivos_perda": [
+          {
+            "motivo": "Não tem interesse",
+            "qtd": 642,
+            "valor": 36444.0
+          },
+          {
+            "motivo": "Contato Não Comercial",
+            "qtd": 84,
+            "valor": 0.0
+          },
+          {
+            "motivo": "O produto não é a necessidade",
+            "qtd": 36,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Volumetria específica",
+            "qtd": 10,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Quantidade mínima",
+            "qtd": 9,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Prazo de produção",
+            "qtd": 4,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Sem motivo registrado",
+            "qtd": 3,
+            "valor": 710.0
+          },
+          {
+            "motivo": "Logística",
+            "qtd": 2,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Preço",
+            "qtd": 1,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Seladora - Investimento",
+            "qtd": 1,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Comprado do concorrente",
+            "qtd": 1,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Não responde - antes proposta",
+            "qtd": 1,
+            "valor": 0.0
+          }
+        ],
+        "total_leads": 859,
+        "total_pipelines": 1
+      },
+      "2026-03": {
+        "por_funil": [
+          {
+            "funil": "Funil Eduardo",
+            "ganhas": 54,
+            "perdidas": 985,
+            "em_aberto": 39,
+            "valor_ganho": 73595.0,
+            "valor_perdido": 5672903.0,
+            "taxa_conversao_pct": 5.2
+          }
+        ],
+        "motivos_perda": [
+          {
+            "motivo": "Não tem interesse",
+            "qtd": 826,
+            "valor": 5670376.0
+          },
+          {
+            "motivo": "Contato Não Comercial",
+            "qtd": 86,
+            "valor": 937.0
+          },
+          {
+            "motivo": "O produto não é a necessidade",
+            "qtd": 36,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Quantidade mínima",
+            "qtd": 16,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Prazo de produção",
+            "qtd": 8,
+            "valor": 1590.0
+          },
+          {
+            "motivo": "Volumetria específica",
+            "qtd": 6,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Preço",
+            "qtd": 3,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Comprado do concorrente",
+            "qtd": 1,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Seladora - Investimento",
+            "qtd": 1,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Sem motivo registrado",
+            "qtd": 1,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Logística",
+            "qtd": 1,
+            "valor": 0.0
+          }
+        ],
+        "total_leads": 1078,
+        "total_pipelines": 1
+      },
+      "2026-04": {
+        "por_funil": [
+          {
+            "funil": "Funil Eduardo",
+            "ganhas": 36,
+            "perdidas": 668,
+            "em_aberto": 30,
+            "valor_ganho": 43212.0,
+            "valor_perdido": 219686.0,
+            "taxa_conversao_pct": 5.1
+          }
+        ],
+        "motivos_perda": [
+          {
+            "motivo": "Não tem interesse",
+            "qtd": 591,
+            "valor": 219686.0
+          },
+          {
+            "motivo": "Contato Não Comercial",
+            "qtd": 29,
+            "valor": 0.0
+          },
+          {
+            "motivo": "O produto não é a necessidade",
+            "qtd": 23,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Volumetria específica",
+            "qtd": 9,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Quantidade mínima",
+            "qtd": 9,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Prazo de produção",
+            "qtd": 5,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Seladora - Investimento",
+            "qtd": 2,
+            "valor": 0.0
+          }
+        ],
+        "total_leads": 734,
+        "total_pipelines": 1
+      },
+      "2026-05": {
+        "por_funil": [
+          {
+            "funil": "Funil Eduardo",
+            "ganhas": 55,
+            "perdidas": 376,
+            "em_aberto": 31,
+            "valor_ganho": 58769.0,
+            "valor_perdido": 83329.0,
+            "taxa_conversao_pct": 12.8
+          }
+        ],
+        "motivos_perda": [
+          {
+            "motivo": "Não tem interesse",
+            "qtd": 281,
+            "valor": 61749.0
+          },
+          {
+            "motivo": "Contato Não Comercial",
+            "qtd": 37,
+            "valor": 0.0
+          },
+          {
+            "motivo": "O produto não é a necessidade",
+            "qtd": 34,
+            "valor": 830.0
+          },
+          {
+            "motivo": "Prazo de produção",
+            "qtd": 11,
+            "valor": 20750.0
+          },
+          {
+            "motivo": "Quantidade mínima",
+            "qtd": 7,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Volumetria específica",
+            "qtd": 3,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Seladora - Investimento",
+            "qtd": 2,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Logística",
+            "qtd": 1,
+            "valor": 0.0
+          }
+        ],
+        "total_leads": 462,
+        "total_pipelines": 1
+      },
+      "2026-06": {
+        "por_funil": [
+          {
+            "funil": "Funil Eduardo",
+            "ganhas": 48,
+            "perdidas": 565,
+            "em_aberto": 16,
+            "valor_ganho": 117883.0,
+            "valor_perdido": 112372.0,
+            "taxa_conversao_pct": 7.8
+          }
+        ],
+        "motivos_perda": [
+          {
+            "motivo": "Não tem interesse",
+            "qtd": 457,
+            "valor": 107532.0
+          },
+          {
+            "motivo": "Contato Não Comercial",
+            "qtd": 46,
+            "valor": 0.0
+          },
+          {
+            "motivo": "O produto não é a necessidade",
+            "qtd": 33,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Volumetria específica",
+            "qtd": 12,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Quantidade mínima",
+            "qtd": 9,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Prazo de produção",
+            "qtd": 7,
+            "valor": 440.0
+          },
+          {
+            "motivo": "Comprado do concorrente",
+            "qtd": 1,
+            "valor": 4400.0
+          }
+        ],
+        "total_leads": 629,
+        "total_pipelines": 1
+      },
+      "2026-07": {
+        "por_funil": [
+          {
+            "funil": "Funil Eduardo",
+            "ganhas": 67,
+            "perdidas": 1058,
+            "em_aberto": 14,
+            "valor_ganho": 94841.0,
+            "valor_perdido": 64716.0,
+            "taxa_conversao_pct": 6.0
+          }
+        ],
+        "motivos_perda": [
+          {
+            "motivo": "Não tem interesse",
+            "qtd": 680,
+            "valor": 62616.0
+          },
+          {
+            "motivo": "Lead Duplicado",
+            "qtd": 258,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Contato Não Comercial",
+            "qtd": 37,
+            "valor": 0.0
+          },
+          {
+            "motivo": "O produto não é a necessidade",
+            "qtd": 35,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Volumetria específica",
+            "qtd": 19,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Prazo de produção",
+            "qtd": 10,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Quantidade mínima",
+            "qtd": 7,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Sem motivo registrado",
+            "qtd": 4,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Preço",
+            "qtd": 4,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Condições de pagamento",
+            "qtd": 1,
+            "valor": 2100.0
+          },
+          {
+            "motivo": "Não responde -pós proposta",
+            "qtd": 1,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Comprado do concorrente",
+            "qtd": 1,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Logística",
+            "qtd": 1,
+            "valor": 0.0
+          }
+        ],
+        "total_leads": 1139,
+        "total_pipelines": 1
+      },
+      "2026-08": {
+        "por_funil": [
+          {
+            "funil": "Funil Eduardo",
+            "ganhas": 16,
+            "perdidas": 396,
+            "em_aberto": 290,
+            "valor_ganho": 10553.0,
+            "valor_perdido": 50539.0,
+            "taxa_conversao_pct": 3.9
+          }
+        ],
+        "motivos_perda": [
+          {
+            "motivo": "Não tem interesse",
+            "qtd": 304,
+            "valor": 49298.0
+          },
+          {
+            "motivo": "Lead Duplicado",
+            "qtd": 55,
+            "valor": 0.0
+          },
+          {
+            "motivo": "O produto não é a necessidade",
+            "qtd": 11,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Contato Não Comercial",
+            "qtd": 10,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Volumetria específica",
+            "qtd": 9,
+            "valor": 1.0
+          },
+          {
+            "motivo": "Prazo de produção",
+            "qtd": 3,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Quantidade mínima",
+            "qtd": 3,
+            "valor": 1240.0
+          },
+          {
+            "motivo": "Sem motivo registrado",
+            "qtd": 1,
+            "valor": 0.0
+          }
+        ],
+        "total_leads": 702,
+        "total_pipelines": 1
+      }
+    }
   },
   "auditoria_cliente_novo": {
-    "status": "pendente",
-    "motivo": "depende de mapear o codigo de vendedor da NF-e OMIE para o nome real (nao confirmado contra a API real ainda)"
+    "status": "ok",
+    "ano_calculo": "2026",
+    "meta_individual_mensal": 166666.67,
+    "registros_sem_cnpj_nao_auditados": 1825,
+    "nota": "Ordens de Servico normalmente nao tem CNPJ do cliente na API do OMIE - essas entram no faturamento total mas ficam de fora da classificacao novo/recorrente (aparecem como 'nao_auditado' nas metas).",
+    "casos_tomada_cliente": []
   },
   "bonus_clientes_novos": {
-    "status": "pendente",
-    "motivo": "depende da auditoria de cliente novo acima"
+    "Eduardo Santiago": []
   },
   "retencao": {
-    "status": "pendente",
-    "motivo": "depende da auditoria de cliente novo (historico de compra por CNPJ) - proxima iteracao"
+    "carteira_tamanho": 0,
+    "clientes_avaliados": 0,
+    "clientes_sem_historico_suficiente": 0,
+    "qtd_clientes_em_risco": 0,
+    "valor_total_em_risco": 0,
+    "taxa_reativacao_pct": null,
+    "clientes_a_reativar": [],
+    "top10_maiores_em_risco": [],
+    "lista_acao_priorizada": []
   },
-  "gratificacao": {
-    "status": "pendente",
-    "motivo": "depende de ingestao de Ordens de Servico do OMIE (ainda nao implementada em ingest/omie_faturamento.py)"
-  },
+  "gratificacao": [
+    {
+      "mes": "2026-01",
+      "faturamento_canal": 686099.58,
+      "gratificacao": 800.0
+    },
+    {
+      "mes": "2026-02",
+      "faturamento_canal": 733758.55,
+      "gratificacao": 800.0
+    },
+    {
+      "mes": "2026-03",
+      "faturamento_canal": 648950.5,
+      "gratificacao": 800.0
+    },
+    {
+      "mes": "2026-04",
+      "faturamento_canal": 695242.33,
+      "gratificacao": 800.0
+    },
+    {
+      "mes": "2026-05",
+      "faturamento_canal": 695646.77,
+      "gratificacao": 800.0
+    },
+    {
+      "mes": "2026-06",
+      "faturamento_canal": 729148.53,
+      "gratificacao": 800.0
+    },
+    {
+      "mes": "2026-07",
+      "faturamento_canal": 695290.55,
+      "gratificacao": 800.0
+    },
+    {
+      "mes": "2026-08",
+      "faturamento_canal": 309281.57,
+      "gratificacao": 800.0
+    }
+  ],
   "omie_erros_empresa": [],
   "comissao": {
     "linhas": [
