@@ -279,9 +279,16 @@ function abaMetas(container) {
       { chave: "mes", rotulo: "Mês" },
       { chave: "meta_canal", rotulo: individual ? "Meta" : "Meta do canal", render: r => fmtMoeda(r.meta_canal) },
       { chave: "realizado_canal", rotulo: "Realizado", render: r => fmtMoeda(r.realizado_canal) },
+      // meta_novos/meta_recorrentes/atingimento_*_pct (4.8: mix da meta
+      // 25%/75% e a propria meta dividida nessa proporcao, nao so o mix
+      // do que foi realizado - ver consolidar.monta_lista_metas).
       { chave: "realizado_novos", rotulo: "Clientes novos", render: r => fmtMoeda(r.realizado_novos) },
+      { chave: "meta_novos", rotulo: "Meta clientes novos (25%)", render: r => fmtMoeda(r.meta_novos ?? 0) },
+      { chave: "atingimento_novos_pct", rotulo: "Ating. novos", render: r => badgeAtingimento(r.atingimento_novos_pct) },
       { chave: "realizado_recorrentes", rotulo: "Clientes recorrentes", render: r => fmtMoeda(r.realizado_recorrentes) },
-      { chave: "atingimento_pct", rotulo: "Atingimento", render: r => badgeAtingimento(r.atingimento_pct) },
+      { chave: "meta_recorrentes", rotulo: "Meta recorrentes (75%)", render: r => fmtMoeda(r.meta_recorrentes ?? 0) },
+      { chave: "atingimento_recorrentes_pct", rotulo: "Ating. recorrentes", render: r => badgeAtingimento(r.atingimento_recorrentes_pct) },
+      { chave: "atingimento_pct", rotulo: "Atingimento total", render: r => badgeAtingimento(r.atingimento_pct) },
     ],
     linhas: metas,
   });
@@ -380,6 +387,9 @@ function abaRetencao(container) {
     { rotulo: "Clientes na carteira", valor: ret.carteira_tamanho },
     { rotulo: "Clientes em risco", valor: ret.qtd_clientes_em_risco, classe: ret.qtd_clientes_em_risco ? "atencao" : "ok" },
     { rotulo: "Valor total em risco", valor: fmtMoeda(ret.valor_total_em_risco) },
+    // comissao_projetada (4.9 - campo que faltava): quanto de comissao
+    // fica em risco se esses clientes nao voltarem a comprar.
+    { rotulo: "Comissão projetada em risco", valor: fmtMoeda(ret.comissao_projetada ?? 0), classe: (ret.comissao_projetada ?? 0) ? "atencao" : "" },
   ]);
   tabelaClientesRisco(container, "retencao-top10", "Top 10 maiores clientes em risco", ret.top10_maiores_em_risco);
   tabelaClientesRisco(container, "retencao-acao", "Lista de ação priorizada", ret.lista_acao_priorizada);
@@ -481,8 +491,23 @@ function renderAbaAtiva() {
 function montarShell() {
   const cfg = window.AREA_CONFIG;
   document.getElementById("area-atual").textContent = cfg.nomeExibicao;
-  document.getElementById("atualizado-em").textContent =
-    "Dados atualizados em: " + fmtData(CONSOLIDADO.gerado_em_utc);
+  // 6.6/4.2: distingue o horario do job automatico (OMIE/Kommo, sempre
+  // "hoje") da data da ULTIMA planilha de Comissao/Frete enviada (pode
+  // ser bem mais antiga) - antes so mostrava um "atualizado em" so, que
+  // dava a falsa impressao de que a comissao tambem era de hoje.
+  const metaComissao = CONSOLIDADO.comissao && CONSOLIDADO.comissao.meta;
+  const planilhasDatas = metaComissao
+    ? [metaComissao.planilha_comissao_atualizada_em_utc, metaComissao.planilha_frete_atualizada_em_utc]
+        .filter(Boolean)
+    : [];
+  const planilhaMaisAntiga = planilhasDatas.length
+    ? planilhasDatas.reduce((a, b) => (a < b ? a : b))
+    : null;
+  document.getElementById("atualizado-em").innerHTML =
+    `Dados automáticos (OMIE/Kommo) atualizados em: ${fmtData(CONSOLIDADO.gerado_em_utc)}` +
+    (planilhaMaisAntiga
+      ? `<br>Planilha de Comissão/Frete atualizada em: ${fmtData(planilhaMaisAntiga)}`
+      : "");
 
   const nav = document.getElementById("tabs");
   nav.innerHTML = "";
