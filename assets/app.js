@@ -224,20 +224,32 @@ function abaComissao(container) {
   );
   if (ESTADO.mes) linhasBonus = linhasBonus.filter(l => l.mes === ESTADO.mes);
   if (linhasBonus.length) {
-    const totalBonusUltimoMes = (() => {
+    // bonus_clientes_novos/bonus_seladora/bonus_total: campos novos
+    // (13/08/2026). Fallback pro campo antigo "bonus" (pre-seladora) so
+    // por seguranca, caso algum dado publicado ainda nao tenha sido
+    // reprocessado com o formato novo.
+    const totalUltimoMes = (campo) => {
       const ultimoMesBonus = linhasBonus.map(l => l.mes).sort().pop();
-      return linhasBonus.filter(l => l.mes === ultimoMesBonus).reduce((s, l) => s + l.bonus, 0);
-    })();
+      return linhasBonus.filter(l => l.mes === ultimoMesBonus).reduce((s, l) => s + (l[campo] ?? l.bonus ?? 0), 0);
+    };
+    const totalNovosMes = totalUltimoMes("bonus_clientes_novos");
+    const totalSeladoraMes = totalUltimoMes("bonus_seladora");
+    const totalGeralMes = linhasBonus.some(l => "bonus_total" in l) ? totalUltimoMes("bonus_total") : totalNovosMes;
     renderCards(container, [
-      { rotulo: "Bônus de clientes novos (último mês)", valor: fmtMoeda(totalBonusUltimoMes), classe: totalBonusUltimoMes ? "ok" : "" },
+      { rotulo: "Bônus clientes novos (último mês)", valor: fmtMoeda(totalNovosMes), classe: totalNovosMes ? "ok" : "" },
+      { rotulo: "Bônus seladora (último mês)", valor: fmtMoeda(totalSeladoraMes), classe: totalSeladoraMes ? "ok" : "" },
+      { rotulo: "Bônus total (último mês)", valor: fmtMoeda(totalGeralMes), classe: totalGeralMes ? "ok" : "" },
     ]);
     renderTabela(container, {
-      id: "bonus-clientes-novos", titulo: "Bônus de clientes novos faturados por mês",
+      id: "bonus-clientes-novos", titulo: "Bônus por mês (clientes novos + seladora)",
       colunas: [
         ...(window.AREA_CONFIG.vendedorFiltro ? [] : [{ chave: "vendedor", rotulo: "Vendedor" }]),
         { chave: "mes", rotulo: "Mês" },
         { chave: "faturamento_clientes_novos", rotulo: "Faturamento clientes novos", render: r => fmtMoeda(r.faturamento_clientes_novos) },
-        { chave: "bonus", rotulo: "Bônus", render: r => fmtMoeda(r.bonus) },
+        { chave: "bonus_clientes_novos", rotulo: "Bônus clientes novos", render: r => fmtMoeda(r.bonus_clientes_novos ?? r.bonus ?? 0) },
+        { chave: "qtd_seladoras", rotulo: "Seladoras vendidas", render: r => r.qtd_seladoras ?? 0 },
+        { chave: "bonus_seladora", rotulo: "Bônus seladora", render: r => fmtMoeda(r.bonus_seladora ?? 0) },
+        { chave: "bonus_total", rotulo: "Bônus total", render: r => fmtMoeda(r.bonus_total ?? r.bonus ?? 0) },
       ],
       linhas: linhasBonus,
     });
