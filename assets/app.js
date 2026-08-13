@@ -169,11 +169,32 @@ function renderPendente(container, info) {
 function renderCards(container, cards) {
   const el = document.createElement("div");
   el.className = "cards";
+  // title com o valor exato (13/08/2026, pedido do usuario: "legenda com
+  // o valor quando passar o mouse") - cards que passam `tooltip` mostram
+  // esse texto ao passar o mouse, alem do valor ja visivel.
   el.innerHTML = cards.map(c => `
-    <div class="card">
+    <div class="card" ${c.tooltip ? `title="${c.tooltip}"` : ""}>
       <div class="rotulo">${c.rotulo}</div>
       <div class="valor ${c.classe || ""}">${c.valor}</div>
     </div>`).join("");
+  container.appendChild(el);
+}
+
+// Card de "analises rapidas" (secao 4.7 do documento do projeto - "Metas
+// e analises rapidas" pros vendedores, "analises rapidas para feedback
+// individual e de equipe" no Gerencial - pedido explicito do usuario,
+// 13/08/2026, pra deixar isso visivel em toda aba). So insights de texto
+// computados a partir do que ja esta no JSON, sem calculo novo nenhum -
+// se `itens` vier vazio, a funcao nao renderiza nada (nunca mostra um
+// card vazio/quebrado).
+function renderAnalisesRapidas(container, itens) {
+  const validos = (itens || []).filter(Boolean);
+  if (!validos.length) return;
+  const el = document.createElement("div");
+  el.className = "painel-tabela analises-rapidas";
+  el.innerHTML = `
+    <div class="cabecalho-tabela"><h3>Análises rápidas</h3></div>
+    <ul>${validos.map(txt => `<li>${txt}</li>`).join("")}</ul>`;
   container.appendChild(el);
 }
 
@@ -188,40 +209,133 @@ function linhasComissaoFiltradas() {
   return linhas;
 }
 
+function somaCampo(linhas, campo, alt) {
+  return linhas.reduce((s, l) => s + (l[campo] ?? (alt ? l[alt] : 0) ?? 0), 0);
+}
+
+// Rotulo de periodo pros cards de totais: quando ha um mes especifico
+// selecionado no filtro, mostra o mes; quando o filtro esta em "Todos"
+// (ESTADO.mes null), soma TUDO que sobrou apos os outros filtros e avisa
+// que e um total de varios meses - antes disso os cards sempre mostravam
+// so o ultimo mes presente nos dados, MESMO com "Todos" selecionado, o
+// que fazia parecer que o filtro "Todos" nao tinha efeito nenhum (bug
+// reportado pelo usuario, 13/08/2026).
+function rotuloPeriodo(linhas) {
+  if (ESTADO.mes) return ESTADO.mes;
+  const meses = Array.from(new Set(linhas.map(l => l.mes))).filter(Boolean).sort();
+  if (meses.length <= 1) return meses[0] || "-";
+  return `todos os meses: ${meses[0]} a ${meses[meses.length - 1]}`;
+}
+
+// Pessoas que aparecem no card de totais (13/08/2026, pedido do usuario):
+// consultores (tem painel/funil proprio), supervisao (Kenia, comissiona e
+// tem bonus mas nao tem painel individual) e backoffice (Francyne/Geovana,
+// so tem Gratificacao - nao vendem, entao comissao/bonus/seladora ficam
+// sempre zero pra elas, mas aparecem na mesma tabela pra comparacao).
+const PESSOAS_RESUMO = [
+  { vendedor: "Eduardo Santiago", papel: "Consultor" },
+  { vendedor: "Joice", papel: "Consultor" },
+  { vendedor: "Rubs", papel: "Consultor" },
+  { vendedor: "Kenia", papel: "Supervisão" },
+  { vendedor: "Francyne", papel: "Backoffice" },
+  { vendedor: "Geovana", papel: "Backoffice" },
+];
+
+function totaisPorPessoa() {
+  // Ignora ESTADO.vendedor de proposito (esse card e uma comparacao entre
+  // TODAS as pessoas ao mesmo tempo - selecionar um vendedor especifico no
+  // filtro nao faz sentido reduzir essa tabela a 1 linha). Respeita
+  // ESTADO.mes normalmente.
+  const comissaoLinhas = (CONSOLIDADO.comissao.linhas || []).filter(l => !ESTADO.mes || l.mes === ESTADO.mes);
+  const bonusPorVendedor = CONSOLIDADO.bonus_clientes_novos || {};
+  const gratLinhas = (CONSOLIDADO.gratificacao || []).filter(l => !ESTADO.mes || l.mes === ESTADO.mes);
+  const totalGratificacao = somaCampo(gratLinhas, "gratificacao");
+
+  return PESSOAS_RESUMO.map(p => {
+    const comissao = somaCampo(comissaoLinhas.filter(l => l.vendedor === p.vendedor), "comissao");
+    const bonusLista = (bonusPorVendedor[p.vendedor] || []).filter(l => !ESTADO.mes || l.mes === ESTADO.mes);
+    const bonus = somaCampo(bonusLista, "bonus_clientes_novos", "bonus");
+    const seladora = somaCampo(bonusLista, "bonus_seladora");
+    const gratificacao = p.papel === "Backoffice" ? totalGratificacao : 0;
+    return {
+      vendedor: p.vendedor, papel: p.papel, comissao, bonus, seladora, gratificacao,
+      total: comissao + bonus + seladora + gratificacao,
+    };
+  });
+}
+
+// Analises rapidas da aba Comissao (secao 4.7 - pedido do usuario,
+// 13/08/2026): so texto derivado do que ja esta calculado, sem nenhuma
+// conta nova. Defensivo com dados vazios (nunca quebra a tela).
+function renderAnalisesComissao(container, linhas, linhasBonus, periodo) {
+  const itens = [];
+  const individual = !!window.AREA_CONFIG.vendedorFiltro;
+
+  if (!individual && linhas.length) {
+    const porPessoa = {};
+    linhas.forEach(l => { porPessoa[l.vendedor] = (porPessoa[l.vendedor] || 0) + (l.comissao || 0); });
+    const ranking = Object.entries(porPessoa).sort((a, b) => b[1] - a[1]);
+    if (ranking.length && ranking[0][1] > 0) {
+      itens.push(`Maior comissão do período (${periodo}): <strong>${ranking[0][0]}</strong>, ${fmtMoeda(ranking[0][1])}.`);
+    }
+  }
+
+  if (individual && linhas.length) {
+    const meses = Array.from(new Set(linhas.map(l => l.mes))).sort();
+    if (meses.length >= 2) {
+      const primeiro = linhas.filter(l => l.mes === meses[0]).reduce((s, l) => s + l.comissao, 0);
+      const ultimoV = linhas.filter(l => l.mes === meses[meses.length - 1]).reduce((s, l) => s + l.comissao, 0);
+      if (primeiro > 0) {
+        const variacao = ((ultimoV - primeiro) / primeiro) * 100;
+        itens.push(`Comissão em ${meses[meses.length - 1]} ${variacao >= 0 ? "cresceu" : "caiu"} ${Math.abs(variacao).toFixed(1)}% em relação a ${meses[0]}.`);
+      }
+    }
+  }
+
+  if (linhasBonus.length) {
+    const qtdComBonus = new Set(linhasBonus.filter(l => (l.bonus_clientes_novos ?? l.bonus ?? 0) > 0).map(l => l.vendedor)).size;
+    const qtdTotal = new Set(linhasBonus.map(l => l.vendedor)).size;
+    if (qtdTotal > 1) {
+      itens.push(`${qtdComBonus} de ${qtdTotal} pessoas bateram o primeiro degrau do bônus de clientes novos (R$ 100 mil) em algum mês do período (${periodo}).`);
+    } else if (qtdComBonus > 0) {
+      itens.push(`Bônus de clientes novos batido em pelo menos 1 mês do período selecionado.`);
+    }
+  }
+
+  renderAnalisesRapidas(container, itens);
+}
+
 function abaComissao(container) {
   const linhas = linhasComissaoFiltradas();
-  const ultimoMes = linhas.map(l => l.mes).sort().pop();
-  const doMes = linhas.filter(l => l.mes === ultimoMes);
-  const totalComissaoMes = doMes.reduce((s, l) => s + l.comissao, 0);
-  const totalRecebidoMes = doMes.reduce((s, l) => s + l.recebido, 0);
+  const periodo = rotuloPeriodo(linhas);
+  const totalComissaoPeriodo = somaCampo(linhas, "comissao");
+  const totalRecebidoPeriodo = somaCampo(linhas, "recebido");
+
+  // Card de totais por pessoa (pedido do usuario, 13/08/2026): so faz
+  // sentido no Gerencial - so ele tem visao de todo mundo (comissao.linhas
+  // e bonus_clientes_novos dos paineis individuais ja vem filtrados so com
+  // a propria pessoa, ver calc/consolidar.gravar_arquivos_por_area).
+  if (!window.AREA_CONFIG.vendedorFiltro) {
+    renderTabela(container, {
+      id: "totais-por-pessoa", titulo: `Totais por pessoa (${rotuloPeriodo(CONSOLIDADO.comissao.linhas || [])})`,
+      colunas: [
+        { chave: "vendedor", rotulo: "Pessoa" },
+        { chave: "papel", rotulo: "Papel" },
+        { chave: "comissao", rotulo: "Comissão", render: r => fmtMoeda(r.comissao) },
+        { chave: "bonus", rotulo: "Bônus", render: r => fmtMoeda(r.bonus) },
+        { chave: "seladora", rotulo: "Seladora", render: r => fmtMoeda(r.seladora) },
+        { chave: "gratificacao", rotulo: "Gratificação", render: r => fmtMoeda(r.gratificacao) },
+        { chave: "total", rotulo: "Total", render: r => fmtMoeda(r.total) },
+      ],
+      linhas: totaisPorPessoa(),
+    });
+  }
 
   renderCards(container, [
-    { rotulo: `Recebido em ${ultimoMes || "-"}`, valor: fmtMoeda(totalRecebidoMes) },
-    { rotulo: `Comissão em ${ultimoMes || "-"}`, valor: fmtMoeda(totalComissaoMes), classe: "ok" },
+    { rotulo: `Recebido (${periodo})`, valor: fmtMoeda(totalRecebidoPeriodo) },
+    { rotulo: `Comissão (${periodo})`, valor: fmtMoeda(totalComissaoPeriodo), classe: "ok" },
     { rotulo: "Linhas sem data de pagamento válida", valor: CONSOLIDADO.comissao.meta.linhas_sem_data_valida.length, classe: CONSOLIDADO.comissao.meta.linhas_sem_data_valida.length ? "atencao" : "ok" },
   ]);
-
-  // Piso aplicado (R$150k) so existe para a Kenia, que nao tem painel
-  // individual - so aparece na visao Gerencial (vendedorFiltro null). Nos
-  // paineis individuais (Joice/Rubs/Eduardo) essa coluna nao se aplica.
-  const colunasComissao = [
-    { chave: "vendedor", rotulo: "Vendedor" },
-    { chave: "mes", rotulo: "Mês" },
-    { chave: "recebido", rotulo: "Recebido (corrigido)", render: r => fmtMoeda(r.recebido) },
-  ];
-  if (!window.AREA_CONFIG.vendedorFiltro) {
-    colunasComissao.push({ chave: "piso_aplicado", rotulo: "Piso aplicado", render: r => fmtMoeda(r.piso_aplicado) });
-  }
-  colunasComissao.push(
-    { chave: "base_comissao", rotulo: "Base de cálculo", render: r => fmtMoeda(r.base_comissao) },
-    { chave: "comissao", rotulo: "Comissão (1%)", render: r => fmtMoeda(r.comissao) },
-  );
-
-  renderTabela(container, {
-    id: "comissao", titulo: "Extrato de comissão por mês",
-    colunas: colunasComissao,
-    linhas,
-  });
 
   // Bonus de clientes novos (secao 4.5): CONSOLIDADO.bonus_clientes_novos e
   // sempre {vendedor: [{mes, faturamento_clientes_novos, bonus}]} - no
@@ -231,26 +345,71 @@ function abaComissao(container) {
   let linhasBonus = Object.entries(bonusPorVendedor).flatMap(
     ([vendedor, lista]) => lista.map(l => ({ vendedor, ...l }))
   );
+  // Responsivo aos dois filtros (mes E vendedor) - antes so filtrava por
+  // mes, entao no Gerencial o filtro de Vendedor nao tinha efeito nenhum
+  // sobre o bonus (mesma familia do bug reportado pelo usuario em
+  // "Recebido em"/"Comissao em", 13/08/2026).
+  if (ESTADO.vendedor) linhasBonus = linhasBonus.filter(l => l.vendedor === ESTADO.vendedor);
   if (ESTADO.mes) linhasBonus = linhasBonus.filter(l => l.mes === ESTADO.mes);
   if (linhasBonus.length) {
     // bonus_clientes_novos/bonus_seladora/bonus_total: campos novos
     // (13/08/2026). Fallback pro campo antigo "bonus" (pre-seladora) so
     // por seguranca, caso algum dado publicado ainda nao tenha sido
     // reprocessado com o formato novo.
-    const totalUltimoMes = (campo) => {
-      const ultimoMesBonus = linhasBonus.map(l => l.mes).sort().pop();
-      return linhasBonus.filter(l => l.mes === ultimoMesBonus).reduce((s, l) => s + (l[campo] ?? l.bonus ?? 0), 0);
-    };
-    const totalNovosMes = totalUltimoMes("bonus_clientes_novos");
-    const totalSeladoraMes = totalUltimoMes("bonus_seladora");
-    const totalGeralMes = linhasBonus.some(l => "bonus_total" in l) ? totalUltimoMes("bonus_total") : totalNovosMes;
+    const periodoBonus = rotuloPeriodo(linhasBonus);
+    const totalNovosMes = somaCampo(linhasBonus, "bonus_clientes_novos", "bonus");
+    const totalSeladoraMes = somaCampo(linhasBonus, "bonus_seladora");
+    const totalGeralMes = linhasBonus.some(l => "bonus_total" in l) ? somaCampo(linhasBonus, "bonus_total") : totalNovosMes;
     renderCards(container, [
-      { rotulo: "Bônus clientes novos (último mês)", valor: fmtMoeda(totalNovosMes), classe: totalNovosMes ? "ok" : "" },
-      { rotulo: "Bônus seladora (último mês)", valor: fmtMoeda(totalSeladoraMes), classe: totalSeladoraMes ? "ok" : "" },
-      { rotulo: "Bônus total (último mês)", valor: fmtMoeda(totalGeralMes), classe: totalGeralMes ? "ok" : "" },
+      { rotulo: `Bônus clientes novos (${periodoBonus})`, valor: fmtMoeda(totalNovosMes), classe: totalNovosMes ? "ok" : "" },
+      { rotulo: `Bônus seladora (${periodoBonus})`, valor: fmtMoeda(totalSeladoraMes), classe: totalSeladoraMes ? "ok" : "" },
+      { rotulo: `Bônus total (${periodoBonus})`, valor: fmtMoeda(totalGeralMes), classe: totalGeralMes ? "ok" : "" },
     ]);
+  }
+
+  // Extrato detalhado com toggle (pedido do usuario, 13/08/2026): antes
+  // as duas tabelas (comissao e bonus) ficavam sempre visiveis ao mesmo
+  // tempo; agora um botao deixa o consultor escolher qual ver, reduzindo
+  // a poluicao visual. ESTADO.extratoView persiste entre trocas de aba/
+  // filtro (so reseta ao recarregar a pagina) e e responsivo aos mesmos
+  // filtros de mes/vendedor que ja alimentam `linhas`/`linhasBonus` acima.
+  if (!ESTADO.extratoView) ESTADO.extratoView = "comissao";
+  const toggle = document.createElement("div");
+  toggle.className = "toggle-extrato";
+  toggle.innerHTML = `
+    <button type="button" data-view="comissao" class="${ESTADO.extratoView === "comissao" ? "ativa" : ""}">Extrato de comissão</button>
+    <button type="button" data-view="bonificacao" class="${ESTADO.extratoView === "bonificacao" ? "ativa" : ""}">Extrato de bonificação</button>
+  `;
+  container.appendChild(toggle);
+  toggle.querySelectorAll("[data-view]").forEach(btn => {
+    btn.addEventListener("click", () => { ESTADO.extratoView = btn.dataset.view; renderAbaAtiva(); });
+  });
+
+  if (ESTADO.extratoView === "comissao") {
+    // Piso aplicado (R$150k) so existe para a Kenia, que nao tem painel
+    // individual - so aparece na visao Gerencial (vendedorFiltro null).
+    // Nos paineis individuais (Joice/Rubs/Eduardo) essa coluna nao se
+    // aplica.
+    const colunasComissao = [
+      { chave: "vendedor", rotulo: "Vendedor" },
+      { chave: "mes", rotulo: "Mês" },
+      { chave: "recebido", rotulo: "Recebido (corrigido)", render: r => fmtMoeda(r.recebido) },
+    ];
+    if (!window.AREA_CONFIG.vendedorFiltro) {
+      colunasComissao.push({ chave: "piso_aplicado", rotulo: "Piso aplicado", render: r => fmtMoeda(r.piso_aplicado) });
+    }
+    colunasComissao.push(
+      { chave: "base_comissao", rotulo: "Base de cálculo", render: r => fmtMoeda(r.base_comissao) },
+      { chave: "comissao", rotulo: "Comissão (1%)", render: r => fmtMoeda(r.comissao) },
+    );
     renderTabela(container, {
-      id: "bonus-clientes-novos", titulo: "Bônus por mês (clientes novos + seladora)",
+      id: "comissao", titulo: `Extrato de comissão por mês (${periodo})`,
+      colunas: colunasComissao,
+      linhas,
+    });
+  } else {
+    renderTabela(container, {
+      id: "bonus-clientes-novos", titulo: `Extrato de bonificação por mês (clientes novos + seladora) (${rotuloPeriodo(linhasBonus)})`,
       colunas: [
         ...(window.AREA_CONFIG.vendedorFiltro ? [] : [{ chave: "vendedor", rotulo: "Vendedor" }]),
         { chave: "mes", rotulo: "Mês" },
@@ -297,6 +456,45 @@ function abaComissao(container) {
       linhas: linhasAuditoriaNovo,
     });
   }
+
+  renderAnalisesComissao(container, linhas, linhasBonus, periodo);
+}
+
+// Grafico de pizza em SVG puro (sem biblioteca externa - jsdom nao tem
+// canvas 2D, entao Chart.js quebraria nos testes locais; SVG e nativo e
+// testavel). <title> dentro do <path> da o tooltip nativo do navegador ao
+// passar o mouse em cada fatia - "legenda com o valor ao passar o mouse"
+// (pedido do usuario, 13/08/2026), alem da legenda sempre visivel ao lado.
+const CORES_PIZZA = ["#ABAD00", "#7A7021", "#607D8B", "#F9A825", "#C62828", "#455A64"];
+
+function svgPizza(fatias) {
+  const raio = 80;
+  const validas = fatias.filter(f => f.valor > 0);
+  const total = validas.reduce((s, f) => s + f.valor, 0);
+  if (!total) return '<p class="pendente-inline">Sem dados para o período selecionado.</p>';
+  const cx = raio, cy = raio;
+  let angulo = -Math.PI / 2;
+  const paths = validas.map((f, i) => {
+    const fracao = f.valor / total;
+    const anguloFim = angulo + fracao * 2 * Math.PI;
+    const x1 = (cx + raio * Math.cos(angulo)).toFixed(2), y1 = (cy + raio * Math.sin(angulo)).toFixed(2);
+    const x2 = (cx + raio * Math.cos(anguloFim)).toFixed(2), y2 = (cy + raio * Math.sin(anguloFim)).toFixed(2);
+    const largeArc = (anguloFim - angulo) > Math.PI ? 1 : 0;
+    const cor = f.cor || CORES_PIZZA[i % CORES_PIZZA.length];
+    const d = `M ${cx} ${cy} L ${x1} ${y1} A ${raio} ${raio} 0 ${largeArc} 1 ${x2} ${y2} Z`;
+    angulo = anguloFim;
+    return `<path d="${d}" fill="${cor}" stroke="#fff" stroke-width="1"><title>${f.rotulo}: ${fmtMoeda(f.valor)} (${(fracao * 100).toFixed(1)}%)</title></path>`;
+  }).join("");
+  const legendas = validas.map((f, i) => `
+    <div class="legenda-item">
+      <span class="legenda-cor" style="background:${f.cor || CORES_PIZZA[i % CORES_PIZZA.length]}"></span>
+      <span>${f.rotulo}: ${fmtMoeda(f.valor)} (${(100 * f.valor / total).toFixed(1)}%)</span>
+    </div>`).join("");
+  return `
+    <div class="pizza-wrap">
+      <svg viewBox="0 0 ${raio * 2} ${raio * 2}" width="${raio * 2}" height="${raio * 2}">${paths}</svg>
+      <div class="pizza-legenda">${legendas}</div>
+    </div>`;
 }
 
 function abaMetas(container) {
@@ -316,6 +514,41 @@ function abaMetas(container) {
       { rotulo: "Mix clientes novos", valor: `${ultimo.mix_novos_pct ?? 0}%` },
     ]);
   }
+
+  // Card "faturamento total da empresa" (pedido do usuario, 13/08/2026):
+  // CONSOLIDADO.metas_empresa e a mesma serie canal-wide (so canal
+  // online, apos a correcao de 13/08/2026 - ver calc/consolidar.
+  // calcular_metas_e_bonus) mas SEM o filtro por vendedor que "metas" ja
+  // leva no painel individual - assim todo mundo (nao so o Gerencial)
+  // consegue ver "quanto a empresa faturou no mes", nao so a propria
+  // carteira. Os cards tem tooltip (title) com o valor e o % do total,
+  // ao passar o mouse.
+  let metasEmpresa = (CONSOLIDADO.metas_empresa || []).slice();
+  if (ESTADO.mes) metasEmpresa = metasEmpresa.filter(m => m.mes === ESTADO.mes);
+  const ultimoEmpresa = metasEmpresa.slice(-1)[0];
+  if (ultimoEmpresa) {
+    const totalRealizado = ultimoEmpresa.realizado_canal || 0;
+    const pctNovos = totalRealizado ? (100 * ultimoEmpresa.realizado_novos / totalRealizado) : 0;
+    const pctRecorrentes = totalRealizado ? (100 * ultimoEmpresa.realizado_recorrentes / totalRealizado) : 0;
+    renderCards(container, [
+      {
+        rotulo: `Faturamento total da empresa (${ultimoEmpresa.mes})`,
+        valor: fmtMoeda(totalRealizado),
+        tooltip: `Canal online (Eduardo, Joice, Rubs, Atendimento, iSet, Kênia, Seladora) em ${ultimoEmpresa.mes}: ${fmtMoeda(totalRealizado)}`,
+      },
+      {
+        rotulo: "Clientes novos",
+        valor: fmtMoeda(ultimoEmpresa.realizado_novos),
+        tooltip: `${fmtMoeda(ultimoEmpresa.realizado_novos)} (${pctNovos.toFixed(1)}% do total faturado no mês)`,
+      },
+      {
+        rotulo: "Clientes recorrentes",
+        valor: fmtMoeda(ultimoEmpresa.realizado_recorrentes),
+        tooltip: `${fmtMoeda(ultimoEmpresa.realizado_recorrentes)} (${pctRecorrentes.toFixed(1)}% do total faturado no mês)`,
+      },
+    ]);
+  }
+
   renderTabela(container, {
     id: "metas", titulo: individual ? "Minhas metas por mês" : "Metas por mês (canal online)",
     colunas: [
@@ -342,6 +575,70 @@ function abaMetas(container) {
     nota.innerHTML = "<strong>Observação:</strong> parte do faturamento (ordens de serviço, que não trazem CNPJ do cliente na API do OMIE) entra no valor \"Realizado\" mas não é classificado como novo/recorrente — a soma de \"Clientes novos\" + \"Clientes recorrentes\" pode ficar um pouco abaixo do Realizado por esse motivo.";
     container.appendChild(nota);
   }
+
+  // Canal online x offline + valores por empresa, em pizza (pedido
+  // explicito do usuario, 13/08/2026): "considere que o canal online sao
+  // apenas as vendas dos vendedores Rubs, Eduardo, Joice, Atendimento,
+  // Iset, Kenia, Seladora, os demais vendedores sao do canal offline
+  // atendidos pelo outro canal". So no Gerencial - e o unico painel com
+  // visao de todo o faturamento (individual so ve a propria carteira).
+  if (!individual) {
+    let canalEmpresa = (CONSOLIDADO.canal_empresa || []).slice();
+    if (ESTADO.mes) canalEmpresa = canalEmpresa.filter(c => c.mes === ESTADO.mes);
+    const ultimoCanal = canalEmpresa.slice(-1)[0];
+    if (ultimoCanal) {
+      const totalGeral = ultimoCanal.realizado_total || 0;
+      const pctOnline = totalGeral ? (100 * ultimoCanal.realizado_online / totalGeral) : 0;
+      renderCards(container, [
+        {
+          rotulo: `Canal online (${ultimoCanal.mes})`,
+          valor: fmtMoeda(ultimoCanal.realizado_online),
+          tooltip: `Rubs, Eduardo, Joice, Atendimento, iSet, Kênia e Seladora: ${fmtMoeda(ultimoCanal.realizado_online)} (${pctOnline.toFixed(1)}% do total)`,
+          classe: "ok",
+        },
+        {
+          rotulo: `Canal offline (${ultimoCanal.mes})`,
+          valor: fmtMoeda(ultimoCanal.realizado_offline),
+          tooltip: `Demais vendedores (atendidos pelo outro canal, ex.: Canudos/Centroeste presencial): ${fmtMoeda(ultimoCanal.realizado_offline)} (${(100 - pctOnline).toFixed(1)}% do total)`,
+        },
+      ]);
+
+      const porEmpresa = ultimoCanal.por_empresa || {};
+      const NOME_EMPRESA = { ecommerce: "Ecommerce", canudos: "Canudos", centroeste: "Centroeste" };
+      const fatias = Object.entries(porEmpresa).map(([chave, valor]) => ({
+        rotulo: NOME_EMPRESA[chave] || chave, valor,
+      }));
+      const el = document.createElement("div");
+      el.className = "painel-tabela";
+      el.innerHTML = `
+        <div class="cabecalho-tabela"><h3>Faturamento por empresa (${ultimoCanal.mes})</h3></div>
+        ${svgPizza(fatias)}`;
+      container.appendChild(el);
+    }
+  }
+
+  // Analises rapidas (secao 4.7 - pedido do usuario, 13/08/2026).
+  const itensAnalise = [];
+  if (ultimo) {
+    const faltaMeta = (ultimo.meta_canal || 0) - (ultimo.realizado_canal || 0);
+    if (faltaMeta > 0) {
+      itensAnalise.push(`Faltam ${fmtMoeda(faltaMeta)} para bater a meta de ${ultimo.mes} (atingimento atual: ${ultimo.atingimento_pct ?? 0}%).`);
+    } else {
+      itensAnalise.push(`Meta de ${ultimo.mes} batida - ${ultimo.atingimento_pct ?? 0}% de atingimento.`);
+    }
+    if (ultimo.mix_novos_pct != null) {
+      const diffMix = ultimo.mix_novos_pct - 25;
+      itensAnalise.push(`Mix de clientes novos em ${ultimo.mes}: ${ultimo.mix_novos_pct}% (meta do mix: 25%) - ${diffMix >= 0 ? "acima" : "abaixo"} do alvo em ${Math.abs(diffMix).toFixed(1)} p.p.`);
+    }
+  }
+  if (metas.length >= 2) {
+    const anterior = metas[metas.length - 2];
+    if (ultimo && anterior && anterior.realizado_canal) {
+      const variacao = ((ultimo.realizado_canal - anterior.realizado_canal) / anterior.realizado_canal) * 100;
+      itensAnalise.push(`Realizado ${variacao >= 0 ? "cresceu" : "caiu"} ${Math.abs(variacao).toFixed(1)}% em relação a ${anterior.mes}.`);
+    }
+  }
+  renderAnalisesRapidas(container, itensAnalise);
 }
 
 function abaKommo(container) {
@@ -378,6 +675,17 @@ function abaKommo(container) {
     ],
     linhas: dados.motivos_perda,
   });
+
+  const itensAnalise = [];
+  const funilTop = dados.por_funil.slice().filter(f => f.taxa_conversao_pct != null).sort((a, b) => b.taxa_conversao_pct - a.taxa_conversao_pct)[0];
+  if (funilTop) {
+    itensAnalise.push(`Funil com maior conversão: <strong>${funilTop.funil}</strong>, ${funilTop.taxa_conversao_pct}% (${funilTop.ganhas} ganhas de ${funilTop.ganhas + funilTop.perdidas} fechadas).`);
+  }
+  const motivoTop = dados.motivos_perda.slice().sort((a, b) => b.qtd - a.qtd)[0];
+  if (motivoTop) {
+    itensAnalise.push(`Principal motivo de perda: <strong>${motivoTop.motivo}</strong> (${motivoTop.qtd} casos, ${fmtMoeda(motivoTop.valor)} perdidos).`);
+  }
+  renderAnalisesRapidas(container, itensAnalise);
 }
 
 function abaGratificacao(container) {
@@ -386,11 +694,15 @@ function abaGratificacao(container) {
   // pessoa) - ver calc/consolidar.calcular_gratificacao.
   let linhas = (CONSOLIDADO.gratificacao || []).slice();
   if (ESTADO.mes) linhas = linhas.filter(l => l.mes === ESTADO.mes);
-  const ultimo = linhas.slice(-1)[0];
-  if (ultimo) {
+  if (linhas.length) {
+    // Soma o periodo filtrado em vez de sempre pegar so o ultimo mes -
+    // mesma correcao aplicada em Comissao/Bonus (13/08/2026): com "Todos"
+    // selecionado, o card precisa refletir a soma de tudo, nao travar no
+    // ultimo mes disponivel.
+    const periodo = rotuloPeriodo(linhas);
     renderCards(container, [
-      { rotulo: `Faturamento do canal (${ultimo.mes})`, valor: fmtMoeda(ultimo.faturamento_canal) },
-      { rotulo: "Gratificação", valor: fmtMoeda(ultimo.gratificacao), classe: ultimo.gratificacao ? "ok" : "" },
+      { rotulo: `Faturamento do canal (${periodo})`, valor: fmtMoeda(somaCampo(linhas, "faturamento_canal")) },
+      { rotulo: `Gratificação (${periodo})`, valor: fmtMoeda(somaCampo(linhas, "gratificacao")), classe: somaCampo(linhas, "gratificacao") ? "ok" : "" },
     ]);
   }
   renderTabela(container, {
@@ -402,6 +714,20 @@ function abaGratificacao(container) {
     ],
     linhas,
   });
+
+  const itensAnalise = [];
+  if (linhas.length) {
+    const ultimoG = linhas.slice(-1)[0];
+    itensAnalise.push(`Gratificação de ${ultimoG.mes}: ${fmtMoeda(ultimoG.gratificacao)}, sobre faturamento de ${fmtMoeda(ultimoG.faturamento_canal)}.`);
+    if (linhas.length >= 2) {
+      const anteriorG = linhas[linhas.length - 2];
+      if (anteriorG.gratificacao) {
+        const variacao = ((ultimoG.gratificacao - anteriorG.gratificacao) / anteriorG.gratificacao) * 100;
+        itensAnalise.push(`Gratificação ${variacao >= 0 ? "subiu" : "caiu"} ${Math.abs(variacao).toFixed(1)}% em relação a ${anteriorG.mes}.`);
+      }
+    }
+  }
+  renderAnalisesRapidas(container, itensAnalise);
 }
 
 function tabelaClientesRisco(container, id, titulo, linhas) {
@@ -457,6 +783,17 @@ function abaRetencao(container) {
     nota.innerHTML = `<strong>Observação:</strong> ${ret.clientes_sem_historico_suficiente} cliente(s) com apenas 1 compra no histórico não entram no score de risco (é preciso pelo menos 2 compras para calcular o intervalo médio do próprio cliente).`;
     container.appendChild(nota);
   }
+
+  const itensAnalise = [];
+  if (ret.carteira_tamanho) {
+    const pctRisco = 100 * ret.qtd_clientes_em_risco / ret.carteira_tamanho;
+    itensAnalise.push(`${ret.qtd_clientes_em_risco} de ${ret.carteira_tamanho} clientes em risco (${pctRisco.toFixed(1)}% da carteira), somando ${fmtMoeda(ret.valor_total_em_risco)}.`);
+  }
+  if (ret.top10_maiores_em_risco && ret.top10_maiores_em_risco.length) {
+    const maior = ret.top10_maiores_em_risco[0];
+    itensAnalise.push(`Maior risco: <strong>${maior.razao_social_cliente || maior.cnpj_cliente}</strong>, ${fmtMoeda(maior.valor_total_historico)} histórico, ${maior.dias_desde_ultima_compra} dias sem comprar.`);
+  }
+  renderAnalisesRapidas(container, itensAnalise);
 }
 
 function abaReativacao(container) {
@@ -470,6 +807,16 @@ function abaReativacao(container) {
   nota.className = "pendente";
   nota.innerHTML = "<strong>Sobre a taxa de reativação:</strong> é uma estimativa a partir do histórico de compras (episódios em que o cliente ficou acima do próprio padrão e depois voltou a comprar) - não vem de um registro de contato/campanha de reativação.";
   container.appendChild(nota);
+
+  const itensAnalise = [];
+  if (ret.clientes_a_reativar && ret.clientes_a_reativar.length) {
+    const valorTotal = ret.clientes_a_reativar.reduce((s, c) => s + (c.valor_total_historico || 0), 0);
+    itensAnalise.push(`${ret.clientes_a_reativar.length} clientes prontos para contato de reativação, somando ${fmtMoeda(valorTotal)} em histórico.`);
+  }
+  if (ret.taxa_reativacao_pct != null) {
+    itensAnalise.push(`Taxa histórica de reativação: ${ret.taxa_reativacao_pct}% dos episódios de risco anteriores resultaram em nova compra.`);
+  }
+  renderAnalisesRapidas(container, itensAnalise);
 }
 
 const RENDER_ABA = {
@@ -500,26 +847,58 @@ function vendedoresDisponiveis() {
 }
 
 function renderFiltros() {
+  // Pedido do usuario (13/08/2026): filtros com botoes "Limpar" e
+  // "Aplicar" em vez de aplicar a cada troca de select - os <select>
+  // so mudam o valor VISIVEL, o ESTADO (que dispara o re-render das
+  // abas) so muda quando o usuario clica em "Aplicar" (ou "Limpar").
+  // Isso tambem evita qualquer race condition entre trocar Mes e
+  // trocar Vendedor rapido em sequencia - so importa o que os dois
+  // selects tem no momento do clique.
   const box = document.getElementById("filtros");
   box.innerHTML = "";
 
   const selMes = document.createElement("label");
   selMes.innerHTML = "Mês";
   const mesEl = document.createElement("select");
-  mesEl.innerHTML = `<option value="">Todos</option>` + mesesDisponiveis().map(m => `<option value="${m}">${m}</option>`).join("");
-  mesEl.addEventListener("change", () => { ESTADO.mes = mesEl.value || null; renderAbaAtiva(); });
+  mesEl.id = "filtro-mes";
+  mesEl.innerHTML = `<option value="">Todos</option>` + mesesDisponiveis().map(m => `<option value="${m}" ${ESTADO.mes === m ? "selected" : ""}>${m}</option>`).join("");
   selMes.appendChild(mesEl);
   box.appendChild(selMes);
 
+  let vendEl = null;
   if (window.AREA_CONFIG.mostrarFiltroVendedor) {
     const selVend = document.createElement("label");
     selVend.innerHTML = "Vendedor";
-    const vendEl = document.createElement("select");
-    vendEl.innerHTML = `<option value="">Todos</option>` + vendedoresDisponiveis().map(v => `<option value="${v}">${v}</option>`).join("");
-    vendEl.addEventListener("change", () => { ESTADO.vendedor = vendEl.value || null; renderAbaAtiva(); });
+    vendEl = document.createElement("select");
+    vendEl.id = "filtro-vendedor";
+    vendEl.innerHTML = `<option value="">Todos</option>` + vendedoresDisponiveis().map(v => `<option value="${v}" ${ESTADO.vendedor === v ? "selected" : ""}>${v}</option>`).join("");
     selVend.appendChild(vendEl);
     box.appendChild(selVend);
   }
+
+  const btnAplicar = document.createElement("button");
+  btnAplicar.type = "button";
+  btnAplicar.className = "btn-filtro btn-aplicar";
+  btnAplicar.textContent = "Aplicar";
+  btnAplicar.addEventListener("click", () => {
+    ESTADO.mes = mesEl.value || null;
+    ESTADO.vendedor = vendEl ? (vendEl.value || null) : null;
+    renderAbaAtiva();
+  });
+  box.appendChild(btnAplicar);
+
+  const btnLimpar = document.createElement("button");
+  btnLimpar.type = "button";
+  btnLimpar.className = "btn-filtro btn-limpar";
+  btnLimpar.textContent = "Limpar";
+  btnLimpar.addEventListener("click", () => {
+    mesEl.value = "";
+    if (vendEl) vendEl.value = "";
+    ESTADO.mes = null;
+    ESTADO.vendedor = null;
+    renderAbaAtiva();
+  });
+  box.appendChild(btnLimpar);
 }
 
 /* ---------- shell ---------- */

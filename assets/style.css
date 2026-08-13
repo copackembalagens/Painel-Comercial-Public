@@ -121,6 +121,32 @@ main {
   font-size: 0.9rem;
 }
 
+.btn-filtro {
+  font-family: var(--fonte);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.btn-filtro.btn-aplicar {
+  background: var(--verde-lima);
+  color: var(--preto);
+}
+
+.btn-filtro.btn-aplicar:hover { opacity: 0.85; }
+
+.btn-filtro.btn-limpar {
+  background: var(--cinza-fundo);
+  color: var(--status-neutro);
+  border: 1px solid var(--cinza-borda);
+}
+
+.btn-filtro.btn-limpar:hover { background: var(--cinza-borda); }
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -195,6 +221,85 @@ main {
 .tabela-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.toggle-extrato {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.toggle-extrato button {
+  font-family: var(--fonte);
+  background: var(--branco);
+  border: 1px solid var(--cinza-borda);
+  color: var(--status-neutro);
+  border-radius: 20px;
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toggle-extrato button.ativa {
+  background: var(--verde-lima);
+  border-color: var(--verde-lima);
+  color: var(--preto);
+}
+
+.toggle-extrato button:hover:not(.ativa) { background: var(--cinza-fundo); }
+
+.analises-rapidas ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.analises-rapidas li {
+  margin-bottom: 0.5rem;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.analises-rapidas li:last-child { margin-bottom: 0; }
+
+.card[title] {
+  cursor: help;
+}
+
+.pizza-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.pizza-wrap svg { flex-shrink: 0; }
+.pizza-wrap svg path { cursor: default; }
+
+.pizza-legenda {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.legenda-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+}
+
+.legenda-cor {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.pendente-inline {
+  color: var(--status-neutro);
+  font-size: 0.88rem;
 }
 
 table.dados {
