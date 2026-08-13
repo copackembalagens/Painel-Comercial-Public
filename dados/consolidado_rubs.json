@@ -1,5 +1,5 @@
 {
-  "gerado_em_utc": "2026-08-13T14:52:25.381735Z",
+  "gerado_em_utc": "2026-08-13T20:20:08.027215Z",
   "metas": [
     {
       "mes": "2026-01",
@@ -13,7 +13,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 88.0,
-      "atingimento_recorrentes_pct": 34.2
+      "atingimento_recorrentes_pct": 34.2,
+      "valor_frete": 5758.32,
+      "faturamento_bruto": 85217.66,
+      "pct_frete_sobre_faturamento": 6.8
     },
     {
       "mes": "2026-02",
@@ -27,7 +30,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 122.0,
-      "atingimento_recorrentes_pct": 29.8
+      "atingimento_recorrentes_pct": 29.8,
+      "valor_frete": 9427.88,
+      "faturamento_bruto": 97552.31,
+      "pct_frete_sobre_faturamento": 9.7
     },
     {
       "mes": "2026-03",
@@ -41,7 +47,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 72.3,
-      "atingimento_recorrentes_pct": 30.1
+      "atingimento_recorrentes_pct": 30.1,
+      "valor_frete": 5935.41,
+      "faturamento_bruto": 73732.83,
+      "pct_frete_sobre_faturamento": 8.0
     },
     {
       "mes": "2026-04",
@@ -55,7 +64,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 67.2,
-      "atingimento_recorrentes_pct": 24.0
+      "atingimento_recorrentes_pct": 24.0,
+      "valor_frete": 6974.59,
+      "faturamento_bruto": 64976.65,
+      "pct_frete_sobre_faturamento": 10.7
     },
     {
       "mes": "2026-05",
@@ -69,7 +81,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 137.0,
-      "atingimento_recorrentes_pct": 25.1
+      "atingimento_recorrentes_pct": 25.1,
+      "valor_frete": 7620.73,
+      "faturamento_bruto": 96083.49,
+      "pct_frete_sobre_faturamento": 7.9
     },
     {
       "mes": "2026-06",
@@ -83,7 +98,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 97.2,
-      "atingimento_recorrentes_pct": 20.3
+      "atingimento_recorrentes_pct": 20.3,
+      "valor_frete": 6758.56,
+      "faturamento_bruto": 72698.06,
+      "pct_frete_sobre_faturamento": 9.3
     },
     {
       "mes": "2026-07",
@@ -97,21 +115,27 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 159.5,
-      "atingimento_recorrentes_pct": 39.2
+      "atingimento_recorrentes_pct": 39.2,
+      "valor_frete": 9370.18,
+      "faturamento_bruto": 124838.84,
+      "pct_frete_sobre_faturamento": 7.5
     },
     {
       "mes": "2026-08",
       "meta_canal": 166666.67,
-      "realizado_canal": 45404.78,
-      "atingimento_pct": 27.2,
-      "realizado_novos": 24385.05,
-      "realizado_recorrentes": 21019.73,
+      "realizado_canal": 50384.75,
+      "atingimento_pct": 30.2,
+      "realizado_novos": 24755.55,
+      "realizado_recorrentes": 25629.2,
       "realizado_nao_auditado": 0.0,
-      "mix_novos_pct": 53.7,
+      "mix_novos_pct": 49.1,
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
-      "atingimento_novos_pct": 58.5,
-      "atingimento_recorrentes_pct": 16.8
+      "atingimento_novos_pct": 59.4,
+      "atingimento_recorrentes_pct": 20.5,
+      "valor_frete": 5392.56,
+      "faturamento_bruto": 55777.31,
+      "pct_frete_sobre_faturamento": 9.7
     }
   ],
   "performance_kommo": {
@@ -119,9 +143,9 @@
       {
         "funil": "Funil Rubs",
         "ganhas": 442,
-        "perdidas": 7421,
-        "em_aberto": 498,
-        "valor_ganho": 526648.0,
+        "perdidas": 7428,
+        "em_aberto": 501,
+        "valor_ganho": 525819.0,
         "valor_perdido": 1444188.0,
         "taxa_conversao_pct": 5.6
       }
@@ -129,17 +153,17 @@
     "motivos_perda": [
       {
         "motivo": "Não tem interesse",
-        "qtd": 6719,
+        "qtd": 6721,
         "valor": 1391870.0
       },
       {
         "motivo": "Lead Duplicado",
-        "qtd": 255,
+        "qtd": 259,
         "valor": 0.0
       },
       {
         "motivo": "Contato Não Comercial",
-        "qtd": 213,
+        "qtd": 214,
         "valor": 0.0
       },
       {
@@ -208,8 +232,114 @@
         "valor": 0.0
       }
     ],
-    "total_leads": 8361,
+    "total_leads": 8371,
     "total_pipelines": 1,
+    "resumo": {
+      "total_leads": 8371,
+      "taxa_conversao_pct": 5.6,
+      "total_ganho": 442,
+      "total_perdido": 7428,
+      "valor_ganho": 525819.0,
+      "valor_perdido": 1444188.0,
+      "leads_em_aberto": {
+        "quantidade": 501,
+        "valor": 221530.0,
+        "pct_quantidade_sobre_total": 6.0,
+        "pct_valor_sobre_total": 10.1
+      }
+    },
+    "por_etapa": [
+      {
+        "funil": "Funil Rubs",
+        "etapa": "VENDA PERDIDA",
+        "quantidade": 7428,
+        "valor": 1444188.0
+      },
+      {
+        "funil": "Funil Rubs",
+        "etapa": "VENDA GANHA",
+        "quantidade": 442,
+        "valor": 525819.0
+      },
+      {
+        "funil": "Funil Rubs",
+        "etapa": "ACOMPANHAMENTO",
+        "quantidade": 61,
+        "valor": 128850.0
+      },
+      {
+        "funil": "Funil Rubs",
+        "etapa": "CLIENTES RECORRENTES",
+        "quantidade": 87,
+        "valor": 47710.0
+      },
+      {
+        "funil": "Funil Rubs",
+        "etapa": "QUALIFICAÇÃO",
+        "quantidade": 348,
+        "valor": 30680.0
+      },
+      {
+        "funil": "Funil Rubs",
+        "etapa": "PROPOSTA ENVIADA",
+        "quantidade": 3,
+        "valor": 13120.0
+      },
+      {
+        "funil": "Funil Rubs",
+        "etapa": "GERAÇÃO DE PEDIDO",
+        "quantidade": 1,
+        "valor": 1170.0
+      },
+      {
+        "funil": "Funil Rubs",
+        "etapa": "SEM ATENDIMENTO",
+        "quantidade": 1,
+        "valor": 0.0
+      }
+    ],
+    "por_produto": [
+      {
+        "produto": "Sem produto informado",
+        "ganhas": 439,
+        "perdidas": 6638,
+        "valor_ganho": 522299.0,
+        "valor_perdido": 1438029.0,
+        "taxa_conversao_pct": 6.2
+      },
+      {
+        "produto": "copo_personalizado",
+        "ganhas": 1,
+        "perdidas": 474,
+        "valor_ganho": 390.0,
+        "valor_perdido": 6159.0,
+        "taxa_conversao_pct": 0.2
+      },
+      {
+        "produto": "pote",
+        "ganhas": 2,
+        "perdidas": 256,
+        "valor_ganho": 3130.0,
+        "valor_perdido": 0.0,
+        "taxa_conversao_pct": 0.8
+      },
+      {
+        "produto": "seladora",
+        "ganhas": 0,
+        "perdidas": 10,
+        "valor_ganho": 0.0,
+        "valor_perdido": 0.0,
+        "taxa_conversao_pct": 0.0
+      },
+      {
+        "produto": "marmita",
+        "ganhas": 0,
+        "perdidas": 50,
+        "valor_ganho": 0.0,
+        "valor_perdido": 0.0,
+        "taxa_conversao_pct": 0.0
+      }
+    ],
     "por_mes": {
       "2026-01": {
         "por_funil": [
@@ -256,7 +386,65 @@
           }
         ],
         "total_leads": 1037,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 1037,
+          "taxa_conversao_pct": 5.9,
+          "total_ganho": 57,
+          "total_perdido": 913,
+          "valor_ganho": 76428.0,
+          "valor_perdido": 267167.0,
+          "leads_em_aberto": {
+            "quantidade": 67,
+            "valor": 6688.0,
+            "pct_quantidade_sobre_total": 6.5,
+            "pct_valor_sobre_total": 1.9
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 913,
+            "valor": 267167.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA GANHA",
+            "quantidade": 57,
+            "valor": 76428.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 13,
+            "valor": 6688.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 54,
+            "valor": 0.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 57,
+            "perdidas": 913,
+            "valor_ganho": 76428.0,
+            "valor_perdido": 267167.0,
+            "taxa_conversao_pct": 5.9
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 0,
+            "perdidas": 0,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": null
+          }
+        ]
       },
       "2026-02": {
         "por_funil": [
@@ -303,7 +491,71 @@
           }
         ],
         "total_leads": 932,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 932,
+          "taxa_conversao_pct": 4.3,
+          "total_ganho": 39,
+          "total_perdido": 877,
+          "valor_ganho": 39008.0,
+          "valor_perdido": 175530.0,
+          "leads_em_aberto": {
+            "quantidade": 16,
+            "valor": 19560.0,
+            "pct_quantidade_sobre_total": 1.7,
+            "pct_valor_sobre_total": 8.4
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 877,
+            "valor": 175530.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA GANHA",
+            "quantidade": 39,
+            "valor": 39008.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 3,
+            "valor": 15650.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 8,
+            "valor": 3910.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 5,
+            "valor": 0.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 39,
+            "perdidas": 877,
+            "valor_ganho": 39008.0,
+            "valor_perdido": 175530.0,
+            "taxa_conversao_pct": 4.3
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 0,
+            "perdidas": 0,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": null
+          }
+        ]
       },
       "2026-03": {
         "por_funil": [
@@ -370,7 +622,63 @@
           }
         ],
         "total_leads": 1046,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 1046,
+          "taxa_conversao_pct": 4.7,
+          "total_ganho": 48,
+          "total_perdido": 975,
+          "valor_ganho": 48719.0,
+          "valor_perdido": 209267.0,
+          "leads_em_aberto": {
+            "quantidade": 23,
+            "valor": 11082.0,
+            "pct_quantidade_sobre_total": 2.2,
+            "pct_valor_sobre_total": 4.1
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 975,
+            "valor": 209267.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA GANHA",
+            "quantidade": 48,
+            "valor": 48719.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 18,
+            "valor": 9442.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 1,
+            "valor": 1640.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 4,
+            "valor": 0.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 48,
+            "perdidas": 975,
+            "valor_ganho": 48719.0,
+            "valor_perdido": 209267.0,
+            "taxa_conversao_pct": 4.7
+          }
+        ]
       },
       "2026-04": {
         "por_funil": [
@@ -378,7 +686,7 @@
             "funil": "Funil Rubs",
             "ganhas": 65,
             "perdidas": 974,
-            "em_aberto": 21,
+            "em_aberto": 22,
             "valor_ganho": 70109.0,
             "valor_perdido": 116251.0,
             "taxa_conversao_pct": 6.3
@@ -436,8 +744,72 @@
             "valor": 0.0
           }
         ],
-        "total_leads": 1060,
-        "total_pipelines": 1
+        "total_leads": 1061,
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 1061,
+          "taxa_conversao_pct": 6.3,
+          "total_ganho": 65,
+          "total_perdido": 974,
+          "valor_ganho": 70109.0,
+          "valor_perdido": 116251.0,
+          "leads_em_aberto": {
+            "quantidade": 22,
+            "valor": 16799.0,
+            "pct_quantidade_sobre_total": 2.1,
+            "pct_valor_sobre_total": 8.3
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 974,
+            "valor": 116251.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA GANHA",
+            "quantidade": 65,
+            "valor": 70109.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 11,
+            "valor": 9778.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 9,
+            "valor": 5851.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 2,
+            "valor": 1170.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 65,
+            "perdidas": 973,
+            "valor_ganho": 70109.0,
+            "valor_perdido": 116251.0,
+            "taxa_conversao_pct": 6.3
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 0,
+            "perdidas": 1,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       },
       "2026-05": {
         "por_funil": [
@@ -514,7 +886,71 @@
           }
         ],
         "total_leads": 892,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 892,
+          "taxa_conversao_pct": 6.0,
+          "total_ganho": 52,
+          "total_perdido": 819,
+          "valor_ganho": 64902.0,
+          "valor_perdido": 125204.0,
+          "leads_em_aberto": {
+            "quantidade": 21,
+            "valor": 13560.0,
+            "pct_quantidade_sobre_total": 2.4,
+            "pct_valor_sobre_total": 6.7
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 819,
+            "valor": 125204.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA GANHA",
+            "quantidade": 52,
+            "valor": 64902.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 17,
+            "valor": 11060.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 3,
+            "valor": 2500.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 1,
+            "valor": 0.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 52,
+            "perdidas": 818,
+            "valor_ganho": 64902.0,
+            "valor_perdido": 125204.0,
+            "taxa_conversao_pct": 6.0
+          },
+          {
+            "produto": "pote",
+            "ganhas": 0,
+            "perdidas": 1,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       },
       "2026-06": {
         "por_funil": [
@@ -591,7 +1027,85 @@
           }
         ],
         "total_leads": 1042,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 1042,
+          "taxa_conversao_pct": 7.8,
+          "total_ganho": 79,
+          "total_perdido": 937,
+          "valor_ganho": 80320.0,
+          "valor_perdido": 291305.0,
+          "leads_em_aberto": {
+            "quantidade": 26,
+            "valor": 13414.0,
+            "pct_quantidade_sobre_total": 2.5,
+            "pct_valor_sobre_total": 3.5
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 937,
+            "valor": 291305.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA GANHA",
+            "quantidade": 79,
+            "valor": 80320.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 9,
+            "valor": 7442.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 12,
+            "valor": 3922.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "GERAÇÃO DE PEDIDO",
+            "quantidade": 1,
+            "valor": 1170.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 4,
+            "valor": 880.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 79,
+            "perdidas": 934,
+            "valor_ganho": 80320.0,
+            "valor_perdido": 291305.0,
+            "taxa_conversao_pct": 7.8
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 0,
+            "perdidas": 1,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "pote",
+            "ganhas": 0,
+            "perdidas": 2,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       },
       "2026-07": {
         "por_funil": [
@@ -600,7 +1114,7 @@
             "ganhas": 74,
             "perdidas": 1321,
             "em_aberto": 33,
-            "valor_ganho": 108512.0,
+            "valor_ganho": 107683.0,
             "valor_perdido": 214661.0,
             "taxa_conversao_pct": 5.3
           }
@@ -668,15 +1182,103 @@
           }
         ],
         "total_leads": 1428,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 1428,
+          "taxa_conversao_pct": 5.3,
+          "total_ganho": 74,
+          "total_perdido": 1321,
+          "valor_ganho": 107683.0,
+          "valor_perdido": 214661.0,
+          "leads_em_aberto": {
+            "quantidade": 33,
+            "valor": 18687.0,
+            "pct_quantidade_sobre_total": 2.3,
+            "pct_valor_sobre_total": 5.5
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 1321,
+            "valor": 214661.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA GANHA",
+            "quantidade": 74,
+            "valor": 107683.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 23,
+            "valor": 15777.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 7,
+            "valor": 2910.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 3,
+            "valor": 0.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 71,
+            "perdidas": 831,
+            "valor_ganho": 104163.0,
+            "valor_perdido": 211072.0,
+            "taxa_conversao_pct": 7.9
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 1,
+            "perdidas": 299,
+            "valor_ganho": 390.0,
+            "valor_perdido": 3589.0,
+            "taxa_conversao_pct": 0.3
+          },
+          {
+            "produto": "pote",
+            "ganhas": 2,
+            "perdidas": 154,
+            "valor_ganho": 3130.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 1.3
+          },
+          {
+            "produto": "seladora",
+            "ganhas": 0,
+            "perdidas": 4,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "marmita",
+            "ganhas": 0,
+            "perdidas": 33,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       },
       "2026-08": {
         "por_funil": [
           {
             "funil": "Funil Rubs",
             "ganhas": 28,
-            "perdidas": 605,
-            "em_aberto": 291,
+            "perdidas": 612,
+            "em_aberto": 293,
             "valor_ganho": 38650.0,
             "valor_perdido": 44803.0,
             "taxa_conversao_pct": 4.4
@@ -685,17 +1287,17 @@
         "motivos_perda": [
           {
             "motivo": "Não tem interesse",
-            "qtd": 498,
+            "qtd": 500,
             "valor": 34808.0
           },
           {
             "motivo": "Lead Duplicado",
-            "qtd": 82,
+            "qtd": 86,
             "valor": 0.0
           },
           {
             "motivo": "Contato Não Comercial",
-            "qtd": 6,
+            "qtd": 7,
             "valor": 0.0
           },
           {
@@ -744,282 +1346,129 @@
             "valor": 0.0
           }
         ],
-        "total_leads": 924,
-        "total_pipelines": 1
+        "total_leads": 933,
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 933,
+          "taxa_conversao_pct": 4.4,
+          "total_ganho": 28,
+          "total_perdido": 612,
+          "valor_ganho": 38650.0,
+          "valor_perdido": 44803.0,
+          "leads_em_aberto": {
+            "quantidade": 293,
+            "valor": 121740.0,
+            "pct_quantidade_sobre_total": 31.4,
+            "pct_valor_sobre_total": 59.3
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Rubs",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 10,
+            "valor": 99780.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 612,
+            "valor": 44803.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "VENDA GANHA",
+            "quantidade": 28,
+            "valor": 38650.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "PROPOSTA ENVIADA",
+            "quantidade": 3,
+            "valor": 13120.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 278,
+            "valor": 8840.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 1,
+            "valor": 0.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "SEM ATENDIMENTO",
+            "quantidade": 1,
+            "valor": 0.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 28,
+            "perdidas": 317,
+            "valor_ganho": 38650.0,
+            "valor_perdido": 42233.0,
+            "taxa_conversao_pct": 8.1
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 0,
+            "perdidas": 173,
+            "valor_ganho": 0.0,
+            "valor_perdido": 2570.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "marmita",
+            "ganhas": 0,
+            "perdidas": 17,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "pote",
+            "ganhas": 0,
+            "perdidas": 99,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "seladora",
+            "ganhas": 0,
+            "perdidas": 6,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       }
+    },
+    "leads_novos_mes_atual": {
+      "mes": "2026-08",
+      "quantidade": 411,
+      "valor": 127809.0,
+      "pct_quantidade_sobre_total": 4.9,
+      "pct_valor_sobre_total": 5.8,
+      "ganhas": 5,
+      "perdidas": 113,
+      "em_aberto": 293,
+      "taxa_conversao_pct": 4.2
     }
   },
   "auditoria_cliente_novo": {
     "status": "ok",
     "ano_calculo": "2026",
     "meta_individual_mensal": 166666.67,
-    "registros_sem_cnpj_nao_auditados": 2447,
+    "registros_sem_cnpj_nao_auditados": 2448,
     "nota": "Ordens de Servico normalmente nao tem CNPJ do cliente na API do OMIE - essas entram no faturamento total mas ficam de fora da classificacao novo/recorrente (aparecem como 'nao_auditado' nas metas).",
     "casos_tomada_cliente": [
-      {
-        "cnpj_cliente": "23.294.275/0001-80",
-        "razao_social_cliente": "VEREDA ALIMENTOS LTDA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "11/08/2023",
-        "data_mudanca": "08/08/2025"
-      },
-      {
-        "cnpj_cliente": "835.029.802-25",
-        "razao_social_cliente": "PEDRO HENRIQUE FERNANDES DE OLIVEIRA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "14/01/2025",
-        "data_mudanca": "08/08/2025"
-      },
-      {
-        "cnpj_cliente": "002.963.100-93",
-        "razao_social_cliente": "REINALDO LUIS PIZZOLO",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "23/09/2024",
-        "data_mudanca": "25/08/2025"
-      },
-      {
-        "cnpj_cliente": "52.719.688/0001-68",
-        "razao_social_cliente": "LA GELATERIA SORVETES E GELATOS LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "06/12/2023",
-        "data_mudanca": "10/09/2025"
-      },
-      {
-        "cnpj_cliente": "46.369.163/0001-47",
-        "razao_social_cliente": "GRM FOTOGRAFIA LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "28/02/2024",
-        "data_mudanca": "16/09/2025"
-      },
-      {
-        "cnpj_cliente": "29.791.877/0001-20",
-        "razao_social_cliente": "RODRIGO COELHO - DOCE ESQUINA SORVETERIA E DOCERIA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "18/10/2023",
-        "data_mudanca": "16/09/2025"
-      },
-      {
-        "cnpj_cliente": "29.680.665/0004-18",
-        "razao_social_cliente": "ALEGRIA ALIMENTACAO ESCOLAR",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "24/01/2024",
-        "data_mudanca": "16/09/2025"
-      },
-      {
-        "cnpj_cliente": "44.493.782/0001-13",
-        "razao_social_cliente": "HUFF LIFE CENTRO ESTETICO, BIOMEDICINA E BELEZA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "29/07/2024",
-        "data_mudanca": "19/09/2025"
-      },
-      {
-        "cnpj_cliente": "59.518.834/0001-36",
-        "razao_social_cliente": "IBRAH INSTITUTO BRASILEIRO DE REABILITACAO AVANCADA E HIPERM",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "21/05/2025",
-        "data_mudanca": "22/09/2025"
-      },
-      {
-        "cnpj_cliente": "32.879.617/0001-15",
-        "razao_social_cliente": "PULSE FISIOTERAPIA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "26/05/2025",
-        "data_mudanca": "22/09/2025"
-      },
-      {
-        "cnpj_cliente": "10.341.481/0001-52",
-        "razao_social_cliente": "L M SICHELERO  CADORE ACAI E GELATO",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "31/10/2024",
-        "data_mudanca": "22/09/2025"
-      },
-      {
-        "cnpj_cliente": "55.154.195/0001-16",
-        "razao_social_cliente": "GOUMERTGOOD -  ALINE NARVAEZ BARONISTO",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "06/06/2024",
-        "data_mudanca": "23/09/2025"
-      },
-      {
-        "cnpj_cliente": "48.314.626/0001-07",
-        "razao_social_cliente": "Gomes Reimberg Sociedade Individual de Advocacia",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "16/11/2023",
-        "data_mudanca": "25/09/2025"
-      },
-      {
-        "cnpj_cliente": "00.687.681/0001-08",
-        "razao_social_cliente": "B HOTEL BRASÍLIA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "03/07/2023",
-        "data_mudanca": "26/09/2025"
-      },
-      {
-        "cnpj_cliente": "22.661.534/0001-00",
-        "razao_social_cliente": "LUANA PEREIRA GAGLIARDI",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "07/08/2023",
-        "data_mudanca": "07/10/2025"
-      },
-      {
-        "cnpj_cliente": "08.831.157/0001-70",
-        "razao_social_cliente": "RICSON AMARAL MATOS",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "05/03/2025",
-        "data_mudanca": "07/10/2025"
-      },
-      {
-        "cnpj_cliente": "08.636.850/0001-92",
-        "razao_social_cliente": "INSTITUTO MODUS VIVENDI DE DESENVOLVIMENTO",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "04/01/2025",
-        "data_mudanca": "09/10/2025"
-      },
-      {
-        "cnpj_cliente": "38.283.405/0001-57",
-        "razao_social_cliente": "CARLA BOHRZ",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "04/12/2024",
-        "data_mudanca": "09/10/2025"
-      },
-      {
-        "cnpj_cliente": "50.273.789/0001-22",
-        "razao_social_cliente": "REPRÉSENTATION IRD BRÉSIL",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "04/06/2024",
-        "data_mudanca": "14/10/2025"
-      },
-      {
-        "cnpj_cliente": "05.912.462/0001-07",
-        "razao_social_cliente": "J. P. M. E. FARMACIA DE MANIPULACAO LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "15/04/2024",
-        "data_mudanca": "21/10/2025"
-      },
-      {
-        "cnpj_cliente": "25.368.378/0001-73",
-        "razao_social_cliente": "MARCUS PAULO MUNIZ",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "14/10/2024",
-        "data_mudanca": "22/10/2025"
-      },
-      {
-        "cnpj_cliente": "07.368.026/0001-36",
-        "razao_social_cliente": "DERMPLASTICA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "27/02/2025",
-        "data_mudanca": "31/10/2025"
-      },
-      {
-        "cnpj_cliente": "58.333.132/0001-15",
-        "razao_social_cliente": "CARDIOINTEGRATIVA INSTITUTO MEDICO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "23/09/2025",
-        "data_mudanca": "04/11/2025"
-      },
-      {
-        "cnpj_cliente": "54.835.565/0001-18",
-        "razao_social_cliente": "HARPIA ACAI LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "26/08/2024",
-        "data_mudanca": "10/11/2025"
-      },
-      {
-        "cnpj_cliente": "22.063.083/0001-09",
-        "razao_social_cliente": "MARINI &amp; CORBUCCI SERVICOS MEDICOS LTDA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "15/09/2023",
-        "data_mudanca": "10/11/2025"
-      },
-      {
-        "cnpj_cliente": "554.496.111-53",
-        "razao_social_cliente": "CRISTINA MOREIRA DA ROCHA BASTOS",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "28/08/2025",
-        "data_mudanca": "20/11/2025"
-      },
-      {
-        "cnpj_cliente": "46.299.030/0001-41",
-        "razao_social_cliente": "POUSADA CANOANA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "11/03/2025",
-        "data_mudanca": "05/12/2025"
-      },
-      {
-        "cnpj_cliente": "29.947.998/0001-18",
-        "razao_social_cliente": "RESTAURANTE ALBANEZ LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "03/01/2025",
-        "data_mudanca": "15/12/2025"
-      },
-      {
-        "cnpj_cliente": "35.460.479/0001-23",
-        "razao_social_cliente": "LUCAS MARQUES VEICULOS",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "06/12/2023",
-        "data_mudanca": "18/12/2025"
-      },
-      {
-        "cnpj_cliente": "11.372.534/0001-65",
-        "razao_social_cliente": "ULTRA SERVICOS AERONAUTICOS LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "19/08/2024",
-        "data_mudanca": "22/12/2025"
-      },
-      {
-        "cnpj_cliente": "55.304.379/0001-15",
-        "razao_social_cliente": "KEDSON JUNIO NEVES SILVA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "20/03/2025",
-        "data_mudanca": "07/01/2026"
-      },
-      {
-        "cnpj_cliente": "01.695.954/0001-29",
-        "razao_social_cliente": "SINDENERGIA MT",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "14/03/2024",
-        "data_mudanca": "09/01/2026"
-      },
-      {
-        "cnpj_cliente": "13.282.906/0001-98",
-        "razao_social_cliente": "TRATE TRAUMATOLOGIA ESPORTIVA",
-        "vendedor_original": "Milena",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "21/03/2024",
-        "data_mudanca": "13/01/2026"
-      },
       {
         "cnpj_cliente": "62.045.663/0001-80",
         "razao_social_cliente": "PONTES LANCHONETE LTDA",
@@ -1037,36 +1486,12 @@
         "data_mudanca": "15/01/2026"
       },
       {
-        "cnpj_cliente": "21.840.986/0001-88",
-        "razao_social_cliente": "ILGNER CADMO SANTOS DA SILVA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "31/10/2024",
-        "data_mudanca": "15/01/2026"
-      },
-      {
         "cnpj_cliente": "01.026.556/0001-10",
         "razao_social_cliente": "SORVETERIA R BOM LTDA",
         "vendedor_original": "Eduardo Santiago",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "23/10/2025",
         "data_mudanca": "15/01/2026"
-      },
-      {
-        "cnpj_cliente": "43.268.787/0001-80",
-        "razao_social_cliente": "TROT&amp;#39;S INDUSTRIA DE ERVAS LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "21/05/2025",
-        "data_mudanca": "15/01/2026"
-      },
-      {
-        "cnpj_cliente": "53.111.734/0001-04",
-        "razao_social_cliente": "53.111.734 IKRAM ABY FARAJ LINHARES",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "01/03/2024",
-        "data_mudanca": "16/01/2026"
       },
       {
         "cnpj_cliente": "49.848.626/0001-41",
@@ -1077,14 +1502,6 @@
         "data_mudanca": "20/01/2026"
       },
       {
-        "cnpj_cliente": "09.372.958/0001-88",
-        "razao_social_cliente": "SANTER EMPREENDIMENTOS LTDA",
-        "vendedor_original": "Milena",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "10/01/2024",
-        "data_mudanca": "21/01/2026"
-      },
-      {
         "cnpj_cliente": "21.066.720/0001-20",
         "razao_social_cliente": "CANTUCCIO RESTAURANTE",
         "vendedor_original": "Eduardo Santiago",
@@ -1093,35 +1510,11 @@
         "data_mudanca": "21/01/2026"
       },
       {
-        "cnpj_cliente": "16.099.194/0004-07",
-        "razao_social_cliente": "ELETRODATA ENGENHARIA LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "31/07/2024",
-        "data_mudanca": "28/01/2026"
-      },
-      {
-        "cnpj_cliente": "698.101.411-49",
-        "razao_social_cliente": "RENATA GOMES FOGACA DE ALBUQUERQUE",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "14/03/2024",
-        "data_mudanca": "30/01/2026"
-      },
-      {
         "cnpj_cliente": "15.257.983/0116-62",
         "razao_social_cliente": "PAROQUIA NOSSA SENHORA DE FATIMA -STELLA MARIS",
         "vendedor_original": "Eduardo Santiago",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "27/12/2024",
-        "data_mudanca": "03/02/2026"
-      },
-      {
-        "cnpj_cliente": "113.213.517-63",
-        "razao_social_cliente": "TASSIA LOBOUNTCHENKO GAUDIO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "02/01/2025",
         "data_mudanca": "03/02/2026"
       },
       {
@@ -1133,28 +1526,12 @@
         "data_mudanca": "03/02/2026"
       },
       {
-        "cnpj_cliente": "019.881.640-52",
-        "razao_social_cliente": "JOSUÉ MONTEIRO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "28/08/2024",
-        "data_mudanca": "03/02/2026"
-      },
-      {
         "cnpj_cliente": "32.840.103/0001-56",
         "razao_social_cliente": "FASE CONTABILIDADE LTDA",
         "vendedor_original": "Eduardo Santiago",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "23/09/2024",
         "data_mudanca": "04/02/2026"
-      },
-      {
-        "cnpj_cliente": "51.267.387/0001-88",
-        "razao_social_cliente": "51.267.387 NILVIA GLASENAPP DEICKE",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "16/08/2023",
-        "data_mudanca": "11/02/2026"
       },
       {
         "cnpj_cliente": "011.938.286-51",
@@ -1165,150 +1542,6 @@
         "data_mudanca": "11/02/2026"
       },
       {
-        "cnpj_cliente": "01.258.268/0001-90",
-        "razao_social_cliente": "AUTO MECANICA JACARE LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "16/04/2024",
-        "data_mudanca": "12/02/2026"
-      },
-      {
-        "cnpj_cliente": "07.134.945/0001-45",
-        "razao_social_cliente": "JOACIR PEREIRA FERNANDES",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "01/12/2025",
-        "data_mudanca": "13/02/2026"
-      },
-      {
-        "cnpj_cliente": "05.924.546/0001-52",
-        "razao_social_cliente": "REALIZE CLÍNICAS MÉDICAS LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "07/10/2025",
-        "data_mudanca": "19/02/2026"
-      },
-      {
-        "cnpj_cliente": "08.075.283/0001-42",
-        "razao_social_cliente": "PANIFICADORA BARCELONA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "14/11/2024",
-        "data_mudanca": "19/02/2026"
-      },
-      {
-        "cnpj_cliente": "21.866.592/0001-07",
-        "razao_social_cliente": "NUTRIFICA COMERCIO DE NUTRICAO ENTERAL",
-        "vendedor_original": "ECOMMERCE",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "03/01/2022",
-        "data_mudanca": "20/02/2026"
-      },
-      {
-        "cnpj_cliente": "58.031.421/0001-60",
-        "razao_social_cliente": "CAPO CUCCO ALIMENTOS LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "30/07/2024",
-        "data_mudanca": "24/02/2026"
-      },
-      {
-        "cnpj_cliente": "13.222.808/0002-46",
-        "razao_social_cliente": "BOM DIA SUPERMERCADO",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "14/10/2024",
-        "data_mudanca": "24/02/2026"
-      },
-      {
-        "cnpj_cliente": "35.571.550/0001-45",
-        "razao_social_cliente": "35.571.550 CASSIANO NUNES MENCK",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "03/09/2025",
-        "data_mudanca": "02/03/2026"
-      },
-      {
-        "cnpj_cliente": "115.152.666-56",
-        "razao_social_cliente": "MARLUCE GOMES PINTO RESENDE",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "14/01/2025",
-        "data_mudanca": "04/03/2026"
-      },
-      {
-        "cnpj_cliente": "58.193.204/0001-76",
-        "razao_social_cliente": "MAGNIFIQUE MASSAS LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "10/11/2025",
-        "data_mudanca": "06/03/2026"
-      },
-      {
-        "cnpj_cliente": "45.633.521/0001-14",
-        "razao_social_cliente": "NAYARA FATIMA FAVRETTO - COMERCIO DE ALIMENTOS LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "08/08/2024",
-        "data_mudanca": "18/03/2026"
-      },
-      {
-        "cnpj_cliente": "002.996.786-44",
-        "razao_social_cliente": "DEISNER CARMO JULIO",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "08/01/2026",
-        "data_mudanca": "18/03/2026"
-      },
-      {
-        "cnpj_cliente": "05.781.115/0001-84",
-        "razao_social_cliente": "CAIM CLINICA DE ATENCAO INTEGRAL A MULHER LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "18/09/2025",
-        "data_mudanca": "20/03/2026"
-      },
-      {
-        "cnpj_cliente": "23.017.342/0002-09",
-        "razao_social_cliente": "SHOPPING FRUTAS VISTA ALEGRE",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "20/03/2025",
-        "data_mudanca": "26/03/2026"
-      },
-      {
-        "cnpj_cliente": "026.851.685-59",
-        "razao_social_cliente": "ROSANA COSTA SANTOS",
-        "vendedor_original": "Rubs",
-        "vendedor_atual": "Amostra",
-        "data_primeira_venda": "28/11/2025",
-        "data_mudanca": "31/03/2026"
-      },
-      {
-        "cnpj_cliente": "07.286.706/0001-00",
-        "razao_social_cliente": "INSTITUTO BRASILEIRO DE INTEGRACAO - CULTURA, TURISMO E CIDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "04/02/2025",
-        "data_mudanca": "31/03/2026"
-      },
-      {
-        "cnpj_cliente": "137.307.068-45",
-        "razao_social_cliente": "PATRICIA ZAMBONATO FREITAS",
-        "vendedor_original": "ECOMMERCE",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "21/09/2022",
-        "data_mudanca": "10/04/2026"
-      },
-      {
-        "cnpj_cliente": "20.691.977/0001-00",
-        "razao_social_cliente": "INSTITUTO LG POS-GRADUACAO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "25/08/2025",
-        "data_mudanca": "22/04/2026"
-      },
-      {
         "cnpj_cliente": "10.848.178/0001-40",
         "razao_social_cliente": "FITOWAY LABORATORIO NUTRICIONAL LTDA",
         "vendedor_original": "Rubs",
@@ -1317,84 +1550,12 @@
         "data_mudanca": "23/04/2026"
       },
       {
-        "cnpj_cliente": "50.161.779/0001-03",
-        "razao_social_cliente": "50.161.779 NATALIA BECKER FRENZEL",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "09/09/2025",
-        "data_mudanca": "23/04/2026"
-      },
-      {
-        "cnpj_cliente": "52.084.766/0001-03",
-        "razao_social_cliente": "DAMA PRODUCAO EXECUTIVA LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "01/07/2025",
-        "data_mudanca": "24/04/2026"
-      },
-      {
         "cnpj_cliente": "09.084.576/0001-59",
         "razao_social_cliente": "CLINICA PREMIUM CURITIBA ODONTOLOGIA LTDA",
         "vendedor_original": "Eduardo Santiago",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "06/10/2025",
         "data_mudanca": "24/04/2026"
-      },
-      {
-        "cnpj_cliente": "03.632.872/0001-60",
-        "razao_social_cliente": "COOPERATIVA DE CREDITO E INVESTIMENTO DO SUDOESTE DA AMAZONI",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "19/06/2025",
-        "data_mudanca": "28/04/2026"
-      },
-      {
-        "cnpj_cliente": "87.951.448/0018-17",
-        "razao_social_cliente": "TRANSCONTINENTAL LOGISTICA S/A - EM RECUPERACAO JUDICIAL",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "27/04/2026",
-        "data_mudanca": "28/04/2026"
-      },
-      {
-        "cnpj_cliente": "39.292.521/0001-03",
-        "razao_social_cliente": "HAMBURGUERIA PAO E CARNE TB",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "10/05/2024",
-        "data_mudanca": "28/04/2026"
-      },
-      {
-        "cnpj_cliente": "07.254.872/0001-25",
-        "razao_social_cliente": "ALVES RIBEIRO FARMACIA DE MANIPULACAO LTDA",
-        "vendedor_original": "Rubs",
-        "vendedor_atual": "Atendimento",
-        "data_primeira_venda": "28/04/2026",
-        "data_mudanca": "30/04/2026"
-      },
-      {
-        "cnpj_cliente": "709.639.751-53",
-        "razao_social_cliente": "LEANDRO DE CARVALHO CARDOSO",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "12/02/2025",
-        "data_mudanca": "08/05/2026"
-      },
-      {
-        "cnpj_cliente": "08.268.865/0001-45",
-        "razao_social_cliente": "LUMMA CONSTRUCOES",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "13/06/2024",
-        "data_mudanca": "14/05/2026"
-      },
-      {
-        "cnpj_cliente": "26.745.367/0001-28",
-        "razao_social_cliente": "CS COMERCIO DE GELATOS LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "01/07/2024",
-        "data_mudanca": "15/05/2026"
       },
       {
         "cnpj_cliente": "02.678.512/0001-37",
@@ -1413,43 +1574,11 @@
         "data_mudanca": "20/05/2026"
       },
       {
-        "cnpj_cliente": "009.529.650-62",
-        "razao_social_cliente": "EDUARDO MOTTA DARGAS",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "16/04/2024",
-        "data_mudanca": "21/05/2026"
-      },
-      {
-        "cnpj_cliente": "496.796.088-08",
-        "razao_social_cliente": "VITOR FERNANDES BUENO",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "12/03/2026",
-        "data_mudanca": "25/05/2026"
-      },
-      {
-        "cnpj_cliente": "43.750.006/0001-99",
-        "razao_social_cliente": "PONTUAL AVIATION",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "30/05/2023",
-        "data_mudanca": "27/05/2026"
-      },
-      {
         "cnpj_cliente": "17.179.101/0001-74",
         "razao_social_cliente": "NACAO CLUB RECREACOES ESPORTIVAS LTDA",
         "vendedor_original": "Eduardo Santiago",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "21/07/2025",
-        "data_mudanca": "29/05/2026"
-      },
-      {
-        "cnpj_cliente": "03.758.544/0001-05",
-        "razao_social_cliente": "CLINICA DE OLHOS SINOP LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "07/03/2024",
         "data_mudanca": "29/05/2026"
       },
       {
@@ -1461,36 +1590,12 @@
         "data_mudanca": "10/06/2026"
       },
       {
-        "cnpj_cliente": "03.821.512/0001-07",
-        "razao_social_cliente": "CONGELLE ALIMENTOS LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "04/05/2026",
-        "data_mudanca": "11/06/2026"
-      },
-      {
-        "cnpj_cliente": "063.906.959-26",
-        "razao_social_cliente": "LIVIA NUMASAWA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "25/10/2024",
-        "data_mudanca": "15/06/2026"
-      },
-      {
         "cnpj_cliente": "51.806.140/0001-92",
         "razao_social_cliente": "LM FRIOS E EMBALAGENS LTDA",
         "vendedor_original": "Joice",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "17/11/2025",
         "data_mudanca": "25/06/2026"
-      },
-      {
-        "cnpj_cliente": "07.970.586/0001-66",
-        "razao_social_cliente": "PIECE OF CAKE",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "23/10/2025",
-        "data_mudanca": "29/06/2026"
       },
       {
         "cnpj_cliente": "57.153.489/0001-59",
@@ -1509,22 +1614,6 @@
         "data_mudanca": "08/07/2026"
       },
       {
-        "cnpj_cliente": "064.429.795-63",
-        "razao_social_cliente": "JULIANA NASCIMENTO SANTOS",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "09/12/2024",
-        "data_mudanca": "13/07/2026"
-      },
-      {
-        "cnpj_cliente": "053.448.777-73",
-        "razao_social_cliente": "CAMILA CEPPAS BASTOS",
-        "vendedor_original": "Seladora",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "13/08/2025",
-        "data_mudanca": "13/07/2026"
-      },
-      {
         "cnpj_cliente": "51.662.240/0001-92",
         "razao_social_cliente": "JUCELIA MARIA DE JESUS PARENTES",
         "vendedor_original": "Joice",
@@ -1541,36 +1630,12 @@
         "data_mudanca": "20/07/2026"
       },
       {
-        "cnpj_cliente": "21.618.588/0001-11",
-        "razao_social_cliente": "OPY CLINICA MEDICA PSIQUIATRICA LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "27/02/2024",
-        "data_mudanca": "20/07/2026"
-      },
-      {
         "cnpj_cliente": "08.678.216/0003-84",
         "razao_social_cliente": "MELO &amp; PETITGAS - COMERCIO VAREJISTA DE ALIMENTOS LTDA",
         "vendedor_original": "Joice",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "18/03/2025",
         "data_mudanca": "22/07/2026"
-      },
-      {
-        "cnpj_cliente": "65.485.922/0001-81",
-        "razao_social_cliente": "TAXI AEREO PIRACICABA LTDA",
-        "vendedor_original": "ECOMMERCE",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "15/06/2023",
-        "data_mudanca": "22/07/2026"
-      },
-      {
-        "cnpj_cliente": "39.997.502/0001-74",
-        "razao_social_cliente": "THAIS SANTOS FRANCA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "11/02/2026",
-        "data_mudanca": "23/07/2026"
       },
       {
         "cnpj_cliente": "08.771.144/0003-15",
@@ -1589,14 +1654,6 @@
         "data_mudanca": "27/07/2026"
       },
       {
-        "cnpj_cliente": "52.000.745/0001-54",
-        "razao_social_cliente": "CONDOMINIO BOMM KREBS SPE LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "27/01/2025",
-        "data_mudanca": "27/07/2026"
-      },
-      {
         "cnpj_cliente": "45.034.508/0001-49",
         "razao_social_cliente": "INTEGRAL HEALTH SKILLS LTDA",
         "vendedor_original": "Joice",
@@ -1605,76 +1662,12 @@
         "data_mudanca": "27/07/2026"
       },
       {
-        "cnpj_cliente": "10.280.806/0031-50",
-        "razao_social_cliente": "FRIBON TRANSPORTES LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "20/08/2024",
-        "data_mudanca": "27/07/2026"
-      },
-      {
-        "cnpj_cliente": "01.420.293/0001-29",
-        "razao_social_cliente": "GANACHE MAM INDUSTRIA E COMERCIO DE PRODUTOS ALIM LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "13/01/2025",
-        "data_mudanca": "28/07/2026"
-      },
-      {
-        "cnpj_cliente": "12.258.610/0001-79",
-        "razao_social_cliente": "SANDUBOM LANCHES E PIZZA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "21/08/2024",
-        "data_mudanca": "31/07/2026"
-      },
-      {
-        "cnpj_cliente": "47.064.425/0001-28",
-        "razao_social_cliente": "NUCLEO MORAIS CENTRO CLINICO ESPORTIVO E EMAGRECIMENTO LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "09/04/2025",
-        "data_mudanca": "31/07/2026"
-      },
-      {
         "cnpj_cliente": "54.224.372/0001-20",
         "razao_social_cliente": "54.224.372 BRUNA PEREIRA PINTO",
         "vendedor_original": "Joice",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "23/06/2026",
         "data_mudanca": "31/07/2026"
-      },
-      {
-        "cnpj_cliente": "29.466.797/0001-07",
-        "razao_social_cliente": "TANZ DANCA E FORMACAO LTDA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "07/03/2023",
-        "data_mudanca": "31/07/2026"
-      },
-      {
-        "cnpj_cliente": "60.601.296/0001-28",
-        "razao_social_cliente": "AUTO POSTO DRUNULE LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "16/12/2025",
-        "data_mudanca": "31/07/2026"
-      },
-      {
-        "cnpj_cliente": "42.055.736/0001-07",
-        "razao_social_cliente": "ZOH CLINICA SAUDE E ESTETICA LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "30/11/2022",
-        "data_mudanca": "04/08/2026"
-      },
-      {
-        "cnpj_cliente": "48.619.707/0001-07",
-        "razao_social_cliente": "RESULTADO COMERCIAL LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "19/11/2024",
-        "data_mudanca": "05/08/2026"
       },
       {
         "cnpj_cliente": "10.701.422/0001-48",
@@ -1693,44 +1686,20 @@
         "data_mudanca": "05/08/2026"
       },
       {
-        "cnpj_cliente": "79.659.017/0001-05",
-        "razao_social_cliente": "CONSTRUTORA ITA LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "11/03/2026",
-        "data_mudanca": "05/08/2026"
-      },
-      {
-        "cnpj_cliente": "22.562.019/0001-64",
-        "razao_social_cliente": "CLINICA DE SAUDE INTEGRADA JULIANA JACQUES LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "06/06/2025",
-        "data_mudanca": "06/08/2026"
-      },
-      {
-        "cnpj_cliente": "420.663.768-76",
-        "razao_social_cliente": "HENRIQUE DE SOUZA FRANCO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "01/10/2024",
-        "data_mudanca": "06/08/2026"
-      },
-      {
-        "cnpj_cliente": "46.411.751/0001-00",
-        "razao_social_cliente": "PILOTAGGIO PECAS E ACESSORIOS LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Rubs",
-        "data_primeira_venda": "05/06/2024",
-        "data_mudanca": "06/08/2026"
-      },
-      {
         "cnpj_cliente": "48.379.013/0001-40",
         "razao_social_cliente": "CLINICA ENDOVASCULAR ANALIA FRANCO LTDA",
         "vendedor_original": "Joice",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "20/02/2026",
         "data_mudanca": "07/08/2026"
+      },
+      {
+        "cnpj_cliente": "12.243.520/0001-04",
+        "razao_social_cliente": "LAVIE JOIAS EXCLUSIVAS",
+        "vendedor_original": "Joice",
+        "vendedor_atual": "Rubs",
+        "data_primeira_venda": "09/06/2025",
+        "data_mudanca": "13/08/2026"
       }
     ]
   },
@@ -1794,7 +1763,7 @@
       },
       {
         "mes": "2026-08",
-        "faturamento_clientes_novos": 24385.05,
+        "faturamento_clientes_novos": 24755.55,
         "bonus_clientes_novos": 0.0,
         "qtd_seladoras": 0,
         "bonus_seladora": 0.0,
@@ -1802,14 +1771,446 @@
       }
     ]
   },
+  "auditoria_novo_incorreto": {
+    "Rubs": [
+      {
+        "numero_nf": "00010525",
+        "data_emissao": "13/07/2026",
+        "cnpj_cliente": "053.448.777-73",
+        "razao_social_cliente": "CAMILA CEPPAS BASTOS",
+        "faturamento_real": 940.5,
+        "dono_cliente": "Seladora",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010238",
+        "data_emissao": "15/06/2026",
+        "cnpj_cliente": "063.906.959-26",
+        "razao_social_cliente": "LIVIA NUMASAWA",
+        "faturamento_real": 830.0,
+        "dono_cliente": "iSet",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010523",
+        "data_emissao": "13/07/2026",
+        "cnpj_cliente": "064.429.795-63",
+        "razao_social_cliente": "JULIANA NASCIMENTO SANTOS",
+        "faturamento_real": 370.5,
+        "dono_cliente": "iSet",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010559",
+        "data_emissao": "17/07/2026",
+        "cnpj_cliente": "064.429.795-63",
+        "razao_social_cliente": "JULIANA NASCIMENTO SANTOS",
+        "faturamento_real": 351.0,
+        "dono_cliente": "iSet",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010424",
+        "data_emissao": "29/06/2026",
+        "cnpj_cliente": "07.970.586/0001-66",
+        "razao_social_cliente": "PIECE OF CAKE",
+        "faturamento_real": 854.0,
+        "dono_cliente": "Amostra",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010616",
+        "data_emissao": "22/07/2026",
+        "cnpj_cliente": "08.678.216/0003-84",
+        "razao_social_cliente": "MELO &amp; PETITGAS - COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+        "faturamento_real": 2500.0,
+        "dono_cliente": "Joice",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010661",
+        "data_emissao": "27/07/2026",
+        "cnpj_cliente": "08.771.144/0003-15",
+        "razao_social_cliente": "CAMPO INCORPORADORA LTDA",
+        "faturamento_real": 950.0,
+        "dono_cliente": "Eduardo Santiago",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010674",
+        "data_emissao": "27/07/2026",
+        "cnpj_cliente": "10.280.806/0031-50",
+        "razao_social_cliente": "FRIBON TRANSPORTES LTDA",
+        "faturamento_real": 741.0,
+        "dono_cliente": "Atendimento",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010924",
+        "data_emissao": "13/08/2026",
+        "cnpj_cliente": "12.243.520/0001-04",
+        "razao_social_cliente": "LAVIE JOIAS EXCLUSIVAS",
+        "faturamento_real": 788.5,
+        "dono_cliente": "Joice",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010803",
+        "data_emissao": "05/08/2026",
+        "cnpj_cliente": "19.913.977/0001-28",
+        "razao_social_cliente": "AMMY INDUSTRIA DE CONFECCOES LTDA",
+        "faturamento_real": 370.5,
+        "dono_cliente": "Joice",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010626",
+        "data_emissao": "22/07/2026",
+        "cnpj_cliente": "27.814.796/0001-72",
+        "razao_social_cliente": "BRUMOS BARBEARIA LTDA",
+        "faturamento_real": 390.0,
+        "dono_cliente": "Rubs",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010638",
+        "data_emissao": "23/07/2026",
+        "cnpj_cliente": "39.997.502/0001-74",
+        "razao_social_cliente": "THAIS SANTOS FRANCA",
+        "faturamento_real": 2050.0,
+        "dono_cliente": "Amostra",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010673",
+        "data_emissao": "27/07/2026",
+        "cnpj_cliente": "45.034.508/0001-49",
+        "razao_social_cliente": "INTEGRAL HEALTH SKILLS LTDA",
+        "faturamento_real": 830.0,
+        "dono_cliente": "Joice",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010799",
+        "data_emissao": "05/08/2026",
+        "cnpj_cliente": "48.619.707/0001-07",
+        "razao_social_cliente": "RESULTADO COMERCIAL LTDA",
+        "faturamento_real": 3496.0,
+        "dono_cliente": "Felipe",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010535",
+        "data_emissao": "15/07/2026",
+        "cnpj_cliente": "51.662.240/0001-92",
+        "razao_social_cliente": "JUCELIA MARIA DE JESUS PARENTES",
+        "faturamento_real": 945.0,
+        "dono_cliente": "Joice",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010672",
+        "data_emissao": "27/07/2026",
+        "cnpj_cliente": "52.000.745/0001-54",
+        "razao_social_cliente": "CONDOMINIO BOMM KREBS SPE LTDA",
+        "faturamento_real": 370.5,
+        "dono_cliente": "Felipe",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010665",
+        "data_emissao": "27/07/2026",
+        "cnpj_cliente": "52.997.493/0001-80",
+        "razao_social_cliente": "AJ ACADEMIA DE TENNIS LTDA",
+        "faturamento_real": 390.0,
+        "dono_cliente": "Joice",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010615",
+        "data_emissao": "22/07/2026",
+        "cnpj_cliente": "61.121.739/0001-46",
+        "razao_social_cliente": "AYUMI FOODS LTDA",
+        "faturamento_real": 652.0,
+        "dono_cliente": "Rubs",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010305",
+        "data_emissao": "19/06/2026",
+        "cnpj_cliente": "63.841.062/0001-46",
+        "razao_social_cliente": "RAIZES DO NORTE",
+        "faturamento_real": 92.12,
+        "dono_cliente": "Rubs",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010340",
+        "data_emissao": "23/06/2026",
+        "cnpj_cliente": "63.841.062/0001-46",
+        "razao_social_cliente": "RAIZES DO NORTE",
+        "faturamento_real": 1050.0,
+        "dono_cliente": "Rubs",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      }
+    ]
+  },
+  "metas_empresa": [
+    {
+      "mes": "2026-01",
+      "meta_canal": 500000.0,
+      "realizado_canal": 294130.06,
+      "atingimento_pct": 58.8,
+      "realizado_novos": 85878.07,
+      "realizado_recorrentes": 208251.99,
+      "realizado_nao_auditado": 0.0,
+      "mix_novos_pct": 29.2,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 68.7,
+      "atingimento_recorrentes_pct": 55.5,
+      "valor_frete": 20008.5,
+      "faturamento_bruto": 314138.56,
+      "pct_frete_sobre_faturamento": 6.4
+    },
+    {
+      "mes": "2026-02",
+      "meta_canal": 500000.0,
+      "realizado_canal": 433331.43,
+      "atingimento_pct": 86.7,
+      "realizado_novos": 125749.05,
+      "realizado_recorrentes": 307582.38,
+      "realizado_nao_auditado": 0.0,
+      "mix_novos_pct": 29.0,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 100.6,
+      "atingimento_recorrentes_pct": 82.0,
+      "valor_frete": 27322.78,
+      "faturamento_bruto": 460654.21,
+      "pct_frete_sobre_faturamento": 5.9
+    },
+    {
+      "mes": "2026-03",
+      "meta_canal": 500000.0,
+      "realizado_canal": 353349.91,
+      "atingimento_pct": 70.7,
+      "realizado_novos": 74964.4,
+      "realizado_recorrentes": 278385.51,
+      "realizado_nao_auditado": 0.0,
+      "mix_novos_pct": 21.2,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 60.0,
+      "atingimento_recorrentes_pct": 74.2,
+      "valor_frete": 26650.58,
+      "faturamento_bruto": 380000.49,
+      "pct_frete_sobre_faturamento": 7.0
+    },
+    {
+      "mes": "2026-04",
+      "meta_canal": 500000.0,
+      "realizado_canal": 369196.13,
+      "atingimento_pct": 73.8,
+      "realizado_novos": 116625.21,
+      "realizado_recorrentes": 252570.92,
+      "realizado_nao_auditado": 0.0,
+      "mix_novos_pct": 31.6,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 93.3,
+      "atingimento_recorrentes_pct": 67.4,
+      "valor_frete": 37484.37,
+      "faturamento_bruto": 406680.5,
+      "pct_frete_sobre_faturamento": 9.2
+    },
+    {
+      "mes": "2026-05",
+      "meta_canal": 500000.0,
+      "realizado_canal": 404994.95,
+      "atingimento_pct": 81.0,
+      "realizado_novos": 124158.46,
+      "realizado_recorrentes": 249836.49,
+      "realizado_nao_auditado": 31000.0,
+      "mix_novos_pct": 30.7,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 99.3,
+      "atingimento_recorrentes_pct": 66.6,
+      "valor_frete": 27595.8,
+      "faturamento_bruto": 432590.75,
+      "pct_frete_sobre_faturamento": 6.4
+    },
+    {
+      "mes": "2026-06",
+      "meta_canal": 500000.0,
+      "realizado_canal": 427213.1,
+      "atingimento_pct": 85.4,
+      "realizado_novos": 135445.13,
+      "realizado_recorrentes": 239067.97,
+      "realizado_nao_auditado": 52700.0,
+      "mix_novos_pct": 31.7,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 108.4,
+      "atingimento_recorrentes_pct": 63.8,
+      "valor_frete": 34439.81,
+      "faturamento_bruto": 461652.91,
+      "pct_frete_sobre_faturamento": 7.5
+    },
+    {
+      "mes": "2026-07",
+      "meta_canal": 500000.0,
+      "realizado_canal": 421315.58,
+      "atingimento_pct": 84.3,
+      "realizado_novos": 127446.89,
+      "realizado_recorrentes": 247368.69,
+      "realizado_nao_auditado": 46500.0,
+      "mix_novos_pct": 30.2,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 102.0,
+      "atingimento_recorrentes_pct": 66.0,
+      "valor_frete": 26531.63,
+      "faturamento_bruto": 447847.21,
+      "pct_frete_sobre_faturamento": 5.9
+    },
+    {
+      "mes": "2026-08",
+      "meta_canal": 500000.0,
+      "realizado_canal": 159945.11,
+      "atingimento_pct": 32.0,
+      "realizado_novos": 49446.85,
+      "realizado_recorrentes": 110498.26,
+      "realizado_nao_auditado": 0.0,
+      "mix_novos_pct": 30.9,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 39.6,
+      "atingimento_recorrentes_pct": 29.5,
+      "valor_frete": 16838.08,
+      "faturamento_bruto": 176783.19,
+      "pct_frete_sobre_faturamento": 9.5
+    }
+  ],
+  "canal_empresa": [
+    {
+      "mes": "2026-01",
+      "realizado_online": 294130.06,
+      "realizado_offline": 391969.52,
+      "realizado_total": 686099.58,
+      "por_empresa": {
+        "ecommerce": 308176.56,
+        "canudos": 83118.2,
+        "centroeste": 294804.82
+      }
+    },
+    {
+      "mes": "2026-02",
+      "realizado_online": 433331.43,
+      "realizado_offline": 300427.12,
+      "realizado_total": 733758.55,
+      "por_empresa": {
+        "ecommerce": 390380.23,
+        "canudos": 106970.0,
+        "centroeste": 236408.32
+      }
+    },
+    {
+      "mes": "2026-03",
+      "realizado_online": 353349.91,
+      "realizado_offline": 249100.59,
+      "realizado_total": 602450.5,
+      "por_empresa": {
+        "ecommerce": 326435.71,
+        "canudos": 72342.68,
+        "centroeste": 250172.11
+      }
+    },
+    {
+      "mes": "2026-04",
+      "realizado_online": 369196.13,
+      "realizado_offline": 326046.2,
+      "realizado_total": 695242.33,
+      "por_empresa": {
+        "ecommerce": 371331.98,
+        "canudos": 3158.3,
+        "centroeste": 320752.05
+      }
+    },
+    {
+      "mes": "2026-05",
+      "realizado_online": 404994.95,
+      "realizado_offline": 288706.82,
+      "realizado_total": 693701.77,
+      "por_empresa": {
+        "ecommerce": 396198.55,
+        "canudos": 32473.12,
+        "centroeste": 266975.1
+      }
+    },
+    {
+      "mes": "2026-06",
+      "realizado_online": 427213.1,
+      "realizado_offline": 301935.43,
+      "realizado_total": 729148.53,
+      "por_empresa": {
+        "ecommerce": 429132.9,
+        "canudos": 69311.13,
+        "centroeste": 230704.5
+      }
+    },
+    {
+      "mes": "2026-07",
+      "realizado_online": 421315.58,
+      "realizado_offline": 271260.97,
+      "realizado_total": 692576.55,
+      "por_empresa": {
+        "ecommerce": 383789.63,
+        "canudos": 49007.37,
+        "centroeste": 262493.55
+      }
+    },
+    {
+      "mes": "2026-08",
+      "realizado_online": 159945.11,
+      "realizado_offline": 171265.88,
+      "realizado_total": 331210.99,
+      "por_empresa": {
+        "ecommerce": 159956.71,
+        "canudos": 10131.08,
+        "centroeste": 161123.2
+      }
+    }
+  ],
   "retencao": {
-    "carteira_tamanho": 451,
-    "clientes_avaliados": 177,
-    "clientes_sem_historico_suficiente": 274,
-    "qtd_clientes_em_risco": 45,
-    "valor_total_em_risco": 230704.31,
-    "comissao_projetada": 2307.04,
-    "taxa_reativacao_pct": 64.3,
+    "carteira_tamanho": 453,
+    "clientes_avaliados": 180,
+    "clientes_sem_historico_suficiente": 273,
+    "qtd_clientes_em_risco": 44,
+    "valor_total_em_risco": 228873.31,
+    "comissao_projetada": 2288.73,
+    "taxa_reativacao_pct": 64.8,
     "clientes_a_reativar": [
       {
         "cnpj_cliente": "49.183.825/0001-88",
@@ -2216,18 +2617,6 @@
         "ultima_compra": "23/04/2026",
         "dias_desde_ultima_compra": 112,
         "intervalo_medio_dias": 84.0,
-        "score_risco": 1.33,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "45.826.776/0001-01",
-        "razao_social_cliente": "45.826.776 JAQUES GUSMAO DE OLIVEIRA",
-        "vendedor": "Rubs",
-        "qtd_compras_historico": 2,
-        "valor_total_historico": 1831.0,
-        "ultima_compra": "01/06/2026",
-        "dias_desde_ultima_compra": 73,
-        "intervalo_medio_dias": 55.0,
         "score_risco": 1.33,
         "em_risco": true
       },
@@ -2692,18 +3081,6 @@
         "em_risco": true
       },
       {
-        "cnpj_cliente": "58.333.132/0001-15",
-        "razao_social_cliente": "CARDIOINTEGRATIVA INSTITUTO MEDICO",
-        "vendedor": "Rubs",
-        "qtd_compras_historico": 2,
-        "valor_total_historico": 1443.0,
-        "ultima_compra": "04/11/2025",
-        "dias_desde_ultima_compra": 282,
-        "intervalo_medio_dias": 42.0,
-        "score_risco": 6.71,
-        "em_risco": true
-      },
-      {
         "cnpj_cliente": "20.222.646/0001-20",
         "razao_social_cliente": "3MJ PROJETOS GRAFICOS LTDA",
         "vendedor": "Rubs",
@@ -2714,48 +3091,60 @@
         "intervalo_medio_dias": 48.0,
         "score_risco": 3.38,
         "em_risco": true
+      },
+      {
+        "cnpj_cliente": "08.636.850/0001-92",
+        "razao_social_cliente": "INSTITUTO MODUS VIVENDI DE DESENVOLVIMENTO",
+        "vendedor": "Rubs",
+        "qtd_compras_historico": 3,
+        "valor_total_historico": 6160.0,
+        "ultima_compra": "10/12/2025",
+        "dias_desde_ultima_compra": 246,
+        "intervalo_medio_dias": 170.0,
+        "score_risco": 1.45,
+        "em_risco": true
       }
     ]
   },
   "gratificacao": [
     {
       "mes": "2026-01",
-      "faturamento_canal": 686099.58,
+      "faturamento_canal": 294130.06,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-02",
-      "faturamento_canal": 733758.55,
+      "faturamento_canal": 433331.43,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-03",
-      "faturamento_canal": 648950.5,
+      "faturamento_canal": 353349.91,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-04",
-      "faturamento_canal": 695242.33,
+      "faturamento_canal": 369196.13,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-05",
-      "faturamento_canal": 695646.77,
+      "faturamento_canal": 404994.95,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-06",
-      "faturamento_canal": 729148.53,
+      "faturamento_canal": 427213.1,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-07",
-      "faturamento_canal": 695290.55,
+      "faturamento_canal": 421315.58,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-08",
-      "faturamento_canal": 310181.57,
+      "faturamento_canal": 159945.11,
       "gratificacao": 800.0
     }
   ],
@@ -2886,8 +3275,8 @@
       "diferenca_frete": 164276.86,
       "total_linhas_processadas": 9556,
       "linhas_sem_data_valida": [],
-      "planilha_comissao_atualizada_em_utc": "2026-08-13T14:46:14.294912Z",
-      "planilha_frete_atualizada_em_utc": "2026-08-13T14:46:14.297912Z"
+      "planilha_comissao_atualizada_em_utc": "2026-08-13T20:13:38.582736Z",
+      "planilha_frete_atualizada_em_utc": "2026-08-13T20:13:38.586736Z"
     }
   }
 }

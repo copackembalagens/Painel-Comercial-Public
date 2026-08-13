@@ -1,5 +1,5 @@
 {
-  "gerado_em_utc": "2026-08-13T14:52:25.381735Z",
+  "gerado_em_utc": "2026-08-13T20:20:08.027215Z",
   "metas": [
     {
       "mes": "2026-01",
@@ -13,7 +13,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 59.0,
-      "atingimento_recorrentes_pct": 62.8
+      "atingimento_recorrentes_pct": 62.8,
+      "valor_frete": 7089.68,
+      "faturamento_bruto": 110229.5,
+      "pct_frete_sobre_faturamento": 6.4
     },
     {
       "mes": "2026-02",
@@ -27,7 +30,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 84.9,
-      "atingimento_recorrentes_pct": 96.6
+      "atingimento_recorrentes_pct": 96.6,
+      "valor_frete": 8105.34,
+      "faturamento_bruto": 164305.03,
+      "pct_frete_sobre_faturamento": 4.9
     },
     {
       "mes": "2026-03",
@@ -41,7 +47,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 41.0,
-      "atingimento_recorrentes_pct": 90.7
+      "atingimento_recorrentes_pct": 90.7,
+      "valor_frete": 8156.05,
+      "faturamento_bruto": 138657.05,
+      "pct_frete_sobre_faturamento": 5.9
     },
     {
       "mes": "2026-04",
@@ -55,7 +64,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 118.6,
-      "atingimento_recorrentes_pct": 74.6
+      "atingimento_recorrentes_pct": 74.6,
+      "valor_frete": 15067.84,
+      "faturamento_bruto": 157747.51,
+      "pct_frete_sobre_faturamento": 9.6
     },
     {
       "mes": "2026-05",
@@ -69,7 +81,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 65.6,
-      "atingimento_recorrentes_pct": 74.7
+      "atingimento_recorrentes_pct": 74.7,
+      "valor_frete": 10983.1,
+      "faturamento_bruto": 162719.15,
+      "pct_frete_sobre_faturamento": 6.7
     },
     {
       "mes": "2026-06",
@@ -83,7 +98,10 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 129.4,
-      "atingimento_recorrentes_pct": 48.6
+      "atingimento_recorrentes_pct": 48.6,
+      "valor_frete": 8073.89,
+      "faturamento_bruto": 175426.09,
+      "pct_frete_sobre_faturamento": 4.6
     },
     {
       "mes": "2026-07",
@@ -97,59 +115,65 @@
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 62.8,
-      "atingimento_recorrentes_pct": 27.0
+      "atingimento_recorrentes_pct": 27.0,
+      "valor_frete": 4596.29,
+      "faturamento_bruto": 64518.74,
+      "pct_frete_sobre_faturamento": 7.1
     },
     {
       "mes": "2026-08",
       "meta_canal": 166666.67,
-      "realizado_canal": 28882.34,
-      "atingimento_pct": 17.3,
-      "realizado_novos": 6635.0,
-      "realizado_recorrentes": 22247.34,
+      "realizado_canal": 29662.34,
+      "atingimento_pct": 17.8,
+      "realizado_novos": 7025.0,
+      "realizado_recorrentes": 22637.34,
       "realizado_nao_auditado": 0.0,
-      "mix_novos_pct": 23.0,
+      "mix_novos_pct": 23.7,
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
-      "atingimento_novos_pct": 15.9,
-      "atingimento_recorrentes_pct": 17.8
+      "atingimento_novos_pct": 16.9,
+      "atingimento_recorrentes_pct": 18.1,
+      "valor_frete": 2734.2,
+      "faturamento_bruto": 32396.54,
+      "pct_frete_sobre_faturamento": 8.4
     }
   ],
   "performance_kommo": {
     "por_funil": [
       {
         "funil": "Funil Joice",
-        "ganhas": 521,
-        "perdidas": 6250,
-        "em_aberto": 571,
-        "valor_ganho": 803342.0,
-        "valor_perdido": 984008.0,
+        "ganhas": 524,
+        "perdidas": 6266,
+        "em_aberto": 565,
+        "valor_ganho": 835628.0,
+        "valor_perdido": 984057.0,
         "taxa_conversao_pct": 7.7
       }
     ],
     "motivos_perda": [
       {
         "motivo": "Não responde - antes proposta",
-        "qtd": 3393,
-        "valor": 197299.0
+        "qtd": 3392,
+        "valor": 196349.0
       },
       {
         "motivo": "Não tem interesse",
-        "qtd": 1653,
-        "valor": 384039.0
+        "qtd": 1656,
+        "valor": 385038.0
       },
       {
         "motivo": "Contato Não Comercial",
-        "qtd": 372,
+        "qtd": 375,
         "valor": 54140.0
       },
       {
         "motivo": "Lead Duplicado",
-        "qtd": 312,
+        "qtd": 321,
         "valor": 0.0
       },
       {
         "motivo": "O produto não é a necessidade",
-        "qtd": 144,
+        "qtd": 145,
         "valor": 2430.0
       },
       {
@@ -164,7 +188,7 @@
       },
       {
         "motivo": "Tempo de Atendimento",
-        "qtd": 59,
+        "qtd": 60,
         "valor": 0.0
       },
       {
@@ -208,8 +232,108 @@
         "valor": 0.0
       }
     ],
-    "total_leads": 7342,
+    "total_leads": 7355,
     "total_pipelines": 1,
+    "resumo": {
+      "total_leads": 7355,
+      "taxa_conversao_pct": 7.7,
+      "total_ganho": 524,
+      "total_perdido": 6266,
+      "valor_ganho": 835628.0,
+      "valor_perdido": 984057.0,
+      "leads_em_aberto": {
+        "quantidade": 565,
+        "valor": 835016.0,
+        "pct_quantidade_sobre_total": 7.7,
+        "pct_valor_sobre_total": 31.5
+      }
+    },
+    "por_etapa": [
+      {
+        "funil": "Funil Joice",
+        "etapa": "Venda perdida",
+        "quantidade": 6266,
+        "valor": 984057.0
+      },
+      {
+        "funil": "Funil Joice",
+        "etapa": "Venda ganha",
+        "quantidade": 524,
+        "valor": 835628.0
+      },
+      {
+        "funil": "Funil Joice",
+        "etapa": "ACOMPANHAMENTO",
+        "quantidade": 42,
+        "valor": 403380.0
+      },
+      {
+        "funil": "Funil Joice",
+        "etapa": "QUALIFICAÇÃO",
+        "quantidade": 286,
+        "valor": 202248.0
+      },
+      {
+        "funil": "Funil Joice",
+        "etapa": "CLIENTES RECORRENTES",
+        "quantidade": 204,
+        "valor": 172873.0
+      },
+      {
+        "funil": "Funil Joice",
+        "etapa": "PROPOSTA ENVIADA",
+        "quantidade": 28,
+        "valor": 51477.0
+      },
+      {
+        "funil": "Funil Joice",
+        "etapa": "GERAÇÃO DE PEDIDO",
+        "quantidade": 5,
+        "valor": 5038.0
+      }
+    ],
+    "por_produto": [
+      {
+        "produto": "Sem produto informado",
+        "ganhas": 522,
+        "perdidas": 5696,
+        "valor_ganho": 834499.0,
+        "valor_perdido": 960622.0,
+        "taxa_conversao_pct": 8.4
+      },
+      {
+        "produto": "pote",
+        "ganhas": 0,
+        "perdidas": 189,
+        "valor_ganho": 0.0,
+        "valor_perdido": 20530.0,
+        "taxa_conversao_pct": 0.0
+      },
+      {
+        "produto": "copo_personalizado",
+        "ganhas": 2,
+        "perdidas": 346,
+        "valor_ganho": 1129.0,
+        "valor_perdido": 2905.0,
+        "taxa_conversao_pct": 0.6
+      },
+      {
+        "produto": "marmita",
+        "ganhas": 0,
+        "perdidas": 26,
+        "valor_ganho": 0.0,
+        "valor_perdido": 0.0,
+        "taxa_conversao_pct": 0.0
+      },
+      {
+        "produto": "seladora",
+        "ganhas": 0,
+        "perdidas": 9,
+        "valor_ganho": 0.0,
+        "valor_perdido": 0.0,
+        "taxa_conversao_pct": 0.0
+      }
+    ],
     "por_mes": {
       "2026-01": {
         "por_funil": [
@@ -281,7 +405,65 @@
           }
         ],
         "total_leads": 896,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 896,
+          "taxa_conversao_pct": 9.3,
+          "total_ganho": 80,
+          "total_perdido": 784,
+          "valor_ganho": 155272.0,
+          "valor_perdido": 170985.0,
+          "leads_em_aberto": {
+            "quantidade": 32,
+            "valor": 194660.0,
+            "pct_quantidade_sobre_total": 3.6,
+            "pct_valor_sobre_total": 37.4
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Joice",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 4,
+            "valor": 171301.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda perdida",
+            "quantidade": 784,
+            "valor": 170985.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda ganha",
+            "quantidade": 80,
+            "valor": 155272.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 28,
+            "valor": 23359.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 80,
+            "perdidas": 783,
+            "valor_ganho": 155272.0,
+            "valor_perdido": 170985.0,
+            "taxa_conversao_pct": 9.3
+          },
+          {
+            "produto": "pote",
+            "ganhas": 0,
+            "perdidas": 1,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       },
       "2026-02": {
         "por_funil": [
@@ -358,7 +540,77 @@
           }
         ],
         "total_leads": 715,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 715,
+          "taxa_conversao_pct": 6.9,
+          "total_ganho": 46,
+          "total_perdido": 621,
+          "valor_ganho": 60593.0,
+          "valor_perdido": 121959.0,
+          "leads_em_aberto": {
+            "quantidade": 48,
+            "valor": 105141.0,
+            "pct_quantidade_sobre_total": 6.7,
+            "pct_valor_sobre_total": 36.5
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda perdida",
+            "quantidade": 621,
+            "valor": 121959.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda ganha",
+            "quantidade": 46,
+            "valor": 60593.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 2,
+            "valor": 52700.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 41,
+            "valor": 39798.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "PROPOSTA ENVIADA",
+            "quantidade": 3,
+            "valor": 7580.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 2,
+            "valor": 5063.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 46,
+            "perdidas": 620,
+            "valor_ganho": 60593.0,
+            "valor_perdido": 121959.0,
+            "taxa_conversao_pct": 6.9
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 0,
+            "perdidas": 1,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       },
       "2026-03": {
         "por_funil": [
@@ -445,7 +697,57 @@
           }
         ],
         "total_leads": 1174,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 1174,
+          "taxa_conversao_pct": 7.7,
+          "total_ganho": 85,
+          "total_perdido": 1024,
+          "valor_ganho": 123361.0,
+          "valor_perdido": 157914.0,
+          "leads_em_aberto": {
+            "quantidade": 65,
+            "valor": 53809.0,
+            "pct_quantidade_sobre_total": 5.5,
+            "pct_valor_sobre_total": 16.1
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda perdida",
+            "quantidade": 1024,
+            "valor": 157914.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda ganha",
+            "quantidade": 85,
+            "valor": 123361.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 56,
+            "valor": 52977.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 9,
+            "valor": 832.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 85,
+            "perdidas": 1024,
+            "valor_ganho": 123361.0,
+            "valor_perdido": 157914.0,
+            "taxa_conversao_pct": 7.7
+          }
+        ]
       },
       "2026-04": {
         "por_funil": [
@@ -512,7 +814,77 @@
           }
         ],
         "total_leads": 1142,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 1142,
+          "taxa_conversao_pct": 6.8,
+          "total_ganho": 74,
+          "total_perdido": 1021,
+          "valor_ganho": 98394.0,
+          "valor_perdido": 105737.0,
+          "leads_em_aberto": {
+            "quantidade": 47,
+            "valor": 253489.0,
+            "pct_quantidade_sobre_total": 4.1,
+            "pct_valor_sobre_total": 55.4
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Joice",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 7,
+            "valor": 224842.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda perdida",
+            "quantidade": 1021,
+            "valor": 105737.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda ganha",
+            "quantidade": 74,
+            "valor": 98394.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 38,
+            "valor": 26057.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "PROPOSTA ENVIADA",
+            "quantidade": 1,
+            "valor": 1760.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "GERAÇÃO DE PEDIDO",
+            "quantidade": 1,
+            "valor": 830.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 74,
+            "perdidas": 1020,
+            "valor_ganho": 98394.0,
+            "valor_perdido": 105737.0,
+            "taxa_conversao_pct": 6.8
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 0,
+            "perdidas": 1,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       },
       "2026-05": {
         "por_funil": [
@@ -520,7 +892,7 @@
             "funil": "Funil Joice",
             "ganhas": 87,
             "perdidas": 676,
-            "em_aberto": 38,
+            "em_aberto": 37,
             "valor_ganho": 99809.0,
             "valor_perdido": 87116.0,
             "taxa_conversao_pct": 11.4
@@ -583,18 +955,88 @@
             "valor": 350.0
           }
         ],
-        "total_leads": 801,
-        "total_pipelines": 1
+        "total_leads": 800,
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 800,
+          "taxa_conversao_pct": 11.4,
+          "total_ganho": 87,
+          "total_perdido": 676,
+          "valor_ganho": 99809.0,
+          "valor_perdido": 87116.0,
+          "leads_em_aberto": {
+            "quantidade": 37,
+            "valor": 34124.0,
+            "pct_quantidade_sobre_total": 4.6,
+            "pct_valor_sobre_total": 15.4
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda ganha",
+            "quantidade": 87,
+            "valor": 99809.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda perdida",
+            "quantidade": 676,
+            "valor": 87116.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 29,
+            "valor": 25831.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "PROPOSTA ENVIADA",
+            "quantidade": 2,
+            "valor": 6503.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 1,
+            "valor": 1790.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 5,
+            "valor": 0.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 87,
+            "perdidas": 674,
+            "valor_ganho": 99809.0,
+            "valor_perdido": 87116.0,
+            "taxa_conversao_pct": 11.4
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 0,
+            "perdidas": 2,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       },
       "2026-06": {
         "por_funil": [
           {
             "funil": "Funil Joice",
             "ganhas": 40,
-            "perdidas": 927,
-            "em_aberto": 9,
+            "perdidas": 926,
+            "em_aberto": 10,
             "valor_ganho": 103698.0,
-            "valor_perdido": 141870.0,
+            "valor_perdido": 140920.0,
             "taxa_conversao_pct": 4.1
           }
         ],
@@ -606,8 +1048,8 @@
           },
           {
             "motivo": "Não responde - antes proposta",
-            "qtd": 352,
-            "valor": 19369.0
+            "qtd": 351,
+            "valor": 18419.0
           },
           {
             "motivo": "Não responde -pós proposta",
@@ -661,7 +1103,79 @@
           }
         ],
         "total_leads": 976,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 976,
+          "taxa_conversao_pct": 4.1,
+          "total_ganho": 40,
+          "total_perdido": 926,
+          "valor_ganho": 103698.0,
+          "valor_perdido": 140920.0,
+          "leads_em_aberto": {
+            "quantidade": 10,
+            "valor": 2512.0,
+            "pct_quantidade_sobre_total": 1.0,
+            "pct_valor_sobre_total": 1.0
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda perdida",
+            "quantidade": 926,
+            "valor": 140920.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda ganha",
+            "quantidade": 40,
+            "valor": 103698.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 4,
+            "valor": 2512.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 5,
+            "valor": 0.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 1,
+            "valor": 0.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 40,
+            "perdidas": 924,
+            "valor_ganho": 103698.0,
+            "valor_perdido": 140920.0,
+            "taxa_conversao_pct": 4.1
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 0,
+            "perdidas": 1,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "pote",
+            "ganhas": 0,
+            "perdidas": 1,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       },
       "2026-07": {
         "por_funil": [
@@ -748,44 +1262,144 @@
           }
         ],
         "total_leads": 811,
-        "total_pipelines": 1
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 811,
+          "taxa_conversao_pct": 9.0,
+          "total_ganho": 71,
+          "total_perdido": 716,
+          "valor_ganho": 70500.0,
+          "valor_perdido": 126889.0,
+          "leads_em_aberto": {
+            "quantidade": 24,
+            "valor": 10857.0,
+            "pct_quantidade_sobre_total": 3.0,
+            "pct_valor_sobre_total": 5.2
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda perdida",
+            "quantidade": 716,
+            "valor": 126889.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda ganha",
+            "quantidade": 71,
+            "valor": 70500.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "GERAÇÃO DE PEDIDO",
+            "quantidade": 4,
+            "valor": 4208.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 2,
+            "valor": 2528.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "CLIENTES RECORRENTES",
+            "quantidade": 8,
+            "valor": 2339.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 9,
+            "valor": 1342.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "PROPOSTA ENVIADA",
+            "quantidade": 1,
+            "valor": 440.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 71,
+            "perdidas": 391,
+            "valor_ganho": 70500.0,
+            "valor_perdido": 104594.0,
+            "taxa_conversao_pct": 15.4
+          },
+          {
+            "produto": "pote",
+            "ganhas": 0,
+            "perdidas": 107,
+            "valor_ganho": 0.0,
+            "valor_perdido": 19780.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 0,
+            "perdidas": 202,
+            "valor_ganho": 0.0,
+            "valor_perdido": 2515.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "marmita",
+            "ganhas": 0,
+            "perdidas": 11,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "seladora",
+            "ganhas": 0,
+            "perdidas": 5,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       },
       "2026-08": {
         "por_funil": [
           {
             "funil": "Funil Joice",
-            "ganhas": 38,
-            "perdidas": 481,
-            "em_aberto": 308,
-            "valor_ganho": 91715.0,
-            "valor_perdido": 71538.0,
-            "taxa_conversao_pct": 7.3
+            "ganhas": 41,
+            "perdidas": 498,
+            "em_aberto": 302,
+            "valor_ganho": 124001.0,
+            "valor_perdido": 72537.0,
+            "taxa_conversao_pct": 7.6
           }
         ],
         "motivos_perda": [
           {
             "motivo": "Não tem interesse",
-            "qtd": 345,
-            "valor": 70818.0
+            "qtd": 348,
+            "valor": 71817.0
           },
           {
             "motivo": "Lead Duplicado",
-            "qtd": 113,
+            "qtd": 122,
             "valor": 0.0
           },
           {
             "motivo": "Contato Não Comercial",
-            "qtd": 11,
+            "qtd": 14,
             "valor": 0.0
           },
           {
             "motivo": "O produto não é a necessidade",
-            "qtd": 7,
+            "qtd": 8,
             "valor": 0.0
           },
           {
             "motivo": "Tempo de Atendimento",
-            "qtd": 1,
+            "qtd": 2,
             "valor": 0.0
           },
           {
@@ -809,250 +1423,117 @@
             "valor": 720.0
           }
         ],
-        "total_leads": 827,
-        "total_pipelines": 1
+        "total_leads": 841,
+        "total_pipelines": 1,
+        "resumo": {
+          "total_leads": 841,
+          "taxa_conversao_pct": 7.6,
+          "total_ganho": 41,
+          "total_perdido": 498,
+          "valor_ganho": 124001.0,
+          "valor_perdido": 72537.0,
+          "leads_em_aberto": {
+            "quantidade": 302,
+            "valor": 180424.0,
+            "pct_quantidade_sobre_total": 35.9,
+            "pct_valor_sobre_total": 47.9
+          }
+        },
+        "por_etapa": [
+          {
+            "funil": "Funil Joice",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 280,
+            "valor": 145230.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda ganha",
+            "quantidade": 41,
+            "valor": 124001.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "Venda perdida",
+            "quantidade": 498,
+            "valor": 72537.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "PROPOSTA ENVIADA",
+            "quantidade": 21,
+            "valor": 35194.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 1,
+            "valor": 0.0
+          }
+        ],
+        "por_produto": [
+          {
+            "produto": "Sem produto informado",
+            "ganhas": 39,
+            "perdidas": 260,
+            "valor_ganho": 122872.0,
+            "valor_perdido": 71397.0,
+            "taxa_conversao_pct": 13.0
+          },
+          {
+            "produto": "copo_personalizado",
+            "ganhas": 2,
+            "perdidas": 139,
+            "valor_ganho": 1129.0,
+            "valor_perdido": 390.0,
+            "taxa_conversao_pct": 1.4
+          },
+          {
+            "produto": "pote",
+            "ganhas": 0,
+            "perdidas": 80,
+            "valor_ganho": 0.0,
+            "valor_perdido": 750.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "marmita",
+            "ganhas": 0,
+            "perdidas": 15,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "seladora",
+            "ganhas": 0,
+            "perdidas": 4,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          }
+        ]
       }
+    },
+    "leads_novos_mes_atual": {
+      "mes": "2026-08",
+      "quantidade": 461,
+      "valor": 186027.0,
+      "pct_quantidade_sobre_total": 6.3,
+      "pct_valor_sobre_total": 7.0,
+      "ganhas": 6,
+      "perdidas": 153,
+      "em_aberto": 302,
+      "taxa_conversao_pct": 3.8
     }
   },
   "auditoria_cliente_novo": {
     "status": "ok",
     "ano_calculo": "2026",
     "meta_individual_mensal": 166666.67,
-    "registros_sem_cnpj_nao_auditados": 2447,
+    "registros_sem_cnpj_nao_auditados": 2448,
     "nota": "Ordens de Servico normalmente nao tem CNPJ do cliente na API do OMIE - essas entram no faturamento total mas ficam de fora da classificacao novo/recorrente (aparecem como 'nao_auditado' nas metas).",
     "casos_tomada_cliente": [
-      {
-        "cnpj_cliente": "00.579.136/0001-06",
-        "razao_social_cliente": "CONFEDERACAO NACIONAL DOS TRABALHADORES EM EDUCACAO",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/07/2023",
-        "data_mudanca": "11/12/2024"
-      },
-      {
-        "cnpj_cliente": "00.101.902/0001-14",
-        "razao_social_cliente": "SORVETES BIANO LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/04/2024",
-        "data_mudanca": "20/01/2025"
-      },
-      {
-        "cnpj_cliente": "43.616.455/0001-49",
-        "razao_social_cliente": "43.616.455 FABIOLA ZILIO MENDES",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "18/03/2024",
-        "data_mudanca": "20/01/2025"
-      },
-      {
-        "cnpj_cliente": "03.932.543/0001-35",
-        "razao_social_cliente": "ABAPA -ASSOCIACAO BAIANA DOS PRODUTORES DE ALGODAO",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "01/04/2024",
-        "data_mudanca": "23/01/2025"
-      },
-      {
-        "cnpj_cliente": "48.760.307/0001-17",
-        "razao_social_cliente": "DI BOA STORE",
-        "vendedor_original": "Fernanda",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "29/11/2024",
-        "data_mudanca": "27/01/2025"
-      },
-      {
-        "cnpj_cliente": "35.224.655/0001-28",
-        "razao_social_cliente": "CAMILA ROMANZINI SKONETZKY",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/10/2023",
-        "data_mudanca": "06/02/2025"
-      },
-      {
-        "cnpj_cliente": "972.424.700-72",
-        "razao_social_cliente": "CINTIA DE MELLO BICCA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/12/2024",
-        "data_mudanca": "11/02/2025"
-      },
-      {
-        "cnpj_cliente": "12.192.187/0001-51",
-        "razao_social_cliente": "VALLENDAR VIAGENS E TURISMO LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "06/12/2023",
-        "data_mudanca": "14/02/2025"
-      },
-      {
-        "cnpj_cliente": "07.265.758/0001-09",
-        "razao_social_cliente": "ASSOCIACAO DOS PRODUTORES DE SOJA E MILHO DO ESTADO DE MATO",
-        "vendedor_original": "Cristiano",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "26/10/2023",
-        "data_mudanca": "25/02/2025"
-      },
-      {
-        "cnpj_cliente": "13.482.075/0001-06",
-        "razao_social_cliente": "LABQUALITY LABORATORIO DE CONTROLE DE QUALIDADE LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/12/2023",
-        "data_mudanca": "26/02/2025"
-      },
-      {
-        "cnpj_cliente": "47.476.042/0001-67",
-        "razao_social_cliente": "LOHANA MENDONCA CAROLINO CARVALHO 12453278797",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "26/08/2024",
-        "data_mudanca": "05/03/2025"
-      },
-      {
-        "cnpj_cliente": "08.412.948/0001-66",
-        "razao_social_cliente": "F. M. N. P. BRAGA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "06/12/2023",
-        "data_mudanca": "05/03/2025"
-      },
-      {
-        "cnpj_cliente": "052.022.537-61",
-        "razao_social_cliente": "PATRICIA NOSSAR CROCE",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "14/01/2025",
-        "data_mudanca": "05/03/2025"
-      },
-      {
-        "cnpj_cliente": "00.325.276/0001-40",
-        "razao_social_cliente": "LABORATORIO SAUDE",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "02/02/2023",
-        "data_mudanca": "18/03/2025"
-      },
-      {
-        "cnpj_cliente": "284.353.578-64",
-        "razao_social_cliente": "ANTONIA CONCEICAO DE JESUS",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "16/01/2025",
-        "data_mudanca": "18/03/2025"
-      },
-      {
-        "cnpj_cliente": "22.046.974/0001-49",
-        "razao_social_cliente": "VANDERLINDE &amp; JEREMIAS ADVOGADOS ASSOCIADOS",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "23/11/2023",
-        "data_mudanca": "21/03/2025"
-      },
-      {
-        "cnpj_cliente": "41.427.476/0001-90",
-        "razao_social_cliente": "G &amp; M SERVICOS MEDICOS LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/04/2024",
-        "data_mudanca": "25/03/2025"
-      },
-      {
-        "cnpj_cliente": "04.623.563/0001-97",
-        "razao_social_cliente": "PANIFICADORA CAMILA LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "06/10/2023",
-        "data_mudanca": "27/03/2025"
-      },
-      {
-        "cnpj_cliente": "090.115.719-83",
-        "razao_social_cliente": "FELIPE AUGUSTO DE ARAUJO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "06/02/2025",
-        "data_mudanca": "27/03/2025"
-      },
-      {
-        "cnpj_cliente": "33.579.056/0001-00",
-        "razao_social_cliente": "ANA DENICOLS MAKEUP",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "17/11/2023",
-        "data_mudanca": "28/03/2025"
-      },
-      {
-        "cnpj_cliente": "54.039.412/0001-64",
-        "razao_social_cliente": "54.039.412 CIGRIDY GONCALVES RODRIGUES DOS SANTOS",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "19/11/2024",
-        "data_mudanca": "01/04/2025"
-      },
-      {
-        "cnpj_cliente": "55.494.148/0001-11",
-        "razao_social_cliente": "DANY PRENSA NATURAL GOURMET LTDA",
-        "vendedor_original": "Joice",
-        "vendedor_atual": "Atendimento",
-        "data_primeira_venda": "07/03/2025",
-        "data_mudanca": "03/04/2025"
-      },
-      {
-        "cnpj_cliente": "053.426.651-75",
-        "razao_social_cliente": "REBEKA LORRAYNE DOS ANJOS PEREIRA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/10/2024",
-        "data_mudanca": "03/04/2025"
-      },
-      {
-        "cnpj_cliente": "00.676.296/0005-99",
-        "razao_social_cliente": "SINDICATO NACIONAL DOS DOCENTES DAS INSTITUICOES DE ENSINO S",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/03/2025",
-        "data_mudanca": "07/04/2025"
-      },
-      {
-        "cnpj_cliente": "131.661.807-29",
-        "razao_social_cliente": "ROSA ANGELICA MACHADO DA SILVA BRAGA",
-        "vendedor_original": "ECOMMERCE",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "24/02/2023",
-        "data_mudanca": "10/04/2025"
-      },
-      {
-        "cnpj_cliente": "33.984.443/0001-13",
-        "razao_social_cliente": "ELCIO DE LIMA 09512409860",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "25/02/2025",
-        "data_mudanca": "17/04/2025"
-      },
-      {
-        "cnpj_cliente": "013.526.653-01",
-        "razao_social_cliente": "MATHEUS HENRYQUE DE SOUSA VIANA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "24/04/2025",
-        "data_mudanca": "24/04/2025"
-      },
-      {
-        "cnpj_cliente": "34.668.447/0001-55",
-        "razao_social_cliente": "COZINHA ALICE CONFEITARIA LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/02/2025",
-        "data_mudanca": "02/05/2025"
-      },
-      {
-        "cnpj_cliente": "01.420.293/0001-29",
-        "razao_social_cliente": "GANACHE MAM INDUSTRIA E COMERCIO DE PRODUTOS ALIM LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "13/01/2025",
-        "data_mudanca": "12/05/2025"
-      },
       {
         "cnpj_cliente": "078.733.124-45",
         "razao_social_cliente": "SUZANA CARDOSO DE OLIVEIRA",
@@ -1060,1070 +1541,6 @@
         "vendedor_atual": "Joice",
         "data_primeira_venda": "11/07/2024",
         "data_mudanca": "16/05/2025"
-      },
-      {
-        "cnpj_cliente": "023.410.739-13",
-        "razao_social_cliente": "ATAIS MINATTI",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "08/01/2025",
-        "data_mudanca": "21/05/2025"
-      },
-      {
-        "cnpj_cliente": "41.501.175/0001-60",
-        "razao_social_cliente": "APARECIDA ODETE BEZERRA DA SILVA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "01/10/2024",
-        "data_mudanca": "23/05/2025"
-      },
-      {
-        "cnpj_cliente": "27.376.582/0001-61",
-        "razao_social_cliente": "LUCKY YOU INDUSTRIA E COMERCIO DE ROUPAS LTDA",
-        "vendedor_original": "Fernanda",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "18/11/2024",
-        "data_mudanca": "26/05/2025"
-      },
-      {
-        "cnpj_cliente": "35.587.381/0001-31",
-        "razao_social_cliente": "A.M. SERVICOS DE APOIO LTDA",
-        "vendedor_original": "Fernanda",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "22/10/2024",
-        "data_mudanca": "28/05/2025"
-      },
-      {
-        "cnpj_cliente": "094.758.407-29",
-        "razao_social_cliente": "EDUARDO DANTAS GOMES",
-        "vendedor_original": "Seladora",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "22/05/2025",
-        "data_mudanca": "02/06/2025"
-      },
-      {
-        "cnpj_cliente": "34.190.279/0001-35",
-        "razao_social_cliente": "COMPANHIA DO DENTE ODONTOLOGIA ESPECIALIZADA LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "04/10/2024",
-        "data_mudanca": "09/06/2025"
-      },
-      {
-        "cnpj_cliente": "444.008.611-04",
-        "razao_social_cliente": "PAULO ROBERTO DE MELLO FERNANDEZ",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "16/09/2022",
-        "data_mudanca": "10/06/2025"
-      },
-      {
-        "cnpj_cliente": "835.802.040-68",
-        "razao_social_cliente": "JULIANA MELATTI",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "28/03/2025",
-        "data_mudanca": "12/06/2025"
-      },
-      {
-        "cnpj_cliente": "41.275.331/0001-11",
-        "razao_social_cliente": "41.275.331 JULIA CAROLINA SOUZA DE MACEDO",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "19/02/2025",
-        "data_mudanca": "18/06/2025"
-      },
-      {
-        "cnpj_cliente": "840.107.115-15",
-        "razao_social_cliente": "BEATRIZ FIGUEIREDO LEITE",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/04/2024",
-        "data_mudanca": "19/06/2025"
-      },
-      {
-        "cnpj_cliente": "57.790.363/0001-95",
-        "razao_social_cliente": "IGUARITEC AMAZONIA LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/03/2025",
-        "data_mudanca": "23/06/2025"
-      },
-      {
-        "cnpj_cliente": "039.920.563-25",
-        "razao_social_cliente": "LUIZ AGOSTINHO DE FREITAS OLIVEIRA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "15/04/2024",
-        "data_mudanca": "26/06/2025"
-      },
-      {
-        "cnpj_cliente": "37.465.909/0001-25",
-        "razao_social_cliente": "CLINICA URO CRUVINEL E GEDDA LTDA",
-        "vendedor_original": "Joice",
-        "vendedor_atual": "Ocorrência",
-        "data_primeira_venda": "26/05/2025",
-        "data_mudanca": "27/06/2025"
-      },
-      {
-        "cnpj_cliente": "07.703.482/0001-95",
-        "razao_social_cliente": "CLINICA CRUZ LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "19/09/2023",
-        "data_mudanca": "30/06/2025"
-      },
-      {
-        "cnpj_cliente": "21.618.588/0001-11",
-        "razao_social_cliente": "OPY CLINICA MEDICA PSIQUIATRICA LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "27/02/2024",
-        "data_mudanca": "30/06/2025"
-      },
-      {
-        "cnpj_cliente": "12.516.746/0001-31",
-        "razao_social_cliente": "COLEGIO SANTA URSULA S/S LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "24/09/2024",
-        "data_mudanca": "30/06/2025"
-      },
-      {
-        "cnpj_cliente": "26.909.038/0001-75",
-        "razao_social_cliente": "BETH COXINHAS LANCHONETES LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "06/11/2023",
-        "data_mudanca": "01/07/2025"
-      },
-      {
-        "cnpj_cliente": "23.909.409/0001-20",
-        "razao_social_cliente": "MED MULHER LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "14/04/2025",
-        "data_mudanca": "01/07/2025"
-      },
-      {
-        "cnpj_cliente": "51.367.156/0001-46",
-        "razao_social_cliente": "51.367.156 ANDREA GRESKI",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "19/09/2024",
-        "data_mudanca": "01/07/2025"
-      },
-      {
-        "cnpj_cliente": "18.732.712/0001-60",
-        "razao_social_cliente": "CAFE DO VO VICENTE LTDA",
-        "vendedor_original": "Joice",
-        "vendedor_atual": "iSet",
-        "data_primeira_venda": "12/02/2025",
-        "data_mudanca": "01/07/2025"
-      },
-      {
-        "cnpj_cliente": "50.026.551/0001-00",
-        "razao_social_cliente": "RM2 HF LTDA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "10/07/2023",
-        "data_mudanca": "01/07/2025"
-      },
-      {
-        "cnpj_cliente": "57.264.441/0001-18",
-        "razao_social_cliente": "PAIVA E SANTOS COMERCIO DE ALIMENTOS LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "06/05/2025",
-        "data_mudanca": "09/07/2025"
-      },
-      {
-        "cnpj_cliente": "082.917.798-13",
-        "razao_social_cliente": "MARCIA REGINA COHEN",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/09/2024",
-        "data_mudanca": "11/07/2025"
-      },
-      {
-        "cnpj_cliente": "29.478.269/0001-60",
-        "razao_social_cliente": "INDUSTRIA DE BEBIDAS TRES RIOS LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "19/04/2024",
-        "data_mudanca": "11/07/2025"
-      },
-      {
-        "cnpj_cliente": "35.345.165/0002-60",
-        "razao_social_cliente": "LC DOCERIA E EMPADAS LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "22/07/2024",
-        "data_mudanca": "11/07/2025"
-      },
-      {
-        "cnpj_cliente": "52.000.745/0001-54",
-        "razao_social_cliente": "CONDOMINIO BOMM KREBS SPE LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "27/01/2025",
-        "data_mudanca": "11/07/2025"
-      },
-      {
-        "cnpj_cliente": "970.089.401-06",
-        "razao_social_cliente": "ANDRÉA DA ROCHA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "07/08/2023",
-        "data_mudanca": "11/07/2025"
-      },
-      {
-        "cnpj_cliente": "37.572.517/0001-65",
-        "razao_social_cliente": "D C FATURETO GELATERIA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "05/09/2023",
-        "data_mudanca": "14/07/2025"
-      },
-      {
-        "cnpj_cliente": "00.364.536/0004-39",
-        "razao_social_cliente": "ICON S/A - EQUIPAMENTOS E MOLDES",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "02/10/2023",
-        "data_mudanca": "14/07/2025"
-      },
-      {
-        "cnpj_cliente": "16.861.520/0001-29",
-        "razao_social_cliente": "FM &amp; MV ALIMENTOS LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "24/01/2025",
-        "data_mudanca": "21/07/2025"
-      },
-      {
-        "cnpj_cliente": "15.270.301/0001-02",
-        "razao_social_cliente": "CENTRO MEDICO ALCANCE LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "30/05/2025",
-        "data_mudanca": "21/07/2025"
-      },
-      {
-        "cnpj_cliente": "14.797.815/0001-58",
-        "razao_social_cliente": "CENTRO MEDICO ELSIMAR COUTINHO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "24/03/2025",
-        "data_mudanca": "22/07/2025"
-      },
-      {
-        "cnpj_cliente": "42.654.508/0001-53",
-        "razao_social_cliente": "CITA PARTICIPACOES SOCIETARIAS S/A",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "05/06/2025",
-        "data_mudanca": "22/07/2025"
-      },
-      {
-        "cnpj_cliente": "18.968.268/0001-87",
-        "razao_social_cliente": "TASSI ODONTOLOGIA ESPECIALIZADA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "24/09/2024",
-        "data_mudanca": "23/07/2025"
-      },
-      {
-        "cnpj_cliente": "33.922.863/0001-75",
-        "razao_social_cliente": "INSTITUTO SIQUEIRA DE NEUROPSICOLOGIA E DESENVOLVIMENTO HUMA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "27/08/2024",
-        "data_mudanca": "24/07/2025"
-      },
-      {
-        "cnpj_cliente": "062.823.053-22",
-        "razao_social_cliente": "RAIANE BARREIRA MARANHAO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "27/08/2024",
-        "data_mudanca": "28/07/2025"
-      },
-      {
-        "cnpj_cliente": "28.465.660/0001-67",
-        "razao_social_cliente": "EQUIPE PROTEGE DE OBSTETRICIA E PROCEDIMENTOS CIRURGICOS",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/02/2025",
-        "data_mudanca": "28/07/2025"
-      },
-      {
-        "cnpj_cliente": "57.161.513/0001-00",
-        "razao_social_cliente": "CTPP MANE GARRINCHA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "02/01/2025",
-        "data_mudanca": "28/07/2025"
-      },
-      {
-        "cnpj_cliente": "23.084.746/0001-26",
-        "razao_social_cliente": "AZARIAS &amp; FREITAS ODONTOLOGIA LTDA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/09/2023",
-        "data_mudanca": "28/07/2025"
-      },
-      {
-        "cnpj_cliente": "29.466.797/0001-07",
-        "razao_social_cliente": "TANZ DANCA E FORMACAO LTDA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "07/03/2023",
-        "data_mudanca": "29/07/2025"
-      },
-      {
-        "cnpj_cliente": "00.543.363/0001-73",
-        "razao_social_cliente": "SINDICATO DOS PROFESSORES NO DISTRITO FEDERAL",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "21/09/2023",
-        "data_mudanca": "29/07/2025"
-      },
-      {
-        "cnpj_cliente": "02.784.232/0001-03",
-        "razao_social_cliente": "CLINICA MEDICA CORPO PERFEITO LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "02/01/2025",
-        "data_mudanca": "30/07/2025"
-      },
-      {
-        "cnpj_cliente": "25.135.981/0001-05",
-        "razao_social_cliente": "TAUA HOTEL E CONVENTION ALEXANIA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "05/02/2025",
-        "data_mudanca": "31/07/2025"
-      },
-      {
-        "cnpj_cliente": "127.429.727-30",
-        "razao_social_cliente": "LUCAS MACEDO SIMAS",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "27/06/2025",
-        "data_mudanca": "31/07/2025"
-      },
-      {
-        "cnpj_cliente": "22.566.409/0001-02",
-        "razao_social_cliente": "REGENERA ESTETICA REGENERATIVA LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "13/05/2024",
-        "data_mudanca": "01/08/2025"
-      },
-      {
-        "cnpj_cliente": "335.829.728-44",
-        "razao_social_cliente": "BEATRIZ TOLEDO LIMA GUEDES",
-        "vendedor_original": "Wellyson",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/09/2024",
-        "data_mudanca": "05/08/2025"
-      },
-      {
-        "cnpj_cliente": "10.824.501/0001-46",
-        "razao_social_cliente": "CONFEITARIA R V OLIVEIRA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "13/03/2025",
-        "data_mudanca": "07/08/2025"
-      },
-      {
-        "cnpj_cliente": "12.234.470/0001-07",
-        "razao_social_cliente": "INOVAR HABITACIONAL INCORPORACAO IMOBILIARIA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "28/03/2025",
-        "data_mudanca": "07/08/2025"
-      },
-      {
-        "cnpj_cliente": "38.694.121/0001-53",
-        "razao_social_cliente": "HIPOGRIFFE LTDA",
-        "vendedor_original": "Milena",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "10/05/2024",
-        "data_mudanca": "07/08/2025"
-      },
-      {
-        "cnpj_cliente": "38.372.680/0001-47",
-        "razao_social_cliente": "RAQUEL ROSIAK 03948550000",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "14/08/2024",
-        "data_mudanca": "07/08/2025"
-      },
-      {
-        "cnpj_cliente": "18.635.850/0001-21",
-        "razao_social_cliente": "TECH ACCUS INSTITUTO DE ENSINO E CLINICA DE TERAPIAS INTEGRA",
-        "vendedor_original": "Milena",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "16/01/2024",
-        "data_mudanca": "08/08/2025"
-      },
-      {
-        "cnpj_cliente": "97.526.318/0001-42",
-        "razao_social_cliente": "TOQUE GOURMET COMERCIO DE ALIMENTOS E BEBIDAS LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "08/03/2023",
-        "data_mudanca": "11/08/2025"
-      },
-      {
-        "cnpj_cliente": "07.499.928/0001-01",
-        "razao_social_cliente": "LAMBUZE COMERCIO E INDUSTRIA DE ALIMENTACAO LTDA",
-        "vendedor_original": "Joice",
-        "vendedor_atual": "Ocorrência",
-        "data_primeira_venda": "06/06/2025",
-        "data_mudanca": "12/08/2025"
-      },
-      {
-        "cnpj_cliente": "005.788.990-27",
-        "razao_social_cliente": "RITHIELE VOLPATO",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/03/2025",
-        "data_mudanca": "13/08/2025"
-      },
-      {
-        "cnpj_cliente": "42.388.977/0001-78",
-        "razao_social_cliente": "DUE MAMMA MASSAS ESPECIAIS LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "29/11/2023",
-        "data_mudanca": "14/08/2025"
-      },
-      {
-        "cnpj_cliente": "053.448.777-73",
-        "razao_social_cliente": "CAMILA CEPPAS BASTOS",
-        "vendedor_original": "Seladora",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "13/08/2025",
-        "data_mudanca": "14/08/2025"
-      },
-      {
-        "cnpj_cliente": "55.326.251/0001-52",
-        "razao_social_cliente": "CONGELADOS DO CHEF RONEI",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "18/02/2025",
-        "data_mudanca": "14/08/2025"
-      },
-      {
-        "cnpj_cliente": "157.636.387-27",
-        "razao_social_cliente": "DAIANA DA SILVA PIRES MENDES",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "10/06/2025",
-        "data_mudanca": "18/08/2025"
-      },
-      {
-        "cnpj_cliente": "57.049.383/0001-00",
-        "razao_social_cliente": "57.049.383 ADRIANO NOGUEIRA PRADO",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "16/01/2025",
-        "data_mudanca": "18/08/2025"
-      },
-      {
-        "cnpj_cliente": "31.463.097/0001-00",
-        "razao_social_cliente": "G. ARPINI MIGUEL ALIMENTOS",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "09/06/2025",
-        "data_mudanca": "19/08/2025"
-      },
-      {
-        "cnpj_cliente": "03.174.337/0001-03",
-        "razao_social_cliente": "FAMA DOCES INDUSTRIA E COMERCIO LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "23/12/2024",
-        "data_mudanca": "19/08/2025"
-      },
-      {
-        "cnpj_cliente": "42.362.266/0001-24",
-        "razao_social_cliente": "ARTCOLUNA CLINICA DE QUIROPRAXIA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/06/2025",
-        "data_mudanca": "19/08/2025"
-      },
-      {
-        "cnpj_cliente": "25.110.169/0001-25",
-        "razao_social_cliente": "KASA &amp; DECOR RIO PRETO DECORACOES LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "01/09/2023",
-        "data_mudanca": "19/08/2025"
-      },
-      {
-        "cnpj_cliente": "58.288.919/0001-02",
-        "razao_social_cliente": "LECHERA HELADOS LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/03/2025",
-        "data_mudanca": "19/08/2025"
-      },
-      {
-        "cnpj_cliente": "14.941.837/0001-40",
-        "razao_social_cliente": "MM PSICOLOGIA CLINICA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "14/03/2022",
-        "data_mudanca": "20/08/2025"
-      },
-      {
-        "cnpj_cliente": "53.755.472/0001-10",
-        "razao_social_cliente": "DOS ANJOS COMERCIO DE ALIMENTOS LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "31/03/2025",
-        "data_mudanca": "20/08/2025"
-      },
-      {
-        "cnpj_cliente": "13.824.517/0001-47",
-        "razao_social_cliente": "13.824.517 KARINA SOEIRO DE OLIVEIRA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/11/2023",
-        "data_mudanca": "22/08/2025"
-      },
-      {
-        "cnpj_cliente": "22.253.414/0001-65",
-        "razao_social_cliente": "SAFETY AND SECURITY - PROTECOES PARA EQUIPAMENTOS LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "22/07/2024",
-        "data_mudanca": "25/08/2025"
-      },
-      {
-        "cnpj_cliente": "09.483.109/0001-00",
-        "razao_social_cliente": "NOGRAN - COMERCIO DE GRANITOS LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "20/08/2024",
-        "data_mudanca": "25/08/2025"
-      },
-      {
-        "cnpj_cliente": "11.443.540/0001-66",
-        "razao_social_cliente": "GABRIELA SCHWAB CHOCOLATES",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "19/04/2022",
-        "data_mudanca": "27/08/2025"
-      },
-      {
-        "cnpj_cliente": "14.941.639/0001-86",
-        "razao_social_cliente": "RECHEIO DOCE",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "29/11/2024",
-        "data_mudanca": "28/08/2025"
-      },
-      {
-        "cnpj_cliente": "22.660.511/0001-72",
-        "razao_social_cliente": "CAFE PATROCINIO INDUSTRIA E COMERCIO LTDA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/08/2023",
-        "data_mudanca": "28/08/2025"
-      },
-      {
-        "cnpj_cliente": "030.217.385-40",
-        "razao_social_cliente": "FERNANDA SALLES REIS",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "23/09/2022",
-        "data_mudanca": "28/08/2025"
-      },
-      {
-        "cnpj_cliente": "37.205.602/0001-95",
-        "razao_social_cliente": "E FRANCISCO NETO DA S OLIVEIRA - THE CLINIC LTDA",
-        "vendedor_original": "Mariana",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "05/07/2022",
-        "data_mudanca": "28/08/2025"
-      },
-      {
-        "cnpj_cliente": "47.062.449/0001-48",
-        "razao_social_cliente": "INSTITUTO GO X EDU LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "15/04/2025",
-        "data_mudanca": "28/08/2025"
-      },
-      {
-        "cnpj_cliente": "30.925.337/0001-70",
-        "razao_social_cliente": "WARABU COMERCIO E FABRICACAO DE DERIVADOS DE CACAU LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "19/12/2023",
-        "data_mudanca": "28/08/2025"
-      },
-      {
-        "cnpj_cliente": "013.786.291-16",
-        "razao_social_cliente": "JERUSA NOGUEIRA MAGANHA",
-        "vendedor_original": "Cristiano",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "24/10/2023",
-        "data_mudanca": "29/08/2025"
-      },
-      {
-        "cnpj_cliente": "025.984.044-08",
-        "razao_social_cliente": "ANA FLORA SENA DE CASTRO",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "04/09/2023",
-        "data_mudanca": "29/08/2025"
-      },
-      {
-        "cnpj_cliente": "154.990.587-25",
-        "razao_social_cliente": "IGOR FELIPE DE ABREU ALBUQUERQUE",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "18/11/2024",
-        "data_mudanca": "03/09/2025"
-      },
-      {
-        "cnpj_cliente": "282.376.478-07",
-        "razao_social_cliente": "FRANCISCO EVILASIO GONCALO",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "06/09/2024",
-        "data_mudanca": "04/09/2025"
-      },
-      {
-        "cnpj_cliente": "38.110.017/0001-74",
-        "razao_social_cliente": "BARROS AZEVEDO ATENDIMENTO MEDICO ESPECIALIZADO LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "05/11/2024",
-        "data_mudanca": "15/09/2025"
-      },
-      {
-        "cnpj_cliente": "00.772.752/0001-70",
-        "razao_social_cliente": "THIEME CAFE E CONFEITARIA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "02/01/2025",
-        "data_mudanca": "15/09/2025"
-      },
-      {
-        "cnpj_cliente": "41.124.773/0001-67",
-        "razao_social_cliente": "BETTER SLEEP COLCHOES",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "09/12/2024",
-        "data_mudanca": "16/09/2025"
-      },
-      {
-        "cnpj_cliente": "10.750.515/0001-62",
-        "razao_social_cliente": "LENZI E GONCALVES ADVOGADOS ASSOCIADOS",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "14/08/2023",
-        "data_mudanca": "16/09/2025"
-      },
-      {
-        "cnpj_cliente": "37.325.547/0001-77",
-        "razao_social_cliente": "MEDLAGO SERVICOS MEDICOS LTDA",
-        "vendedor_original": "ECOMMERCE",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "24/03/2022",
-        "data_mudanca": "17/09/2025"
-      },
-      {
-        "cnpj_cliente": "48.726.446/0001-24",
-        "razao_social_cliente": "VISART OCULOS EM 1 HORA LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "31/10/2023",
-        "data_mudanca": "19/09/2025"
-      },
-      {
-        "cnpj_cliente": "33.045.176/0001-19",
-        "razao_social_cliente": "GZF AVIACAO LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "21/09/2023",
-        "data_mudanca": "19/09/2025"
-      },
-      {
-        "cnpj_cliente": "047.617.889-41",
-        "razao_social_cliente": "HELIO RAFAEL MARINHO DA SILVA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "24/01/2025",
-        "data_mudanca": "22/09/2025"
-      },
-      {
-        "cnpj_cliente": "40.031.036/0001-57",
-        "razao_social_cliente": "CHEFIT COMERCIO DE ALIMENTOS LTDA",
-        "vendedor_original": "Seladora",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/08/2025",
-        "data_mudanca": "22/09/2025"
-      },
-      {
-        "cnpj_cliente": "61.087.068/0001-44",
-        "razao_social_cliente": "VERISSIMA INDUSTRIA E COMERCIO DE ALIMENTOS LTDA",
-        "vendedor_original": "Seladora",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "25/07/2025",
-        "data_mudanca": "22/09/2025"
-      },
-      {
-        "cnpj_cliente": "58.370.549/0001-58",
-        "razao_social_cliente": "PONTO DA CASQUINHA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "24/01/2025",
-        "data_mudanca": "23/09/2025"
-      },
-      {
-        "cnpj_cliente": "47.531.213/0001-03",
-        "razao_social_cliente": "VORAZ ALIMENTOS INDUSTRIA E COMERCIO LTDA",
-        "vendedor_original": "Seladora",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "30/06/2025",
-        "data_mudanca": "25/09/2025"
-      },
-      {
-        "cnpj_cliente": "283.337.388-00",
-        "razao_social_cliente": "JUST JAPAN LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "04/01/2024",
-        "data_mudanca": "26/09/2025"
-      },
-      {
-        "cnpj_cliente": "00.833.801/8001-77",
-        "razao_social_cliente": "MASSIMO ALIMENTO LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "10/03/2025",
-        "data_mudanca": "29/09/2025"
-      },
-      {
-        "cnpj_cliente": "05.665.487/0001-45",
-        "razao_social_cliente": "HP GOMES",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "20/01/2025",
-        "data_mudanca": "30/09/2025"
-      },
-      {
-        "cnpj_cliente": "842.871.955-15",
-        "razao_social_cliente": "LETHICIA SILVA BEZERRA FALCONERY",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "25/07/2025",
-        "data_mudanca": "02/10/2025"
-      },
-      {
-        "cnpj_cliente": "20.482.492/0001-06",
-        "razao_social_cliente": "SPADOTTO TREINAMENTO DE TRIATHLON LTDA.",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "07/08/2024",
-        "data_mudanca": "02/10/2025"
-      },
-      {
-        "cnpj_cliente": "102.518.789-02",
-        "razao_social_cliente": "HAILA MONIQUE YAMAMOTO HIGASHI",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "01/07/2025",
-        "data_mudanca": "02/10/2025"
-      },
-      {
-        "cnpj_cliente": "08.340.274/0001-31",
-        "razao_social_cliente": "NEW LIFE ADONAI COMERCIO E SERVICOS LTDA",
-        "vendedor_original": "Seladora",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/08/2025",
-        "data_mudanca": "06/10/2025"
-      },
-      {
-        "cnpj_cliente": "218.180.498-21",
-        "razao_social_cliente": "LIGIA DE FENDI",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/09/2023",
-        "data_mudanca": "07/10/2025"
-      },
-      {
-        "cnpj_cliente": "12.843.945/0001-54",
-        "razao_social_cliente": "FRANCIELE CASARIN BUFFET LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "05/02/2025",
-        "data_mudanca": "09/10/2025"
-      },
-      {
-        "cnpj_cliente": "33.857.478/0001-91",
-        "razao_social_cliente": "RW GARAGE SERVICOS AUTOMOTIVOS LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "06/02/2025",
-        "data_mudanca": "09/10/2025"
-      },
-      {
-        "cnpj_cliente": "019.919.697-40",
-        "razao_social_cliente": "ISABEL CRISTINA DOS PRAZERES QUEIROZ",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "29/07/2025",
-        "data_mudanca": "13/10/2025"
-      },
-      {
-        "cnpj_cliente": "60.991.254/0001-40",
-        "razao_social_cliente": "CONFECCOES ARAMODU LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "21/05/2024",
-        "data_mudanca": "15/10/2025"
-      },
-      {
-        "cnpj_cliente": "013.746.331-60",
-        "razao_social_cliente": "ROSENVALDO MOREIRA JUNIOR",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "06/10/2023",
-        "data_mudanca": "15/10/2025"
-      },
-      {
-        "cnpj_cliente": "034.932.524-39",
-        "razao_social_cliente": "LEONARDO ESPINDOLA DE ANDRADE",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "16/01/2025",
-        "data_mudanca": "16/10/2025"
-      },
-      {
-        "cnpj_cliente": "22.138.715/0001-48",
-        "razao_social_cliente": "ITHYARA LUEDJAN MARTINS DE OLIVEIRA 34906623859",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/01/2025",
-        "data_mudanca": "16/10/2025"
-      },
-      {
-        "cnpj_cliente": "07.884.928/0001-25",
-        "razao_social_cliente": "TURMIX MILKSHAKERIA SORVETERIA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "30/09/2024",
-        "data_mudanca": "17/10/2025"
-      },
-      {
-        "cnpj_cliente": "17.340.368/0001-00",
-        "razao_social_cliente": "17.340.368 JONI DO NASCIMENTO AMORIM",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "15/08/2024",
-        "data_mudanca": "17/10/2025"
-      },
-      {
-        "cnpj_cliente": "53.547.096/0001-79",
-        "razao_social_cliente": "MARMITAS DO PAINHO LONDRINA LTDA",
-        "vendedor_original": "Wellyson",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "28/08/2024",
-        "data_mudanca": "20/10/2025"
-      },
-      {
-        "cnpj_cliente": "352.745.628-76",
-        "razao_social_cliente": "CAMILA LURIE TAKAHASHI",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "21/09/2023",
-        "data_mudanca": "20/10/2025"
-      },
-      {
-        "cnpj_cliente": "50.189.591/0001-65",
-        "razao_social_cliente": "SORVETES QUINZE LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/09/2025",
-        "data_mudanca": "21/10/2025"
-      },
-      {
-        "cnpj_cliente": "55.800.755/0001-62",
-        "razao_social_cliente": "A B3 BARBEARIA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "30/05/2025",
-        "data_mudanca": "21/10/2025"
-      },
-      {
-        "cnpj_cliente": "38.560.255/0001-81",
-        "razao_social_cliente": "PARATY CARNES NOBRES E IMPORTADOS LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "08/01/2024",
-        "data_mudanca": "23/10/2025"
-      },
-      {
-        "cnpj_cliente": "54.168.855/0001-55",
-        "razao_social_cliente": "BALI AUTO ELETRICS LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "20/08/2025",
-        "data_mudanca": "28/10/2025"
-      },
-      {
-        "cnpj_cliente": "47.336.360/0001-22",
-        "razao_social_cliente": "SHEILA SORATTO ZEFERINO LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "07/07/2023",
-        "data_mudanca": "31/10/2025"
-      },
-      {
-        "cnpj_cliente": "083.047.739-02",
-        "razao_social_cliente": "MAHIARA FINK LIELL",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "13/12/2023",
-        "data_mudanca": "03/11/2025"
-      },
-      {
-        "cnpj_cliente": "833.357.494-72",
-        "razao_social_cliente": "KARINA MANDEL DE FRANCA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "19/06/2025",
-        "data_mudanca": "07/11/2025"
-      },
-      {
-        "cnpj_cliente": "080.189.356-96",
-        "razao_social_cliente": "LEANDRO PAVIOTE DE FREITAS",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/05/2025",
-        "data_mudanca": "10/11/2025"
-      },
-      {
-        "cnpj_cliente": "27.719.919/0001-96",
-        "razao_social_cliente": "RV CIRURGIA PLASTICA E DERMATOLOGIA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "16/04/2025",
-        "data_mudanca": "13/11/2025"
-      },
-      {
-        "cnpj_cliente": "45.237.464/0001-54",
-        "razao_social_cliente": "CLINICA STEINERT SERVICOS ODONTOLOGICOS LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "26/02/2025",
-        "data_mudanca": "25/11/2025"
-      },
-      {
-        "cnpj_cliente": "54.405.350/0001-67",
-        "razao_social_cliente": "54.405.350 IVONE ANTONIOLLI PEZZINI",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/04/2024",
-        "data_mudanca": "25/11/2025"
-      },
-      {
-        "cnpj_cliente": "65.485.922/0001-81",
-        "razao_social_cliente": "TAXI AEREO PIRACICABA LTDA",
-        "vendedor_original": "ECOMMERCE",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "15/06/2023",
-        "data_mudanca": "25/11/2025"
-      },
-      {
-        "cnpj_cliente": "51.625.368/0001-86",
-        "razao_social_cliente": "51.625.368 JOAO PEDRO DAVIDIAN SABINO",
-        "vendedor_original": "Seladora",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "14/11/2025",
-        "data_mudanca": "25/11/2025"
-      },
-      {
-        "cnpj_cliente": "29.682.376/0001-05",
-        "razao_social_cliente": "J. S. DINIZ CONFECCAO LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "02/09/2024",
-        "data_mudanca": "27/11/2025"
-      },
-      {
-        "cnpj_cliente": "46.710.176/0001-38",
-        "razao_social_cliente": "OPTICA AGUAS CLARAS LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "21/03/2025",
-        "data_mudanca": "09/12/2025"
-      },
-      {
-        "cnpj_cliente": "41.132.844/0001-73",
-        "razao_social_cliente": "CAFE E CHA NO JARDIM SAO BENTO COMERCIO DE ALIMENTOS LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/10/2023",
-        "data_mudanca": "10/12/2025"
-      },
-      {
-        "cnpj_cliente": "40.512.337/0009-50",
-        "razao_social_cliente": "AGROSUL MAQUINAS LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "20/09/2023",
-        "data_mudanca": "17/12/2025"
-      },
-      {
-        "cnpj_cliente": "38.449.045/0001-10",
-        "razao_social_cliente": "GAIA CONGELADOS LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "17/10/2025",
-        "data_mudanca": "22/12/2025"
-      },
-      {
-        "cnpj_cliente": "49.066.146/0001-29",
-        "razao_social_cliente": "49.066.146 BRUNA DA SILVA FELIX",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "21/12/2023",
-        "data_mudanca": "23/12/2025"
-      },
-      {
-        "cnpj_cliente": "30.849.212/0001-09",
-        "razao_social_cliente": "JERONIMO MARTINS SILVA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "23/04/2024",
-        "data_mudanca": "26/12/2025"
-      },
-      {
-        "cnpj_cliente": "034.973.949-80",
-        "razao_social_cliente": "IVANDRO DEBORTOLI DUARTE",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "14/03/2024",
-        "data_mudanca": "05/01/2026"
-      },
-      {
-        "cnpj_cliente": "33.069.229/0001-31",
-        "razao_social_cliente": "SAO JOAO AGROINDUSTRIA DE FRUTAS LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "20/02/2025",
-        "data_mudanca": "05/01/2026"
       },
       {
         "cnpj_cliente": "50.659.402/0001-70",
@@ -2134,44 +1551,12 @@
         "data_mudanca": "13/01/2026"
       },
       {
-        "cnpj_cliente": "35.130.015/0001-59",
-        "razao_social_cliente": "BAHIA NATURAL INDUSTRIA DE BEBIDAS EIRELI",
-        "vendedor_original": "ECOMMERCE",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/01/2022",
-        "data_mudanca": "13/01/2026"
-      },
-      {
         "cnpj_cliente": "02.299.844/0001-00",
         "razao_social_cliente": "LABCENTER",
         "vendedor_original": "Eduardo Santiago",
         "vendedor_atual": "Joice",
         "data_primeira_venda": "25/11/2025",
         "data_mudanca": "16/01/2026"
-      },
-      {
-        "cnpj_cliente": "51.288.344/0001-89",
-        "razao_social_cliente": "LVV SOLUCOES EM NEUROLOGIA LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/07/2024",
-        "data_mudanca": "16/01/2026"
-      },
-      {
-        "cnpj_cliente": "47.064.425/0001-28",
-        "razao_social_cliente": "NUCLEO MORAIS CENTRO CLINICO ESPORTIVO E EMAGRECIMENTO LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "09/04/2025",
-        "data_mudanca": "16/01/2026"
-      },
-      {
-        "cnpj_cliente": "63.476.808/0001-60",
-        "razao_social_cliente": "BEETOP INDUSTRIA E COMERCIO DE CONFECCOES LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "17/11/2023",
-        "data_mudanca": "19/01/2026"
       },
       {
         "cnpj_cliente": "44.688.095/0001-53",
@@ -2198,388 +1583,12 @@
         "data_mudanca": "20/01/2026"
       },
       {
-        "cnpj_cliente": "24.491.138/0001-07",
-        "razao_social_cliente": "FABRICIO RANGEL SOCIEDADE INDIVIDUAL DE ADVOCACIA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "20/09/2023",
-        "data_mudanca": "20/01/2026"
-      },
-      {
-        "cnpj_cliente": "098.137.966-42",
-        "razao_social_cliente": "MOYSES EDUARDO SOLRAC MATTAR",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "14/03/2025",
-        "data_mudanca": "22/01/2026"
-      },
-      {
-        "cnpj_cliente": "51.538.078/0001-03",
-        "razao_social_cliente": "JUCINARA TEODORO ESCOBAR LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "19/03/2025",
-        "data_mudanca": "03/02/2026"
-      },
-      {
-        "cnpj_cliente": "55.657.461/0001-23",
-        "razao_social_cliente": "PRACA SWISS PARK RESTAURANTE E BAR LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "26/02/2025",
-        "data_mudanca": "03/02/2026"
-      },
-      {
-        "cnpj_cliente": "054.937.056-05",
-        "razao_social_cliente": "SABRINA MAGALHAES BARROS CARVALHO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "09/04/2024",
-        "data_mudanca": "11/02/2026"
-      },
-      {
-        "cnpj_cliente": "02.422.892/0001-44",
-        "razao_social_cliente": "CORDIALLE ODONTOLOGIA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "13/03/2024",
-        "data_mudanca": "12/02/2026"
-      },
-      {
-        "cnpj_cliente": "54.531.064/0001-48",
-        "razao_social_cliente": "MAGMA INDUSTRIA E COMERCIO DE CAFE LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "29/01/2025",
-        "data_mudanca": "12/02/2026"
-      },
-      {
-        "cnpj_cliente": "10.525.283/0001-49",
-        "razao_social_cliente": "CONSTRUIR CONSTRUCAO, LOCACAO DE EQUIPAMENTOS E ADMINISTRACA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/12/2024",
-        "data_mudanca": "19/02/2026"
-      },
-      {
-        "cnpj_cliente": "03.556.670/0001-87",
-        "razao_social_cliente": "CLINICA CIRURGICA MARCELO MARIANO LTDA.",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "26/01/2023",
-        "data_mudanca": "23/02/2026"
-      },
-      {
-        "cnpj_cliente": "40.896.676/0001-20",
-        "razao_social_cliente": "T. ODONTOLOGIA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "18/11/2024",
-        "data_mudanca": "24/02/2026"
-      },
-      {
-        "cnpj_cliente": "027.835.893-46",
-        "razao_social_cliente": "ALEXANDRE CELIO MEDEIROS",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "27/04/2023",
-        "data_mudanca": "25/02/2026"
-      },
-      {
-        "cnpj_cliente": "62.872.420/0001-15",
-        "razao_social_cliente": "62.872.420 ALINE MONTEIRO PINTO",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/01/2026",
-        "data_mudanca": "04/03/2026"
-      },
-      {
-        "cnpj_cliente": "30.110.185/0001-58",
-        "razao_social_cliente": "COMPANHIA DO TRICOT E MALHARIA COMERCIO LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "26/02/2025",
-        "data_mudanca": "04/03/2026"
-      },
-      {
-        "cnpj_cliente": "620.429.632-91",
-        "razao_social_cliente": "CARLOS FIRMINO DE OLIVEIRA NETO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "23/01/2024",
-        "data_mudanca": "04/03/2026"
-      },
-      {
-        "cnpj_cliente": "45.035.225/0001-11",
-        "razao_social_cliente": "VANESSA ARRUDA PIRES",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "07/03/2024",
-        "data_mudanca": "05/03/2026"
-      },
-      {
-        "cnpj_cliente": "50.705.332/0001-40",
-        "razao_social_cliente": "NINA FIT FOOD LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "23/09/2024",
-        "data_mudanca": "06/03/2026"
-      },
-      {
-        "cnpj_cliente": "980.631.460-34",
-        "razao_social_cliente": "ISMAEL MICHAELSEN",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/12/2025",
-        "data_mudanca": "10/03/2026"
-      },
-      {
-        "cnpj_cliente": "304.997.838-40",
-        "razao_social_cliente": "ANTONIO FRANCISCO GOMES RODRIGUES",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "29/08/2025",
-        "data_mudanca": "12/03/2026"
-      },
-      {
-        "cnpj_cliente": "01.381.059/0001-30",
-        "razao_social_cliente": "CLINICA DE ORTODONTIA JOSILCE GASPERIN SS",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "08/02/2024",
-        "data_mudanca": "19/03/2026"
-      },
-      {
-        "cnpj_cliente": "46.379.133/0002-00",
-        "razao_social_cliente": "FLAMBOYANT COLCHOES LTDAFLAMBOYANT COLCHOES LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "13/09/2023",
-        "data_mudanca": "20/03/2026"
-      },
-      {
-        "cnpj_cliente": "30.784.901/0001-82",
-        "razao_social_cliente": "CASA DO SUCO POWER ALIMENTACAO SAUDAVEL LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "13/10/2025",
-        "data_mudanca": "08/04/2026"
-      },
-      {
-        "cnpj_cliente": "27.206.389/0001-82",
-        "razao_social_cliente": "FRANCHETTO VETPET LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "29/11/2023",
-        "data_mudanca": "09/04/2026"
-      },
-      {
-        "cnpj_cliente": "15.311.286/0001-01",
-        "razao_social_cliente": "MENU INFANTIL - FUNCIONAL BRASIL NUTRICAO E EDUCACAO FISICA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "15/06/2023",
-        "data_mudanca": "10/04/2026"
-      },
-      {
-        "cnpj_cliente": "54.829.700/0001-12",
-        "razao_social_cliente": "PILON &amp; PILON LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "23/10/2025",
-        "data_mudanca": "10/04/2026"
-      },
-      {
-        "cnpj_cliente": "41.330.539/0001-96",
-        "razao_social_cliente": "BIO 7 PRO PRODUTOS DE SAUDE E BELEZA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "10/04/2025",
-        "data_mudanca": "15/04/2026"
-      },
-      {
-        "cnpj_cliente": "035.552.491-00",
-        "razao_social_cliente": "GIOWANNA REICH PADILHA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "04/03/2026",
-        "data_mudanca": "22/04/2026"
-      },
-      {
-        "cnpj_cliente": "15.648.077/0001-40",
-        "razao_social_cliente": "ANDRE LUIZ SOARES DE MOURA LANCHES",
-        "vendedor_original": "Fernanda",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "22/11/2024",
-        "data_mudanca": "22/04/2026"
-      },
-      {
-        "cnpj_cliente": "51.806.375/0001-84",
-        "razao_social_cliente": "TEXTILCOLOR BRASIL LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "27/06/2024",
-        "data_mudanca": "23/04/2026"
-      },
-      {
-        "cnpj_cliente": "40.861.263/0001-00",
-        "razao_social_cliente": "OLIMPIASEG CORRETORA DE SEGUROS LTDA",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "14/05/2024",
-        "data_mudanca": "23/04/2026"
-      },
-      {
-        "cnpj_cliente": "60.601.296/0001-28",
-        "razao_social_cliente": "AUTO POSTO DRUNULE LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "16/12/2025",
-        "data_mudanca": "23/04/2026"
-      },
-      {
-        "cnpj_cliente": "41.309.970/0001-50",
-        "razao_social_cliente": "RESTAURANTE TUDO DE BAO LTDA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "27/02/2026",
-        "data_mudanca": "23/04/2026"
-      },
-      {
-        "cnpj_cliente": "47.504.413/0004-10",
-        "razao_social_cliente": "IMEX IMPORTACAO E EXPORTACAO LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "17/09/2025",
-        "data_mudanca": "24/04/2026"
-      },
-      {
-        "cnpj_cliente": "15.758.602/0001-80",
-        "razao_social_cliente": "IN PRESS OFICINA ASSESSORIA DE COMUNICACAO LTDA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "07/03/2023",
-        "data_mudanca": "12/05/2026"
-      },
-      {
-        "cnpj_cliente": "17.443.386/0001-09",
-        "razao_social_cliente": "MULTIPLANO ENGENHARIA LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "30/09/2024",
-        "data_mudanca": "13/05/2026"
-      },
-      {
-        "cnpj_cliente": "44.122.982/0001-60",
-        "razao_social_cliente": "MAMMA JULIA PIZZA &amp; PASTAS",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "25/06/2024",
-        "data_mudanca": "14/05/2026"
-      },
-      {
-        "cnpj_cliente": "192.771.458-38",
-        "razao_social_cliente": "EMILIO HUGO RAMALHO DE ABREU",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "30/09/2024",
-        "data_mudanca": "18/05/2026"
-      },
-      {
-        "cnpj_cliente": "047.085.969-52",
-        "razao_social_cliente": "NARA FARIAS NIEHUES",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/07/2025",
-        "data_mudanca": "20/05/2026"
-      },
-      {
-        "cnpj_cliente": "49.390.569/0001-08",
-        "razao_social_cliente": "TB CAKE CONFEITARIA LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "01/10/2024",
-        "data_mudanca": "20/05/2026"
-      },
-      {
-        "cnpj_cliente": "12.258.610/0001-79",
-        "razao_social_cliente": "SANDUBOM LANCHES E PIZZA LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "21/08/2024",
-        "data_mudanca": "20/05/2026"
-      },
-      {
-        "cnpj_cliente": "42.579.159/0001-52",
-        "razao_social_cliente": "ALVES MOREIRA &amp; MARQUES ADVOCACIA",
-        "vendedor_original": "ECOMMERCE",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "31/05/2023",
-        "data_mudanca": "22/05/2026"
-      },
-      {
-        "cnpj_cliente": "271.306.968-85",
-        "razao_social_cliente": "WILSON FABIANO NUNES",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "02/04/2026",
-        "data_mudanca": "26/05/2026"
-      },
-      {
         "cnpj_cliente": "80.869.217/0001-71",
         "razao_social_cliente": "LABORATORIO BIOCLINICO MIGUEL",
         "vendedor_original": "Eduardo Santiago",
         "vendedor_atual": "Joice",
         "data_primeira_venda": "13/11/2025",
         "data_mudanca": "27/05/2026"
-      },
-      {
-        "cnpj_cliente": "41.855.836/0001-55",
-        "razao_social_cliente": "BRUNA BARBOSA NUNES 40869588800",
-        "vendedor_original": "Seladora",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "07/05/2026",
-        "data_mudanca": "27/05/2026"
-      },
-      {
-        "cnpj_cliente": "03.915.693/0003-00",
-        "razao_social_cliente": "LANTANA LTDA",
-        "vendedor_original": "Joice",
-        "vendedor_atual": "iSet",
-        "data_primeira_venda": "11/07/2025",
-        "data_mudanca": "03/06/2026"
-      },
-      {
-        "cnpj_cliente": "40.512.337/0002-83",
-        "razao_social_cliente": "AGROSUL MAQUINAS LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "07/11/2025",
-        "data_mudanca": "03/06/2026"
-      },
-      {
-        "cnpj_cliente": "35.345.165/0001-80",
-        "razao_social_cliente": "LC DOCERIA E EMPADAS LTDA",
-        "vendedor_original": "Atendimento",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/10/2023",
-        "data_mudanca": "03/06/2026"
-      },
-      {
-        "cnpj_cliente": "000.885.031-35",
-        "razao_social_cliente": "DENNYS AUGUSTO DE NOVAIS MONTEIRO",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "19/02/2026",
-        "data_mudanca": "08/06/2026"
-      },
-      {
-        "cnpj_cliente": "056.509.639-75",
-        "razao_social_cliente": "RODRIGO FERREIRA PETTI",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "26/05/2025",
-        "data_mudanca": "09/06/2026"
       },
       {
         "cnpj_cliente": "34.248.831/0001-07",
@@ -2590,60 +1599,12 @@
         "data_mudanca": "11/06/2026"
       },
       {
-        "cnpj_cliente": "16.454.959/0001-37",
-        "razao_social_cliente": "MARCIA GONCALVES FARIA ROSA",
-        "vendedor_original": "Stéfani Martins",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "16/01/2023",
-        "data_mudanca": "15/06/2026"
-      },
-      {
-        "cnpj_cliente": "47.504.413/0002-58",
-        "razao_social_cliente": "IMEX IMPORTACAO E EXPORTACAO LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "11/04/2024",
-        "data_mudanca": "18/06/2026"
-      },
-      {
-        "cnpj_cliente": "32.097.091/0001-11",
-        "razao_social_cliente": "LUIZ ANDRE RODRIGUES DE ARAUJO",
-        "vendedor_original": "Cibele",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "05/09/2023",
-        "data_mudanca": "23/06/2026"
-      },
-      {
-        "cnpj_cliente": "43.565.854/0001-28",
-        "razao_social_cliente": "KATHREN AUGUSTA TEIXEIRA SILVA",
-        "vendedor_original": "Amostra",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "23/07/2025",
-        "data_mudanca": "23/06/2026"
-      },
-      {
         "cnpj_cliente": "51.806.140/0001-92",
         "razao_social_cliente": "LM FRIOS E EMBALAGENS LTDA",
         "vendedor_original": "Joice",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "17/11/2025",
         "data_mudanca": "25/06/2026"
-      },
-      {
-        "cnpj_cliente": "26.936.884/0001-84",
-        "razao_social_cliente": "PRIMOR SERVICOS MEDICOS SS",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "13/01/2026",
-        "data_mudanca": "26/06/2026"
-      },
-      {
-        "cnpj_cliente": "04.746.729/0001-62",
-        "razao_social_cliente": "LEVANTINA NATURAL STONE BRASIL LTDA",
-        "vendedor_original": "Felipe",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "05/11/2024",
-        "data_mudanca": "30/06/2026"
       },
       {
         "cnpj_cliente": "57.153.489/0001-59",
@@ -2662,28 +1623,12 @@
         "data_mudanca": "06/07/2026"
       },
       {
-        "cnpj_cliente": "60.073.867/0001-07",
-        "razao_social_cliente": "VINHO TINTA LAB LTDA",
-        "vendedor_original": "Joice",
-        "vendedor_atual": "Kenia",
-        "data_primeira_venda": "23/07/2025",
-        "data_mudanca": "07/07/2026"
-      },
-      {
         "cnpj_cliente": "19.368.111/0001-83",
         "razao_social_cliente": "G DE S FORNAZIER",
         "vendedor_original": "Joice",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "31/07/2025",
         "data_mudanca": "08/07/2026"
-      },
-      {
-        "cnpj_cliente": "68.870.104/0021-34",
-        "razao_social_cliente": "S.R. COMERCIO DE OCULOS LTDA",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "03/10/2023",
-        "data_mudanca": "14/07/2026"
       },
       {
         "cnpj_cliente": "51.662.240/0001-92",
@@ -2702,14 +1647,6 @@
         "data_mudanca": "20/07/2026"
       },
       {
-        "cnpj_cliente": "17.442.769/0001-62",
-        "razao_social_cliente": "RICARDO A. MARQUES",
-        "vendedor_original": "Joice",
-        "vendedor_atual": "Kenia",
-        "data_primeira_venda": "21/07/2025",
-        "data_mudanca": "21/07/2026"
-      },
-      {
         "cnpj_cliente": "08.678.216/0003-84",
         "razao_social_cliente": "MELO &amp; PETITGAS - COMERCIO VAREJISTA DE ALIMENTOS LTDA",
         "vendedor_original": "Joice",
@@ -2726,35 +1663,11 @@
         "data_mudanca": "23/07/2026"
       },
       {
-        "cnpj_cliente": "62.432.884/0001-00",
-        "razao_social_cliente": "HF ENSINO DE ESPORTES LTDA",
-        "vendedor_original": "Joice",
-        "vendedor_atual": "Kenia",
-        "data_primeira_venda": "08/10/2025",
-        "data_mudanca": "27/07/2026"
-      },
-      {
-        "cnpj_cliente": "26.417.105/0001-34",
-        "razao_social_cliente": "COI CENTRO ODONTOLOGICO INTEGRADO LTDA",
-        "vendedor_original": "Mariana",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "02/03/2023",
-        "data_mudanca": "27/07/2026"
-      },
-      {
         "cnpj_cliente": "52.997.493/0001-80",
         "razao_social_cliente": "AJ ACADEMIA DE TENNIS LTDA",
         "vendedor_original": "Joice",
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "16/09/2025",
-        "data_mudanca": "27/07/2026"
-      },
-      {
-        "cnpj_cliente": "286.638.022-34",
-        "razao_social_cliente": "EVANDRO SURIANO",
-        "vendedor_original": "Joice",
-        "vendedor_atual": "Kenia",
-        "data_primeira_venda": "07/10/2025",
         "data_mudanca": "27/07/2026"
       },
       {
@@ -2764,14 +1677,6 @@
         "vendedor_atual": "Rubs",
         "data_primeira_venda": "12/05/2026",
         "data_mudanca": "27/07/2026"
-      },
-      {
-        "cnpj_cliente": "44.816.433/0001-95",
-        "razao_social_cliente": "DOM FERNAO LATICINIO ARTESANAL LTDA",
-        "vendedor_original": "Joice",
-        "vendedor_atual": "Kenia",
-        "data_primeira_venda": "27/11/2025",
-        "data_mudanca": "30/07/2026"
       },
       {
         "cnpj_cliente": "63.936.870/0001-97",
@@ -2830,12 +1735,12 @@
         "data_mudanca": "07/08/2026"
       },
       {
-        "cnpj_cliente": "037.503.341-61",
-        "razao_social_cliente": "ANANDA CHRISTINA ALVES MARTINS",
-        "vendedor_original": "iSet",
-        "vendedor_atual": "Joice",
-        "data_primeira_venda": "12/09/2025",
-        "data_mudanca": "12/08/2026"
+        "cnpj_cliente": "12.243.520/0001-04",
+        "razao_social_cliente": "LAVIE JOIAS EXCLUSIVAS",
+        "vendedor_original": "Joice",
+        "vendedor_atual": "Rubs",
+        "data_primeira_venda": "09/06/2025",
+        "data_mudanca": "13/08/2026"
       }
     ]
   },
@@ -2899,7 +1804,7 @@
       },
       {
         "mes": "2026-08",
-        "faturamento_clientes_novos": 6635.0,
+        "faturamento_clientes_novos": 7025.0,
         "bonus_clientes_novos": 0.0,
         "qtd_seladoras": 0,
         "bonus_seladora": 0.0,
@@ -2907,14 +1812,296 @@
       }
     ]
   },
+  "auditoria_novo_incorreto": {
+    "Joice": [
+      {
+        "numero_nf": "00010241",
+        "data_emissao": "15/06/2026",
+        "cnpj_cliente": "08.678.216/0003-84",
+        "razao_social_cliente": "MELO &amp; PETITGAS - COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+        "faturamento_real": 1710.0,
+        "dono_cliente": "Joice",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010524",
+        "data_emissao": "13/07/2026",
+        "cnpj_cliente": "082.917.798-13",
+        "razao_social_cliente": "MARCIA REGINA COHEN",
+        "faturamento_real": 990.0,
+        "dono_cliente": "iSet",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010800",
+        "data_emissao": "05/08/2026",
+        "cnpj_cliente": "25.135.981/0001-05",
+        "razao_social_cliente": "TAUA HOTEL E CONVENTION ALEXANIA LTDA",
+        "faturamento_real": 465.0,
+        "dono_cliente": "Felipe",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010338",
+        "data_emissao": "23/06/2026",
+        "cnpj_cliente": "32.097.091/0001-11",
+        "razao_social_cliente": "LUIZ ANDRE RODRIGUES DE ARAUJO",
+        "faturamento_real": 370.5,
+        "dono_cliente": "Cibele",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      },
+      {
+        "numero_nf": "00010530",
+        "data_emissao": "14/07/2026",
+        "cnpj_cliente": "68.870.104/0021-34",
+        "razao_social_cliente": "S.R. COMERCIO DE OCULOS LTDA",
+        "faturamento_real": 390.0,
+        "dono_cliente": "iSet",
+        "classificacao_informada": "Novo",
+        "classificacao_real": "Recorrente"
+      }
+    ]
+  },
+  "metas_empresa": [
+    {
+      "mes": "2026-01",
+      "meta_canal": 500000.0,
+      "realizado_canal": 294130.06,
+      "atingimento_pct": 58.8,
+      "realizado_novos": 85878.07,
+      "realizado_recorrentes": 208251.99,
+      "realizado_nao_auditado": 0.0,
+      "mix_novos_pct": 29.2,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 68.7,
+      "atingimento_recorrentes_pct": 55.5,
+      "valor_frete": 20008.5,
+      "faturamento_bruto": 314138.56,
+      "pct_frete_sobre_faturamento": 6.4
+    },
+    {
+      "mes": "2026-02",
+      "meta_canal": 500000.0,
+      "realizado_canal": 433331.43,
+      "atingimento_pct": 86.7,
+      "realizado_novos": 125749.05,
+      "realizado_recorrentes": 307582.38,
+      "realizado_nao_auditado": 0.0,
+      "mix_novos_pct": 29.0,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 100.6,
+      "atingimento_recorrentes_pct": 82.0,
+      "valor_frete": 27322.78,
+      "faturamento_bruto": 460654.21,
+      "pct_frete_sobre_faturamento": 5.9
+    },
+    {
+      "mes": "2026-03",
+      "meta_canal": 500000.0,
+      "realizado_canal": 353349.91,
+      "atingimento_pct": 70.7,
+      "realizado_novos": 74964.4,
+      "realizado_recorrentes": 278385.51,
+      "realizado_nao_auditado": 0.0,
+      "mix_novos_pct": 21.2,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 60.0,
+      "atingimento_recorrentes_pct": 74.2,
+      "valor_frete": 26650.58,
+      "faturamento_bruto": 380000.49,
+      "pct_frete_sobre_faturamento": 7.0
+    },
+    {
+      "mes": "2026-04",
+      "meta_canal": 500000.0,
+      "realizado_canal": 369196.13,
+      "atingimento_pct": 73.8,
+      "realizado_novos": 116625.21,
+      "realizado_recorrentes": 252570.92,
+      "realizado_nao_auditado": 0.0,
+      "mix_novos_pct": 31.6,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 93.3,
+      "atingimento_recorrentes_pct": 67.4,
+      "valor_frete": 37484.37,
+      "faturamento_bruto": 406680.5,
+      "pct_frete_sobre_faturamento": 9.2
+    },
+    {
+      "mes": "2026-05",
+      "meta_canal": 500000.0,
+      "realizado_canal": 404994.95,
+      "atingimento_pct": 81.0,
+      "realizado_novos": 124158.46,
+      "realizado_recorrentes": 249836.49,
+      "realizado_nao_auditado": 31000.0,
+      "mix_novos_pct": 30.7,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 99.3,
+      "atingimento_recorrentes_pct": 66.6,
+      "valor_frete": 27595.8,
+      "faturamento_bruto": 432590.75,
+      "pct_frete_sobre_faturamento": 6.4
+    },
+    {
+      "mes": "2026-06",
+      "meta_canal": 500000.0,
+      "realizado_canal": 427213.1,
+      "atingimento_pct": 85.4,
+      "realizado_novos": 135445.13,
+      "realizado_recorrentes": 239067.97,
+      "realizado_nao_auditado": 52700.0,
+      "mix_novos_pct": 31.7,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 108.4,
+      "atingimento_recorrentes_pct": 63.8,
+      "valor_frete": 34439.81,
+      "faturamento_bruto": 461652.91,
+      "pct_frete_sobre_faturamento": 7.5
+    },
+    {
+      "mes": "2026-07",
+      "meta_canal": 500000.0,
+      "realizado_canal": 421315.58,
+      "atingimento_pct": 84.3,
+      "realizado_novos": 127446.89,
+      "realizado_recorrentes": 247368.69,
+      "realizado_nao_auditado": 46500.0,
+      "mix_novos_pct": 30.2,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 102.0,
+      "atingimento_recorrentes_pct": 66.0,
+      "valor_frete": 26531.63,
+      "faturamento_bruto": 447847.21,
+      "pct_frete_sobre_faturamento": 5.9
+    },
+    {
+      "mes": "2026-08",
+      "meta_canal": 500000.0,
+      "realizado_canal": 159945.11,
+      "atingimento_pct": 32.0,
+      "realizado_novos": 49446.85,
+      "realizado_recorrentes": 110498.26,
+      "realizado_nao_auditado": 0.0,
+      "mix_novos_pct": 30.9,
+      "meta_novos": 125000.0,
+      "meta_recorrentes": 375000.0,
+      "atingimento_novos_pct": 39.6,
+      "atingimento_recorrentes_pct": 29.5,
+      "valor_frete": 16838.08,
+      "faturamento_bruto": 176783.19,
+      "pct_frete_sobre_faturamento": 9.5
+    }
+  ],
+  "canal_empresa": [
+    {
+      "mes": "2026-01",
+      "realizado_online": 294130.06,
+      "realizado_offline": 391969.52,
+      "realizado_total": 686099.58,
+      "por_empresa": {
+        "ecommerce": 308176.56,
+        "canudos": 83118.2,
+        "centroeste": 294804.82
+      }
+    },
+    {
+      "mes": "2026-02",
+      "realizado_online": 433331.43,
+      "realizado_offline": 300427.12,
+      "realizado_total": 733758.55,
+      "por_empresa": {
+        "ecommerce": 390380.23,
+        "canudos": 106970.0,
+        "centroeste": 236408.32
+      }
+    },
+    {
+      "mes": "2026-03",
+      "realizado_online": 353349.91,
+      "realizado_offline": 249100.59,
+      "realizado_total": 602450.5,
+      "por_empresa": {
+        "ecommerce": 326435.71,
+        "canudos": 72342.68,
+        "centroeste": 250172.11
+      }
+    },
+    {
+      "mes": "2026-04",
+      "realizado_online": 369196.13,
+      "realizado_offline": 326046.2,
+      "realizado_total": 695242.33,
+      "por_empresa": {
+        "ecommerce": 371331.98,
+        "canudos": 3158.3,
+        "centroeste": 320752.05
+      }
+    },
+    {
+      "mes": "2026-05",
+      "realizado_online": 404994.95,
+      "realizado_offline": 288706.82,
+      "realizado_total": 693701.77,
+      "por_empresa": {
+        "ecommerce": 396198.55,
+        "canudos": 32473.12,
+        "centroeste": 266975.1
+      }
+    },
+    {
+      "mes": "2026-06",
+      "realizado_online": 427213.1,
+      "realizado_offline": 301935.43,
+      "realizado_total": 729148.53,
+      "por_empresa": {
+        "ecommerce": 429132.9,
+        "canudos": 69311.13,
+        "centroeste": 230704.5
+      }
+    },
+    {
+      "mes": "2026-07",
+      "realizado_online": 421315.58,
+      "realizado_offline": 271260.97,
+      "realizado_total": 692576.55,
+      "por_empresa": {
+        "ecommerce": 383789.63,
+        "canudos": 49007.37,
+        "centroeste": 262493.55
+      }
+    },
+    {
+      "mes": "2026-08",
+      "realizado_online": 159945.11,
+      "realizado_offline": 171265.88,
+      "realizado_total": 331210.99,
+      "por_empresa": {
+        "ecommerce": 159956.71,
+        "canudos": 10131.08,
+        "centroeste": 161123.2
+      }
+    }
+  ],
   "retencao": {
-    "carteira_tamanho": 706,
+    "carteira_tamanho": 705,
     "clientes_avaliados": 339,
-    "clientes_sem_historico_suficiente": 367,
-    "qtd_clientes_em_risco": 147,
-    "valor_total_em_risco": 1250435.55,
-    "comissao_projetada": 12504.36,
-    "taxa_reativacao_pct": 54.3,
+    "clientes_sem_historico_suficiente": 366,
+    "qtd_clientes_em_risco": 146,
+    "valor_total_em_risco": 1249890.55,
+    "comissao_projetada": 12498.91,
+    "taxa_reativacao_pct": 54.5,
     "clientes_a_reativar": [
       {
         "cnpj_cliente": "094.758.407-29",
@@ -3653,18 +2840,6 @@
         "em_risco": true
       },
       {
-        "cnpj_cliente": "55.494.148/0001-11",
-        "razao_social_cliente": "DANY PRENSA NATURAL GOURMET LTDA",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 7,
-        "valor_total_historico": 60053.38,
-        "ultima_compra": "29/04/2025",
-        "dias_desde_ultima_compra": 471,
-        "intervalo_medio_dias": 13.2,
-        "score_risco": 35.55,
-        "em_risco": true
-      },
-      {
         "cnpj_cliente": "444.008.611-04",
         "razao_social_cliente": "PAULO ROBERTO DE MELLO FERNANDEZ",
         "vendedor": "Joice",
@@ -3674,42 +2849,6 @@
         "dias_desde_ultima_compra": 212,
         "intervalo_medio_dias": 9.1,
         "score_risco": 23.21,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "19.540.139/0001-56",
-        "razao_social_cliente": "QUEIROZ JUNIOR SERVICOS ESPECIALIZADOS LTDA",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 5,
-        "valor_total_historico": 31520.0,
-        "ultima_compra": "25/06/2025",
-        "dias_desde_ultima_compra": 414,
-        "intervalo_medio_dias": 14.0,
-        "score_risco": 29.57,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "54.006.669/0001-10",
-        "razao_social_cliente": "BITEON BURGERS LTDA",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 2,
-        "valor_total_historico": 4927.58,
-        "ultima_compra": "27/03/2025",
-        "dias_desde_ultima_compra": 504,
-        "intervalo_medio_dias": 17.0,
-        "score_risco": 29.65,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "094.758.407-29",
-        "razao_social_cliente": "EDUARDO DANTAS GOMES",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 2,
-        "valor_total_historico": 3100.0,
-        "ultima_compra": "02/06/2025",
-        "dias_desde_ultima_compra": 437,
-        "intervalo_medio_dias": 11.0,
-        "score_risco": 39.73,
         "em_risco": true
       },
       {
@@ -3761,18 +2900,6 @@
         "em_risco": true
       },
       {
-        "cnpj_cliente": "005.788.990-27",
-        "razao_social_cliente": "RITHIELE VOLPATO",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 4,
-        "valor_total_historico": 22200.95,
-        "ultima_compra": "06/11/2025",
-        "dias_desde_ultima_compra": 280,
-        "intervalo_medio_dias": 79.7,
-        "score_risco": 3.51,
-        "em_risco": true
-      },
-      {
         "cnpj_cliente": "51.625.368/0001-86",
         "razao_social_cliente": "51.625.368 JOAO PEDRO DAVIDIAN SABINO",
         "vendedor": "Joice",
@@ -3797,78 +2924,6 @@
         "em_risco": true
       },
       {
-        "cnpj_cliente": "56.809.338/0001-43",
-        "razao_social_cliente": "BRASILIA ALIMENTOS LTDA.",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 2,
-        "valor_total_historico": 24212.5,
-        "ultima_compra": "21/10/2025",
-        "dias_desde_ultima_compra": 296,
-        "intervalo_medio_dias": 119.0,
-        "score_risco": 2.49,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "50.433.132/0001-85",
-        "razao_social_cliente": "FAZENDA FELICIDADE LTDA",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 2,
-        "valor_total_historico": 3775.36,
-        "ultima_compra": "27/05/2025",
-        "dias_desde_ultima_compra": 443,
-        "intervalo_medio_dias": 35.0,
-        "score_risco": 12.66,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "282.376.478-07",
-        "razao_social_cliente": "FRANCISCO EVILASIO GONCALO",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 5,
-        "valor_total_historico": 12016.0,
-        "ultima_compra": "04/09/2025",
-        "dias_desde_ultima_compra": 343,
-        "intervalo_medio_dias": 90.8,
-        "score_risco": 3.78,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "59.400.773/0001-08",
-        "razao_social_cliente": "NO PESO INDUSTRIA E COMERCIO LTDA",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 2,
-        "valor_total_historico": 1174.25,
-        "ultima_compra": "06/03/2025",
-        "dias_desde_ultima_compra": 525,
-        "intervalo_medio_dias": 15.0,
-        "score_risco": 35.0,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "099.936.747-10",
-        "razao_social_cliente": "THIAGO DOS SANTOS NASCIMENTO",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 3,
-        "valor_total_historico": 1885.25,
-        "ultima_compra": "19/03/2025",
-        "dias_desde_ultima_compra": 512,
-        "intervalo_medio_dias": 24.0,
-        "score_risco": 21.33,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "30.925.337/0001-70",
-        "razao_social_cliente": "WARABU COMERCIO E FABRICACAO DE DERIVADOS DE CACAU LTDA",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 10,
-        "valor_total_historico": 9848.8,
-        "ultima_compra": "28/08/2025",
-        "dias_desde_ultima_compra": 350,
-        "intervalo_medio_dias": 88.3,
-        "score_risco": 3.96,
-        "em_risco": true
-      },
-      {
         "cnpj_cliente": "009.742.481-18",
         "razao_social_cliente": "MARIANA PORTO MORAIS",
         "vendedor": "Joice",
@@ -3879,48 +2934,180 @@
         "intervalo_medio_dias": 42.0,
         "score_risco": 4.4,
         "em_risco": true
+      },
+      {
+        "cnpj_cliente": "59.694.243/0001-10",
+        "razao_social_cliente": "BELUCO ALIMENTOS LTDA",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 6,
+        "valor_total_historico": 5741.96,
+        "ultima_compra": "23/12/2025",
+        "dias_desde_ultima_compra": 233,
+        "intervalo_medio_dias": 47.8,
+        "score_risco": 4.87,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "33.069.229/0001-31",
+        "razao_social_cliente": "SAO JOAO AGROINDUSTRIA DE FRUTAS LTDA",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 4,
+        "valor_total_historico": 12666.25,
+        "ultima_compra": "05/01/2026",
+        "dias_desde_ultima_compra": 220,
+        "intervalo_medio_dias": 106.3,
+        "score_risco": 2.07,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "875.926.811-53",
+        "razao_social_cliente": "KARINA MOURA SANTOS SUMIHARA",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 2,
+        "valor_total_historico": 1768.5,
+        "ultima_compra": "25/11/2025",
+        "dias_desde_ultima_compra": 261,
+        "intervalo_medio_dias": 18.0,
+        "score_risco": 14.5,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "18.134.684/0001-80",
+        "razao_social_cliente": "SOCIEDADE DE INVESTIGACOES FLORESTAIS",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 2,
+        "valor_total_historico": 6160.0,
+        "ultima_compra": "04/12/2025",
+        "dias_desde_ultima_compra": 252,
+        "intervalo_medio_dias": 79.0,
+        "score_risco": 3.19,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "00.833.801/8001-77",
+        "razao_social_cliente": "MASSIMO ALIMENTO LTDA",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 4,
+        "valor_total_historico": 6137.0,
+        "ultima_compra": "19/11/2025",
+        "dias_desde_ultima_compra": 267,
+        "intervalo_medio_dias": 84.7,
+        "score_risco": 3.15,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "41.855.836/0001-55",
+        "razao_social_cliente": "BRUNA BARBOSA NUNES 40869588800",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 2,
+        "valor_total_historico": 4695.0,
+        "ultima_compra": "27/05/2026",
+        "dias_desde_ultima_compra": 78,
+        "intervalo_medio_dias": 20.0,
+        "score_risco": 3.9,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "61.985.109/0001-10",
+        "razao_social_cliente": "MARMITARIA REQUINTE LTDA",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 2,
+        "valor_total_historico": 6610.0,
+        "ultima_compra": "11/02/2026",
+        "dias_desde_ultima_compra": 183,
+        "intervalo_medio_dias": 68.0,
+        "score_risco": 2.69,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "19.605.528/0001-12",
+        "razao_social_cliente": "LATICINIO NOVO HORIZONTE LTDA",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 3,
+        "valor_total_historico": 14449.5,
+        "ultima_compra": "27/04/2026",
+        "dias_desde_ultima_compra": 108,
+        "intervalo_medio_dias": 96.0,
+        "score_risco": 1.12,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "38.372.680/0001-47",
+        "razao_social_cliente": "RAQUEL ROSIAK 03948550000",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 7,
+        "valor_total_historico": 10598.6,
+        "ultima_compra": "27/02/2026",
+        "dias_desde_ultima_compra": 167,
+        "intervalo_medio_dias": 112.4,
+        "score_risco": 1.49,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "14.661.695/0001-67",
+        "razao_social_cliente": "14.661.695 MARIA LECIR ROTTA SILVA",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 6,
+        "valor_total_historico": 9258.34,
+        "ultima_compra": "25/03/2026",
+        "dias_desde_ultima_compra": 141,
+        "intervalo_medio_dias": 83.0,
+        "score_risco": 1.7,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "50.189.591/0001-65",
+        "razao_social_cliente": "SORVETES QUINZE LTDA",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 3,
+        "valor_total_historico": 7534.05,
+        "ultima_compra": "24/02/2026",
+        "dias_desde_ultima_compra": 170,
+        "intervalo_medio_dias": 82.5,
+        "score_risco": 2.06,
+        "em_risco": true
       }
     ]
   },
   "gratificacao": [
     {
       "mes": "2026-01",
-      "faturamento_canal": 686099.58,
+      "faturamento_canal": 294130.06,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-02",
-      "faturamento_canal": 733758.55,
+      "faturamento_canal": 433331.43,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-03",
-      "faturamento_canal": 648950.5,
+      "faturamento_canal": 353349.91,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-04",
-      "faturamento_canal": 695242.33,
+      "faturamento_canal": 369196.13,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-05",
-      "faturamento_canal": 695646.77,
+      "faturamento_canal": 404994.95,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-06",
-      "faturamento_canal": 729148.53,
+      "faturamento_canal": 427213.1,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-07",
-      "faturamento_canal": 695290.55,
+      "faturamento_canal": 421315.58,
       "gratificacao": 800.0
     },
     {
       "mes": "2026-08",
-      "faturamento_canal": 310181.57,
+      "faturamento_canal": 159945.11,
       "gratificacao": 800.0
     }
   ],
@@ -4105,8 +3292,8 @@
       "diferenca_frete": 164276.86,
       "total_linhas_processadas": 9556,
       "linhas_sem_data_valida": [],
-      "planilha_comissao_atualizada_em_utc": "2026-08-13T14:46:14.294912Z",
-      "planilha_frete_atualizada_em_utc": "2026-08-13T14:46:14.297912Z"
+      "planilha_comissao_atualizada_em_utc": "2026-08-13T20:13:38.582736Z",
+      "planilha_frete_atualizada_em_utc": "2026-08-13T20:13:38.586736Z"
     }
   }
 }
