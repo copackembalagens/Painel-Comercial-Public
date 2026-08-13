@@ -515,38 +515,40 @@ function abaMetas(container) {
     ]);
   }
 
-  // Card "faturamento total da empresa" (pedido do usuario, 13/08/2026):
-  // CONSOLIDADO.metas_empresa e a mesma serie canal-wide (so canal
-  // online, apos a correcao de 13/08/2026 - ver calc/consolidar.
-  // calcular_metas_e_bonus) mas SEM o filtro por vendedor que "metas" ja
-  // leva no painel individual - assim todo mundo (nao so o Gerencial)
-  // consegue ver "quanto a empresa faturou no mes", nao so a propria
-  // carteira. Os cards tem tooltip (title) com o valor e o % do total,
-  // ao passar o mouse.
-  let metasEmpresa = (CONSOLIDADO.metas_empresa || []).slice();
-  if (ESTADO.mes) metasEmpresa = metasEmpresa.filter(m => m.mes === ESTADO.mes);
-  const ultimoEmpresa = metasEmpresa.slice(-1)[0];
-  if (ultimoEmpresa) {
-    const totalRealizado = ultimoEmpresa.realizado_canal || 0;
-    const pctNovos = totalRealizado ? (100 * ultimoEmpresa.realizado_novos / totalRealizado) : 0;
-    const pctRecorrentes = totalRealizado ? (100 * ultimoEmpresa.realizado_recorrentes / totalRealizado) : 0;
-    renderCards(container, [
-      {
-        rotulo: `Faturamento total da empresa (${ultimoEmpresa.mes})`,
-        valor: fmtMoeda(totalRealizado),
-        tooltip: `Canal online (Eduardo, Joice, Rubs, Atendimento, iSet, Kênia, Seladora) em ${ultimoEmpresa.mes}: ${fmtMoeda(totalRealizado)}`,
-      },
-      {
-        rotulo: "Clientes novos",
-        valor: fmtMoeda(ultimoEmpresa.realizado_novos),
-        tooltip: `${fmtMoeda(ultimoEmpresa.realizado_novos)} (${pctNovos.toFixed(1)}% do total faturado no mês)`,
-      },
-      {
-        rotulo: "Clientes recorrentes",
-        valor: fmtMoeda(ultimoEmpresa.realizado_recorrentes),
-        tooltip: `${fmtMoeda(ultimoEmpresa.realizado_recorrentes)} (${pctRecorrentes.toFixed(1)}% do total faturado no mês)`,
-      },
-    ]);
+  // Card "faturamento total da empresa" (pedido do usuario, 13/08/2026,
+  // AJUSTADO em 13/08/2026: so no Gerencial - nos paineis individuais
+  // (Joice/Rubs/Eduardo) deve aparecer so o resultado da propria pessoa,
+  // que ja e exatamente o que os cards "Minha meta"/"Realizado" acima
+  // mostram via CONSOLIDADO.metas, ja filtrado por vendedor). CONSOLIDADO.
+  // metas_empresa continua existindo em todo painel (ver calc/
+  // consolidar.py) pra nao ter que reprocessar o backend so por causa
+  // dessa restricao de exibicao - o corte fica so aqui na tela.
+  if (!individual) {
+    let metasEmpresa = (CONSOLIDADO.metas_empresa || []).slice();
+    if (ESTADO.mes) metasEmpresa = metasEmpresa.filter(m => m.mes === ESTADO.mes);
+    const ultimoEmpresa = metasEmpresa.slice(-1)[0];
+    if (ultimoEmpresa) {
+      const totalRealizado = ultimoEmpresa.realizado_canal || 0;
+      const pctNovos = totalRealizado ? (100 * ultimoEmpresa.realizado_novos / totalRealizado) : 0;
+      const pctRecorrentes = totalRealizado ? (100 * ultimoEmpresa.realizado_recorrentes / totalRealizado) : 0;
+      renderCards(container, [
+        {
+          rotulo: `Faturamento total da empresa (${ultimoEmpresa.mes})`,
+          valor: fmtMoeda(totalRealizado),
+          tooltip: `Canal online (Eduardo, Joice, Rubs, Atendimento, iSet, Kênia, Seladora) em ${ultimoEmpresa.mes}: ${fmtMoeda(totalRealizado)}`,
+        },
+        {
+          rotulo: "Clientes novos",
+          valor: fmtMoeda(ultimoEmpresa.realizado_novos),
+          tooltip: `${fmtMoeda(ultimoEmpresa.realizado_novos)} (${pctNovos.toFixed(1)}% do total faturado no mês)`,
+        },
+        {
+          rotulo: "Clientes recorrentes",
+          valor: fmtMoeda(ultimoEmpresa.realizado_recorrentes),
+          tooltip: `${fmtMoeda(ultimoEmpresa.realizado_recorrentes)} (${pctRecorrentes.toFixed(1)}% do total faturado no mês)`,
+        },
+      ]);
+    }
   }
 
   renderTabela(container, {
