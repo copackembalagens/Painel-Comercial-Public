@@ -741,16 +741,44 @@ function abaKommo(container) {
   // Valor por etapa (pedido: "valor total gerado por etapa de cada
   // funil"). Etapa = onde o lead esta agora (nome vindo do cadastro real
   // de etapas do Kommo, ver consolidar._mapa_etapas).
-  renderTabela(container, {
-    id: "kommo-etapas", titulo: "Valor por etapa de cada funil",
-    colunas: [
-      { chave: "funil", rotulo: "Funil" },
-      { chave: "etapa", rotulo: "Etapa" },
-      { chave: "quantidade", rotulo: "Quantidade" },
-      { chave: "valor", rotulo: "Valor", render: r => fmtMoeda(r.valor) },
-    ],
-    linhas: dados.por_etapa || [],
-  });
+  //
+  // Pivotada em 14/08/2026 (pedido do usuario: "a tabela ficou muito
+  // extensa, mude a ordem colocando as etapas como colunas e cada funil
+  // em uma linha") - antes era uma linha por combinacao (funil, etapa),
+  // agora e uma linha por funil com uma coluna por etapa. Cada celula
+  // mostra valor + quantidade (ex.: "R$ 60.936,00 (74)"); o valor bruto
+  // fica em row[etapa] pra ordenacao numerica continuar funcionando ao
+  // clicar no cabecalho da coluna (ver renderTabela).
+  {
+    const porEtapa = dados.por_etapa || [];
+    const funisEtapa = Array.from(new Set(porEtapa.map(e => e.funil)));
+    const etapas = Array.from(new Set(porEtapa.map(e => e.etapa)));
+    const mapaEtapa = {};
+    porEtapa.forEach(e => { mapaEtapa[e.funil + "||" + e.etapa] = e; });
+    const linhasEtapa = funisEtapa.map(funil => {
+      const linha = { funil };
+      etapas.forEach(etapa => {
+        const d = mapaEtapa[funil + "||" + etapa];
+        linha[etapa] = d ? d.valor : null;
+      });
+      return linha;
+    });
+    renderTabela(container, {
+      id: "kommo-etapas", titulo: "Valor por etapa de cada funil",
+      colunas: [
+        { chave: "funil", rotulo: "Funil" },
+        ...etapas.map(etapa => ({
+          chave: etapa,
+          rotulo: etapa,
+          render: r => {
+            const d = mapaEtapa[r.funil + "||" + etapa];
+            return d ? `${fmtMoeda(d.valor)} (${d.quantidade})` : "-";
+          },
+        })),
+      ],
+      linhas: linhasEtapa,
+    });
+  }
 
   // Ganhas/perdidas por produto (pedido: "quantidade de vendas ganhas e
   // perdidas por produto, com valor e taxa de conversao"). Campo
