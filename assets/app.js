@@ -725,6 +725,10 @@ function abaKommo(container) {
     ]);
   }
 
+  // Pedido do usuario (17/08/2026): "no card Ganhas/perdidas por funil
+  // nao considere o funil atendimento e supervisao" - so essa tabela;
+  // os cards de resumo geral e os demais continuam com os 5 funis.
+  const FUNIS_OCULTOS_TABELA_FUNIL = ["Funil Atendimento", "Supervisão"];
   renderTabela(container, {
     id: "kommo-funis", titulo: "Ganhas / perdidas por funil",
     colunas: [
@@ -735,7 +739,7 @@ function abaKommo(container) {
       { chave: "taxa_conversao_pct", rotulo: "Conversão", render: r => r.taxa_conversao_pct != null ? r.taxa_conversao_pct + "%" : "-" },
       { chave: "valor_ganho", rotulo: "Valor ganho", render: r => fmtMoeda(r.valor_ganho) },
     ],
-    linhas: dados.por_funil,
+    linhas: (dados.por_funil || []).filter(f => !FUNIS_OCULTOS_TABELA_FUNIL.includes(f.funil)),
   });
 
   // Valor por etapa (pedido: "valor total gerado por etapa de cada
@@ -750,7 +754,20 @@ function abaKommo(container) {
   // fica em row[etapa] pra ordenacao numerica continuar funcionando ao
   // clicar no cabecalho da coluna (ver renderTabela).
   {
-    const porEtapa = dados.por_etapa || [];
+    // Pedido do usuario (17/08/2026): esconder etapas especificas que
+    // nao fazem sentido nesse card - "Clientes Recorrentes" e "Sem
+    // atendimento" do Funil Atendimento, e "Negociacao", "Clientes",
+    // "Parceria", "Contato inicial" do Supervisao (comparacao case-
+    // insensitive, o pedido veio com grafia/capitalizacao variada).
+    const ETAPAS_OCULTAS_POR_FUNIL = {
+      "Funil Atendimento": ["clientes recorrentes", "sem atendimento"],
+      "Supervisão": ["negociação", "clientes", "parceria", "contato inicial"],
+    };
+    const etapaOculta = (funil, etapa) => {
+      const lista = ETAPAS_OCULTAS_POR_FUNIL[funil];
+      return !!lista && lista.includes((etapa || "").toLowerCase());
+    };
+    const porEtapa = (dados.por_etapa || []).filter(e => !etapaOculta(e.funil, e.etapa));
     const funisEtapa = Array.from(new Set(porEtapa.map(e => e.funil)));
     const etapas = Array.from(new Set(porEtapa.map(e => e.etapa)));
     const mapaEtapa = {};
