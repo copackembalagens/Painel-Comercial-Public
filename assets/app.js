@@ -684,6 +684,25 @@ function abaKommo(container) {
   const resumo = dados.resumo || vazio.resumo;
   const aberto = resumo.leads_em_aberto || vazio.resumo.leads_em_aberto;
 
+  // Filtro de vendedor (bug reportado pelo usuario, 24/08/2026): no
+  // Kommo, "vendedor" so existe como "funil" (cada consultor tem o
+  // proprio funil - ver por_funil/por_etapa abaixo). Os cards de resumo
+  // (resumo/leads_em_aberto/leads_novos_mes_atual) e as tabelas "por
+  // produto"/"motivos de perda" sao agregados sem quebra por funil no
+  // backend (calc/consolidar.calcular_performance_kommo) - filtrar isso
+  // exigiria recalcular e publicar o backend de novo, entao esses
+  // continuam mostrando o total de todos os vendedores mesmo com um
+  // filtro selecionado. Já as tabelas "Ganhas/perdidas por funil" e
+  // "Valor por etapa de cada funil" trazem o funil linha a linha, e
+  // antes NUNCA respeitavam ESTADO.vendedor - corrigido abaixo.
+  const FUNIL_POR_VENDEDOR = {
+    "Eduardo Santiago": "Funil Eduardo",
+    "Joice": "Funil Joice",
+    "Rubs": "Funil Rubs",
+    "Kenia": "Supervisão",
+  };
+  const funilSelecionado = ESTADO.vendedor ? (FUNIL_POR_VENDEDOR[ESTADO.vendedor] || null) : null;
+
   // Resumo geral (pedido do usuario, 13/08/2026): "Total de leads em
   // estado, taxa de conversao, total ganho, total perdido, valor ganho e
   // quantidade ganha".
@@ -739,7 +758,7 @@ function abaKommo(container) {
       { chave: "taxa_conversao_pct", rotulo: "Conversão", render: r => r.taxa_conversao_pct != null ? r.taxa_conversao_pct + "%" : "-" },
       { chave: "valor_ganho", rotulo: "Valor ganho", render: r => fmtMoeda(r.valor_ganho) },
     ],
-    linhas: (dados.por_funil || []).filter(f => !FUNIS_OCULTOS_TABELA_FUNIL.includes(f.funil)),
+    linhas: (dados.por_funil || []).filter(f => !FUNIS_OCULTOS_TABELA_FUNIL.includes(f.funil) && (!funilSelecionado || f.funil === funilSelecionado)),
   });
 
   // Valor por etapa (pedido: "valor total gerado por etapa de cada
@@ -767,7 +786,7 @@ function abaKommo(container) {
       const lista = ETAPAS_OCULTAS_POR_FUNIL[funil];
       return !!lista && lista.includes((etapa || "").toLowerCase());
     };
-    const porEtapa = (dados.por_etapa || []).filter(e => !etapaOculta(e.funil, e.etapa));
+    const porEtapa = (dados.por_etapa || []).filter(e => !etapaOculta(e.funil, e.etapa) && (!funilSelecionado || e.funil === funilSelecionado));
     const funisEtapa = Array.from(new Set(porEtapa.map(e => e.funil)));
     const etapas = Array.from(new Set(porEtapa.map(e => e.etapa)));
     const mapaEtapa = {};
@@ -909,6 +928,25 @@ function tabelaClientesRisco(container, id, titulo, linhas) {
 // aqui por natureza do dado (nao ha "retencao de fevereiro").
 function abaRetencao(container) {
   const ret = CONSOLIDADO.retencao;
+  // Filtro de vendedor (bug reportado pelo usuario, 24/08/2026): os 4
+  // cards acima sao agregados da carteira INTEIRA calculados no backend
+  // (carteira_tamanho/qtd_clientes_em_risco/valor_total_em_risco/
+  // comissao_projetada nao tem quebra por vendedor no JSON - so o
+  // backend, com acesso a todos os 737 clientes em risco, consegue
+  // recalcular isso certo; as tabelas abaixo so trazem um recorte -
+  // top10/top20 - entao filtrar ESSAS pra estimar os cards daria numero
+  // errado). Por isso os cards continuam mostrando o total da empresa
+  // mesmo com um vendedor selecionado. Mas as TABELAS linha-a-linha (top
+  // 10, lista de acao, tomada de cliente) ja vem com o campo "vendedor"
+  // (ou vendedor_original/vendedor_atual) prontas do backend e antes
+  // NUNCA eram filtradas por ESTADO.vendedor - trocar o filtro nao
+  // mudava nada nelas. Corrigido abaixo.
+  const top10 = ESTADO.vendedor
+    ? (ret.top10_maiores_em_risco || []).filter(c => c.vendedor === ESTADO.vendedor)
+    : (ret.top10_maiores_em_risco || []);
+  const listaAcao = ESTADO.vendedor
+    ? (ret.lista_acao_priorizada || []).filter(c => c.vendedor === ESTADO.vendedor)
+    : (ret.lista_acao_priorizada || []);
   renderCards(container, [
     { rotulo: "Clientes na carteira", valor: ret.carteira_tamanho },
     { rotulo: "Clientes em risco", valor: ret.qtd_clientes_em_risco, classe: ret.qtd_clientes_em_risco ? "atencao" : "ok" },
@@ -917,10 +955,13 @@ function abaRetencao(container) {
     // fica em risco se esses clientes nao voltarem a comprar.
     { rotulo: "Comissão projetada em risco", valor: fmtMoeda(ret.comissao_projetada ?? 0), classe: (ret.comissao_projetada ?? 0) ? "atencao" : "" },
   ]);
-  tabelaClientesRisco(container, "retencao-top10", "Top 10 maiores clientes em risco", ret.top10_maiores_em_risco);
-  tabelaClientesRisco(container, "retencao-acao", "Lista de ação priorizada", ret.lista_acao_priorizada);
+  tabelaClientesRisco(container, "retencao-top10", "Top 10 maiores clientes em risco", top10);
+  tabelaClientesRisco(container, "retencao-acao", "Lista de ação priorizada", listaAcao);
 
-  const casos = (CONSOLIDADO.auditoria_cliente_novo || {}).casos_tomada_cliente || [];
+  let casos = (CONSOLIDADO.auditoria_cliente_novo || {}).casos_tomada_cliente || [];
+  if (ESTADO.vendedor) {
+    casos = casos.filter(c => c.vendedor_original === ESTADO.vendedor || c.vendedor_atual === ESTADO.vendedor);
+  }
   if (casos.length) {
     renderTabela(container, {
       id: "tomada-cliente", titulo: "Casos de tomada de cliente",
@@ -946,8 +987,8 @@ function abaRetencao(container) {
     const pctRisco = 100 * ret.qtd_clientes_em_risco / ret.carteira_tamanho;
     itensAnalise.push(`${ret.qtd_clientes_em_risco} de ${ret.carteira_tamanho} clientes em risco (${pctRisco.toFixed(1)}% da carteira), somando ${fmtMoeda(ret.valor_total_em_risco)}.`);
   }
-  if (ret.top10_maiores_em_risco && ret.top10_maiores_em_risco.length) {
-    const maior = ret.top10_maiores_em_risco[0];
+  if (top10.length) {
+    const maior = top10[0];
     itensAnalise.push(`Maior risco: <strong>${maior.razao_social_cliente || maior.cnpj_cliente}</strong>, ${fmtMoeda(maior.valor_total_historico)} histórico, ${maior.dias_desde_ultima_compra} dias sem comprar.`);
   }
   renderAnalisesRapidas(container, itensAnalise);
@@ -955,20 +996,29 @@ function abaRetencao(container) {
 
 function abaReativacao(container) {
   const ret = CONSOLIDADO.retencao;
+  // Filtro de vendedor (bug reportado pelo usuario, 24/08/2026): ao
+  // contrario da Retencao, aqui "clientes_a_reativar" JA E a lista
+  // completa que embasa o card de cima (nao e um top10/recorte) - entao
+  // filtrar por vendedor aqui e seguro tanto pra tabela quanto pro card
+  // de contagem. "Taxa de reativacao historica" continua sem filtro: e
+  // um numero agregado calculado no backend, sem quebra por vendedor.
+  const clientesReativar = ESTADO.vendedor
+    ? (ret.clientes_a_reativar || []).filter(c => c.vendedor === ESTADO.vendedor)
+    : (ret.clientes_a_reativar || []);
   renderCards(container, [
-    { rotulo: "Clientes a reativar", valor: ret.clientes_a_reativar.length },
+    { rotulo: "Clientes a reativar", valor: clientesReativar.length },
     { rotulo: "Taxa de reativação histórica", valor: ret.taxa_reativacao_pct != null ? ret.taxa_reativacao_pct + "%" : "-" },
   ]);
-  tabelaClientesRisco(container, "reativacao-lista", "Clientes a reativar (ordenado por score de risco)", ret.clientes_a_reativar);
+  tabelaClientesRisco(container, "reativacao-lista", "Clientes a reativar (ordenado por score de risco)", clientesReativar);
   const nota = document.createElement("p");
   nota.className = "pendente";
   nota.innerHTML = "<strong>Sobre a taxa de reativação:</strong> é uma estimativa a partir do histórico de compras (episódios em que o cliente ficou acima do próprio padrão e depois voltou a comprar) - não vem de um registro de contato/campanha de reativação.";
   container.appendChild(nota);
 
   const itensAnalise = [];
-  if (ret.clientes_a_reativar && ret.clientes_a_reativar.length) {
-    const valorTotal = ret.clientes_a_reativar.reduce((s, c) => s + (c.valor_total_historico || 0), 0);
-    itensAnalise.push(`${ret.clientes_a_reativar.length} clientes prontos para contato de reativação, somando ${fmtMoeda(valorTotal)} em histórico.`);
+  if (clientesReativar.length) {
+    const valorTotal = clientesReativar.reduce((s, c) => s + (c.valor_total_historico || 0), 0);
+    itensAnalise.push(`${clientesReativar.length} clientes prontos para contato de reativação, somando ${fmtMoeda(valorTotal)} em histórico.`);
   }
   if (ret.taxa_reativacao_pct != null) {
     itensAnalise.push(`Taxa histórica de reativação: ${ret.taxa_reativacao_pct}% dos episódios de risco anteriores resultaram em nova compra.`);
