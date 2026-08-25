@@ -311,10 +311,43 @@ function abaComissao(container) {
   const totalComissaoPeriodo = somaCampo(linhas, "comissao");
   const totalRecebidoPeriodo = somaCampo(linhas, "recebido");
 
-  // Card de totais por pessoa (pedido do usuario, 13/08/2026): so faz
-  // sentido no Gerencial - so ele tem visao de todo mundo (comissao.linhas
-  // e bonus_clientes_novos dos paineis individuais ja vem filtrados so com
-  // a propria pessoa, ver calc/consolidar.gravar_arquivos_por_area).
+  // Bonus de clientes novos (secao 4.5): CONSOLIDADO.bonus_clientes_novos e
+  // sempre {vendedor: [{mes, faturamento_clientes_novos, bonus}]} - no
+  // painel individual so vem a chave do proprio vendedor; no Gerencial vem
+  // todo mundo (Eduardo/Joice/Rubs/Kenia). Calculado aqui em cima (antes
+  // era so dentro do bloco dos cards de bonus, 24/08/2026) porque o
+  // consolidado de recebimentos do vendedor, logo abaixo, tambem precisa
+  // desses totais - inclusive quando linhasBonus vem vazio (nesse caso
+  // somaCampo com lista vazia da 0, sem quebrar nada).
+  const bonusPorVendedor = CONSOLIDADO.bonus_clientes_novos || {};
+  let linhasBonus = Object.entries(bonusPorVendedor).flatMap(
+    ([vendedor, lista]) => lista.map(l => ({ vendedor, ...l }))
+  );
+  // Responsivo aos dois filtros (mes E vendedor) - antes so filtrava por
+  // mes, entao no Gerencial o filtro de Vendedor nao tinha efeito nenhum
+  // sobre o bonus (mesma familia do bug reportado pelo usuario em
+  // "Recebido em"/"Comissao em", 13/08/2026).
+  if (ESTADO.vendedor) linhasBonus = linhasBonus.filter(l => l.vendedor === ESTADO.vendedor);
+  if (ESTADO.mes) linhasBonus = linhasBonus.filter(l => l.mes === ESTADO.mes);
+  // bonus_clientes_novos/bonus_seladora/bonus_total: campos novos
+  // (13/08/2026). Fallback pro campo antigo "bonus" (pre-seladora) so por
+  // seguranca, caso algum dado publicado ainda nao tenha sido reprocessado
+  // com o formato novo.
+  const periodoBonus = rotuloPeriodo(linhasBonus);
+  const totalNovosMes = somaCampo(linhasBonus, "bonus_clientes_novos", "bonus");
+  const totalSeladoraMes = somaCampo(linhasBonus, "bonus_seladora");
+  const totalGeralMes = linhasBonus.some(l => "bonus_total" in l) ? somaCampo(linhasBonus, "bonus_total") : totalNovosMes;
+
+  // Totais por pessoa no Gerencial (pedido do usuario, 13/08/2026) e
+  // consolidado de recebimentos nos paineis individuais (pedido do
+  // usuario, 24/08/2026: comissao + bonificacao + seladoras + total, so
+  // do proprio vendedor, num unico lugar em vez de espalhado pelos cards
+  // mais abaixo). So faz sentido separar os dois porque o Gerencial e o
+  // unico com visao de todo mundo (comissao.linhas e bonus_clientes_novos
+  // dos paineis individuais ja vem filtrados so com a propria pessoa, ver
+  // calc/consolidar.gravar_arquivos_por_area) - nos paineis individuais
+  // uma tabela comparando "pessoas" nao faz sentido, ja que so tem uma
+  // pessoa nos dados.
   if (!window.AREA_CONFIG.vendedorFiltro) {
     renderTabela(container, {
       id: "totais-por-pessoa", titulo: `Totais por pessoa (${rotuloPeriodo(CONSOLIDADO.comissao.linhas || [])})`,
@@ -329,6 +362,22 @@ function abaComissao(container) {
       ],
       linhas: totaisPorPessoa(),
     });
+  } else {
+    renderTabela(container, {
+      id: "consolidado-recebimentos", titulo: `Consolidado de recebimentos (${periodo})`,
+      colunas: [
+        { chave: "comissao", rotulo: "Comissão", render: r => fmtMoeda(r.comissao) },
+        { chave: "bonificacao", rotulo: "Bonificação", render: r => fmtMoeda(r.bonificacao) },
+        { chave: "seladoras", rotulo: "Seladoras", render: r => fmtMoeda(r.seladoras) },
+        { chave: "total", rotulo: "Total", render: r => fmtMoeda(r.total) },
+      ],
+      linhas: [{
+        comissao: totalComissaoPeriodo,
+        bonificacao: totalNovosMes,
+        seladoras: totalSeladoraMes,
+        total: totalComissaoPeriodo + totalGeralMes,
+      }],
+    });
   }
 
   renderCards(container, [
@@ -337,29 +386,7 @@ function abaComissao(container) {
     { rotulo: "Linhas sem data de pagamento válida", valor: CONSOLIDADO.comissao.meta.linhas_sem_data_valida.length, classe: CONSOLIDADO.comissao.meta.linhas_sem_data_valida.length ? "atencao" : "ok" },
   ]);
 
-  // Bonus de clientes novos (secao 4.5): CONSOLIDADO.bonus_clientes_novos e
-  // sempre {vendedor: [{mes, faturamento_clientes_novos, bonus}]} - no
-  // painel individual so vem a chave do proprio vendedor; no Gerencial vem
-  // todo mundo (Eduardo/Joice/Rubs/Kenia).
-  const bonusPorVendedor = CONSOLIDADO.bonus_clientes_novos || {};
-  let linhasBonus = Object.entries(bonusPorVendedor).flatMap(
-    ([vendedor, lista]) => lista.map(l => ({ vendedor, ...l }))
-  );
-  // Responsivo aos dois filtros (mes E vendedor) - antes so filtrava por
-  // mes, entao no Gerencial o filtro de Vendedor nao tinha efeito nenhum
-  // sobre o bonus (mesma familia do bug reportado pelo usuario em
-  // "Recebido em"/"Comissao em", 13/08/2026).
-  if (ESTADO.vendedor) linhasBonus = linhasBonus.filter(l => l.vendedor === ESTADO.vendedor);
-  if (ESTADO.mes) linhasBonus = linhasBonus.filter(l => l.mes === ESTADO.mes);
   if (linhasBonus.length) {
-    // bonus_clientes_novos/bonus_seladora/bonus_total: campos novos
-    // (13/08/2026). Fallback pro campo antigo "bonus" (pre-seladora) so
-    // por seguranca, caso algum dado publicado ainda nao tenha sido
-    // reprocessado com o formato novo.
-    const periodoBonus = rotuloPeriodo(linhasBonus);
-    const totalNovosMes = somaCampo(linhasBonus, "bonus_clientes_novos", "bonus");
-    const totalSeladoraMes = somaCampo(linhasBonus, "bonus_seladora");
-    const totalGeralMes = linhasBonus.some(l => "bonus_total" in l) ? somaCampo(linhasBonus, "bonus_total") : totalNovosMes;
     renderCards(container, [
       { rotulo: `Bônus clientes novos (${periodoBonus})`, valor: fmtMoeda(totalNovosMes), classe: totalNovosMes ? "ok" : "" },
       { rotulo: `Bônus seladora (${periodoBonus})`, valor: fmtMoeda(totalSeladoraMes), classe: totalSeladoraMes ? "ok" : "" },
