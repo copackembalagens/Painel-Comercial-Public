@@ -1,5 +1,5 @@
 {
-  "gerado_em_utc": "2026-08-28T17:19:38.683561Z",
+  "gerado_em_utc": "2026-08-28T19:43:01.939242Z",
   "metas": [
     {
       "mes": "2026-01",
@@ -123,18 +123,18 @@
     {
       "mes": "2026-08",
       "meta_canal": 166666.67,
-      "realizado_canal": 118206.84,
-      "atingimento_pct": 70.9,
-      "realizado_novos": 15740.0,
-      "realizado_recorrentes": 52866.84,
+      "realizado_canal": 120238.34,
+      "atingimento_pct": 72.1,
+      "realizado_novos": 15741.0,
+      "realizado_recorrentes": 54897.34,
       "realizado_nao_auditado": 49600.0,
-      "mix_novos_pct": 13.3,
+      "mix_novos_pct": 13.1,
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
       "atingimento_novos_pct": 37.8,
-      "atingimento_recorrentes_pct": 42.3,
-      "valor_frete": 6201.68,
-      "faturamento_bruto": 124408.52,
+      "atingimento_recorrentes_pct": 43.9,
+      "valor_frete": 6375.18,
+      "faturamento_bruto": 126613.52,
       "pct_frete_sobre_faturamento": 5.0
     }
   ],
@@ -142,12 +142,12 @@
     "por_funil": [
       {
         "funil": "Funil Joice",
-        "ganhas": 568,
-        "perdidas": 6884,
-        "em_aberto": 623,
-        "valor_ganho": 905644.0,
-        "valor_perdido": 1239883.0,
-        "taxa_conversao_pct": 7.6
+        "ganhas": 572,
+        "perdidas": 6889,
+        "em_aberto": 616,
+        "valor_ganho": 914906.0,
+        "valor_perdido": 1243013.0,
+        "taxa_conversao_pct": 7.7
       }
     ],
     "motivos_perda": [
@@ -158,8 +158,8 @@
       },
       {
         "motivo": "Não tem interesse",
-        "qtd": 2067,
-        "valor": 639825.0
+        "qtd": 2072,
+        "valor": 642955.0
       },
       {
         "motivo": "Lead Duplicado",
@@ -232,34 +232,34 @@
         "valor": 0.0
       }
     ],
-    "total_leads": 8075,
+    "total_leads": 8077,
     "total_pipelines": 1,
     "resumo": {
-      "total_leads": 8075,
-      "taxa_conversao_pct": 7.6,
-      "total_ganho": 568,
-      "total_perdido": 6884,
-      "valor_ganho": 905644.0,
-      "valor_perdido": 1239883.0,
+      "total_leads": 8077,
+      "taxa_conversao_pct": 7.7,
+      "total_ganho": 572,
+      "total_perdido": 6889,
+      "valor_ganho": 914906.0,
+      "valor_perdido": 1243013.0,
       "leads_em_aberto": {
-        "quantidade": 623,
-        "valor": 639263.0,
-        "pct_quantidade_sobre_total": 7.7,
-        "pct_valor_sobre_total": 23.0
+        "quantidade": 616,
+        "valor": 626773.0,
+        "pct_quantidade_sobre_total": 7.6,
+        "pct_valor_sobre_total": 22.5
       }
     },
     "por_etapa": [
       {
         "funil": "Funil Joice",
         "etapa": "VENDA PERDIDA",
-        "quantidade": 6884,
-        "valor": 1239883.0
+        "quantidade": 6889,
+        "valor": 1243013.0
       },
       {
         "funil": "Funil Joice",
         "etapa": "VENDA GANHA",
-        "quantidade": 568,
-        "valor": 905644.0
+        "quantidade": 572,
+        "valor": 914906.0
       },
       {
         "funil": "Funil Joice",
@@ -276,43 +276,43 @@
       {
         "funil": "Funil Joice",
         "etapa": "PROPOSTA ENVIADA",
-        "quantidade": 30,
-        "valor": 48618.0
-      },
-      {
-        "funil": "Funil Joice",
-        "etapa": "GERAÇÃO DE PEDIDO",
-        "quantidade": 5,
-        "valor": 5010.0
+        "quantidade": 28,
+        "valor": 40568.0
       },
       {
         "funil": "Funil Joice",
         "etapa": "QUALIFICAÇÃO",
-        "quantidade": 331,
-        "valor": 4289.0
+        "quantidade": 327,
+        "valor": 3639.0
+      },
+      {
+        "funil": "Funil Joice",
+        "etapa": "GERAÇÃO DE PEDIDO",
+        "quantidade": 3,
+        "valor": 1220.0
       },
       {
         "funil": "Funil Joice",
         "etapa": "SEM ATENDIMENTO",
-        "quantidade": 1,
+        "quantidade": 2,
         "valor": 0.0
       }
     ],
     "por_produto": [
       {
         "produto": "Sem produto informado",
-        "ganhas": 561,
-        "perdidas": 5702,
-        "valor_ganho": 898709.0,
-        "valor_perdido": 1208258.0,
+        "ganhas": 565,
+        "perdidas": 5703,
+        "valor_ganho": 907971.0,
+        "valor_perdido": 1210738.0,
         "taxa_conversao_pct": 9.0
       },
       {
         "produto": "pote",
         "ganhas": 2,
-        "perdidas": 376,
+        "perdidas": 380,
         "valor_ganho": 4558.0,
-        "valor_perdido": 25370.0,
+        "valor_perdido": 26020.0,
         "taxa_conversao_pct": 0.5
       },
       {
@@ -934,7 +934,7 @@
             "funil": "Funil Joice",
             "ganhas": 84,
             "perdidas": 673,
-            "em_aberto": 41,
+            "em_aberto": 40,
             "valor_ganho": 93010.0,
             "valor_perdido": 86336.0,
             "taxa_conversao_pct": 11.1
@@ -997,19 +997,19 @@
             "valor": 350.0
           }
         ],
-        "total_leads": 798,
+        "total_leads": 797,
         "total_pipelines": 1,
         "resumo": {
-          "total_leads": 798,
+          "total_leads": 797,
           "taxa_conversao_pct": 11.1,
           "total_ganho": 84,
           "total_perdido": 673,
           "valor_ganho": 93010.0,
           "valor_perdido": 86336.0,
           "leads_em_aberto": {
-            "quantidade": 41,
+            "quantidade": 40,
             "valor": 28341.0,
-            "pct_quantidade_sobre_total": 5.1,
+            "pct_quantidade_sobre_total": 5.0,
             "pct_valor_sobre_total": 13.6
           }
         },
@@ -1034,20 +1034,14 @@
           },
           {
             "funil": "Funil Joice",
-            "etapa": "QUALIFICAÇÃO",
-            "quantidade": 2,
-            "valor": 390.0
-          },
-          {
-            "funil": "Funil Joice",
-            "etapa": "GERAÇÃO DE PEDIDO",
-            "quantidade": 1,
-            "valor": 390.0
-          },
-          {
-            "funil": "Funil Joice",
             "etapa": "PROPOSTA ENVIADA",
             "quantidade": 1,
+            "valor": 780.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 2,
             "valor": 390.0
           },
           {
@@ -1082,7 +1076,7 @@
             "funil": "Funil Joice",
             "ganhas": 40,
             "perdidas": 923,
-            "em_aberto": 14,
+            "em_aberto": 12,
             "valor_ganho": 103698.0,
             "valor_perdido": 139750.0,
             "taxa_conversao_pct": 4.2
@@ -1150,20 +1144,20 @@
             "valor": 0.0
           }
         ],
-        "total_leads": 977,
+        "total_leads": 975,
         "total_pipelines": 1,
         "resumo": {
-          "total_leads": 977,
+          "total_leads": 975,
           "taxa_conversao_pct": 4.2,
           "total_ganho": 40,
           "total_perdido": 923,
           "valor_ganho": 103698.0,
           "valor_perdido": 139750.0,
           "leads_em_aberto": {
-            "quantidade": 14,
-            "valor": 6512.0,
-            "pct_quantidade_sobre_total": 1.4,
-            "pct_valor_sobre_total": 2.6
+            "quantidade": 12,
+            "valor": 3642.0,
+            "pct_quantidade_sobre_total": 1.2,
+            "pct_valor_sobre_total": 1.5
           }
         },
         "por_etapa": [
@@ -1181,15 +1175,15 @@
           },
           {
             "funil": "Funil Joice",
-            "etapa": "PROPOSTA ENVIADA",
-            "quantidade": 3,
-            "valor": 3260.0
-          },
-          {
-            "funil": "Funil Joice",
             "etapa": "CLIENTES RECORRENTES",
             "quantidade": 6,
             "valor": 3252.0
+          },
+          {
+            "funil": "Funil Joice",
+            "etapa": "PROPOSTA ENVIADA",
+            "quantidade": 1,
+            "valor": 390.0
           },
           {
             "funil": "Funil Joice",
@@ -1231,7 +1225,7 @@
             "funil": "Funil Joice",
             "ganhas": 71,
             "perdidas": 713,
-            "em_aberto": 21,
+            "em_aberto": 20,
             "valor_ganho": 70500.0,
             "valor_perdido": 126499.0,
             "taxa_conversao_pct": 9.1
@@ -1309,20 +1303,20 @@
             "valor": 0.0
           }
         ],
-        "total_leads": 805,
+        "total_leads": 804,
         "total_pipelines": 1,
         "resumo": {
-          "total_leads": 805,
+          "total_leads": 804,
           "taxa_conversao_pct": 9.1,
           "total_ganho": 71,
           "total_perdido": 713,
           "valor_ganho": 70500.0,
           "valor_perdido": 126499.0,
           "leads_em_aberto": {
-            "quantidade": 21,
-            "valor": 8666.0,
-            "pct_quantidade_sobre_total": 2.6,
-            "pct_valor_sobre_total": 4.2
+            "quantidade": 20,
+            "valor": 5266.0,
+            "pct_quantidade_sobre_total": 2.5,
+            "pct_valor_sobre_total": 2.6
           }
         },
         "por_etapa": [
@@ -1337,12 +1331,6 @@
             "etapa": "VENDA GANHA",
             "quantidade": 71,
             "valor": 70500.0
-          },
-          {
-            "funil": "Funil Joice",
-            "etapa": "GERAÇÃO DE PEDIDO",
-            "quantidade": 1,
-            "valor": 3400.0
           },
           {
             "funil": "Funil Joice",
@@ -1416,19 +1404,19 @@
         "por_funil": [
           {
             "funil": "Funil Joice",
-            "ganhas": 92,
-            "perdidas": 1129,
-            "em_aberto": 350,
-            "valor_ganho": 203600.0,
-            "valor_perdido": 334149.0,
-            "taxa_conversao_pct": 7.5
+            "ganhas": 96,
+            "perdidas": 1134,
+            "em_aberto": 347,
+            "valor_ganho": 212862.0,
+            "valor_perdido": 337279.0,
+            "taxa_conversao_pct": 7.8
           }
         ],
         "motivos_perda": [
           {
             "motivo": "Não tem interesse",
-            "qtd": 768,
-            "valor": 331459.0
+            "qtd": 773,
+            "valor": 334589.0
           },
           {
             "motivo": "Lead Duplicado",
@@ -1476,46 +1464,46 @@
             "valor": 0.0
           }
         ],
-        "total_leads": 1571,
+        "total_leads": 1577,
         "total_pipelines": 1,
         "resumo": {
-          "total_leads": 1571,
-          "taxa_conversao_pct": 7.5,
-          "total_ganho": 92,
-          "total_perdido": 1129,
-          "valor_ganho": 203600.0,
-          "valor_perdido": 334149.0,
+          "total_leads": 1577,
+          "taxa_conversao_pct": 7.8,
+          "total_ganho": 96,
+          "total_perdido": 1134,
+          "valor_ganho": 212862.0,
+          "valor_perdido": 337279.0,
           "leads_em_aberto": {
-            "quantidade": 350,
-            "valor": 26638.0,
-            "pct_quantidade_sobre_total": 22.3,
-            "pct_valor_sobre_total": 4.7
+            "quantidade": 347,
+            "valor": 20418.0,
+            "pct_quantidade_sobre_total": 22.0,
+            "pct_valor_sobre_total": 3.6
           }
         },
         "por_etapa": [
           {
             "funil": "Funil Joice",
             "etapa": "VENDA PERDIDA",
-            "quantidade": 1129,
-            "valor": 334149.0
+            "quantidade": 1134,
+            "valor": 337279.0
           },
           {
             "funil": "Funil Joice",
             "etapa": "VENDA GANHA",
-            "quantidade": 92,
-            "valor": 203600.0
+            "quantidade": 96,
+            "valor": 212862.0
           },
           {
             "funil": "Funil Joice",
             "etapa": "PROPOSTA ENVIADA",
             "quantidade": 16,
-            "valor": 22298.0
+            "valor": 16728.0
           },
           {
             "funil": "Funil Joice",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 324,
-            "valor": 3119.0
+            "quantidade": 320,
+            "valor": 2469.0
           },
           {
             "funil": "Funil Joice",
@@ -1538,26 +1526,26 @@
           {
             "funil": "Funil Joice",
             "etapa": "SEM ATENDIMENTO",
-            "quantidade": 1,
+            "quantidade": 2,
             "valor": 0.0
           }
         ],
         "por_produto": [
           {
             "produto": "Sem produto informado",
-            "ganhas": 85,
-            "perdidas": 382,
-            "valor_ganho": 196665.0,
-            "valor_perdido": 328589.0,
-            "taxa_conversao_pct": 18.2
+            "ganhas": 89,
+            "perdidas": 383,
+            "valor_ganho": 205927.0,
+            "valor_perdido": 331069.0,
+            "taxa_conversao_pct": 18.9
           },
           {
             "produto": "pote",
             "ganhas": 2,
-            "perdidas": 232,
+            "perdidas": 236,
             "valor_ganho": 4558.0,
-            "valor_perdido": 3170.0,
-            "taxa_conversao_pct": 0.9
+            "valor_perdido": 3820.0,
+            "taxa_conversao_pct": 0.8
           },
           {
             "produto": "copo_personalizado",
@@ -1588,14 +1576,14 @@
     },
     "leads_novos_mes_atual": {
       "mes": "2026-08",
-      "quantidade": 1125,
-      "valor": 236792.0,
-      "pct_quantidade_sobre_total": 13.9,
+      "quantidade": 1127,
+      "valor": 236494.0,
+      "pct_quantidade_sobre_total": 14.0,
       "pct_valor_sobre_total": 8.5,
-      "ganhas": 27,
-      "perdidas": 748,
-      "em_aberto": 350,
-      "taxa_conversao_pct": 3.5
+      "ganhas": 28,
+      "perdidas": 752,
+      "em_aberto": 347,
+      "taxa_conversao_pct": 3.6
     }
   },
   "auditoria_cliente_novo": {
@@ -1875,7 +1863,7 @@
       },
       {
         "mes": "2026-08",
-        "faturamento_clientes_novos": 15740.0,
+        "faturamento_clientes_novos": 15741.0,
         "bonus_clientes_novos": 0.0,
         "qtd_seladoras": 0,
         "bonus_seladora": 0.0,
@@ -2060,19 +2048,19 @@
     {
       "mes": "2026-08",
       "meta_canal": 500000.0,
-      "realizado_canal": 373674.53,
-      "atingimento_pct": 74.7,
-      "realizado_novos": 76854.62,
-      "realizado_recorrentes": 247219.91,
+      "realizado_canal": 382742.37,
+      "atingimento_pct": 76.5,
+      "realizado_novos": 76855.62,
+      "realizado_recorrentes": 256286.75,
       "realizado_nao_auditado": 49600.0,
-      "mix_novos_pct": 20.6,
+      "mix_novos_pct": 20.1,
       "meta_novos": 125000.0,
       "meta_recorrentes": 375000.0,
       "atingimento_novos_pct": 61.5,
-      "atingimento_recorrentes_pct": 65.9,
-      "valor_frete": 28462.75,
-      "faturamento_bruto": 402137.28,
-      "pct_frete_sobre_faturamento": 7.1
+      "atingimento_recorrentes_pct": 68.3,
+      "valor_frete": 28675.03,
+      "faturamento_bruto": 411417.4,
+      "pct_frete_sobre_faturamento": 7.0
     }
   ],
   "canal_empresa": [
@@ -2155,24 +2143,24 @@
     },
     {
       "mes": "2026-08",
-      "realizado_online": 373674.53,
+      "realizado_online": 382742.37,
       "realizado_offline": 256953.15,
-      "realizado_total": 630627.68,
+      "realizado_total": 639695.52,
       "por_empresa": {
-        "ecommerce": 334040.88,
+        "ecommerce": 343108.72,
         "canudos": 61330.7,
         "centroeste": 235256.1
       }
     }
   ],
   "retencao": {
-    "carteira_tamanho": 720,
-    "clientes_avaliados": 345,
+    "carteira_tamanho": 721,
+    "clientes_avaliados": 346,
     "clientes_sem_historico_suficiente": 375,
-    "qtd_clientes_em_risco": 146,
-    "valor_total_em_risco": 1283794.89,
-    "comissao_projetada": 12837.95,
-    "taxa_reativacao_pct": 55.1,
+    "qtd_clientes_em_risco": 144,
+    "valor_total_em_risco": 1272779.89,
+    "comissao_projetada": 12727.8,
+    "taxa_reativacao_pct": 55.4,
     "clientes_a_reativar": [
       {
         "cnpj_cliente": "094.758.407-29",
@@ -3178,8 +3166,8 @@
     },
     {
       "mes": "2026-08",
-      "faturamento_canal": 373674.53,
-      "gratificacao": 747.35
+      "faturamento_canal": 382742.37,
+      "gratificacao": 765.48
     }
   ],
   "omie_erros_empresa": [],
@@ -3363,8 +3351,8 @@
       "diferenca_frete": 164276.86,
       "total_linhas_processadas": 9556,
       "linhas_sem_data_valida": [],
-      "planilha_comissao_atualizada_em_utc": "2026-08-28T17:12:58.300627Z",
-      "planilha_frete_atualizada_em_utc": "2026-08-28T17:12:58.304627Z"
+      "planilha_comissao_atualizada_em_utc": "2026-08-28T19:20:30.189101Z",
+      "planilha_frete_atualizada_em_utc": "2026-08-28T19:20:30.193101Z"
     }
   }
 }
