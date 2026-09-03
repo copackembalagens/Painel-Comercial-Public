@@ -1,5 +1,5 @@
 {
-  "gerado_em_utc": "2026-09-02T09:44:41.846682Z",
+  "gerado_em_utc": "2026-09-03T09:56:20.091229Z",
   "metas": [
     {
       "mes": "2026-01",
@@ -140,47 +140,47 @@
     {
       "mes": "2026-09",
       "meta_canal": 166666.67,
-      "realizado_canal": 1111.5,
-      "atingimento_pct": 0.7,
-      "realizado_novos": 0.0,
-      "realizado_recorrentes": 1111.5,
+      "realizado_canal": 2544.5,
+      "atingimento_pct": 1.5,
+      "realizado_novos": 692.0,
+      "realizado_recorrentes": 1852.5,
       "realizado_nao_auditado": 0.0,
-      "mix_novos_pct": 0.0,
+      "mix_novos_pct": 27.2,
       "meta_novos": 41666.67,
       "meta_recorrentes": 125000.0,
-      "atingimento_novos_pct": 0.0,
-      "atingimento_recorrentes_pct": 0.9,
-      "valor_frete": 97.97,
-      "faturamento_bruto": 1209.47,
-      "pct_frete_sobre_faturamento": 8.1
+      "atingimento_novos_pct": 1.7,
+      "atingimento_recorrentes_pct": 1.5,
+      "valor_frete": 220.44,
+      "faturamento_bruto": 2764.94,
+      "pct_frete_sobre_faturamento": 8.0
     }
   ],
   "performance_kommo": {
     "por_funil": [
       {
         "funil": "Funil Rubs",
-        "ganhas": 477,
-        "perdidas": 8117,
-        "em_aberto": 701,
-        "valor_ganho": 593683.0,
-        "valor_perdido": 1482436.0,
+        "ganhas": 481,
+        "perdidas": 8126,
+        "em_aberto": 722,
+        "valor_ganho": 597293.0,
+        "valor_perdido": 1481876.0,
         "taxa_conversao_pct": 5.6
       }
     ],
     "motivos_perda": [
       {
         "motivo": "Não tem interesse",
-        "qtd": 7153,
-        "valor": 1413948.0
+        "qtd": 7151,
+        "valor": 1413388.0
       },
       {
         "motivo": "Lead Duplicado",
-        "qtd": 466,
+        "qtd": 476,
         "valor": 0.0
       },
       {
         "motivo": "Contato Não Comercial",
-        "qtd": 225,
+        "qtd": 224,
         "valor": 0.0
       },
       {
@@ -195,7 +195,7 @@
       },
       {
         "motivo": "Quantidade mínima",
-        "qtd": 34,
+        "qtd": 35,
         "valor": 0.0
       },
       {
@@ -215,7 +215,7 @@
       },
       {
         "motivo": "Preço",
-        "qtd": 16,
+        "qtd": 17,
         "valor": 13445.0
       },
       {
@@ -249,52 +249,52 @@
         "valor": 0.0
       }
     ],
-    "total_leads": 9295,
+    "total_leads": 9329,
     "total_pipelines": 1,
     "resumo": {
-      "total_leads": 9295,
+      "total_leads": 9329,
       "taxa_conversao_pct": 5.6,
-      "total_ganho": 477,
-      "total_perdido": 8117,
-      "valor_ganho": 593683.0,
-      "valor_perdido": 1482436.0,
+      "total_ganho": 481,
+      "total_perdido": 8126,
+      "valor_ganho": 597293.0,
+      "valor_perdido": 1481876.0,
       "leads_em_aberto": {
-        "quantidade": 701,
-        "valor": 284726.0,
-        "pct_quantidade_sobre_total": 7.5,
-        "pct_valor_sobre_total": 12.1
+        "quantidade": 722,
+        "valor": 296713.0,
+        "pct_quantidade_sobre_total": 7.7,
+        "pct_valor_sobre_total": 12.5
       }
     },
     "por_etapa": [
       {
         "funil": "Funil Rubs",
         "etapa": "VENDA PERDIDA",
-        "quantidade": 8117,
-        "valor": 1482436.0
+        "quantidade": 8126,
+        "valor": 1481876.0
       },
       {
         "funil": "Funil Rubs",
         "etapa": "VENDA GANHA",
-        "quantidade": 477,
-        "valor": 593683.0
+        "quantidade": 481,
+        "valor": 597293.0
       },
       {
         "funil": "Funil Rubs",
         "etapa": "ACOMPANHAMENTO",
-        "quantidade": 87,
-        "valor": 172726.0
+        "quantidade": 91,
+        "valor": 185834.0
       },
       {
         "funil": "Funil Rubs",
         "etapa": "CLIENTES RECORRENTES",
-        "quantidade": 107,
-        "valor": 67492.0
+        "quantidade": 111,
+        "valor": 74469.0
       },
       {
         "funil": "Funil Rubs",
         "etapa": "QUALIFICAÇÃO",
-        "quantidade": 469,
-        "valor": 35900.0
+        "quantidade": 497,
+        "valor": 31972.0
       },
       {
         "funil": "Funil Rubs",
@@ -304,30 +304,24 @@
       },
       {
         "funil": "Funil Rubs",
-        "etapa": "GERAÇÃO DE PEDIDO",
-        "quantidade": 3,
-        "valor": 2380.0
-      },
-      {
-        "funil": "Funil Rubs",
         "etapa": "SEM ATENDIMENTO",
-        "quantidade": 30,
-        "valor": 1790.0
+        "quantidade": 18,
+        "valor": 0.0
       }
     ],
     "por_produto": [
       {
         "produto": "Sem produto informado",
-        "ganhas": 471,
-        "perdidas": 6590,
-        "valor_ganho": 588303.0,
-        "valor_perdido": 1467493.0,
+        "ganhas": 475,
+        "perdidas": 6589,
+        "valor_ganho": 591913.0,
+        "valor_perdido": 1466933.0,
         "taxa_conversao_pct": 6.7
       },
       {
         "produto": "copo_personalizado",
         "ganhas": 3,
-        "perdidas": 922,
+        "perdidas": 929,
         "valor_ganho": 1500.0,
         "valor_perdido": 11094.0,
         "taxa_conversao_pct": 0.3
@@ -335,7 +329,7 @@
       {
         "produto": "pote",
         "ganhas": 3,
-        "perdidas": 485,
+        "perdidas": 488,
         "valor_ganho": 3880.0,
         "valor_perdido": 3849.0,
         "taxa_conversao_pct": 0.6
@@ -374,7 +368,7 @@
     "status": "ok",
     "ano_calculo": "2026",
     "meta_individual_mensal": 166666.67,
-    "registros_sem_cnpj_nao_auditados": 2482,
+    "registros_sem_cnpj_nao_auditados": 2486,
     "nota": "Ordens de Servico normalmente nao tem CNPJ do cliente na API do OMIE - essas entram no faturamento total mas ficam de fora da classificacao novo/recorrente (aparecem como 'nao_auditado' nas metas).",
     "casos_tomada_cliente": [
       {
@@ -679,7 +673,7 @@
       },
       {
         "mes": "2026-09",
-        "faturamento_clientes_novos": 0.0,
+        "faturamento_clientes_novos": 692.0,
         "bonus_clientes_novos": 0.0,
         "qtd_seladoras": 0,
         "bonus_seladora": 0.0,
@@ -823,7 +817,7 @@
         "numero_nf": "00010638",
         "data_emissao": "23/07/2026",
         "cnpj_cliente": "39.997.502/0001-74",
-        "razao_social_cliente": "THAIS SANTOS FRANCA",
+        "razao_social_cliente": "THAIS SANTOS FRANCA 12261495455",
         "faturamento_real": 2050.0,
         "dono_cliente": "Amostra",
         "classificacao_informada": "Novo",
@@ -1061,19 +1055,19 @@
     {
       "mes": "2026-09",
       "meta_canal": 500000.0,
-      "realizado_canal": 12064.0,
-      "atingimento_pct": 2.4,
-      "realizado_novos": 7152.0,
-      "realizado_recorrentes": 4912.0,
+      "realizado_canal": 23204.5,
+      "atingimento_pct": 4.6,
+      "realizado_novos": 11390.0,
+      "realizado_recorrentes": 11814.5,
       "realizado_nao_auditado": 0.0,
-      "mix_novos_pct": 59.3,
+      "mix_novos_pct": 49.1,
       "meta_novos": 125000.0,
       "meta_recorrentes": 375000.0,
-      "atingimento_novos_pct": 5.7,
-      "atingimento_recorrentes_pct": 1.3,
-      "valor_frete": 1130.54,
-      "faturamento_bruto": 13194.54,
-      "pct_frete_sobre_faturamento": 8.6
+      "atingimento_novos_pct": 9.1,
+      "atingimento_recorrentes_pct": 3.2,
+      "valor_frete": 1916.23,
+      "faturamento_bruto": 25120.73,
+      "pct_frete_sobre_faturamento": 7.6
     }
   ],
   "canal_empresa": [
@@ -1167,18 +1161,18 @@
     },
     {
       "mes": "2026-09",
-      "realizado_online": 12064.0,
-      "realizado_offline": 87270.0,
-      "realizado_total": 99334.0,
+      "realizado_online": 23204.5,
+      "realizado_offline": 92381.9,
+      "realizado_total": 115586.4,
       "por_empresa": {
-        "ecommerce": 12064.0,
-        "centroeste": 87270.0
+        "ecommerce": 23596.4,
+        "centroeste": 91990.0
       }
     }
   ],
   "retencao": {
-    "carteira_tamanho": 464,
-    "clientes_avaliados": 184,
+    "carteira_tamanho": 465,
+    "clientes_avaliados": 185,
     "clientes_sem_historico_suficiente": 280,
     "qtd_clientes_em_risco": 50,
     "valor_total_em_risco": 230164.85,
@@ -1192,9 +1186,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 810.5,
         "ultima_compra": "10/04/2026",
-        "dias_desde_ultima_compra": 145,
+        "dias_desde_ultima_compra": 146,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 145.0,
+        "score_risco": 146.0,
         "em_risco": true
       },
       {
@@ -1204,9 +1198,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1577.0,
         "ultima_compra": "28/04/2026",
-        "dias_desde_ultima_compra": 127,
+        "dias_desde_ultima_compra": 128,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 127.0,
+        "score_risco": 128.0,
         "em_risco": true
       },
       {
@@ -1216,9 +1210,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 1892.12,
         "ultima_compra": "23/06/2026",
-        "dias_desde_ultima_compra": 71,
+        "dias_desde_ultima_compra": 72,
         "intervalo_medio_dias": 2.5,
-        "score_risco": 28.4,
+        "score_risco": 28.8,
         "em_risco": true
       },
       {
@@ -1228,9 +1222,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 4366.07,
         "ultima_compra": "03/12/2025",
-        "dias_desde_ultima_compra": 273,
+        "dias_desde_ultima_compra": 274,
         "intervalo_medio_dias": 19.0,
-        "score_risco": 14.37,
+        "score_risco": 14.42,
         "em_risco": true
       },
       {
@@ -1240,9 +1234,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1443.0,
         "ultima_compra": "04/11/2025",
-        "dias_desde_ultima_compra": 302,
+        "dias_desde_ultima_compra": 303,
         "intervalo_medio_dias": 42.0,
-        "score_risco": 7.19,
+        "score_risco": 7.21,
         "em_risco": true
       },
       {
@@ -1252,9 +1246,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 4936.0,
         "ultima_compra": "20/02/2026",
-        "dias_desde_ultima_compra": 194,
+        "dias_desde_ultima_compra": 195,
         "intervalo_medio_dias": 30.0,
-        "score_risco": 6.47,
+        "score_risco": 6.5,
         "em_risco": true
       },
       {
@@ -1264,9 +1258,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 828.56,
         "ultima_compra": "14/05/2026",
-        "dias_desde_ultima_compra": 111,
+        "dias_desde_ultima_compra": 112,
         "intervalo_medio_dias": 21.0,
-        "score_risco": 5.29,
+        "score_risco": 5.33,
         "em_risco": true
       },
       {
@@ -1276,9 +1270,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 2730.0,
         "ultima_compra": "04/03/2026",
-        "dias_desde_ultima_compra": 182,
+        "dias_desde_ultima_compra": 183,
         "intervalo_medio_dias": 48.0,
-        "score_risco": 3.79,
+        "score_risco": 3.81,
         "em_risco": true
       },
       {
@@ -1288,9 +1282,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 8273.72,
         "ultima_compra": "18/02/2026",
-        "dias_desde_ultima_compra": 196,
+        "dias_desde_ultima_compra": 197,
         "intervalo_medio_dias": 56.0,
-        "score_risco": 3.5,
+        "score_risco": 3.52,
         "em_risco": true
       },
       {
@@ -1300,9 +1294,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 901.2,
         "ultima_compra": "20/11/2025",
-        "dias_desde_ultima_compra": 286,
+        "dias_desde_ultima_compra": 287,
         "intervalo_medio_dias": 84.0,
-        "score_risco": 3.4,
+        "score_risco": 3.42,
         "em_risco": true
       },
       {
@@ -1312,9 +1306,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1556.5,
         "ultima_compra": "29/05/2026",
-        "dias_desde_ultima_compra": 96,
+        "dias_desde_ultima_compra": 97,
         "intervalo_medio_dias": 31.0,
-        "score_risco": 3.1,
+        "score_risco": 3.13,
         "em_risco": true
       },
       {
@@ -1324,9 +1318,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1543.32,
         "ultima_compra": "08/01/2026",
-        "dias_desde_ultima_compra": 237,
+        "dias_desde_ultima_compra": 238,
         "intervalo_medio_dias": 77.0,
-        "score_risco": 3.08,
+        "score_risco": 3.09,
         "em_risco": true
       },
       {
@@ -1336,9 +1330,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 15060.0,
         "ultima_compra": "15/01/2026",
-        "dias_desde_ultima_compra": 230,
+        "dias_desde_ultima_compra": 231,
         "intervalo_medio_dias": 84.0,
-        "score_risco": 2.74,
+        "score_risco": 2.75,
         "em_risco": true
       },
       {
@@ -1348,9 +1342,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 6497.61,
         "ultima_compra": "13/02/2026",
-        "dias_desde_ultima_compra": 201,
+        "dias_desde_ultima_compra": 202,
         "intervalo_medio_dias": 74.0,
-        "score_risco": 2.72,
+        "score_risco": 2.73,
         "em_risco": true
       },
       {
@@ -1360,9 +1354,9 @@
         "qtd_compras_historico": 4,
         "valor_total_historico": 13049.0,
         "ultima_compra": "17/04/2026",
-        "dias_desde_ultima_compra": 138,
+        "dias_desde_ultima_compra": 139,
         "intervalo_medio_dias": 51.3,
-        "score_risco": 2.69,
+        "score_risco": 2.71,
         "em_risco": true
       },
       {
@@ -1372,9 +1366,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 2535.0,
         "ultima_compra": "28/04/2026",
-        "dias_desde_ultima_compra": 127,
+        "dias_desde_ultima_compra": 128,
         "intervalo_medio_dias": 48.0,
-        "score_risco": 2.65,
+        "score_risco": 2.67,
         "em_risco": true
       },
       {
@@ -1384,9 +1378,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 6184.0,
         "ultima_compra": "07/05/2026",
-        "dias_desde_ultima_compra": 118,
+        "dias_desde_ultima_compra": 119,
         "intervalo_medio_dias": 45.0,
-        "score_risco": 2.62,
+        "score_risco": 2.64,
         "em_risco": true
       },
       {
@@ -1396,9 +1390,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 717.0,
         "ultima_compra": "20/03/2026",
-        "dias_desde_ultima_compra": 166,
+        "dias_desde_ultima_compra": 167,
         "intervalo_medio_dias": 66.0,
-        "score_risco": 2.52,
+        "score_risco": 2.53,
         "em_risco": true
       },
       {
@@ -1408,9 +1402,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 2350.95,
         "ultima_compra": "18/03/2026",
-        "dias_desde_ultima_compra": 168,
+        "dias_desde_ultima_compra": 169,
         "intervalo_medio_dias": 69.0,
-        "score_risco": 2.43,
+        "score_risco": 2.45,
         "em_risco": true
       },
       {
@@ -1420,21 +1414,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 6734.0,
         "ultima_compra": "18/02/2026",
-        "dias_desde_ultima_compra": 196,
+        "dias_desde_ultima_compra": 197,
         "intervalo_medio_dias": 83.0,
-        "score_risco": 2.36,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "10.341.481/0001-52",
-        "razao_social_cliente": "L M SICHELERO  CADORE ACAI E GELATO",
-        "vendedor": "Rubs",
-        "qtd_compras_historico": 4,
-        "valor_total_historico": 17033.0,
-        "ultima_compra": "13/11/2025",
-        "dias_desde_ultima_compra": 293,
-        "intervalo_medio_dias": 126.0,
-        "score_risco": 2.33,
+        "score_risco": 2.37,
         "em_risco": true
       },
       {
@@ -1444,9 +1426,21 @@
         "qtd_compras_historico": 19,
         "valor_total_historico": 21680.0,
         "ultima_compra": "20/02/2026",
-        "dias_desde_ultima_compra": 194,
+        "dias_desde_ultima_compra": 195,
         "intervalo_medio_dias": 83.8,
-        "score_risco": 2.31,
+        "score_risco": 2.33,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "10.341.481/0001-52",
+        "razao_social_cliente": "L M SICHELERO  CADORE ACAI E GELATO",
+        "vendedor": "Rubs",
+        "qtd_compras_historico": 4,
+        "valor_total_historico": 17033.0,
+        "ultima_compra": "13/11/2025",
+        "dias_desde_ultima_compra": 294,
+        "intervalo_medio_dias": 126.0,
+        "score_risco": 2.33,
         "em_risco": true
       },
       {
@@ -1456,9 +1450,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 2172.95,
         "ultima_compra": "11/06/2026",
-        "dias_desde_ultima_compra": 83,
+        "dias_desde_ultima_compra": 84,
         "intervalo_medio_dias": 38.0,
-        "score_risco": 2.18,
+        "score_risco": 2.21,
         "em_risco": true
       },
       {
@@ -1468,9 +1462,9 @@
         "qtd_compras_historico": 5,
         "valor_total_historico": 6964.5,
         "ultima_compra": "15/01/2026",
-        "dias_desde_ultima_compra": 230,
+        "dias_desde_ultima_compra": 231,
         "intervalo_medio_dias": 110.2,
-        "score_risco": 2.09,
+        "score_risco": 2.1,
         "em_risco": true
       },
       {
@@ -1480,9 +1474,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1479.0,
         "ultima_compra": "16/01/2026",
-        "dias_desde_ultima_compra": 229,
+        "dias_desde_ultima_compra": 230,
         "intervalo_medio_dias": 116.0,
-        "score_risco": 1.97,
+        "score_risco": 1.98,
         "em_risco": true
       },
       {
@@ -1492,9 +1486,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 2298.0,
         "ultima_compra": "23/04/2026",
-        "dias_desde_ultima_compra": 132,
+        "dias_desde_ultima_compra": 133,
         "intervalo_medio_dias": 69.0,
-        "score_risco": 1.91,
+        "score_risco": 1.93,
         "em_risco": true
       },
       {
@@ -1504,9 +1498,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 3433.5,
         "ultima_compra": "22/06/2026",
-        "dias_desde_ultima_compra": 72,
+        "dias_desde_ultima_compra": 73,
         "intervalo_medio_dias": 42.0,
-        "score_risco": 1.71,
+        "score_risco": 1.74,
         "em_risco": true
       },
       {
@@ -1516,21 +1510,9 @@
         "qtd_compras_historico": 4,
         "valor_total_historico": 4234.5,
         "ultima_compra": "01/06/2026",
-        "dias_desde_ultima_compra": 93,
+        "dias_desde_ultima_compra": 94,
         "intervalo_medio_dias": 54.7,
-        "score_risco": 1.7,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "55.304.379/0001-15",
-        "razao_social_cliente": "KEDSON JUNIO NEVES SILVA",
-        "vendedor": "Rubs",
-        "qtd_compras_historico": 3,
-        "valor_total_historico": 2728.5,
-        "ultima_compra": "07/01/2026",
-        "dias_desde_ultima_compra": 238,
-        "intervalo_medio_dias": 146.5,
-        "score_risco": 1.62,
+        "score_risco": 1.72,
         "em_risco": true
       },
       {
@@ -1540,9 +1522,21 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1472.0,
         "ultima_compra": "22/07/2026",
-        "dias_desde_ultima_compra": 42,
+        "dias_desde_ultima_compra": 43,
         "intervalo_medio_dias": 26.0,
-        "score_risco": 1.62,
+        "score_risco": 1.65,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "55.304.379/0001-15",
+        "razao_social_cliente": "KEDSON JUNIO NEVES SILVA",
+        "vendedor": "Rubs",
+        "qtd_compras_historico": 3,
+        "valor_total_historico": 2728.5,
+        "ultima_compra": "07/01/2026",
+        "dias_desde_ultima_compra": 239,
+        "intervalo_medio_dias": 146.5,
+        "score_risco": 1.63,
         "em_risco": true
       },
       {
@@ -1552,9 +1546,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 3174.0,
         "ultima_compra": "23/04/2026",
-        "dias_desde_ultima_compra": 132,
+        "dias_desde_ultima_compra": 133,
         "intervalo_medio_dias": 84.0,
-        "score_risco": 1.57,
+        "score_risco": 1.58,
         "em_risco": true
       },
       {
@@ -1564,8 +1558,20 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 6160.0,
         "ultima_compra": "10/12/2025",
-        "dias_desde_ultima_compra": 266,
+        "dias_desde_ultima_compra": 267,
         "intervalo_medio_dias": 170.0,
+        "score_risco": 1.57,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "58.193.204/0001-76",
+        "razao_social_cliente": "MAGNIFIQUE MASSAS LTDA",
+        "vendedor": "Rubs",
+        "qtd_compras_historico": 2,
+        "valor_total_historico": 1796.95,
+        "ultima_compra": "06/03/2026",
+        "dias_desde_ultima_compra": 181,
+        "intervalo_medio_dias": 116.0,
         "score_risco": 1.56,
         "em_risco": true
       },
@@ -1576,20 +1582,8 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 9721.39,
         "ultima_compra": "03/02/2026",
-        "dias_desde_ultima_compra": 211,
+        "dias_desde_ultima_compra": 212,
         "intervalo_medio_dias": 136.5,
-        "score_risco": 1.55,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "58.193.204/0001-76",
-        "razao_social_cliente": "MAGNIFIQUE MASSAS LTDA",
-        "vendedor": "Rubs",
-        "qtd_compras_historico": 2,
-        "valor_total_historico": 1796.95,
-        "ultima_compra": "06/03/2026",
-        "dias_desde_ultima_compra": 180,
-        "intervalo_medio_dias": 116.0,
         "score_risco": 1.55,
         "em_risco": true
       },
@@ -1600,9 +1594,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1112.0,
         "ultima_compra": "19/02/2026",
-        "dias_desde_ultima_compra": 195,
+        "dias_desde_ultima_compra": 196,
         "intervalo_medio_dias": 135.0,
-        "score_risco": 1.44,
+        "score_risco": 1.45,
         "em_risco": true
       },
       {
@@ -1612,9 +1606,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 5894.39,
         "ultima_compra": "06/04/2026",
-        "dias_desde_ultima_compra": 149,
+        "dias_desde_ultima_compra": 150,
         "intervalo_medio_dias": 107.5,
-        "score_risco": 1.39,
+        "score_risco": 1.4,
         "em_risco": true
       },
       {
@@ -1624,9 +1618,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1025.95,
         "ultima_compra": "25/05/2026",
-        "dias_desde_ultima_compra": 100,
+        "dias_desde_ultima_compra": 101,
         "intervalo_medio_dias": 74.0,
-        "score_risco": 1.35,
+        "score_risco": 1.36,
         "em_risco": true
       },
       {
@@ -1636,9 +1630,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 3765.38,
         "ultima_compra": "10/11/2025",
-        "dias_desde_ultima_compra": 296,
+        "dias_desde_ultima_compra": 297,
         "intervalo_medio_dias": 220.5,
-        "score_risco": 1.34,
+        "score_risco": 1.35,
         "em_risco": true
       },
       {
@@ -1648,9 +1642,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1114.0,
         "ultima_compra": "23/06/2026",
-        "dias_desde_ultima_compra": 71,
+        "dias_desde_ultima_compra": 72,
         "intervalo_medio_dias": 56.0,
-        "score_risco": 1.27,
+        "score_risco": 1.29,
         "em_risco": true
       },
       {
@@ -1660,9 +1654,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 858.0,
         "ultima_compra": "31/10/2025",
-        "dias_desde_ultima_compra": 306,
+        "dias_desde_ultima_compra": 307,
         "intervalo_medio_dias": 246.0,
-        "score_risco": 1.24,
+        "score_risco": 1.25,
         "em_risco": true
       },
       {
@@ -1672,9 +1666,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 1853.5,
         "ultima_compra": "26/06/2026",
-        "dias_desde_ultima_compra": 68,
+        "dias_desde_ultima_compra": 69,
         "intervalo_medio_dias": 56.5,
-        "score_risco": 1.2,
+        "score_risco": 1.22,
         "em_risco": true
       },
       {
@@ -1684,21 +1678,9 @@
         "qtd_compras_historico": 6,
         "valor_total_historico": 21634.5,
         "ultima_compra": "06/03/2026",
-        "dias_desde_ultima_compra": 180,
+        "dias_desde_ultima_compra": 181,
         "intervalo_medio_dias": 154.4,
         "score_risco": 1.17,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "002.963.100-93",
-        "razao_social_cliente": "REINALDO LUIS PIZZOLO",
-        "vendedor": "Rubs",
-        "qtd_compras_historico": 2,
-        "valor_total_historico": 760.5,
-        "ultima_compra": "25/08/2025",
-        "dias_desde_ultima_compra": 373,
-        "intervalo_medio_dias": 336.0,
-        "score_risco": 1.11,
         "em_risco": true
       },
       {
@@ -1708,21 +1690,21 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1289.0,
         "ultima_compra": "08/04/2026",
-        "dias_desde_ultima_compra": 147,
+        "dias_desde_ultima_compra": 148,
         "intervalo_medio_dias": 132.0,
-        "score_risco": 1.11,
+        "score_risco": 1.12,
         "em_risco": true
       },
       {
-        "cnpj_cliente": "38.283.405/0001-57",
-        "razao_social_cliente": "CARLA BOHRZ",
+        "cnpj_cliente": "002.963.100-93",
+        "razao_social_cliente": "REINALDO LUIS PIZZOLO",
         "vendedor": "Rubs",
         "qtd_compras_historico": 2,
-        "valor_total_historico": 4445.25,
-        "ultima_compra": "09/10/2025",
-        "dias_desde_ultima_compra": 328,
-        "intervalo_medio_dias": 309.0,
-        "score_risco": 1.06,
+        "valor_total_historico": 760.5,
+        "ultima_compra": "25/08/2025",
+        "dias_desde_ultima_compra": 374,
+        "intervalo_medio_dias": 336.0,
+        "score_risco": 1.11,
         "em_risco": true
       },
       {
@@ -1732,8 +1714,32 @@
         "qtd_compras_historico": 9,
         "valor_total_historico": 5480.0,
         "ultima_compra": "29/04/2026",
-        "dias_desde_ultima_compra": 126,
+        "dias_desde_ultima_compra": 127,
         "intervalo_medio_dias": 119.6,
+        "score_risco": 1.06,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "38.283.405/0001-57",
+        "razao_social_cliente": "CARLA BOHRZ",
+        "vendedor": "Rubs",
+        "qtd_compras_historico": 2,
+        "valor_total_historico": 4445.25,
+        "ultima_compra": "09/10/2025",
+        "dias_desde_ultima_compra": 329,
+        "intervalo_medio_dias": 309.0,
+        "score_risco": 1.06,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "60.941.364/0001-06",
+        "razao_social_cliente": "TIAGO MONACO",
+        "vendedor": "Rubs",
+        "qtd_compras_historico": 3,
+        "valor_total_historico": 2714.2,
+        "ultima_compra": "22/05/2026",
+        "dias_desde_ultima_compra": 104,
+        "intervalo_medio_dias": 99.0,
         "score_risco": 1.05,
         "em_risco": true
       },
@@ -1744,20 +1750,8 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 3372.5,
         "ultima_compra": "22/12/2025",
-        "dias_desde_ultima_compra": 254,
+        "dias_desde_ultima_compra": 255,
         "intervalo_medio_dias": 245.0,
-        "score_risco": 1.04,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "60.941.364/0001-06",
-        "razao_social_cliente": "TIAGO MONACO",
-        "vendedor": "Rubs",
-        "qtd_compras_historico": 3,
-        "valor_total_historico": 2714.2,
-        "ultima_compra": "22/05/2026",
-        "dias_desde_ultima_compra": 103,
-        "intervalo_medio_dias": 99.0,
         "score_risco": 1.04,
         "em_risco": true
       },
@@ -1768,9 +1762,9 @@
         "qtd_compras_historico": 4,
         "valor_total_historico": 5049.1,
         "ultima_compra": "23/06/2026",
-        "dias_desde_ultima_compra": 71,
+        "dias_desde_ultima_compra": 72,
         "intervalo_medio_dias": 69.0,
-        "score_risco": 1.03,
+        "score_risco": 1.04,
         "em_risco": true
       },
       {
@@ -1780,7 +1774,7 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1462.74,
         "ultima_compra": "05/12/2025",
-        "dias_desde_ultima_compra": 271,
+        "dias_desde_ultima_compra": 272,
         "intervalo_medio_dias": 269.0,
         "score_risco": 1.01,
         "em_risco": true
@@ -1794,9 +1788,9 @@
         "qtd_compras_historico": 19,
         "valor_total_historico": 21680.0,
         "ultima_compra": "20/02/2026",
-        "dias_desde_ultima_compra": 194,
+        "dias_desde_ultima_compra": 195,
         "intervalo_medio_dias": 83.8,
-        "score_risco": 2.31,
+        "score_risco": 2.33,
         "em_risco": true
       },
       {
@@ -1806,7 +1800,7 @@
         "qtd_compras_historico": 6,
         "valor_total_historico": 21634.5,
         "ultima_compra": "06/03/2026",
-        "dias_desde_ultima_compra": 180,
+        "dias_desde_ultima_compra": 181,
         "intervalo_medio_dias": 154.4,
         "score_risco": 1.17,
         "em_risco": true
@@ -1818,7 +1812,7 @@
         "qtd_compras_historico": 4,
         "valor_total_historico": 17033.0,
         "ultima_compra": "13/11/2025",
-        "dias_desde_ultima_compra": 293,
+        "dias_desde_ultima_compra": 294,
         "intervalo_medio_dias": 126.0,
         "score_risco": 2.33,
         "em_risco": true
@@ -1830,9 +1824,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 15060.0,
         "ultima_compra": "15/01/2026",
-        "dias_desde_ultima_compra": 230,
+        "dias_desde_ultima_compra": 231,
         "intervalo_medio_dias": 84.0,
-        "score_risco": 2.74,
+        "score_risco": 2.75,
         "em_risco": true
       },
       {
@@ -1842,9 +1836,9 @@
         "qtd_compras_historico": 4,
         "valor_total_historico": 13049.0,
         "ultima_compra": "17/04/2026",
-        "dias_desde_ultima_compra": 138,
+        "dias_desde_ultima_compra": 139,
         "intervalo_medio_dias": 51.3,
-        "score_risco": 2.69,
+        "score_risco": 2.71,
         "em_risco": true
       },
       {
@@ -1854,7 +1848,7 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 9721.39,
         "ultima_compra": "03/02/2026",
-        "dias_desde_ultima_compra": 211,
+        "dias_desde_ultima_compra": 212,
         "intervalo_medio_dias": 136.5,
         "score_risco": 1.55,
         "em_risco": true
@@ -1866,9 +1860,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 8273.72,
         "ultima_compra": "18/02/2026",
-        "dias_desde_ultima_compra": 196,
+        "dias_desde_ultima_compra": 197,
         "intervalo_medio_dias": 56.0,
-        "score_risco": 3.5,
+        "score_risco": 3.52,
         "em_risco": true
       },
       {
@@ -1878,9 +1872,9 @@
         "qtd_compras_historico": 5,
         "valor_total_historico": 6964.5,
         "ultima_compra": "15/01/2026",
-        "dias_desde_ultima_compra": 230,
+        "dias_desde_ultima_compra": 231,
         "intervalo_medio_dias": 110.2,
-        "score_risco": 2.09,
+        "score_risco": 2.1,
         "em_risco": true
       },
       {
@@ -1890,9 +1884,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 6734.0,
         "ultima_compra": "18/02/2026",
-        "dias_desde_ultima_compra": 196,
+        "dias_desde_ultima_compra": 197,
         "intervalo_medio_dias": 83.0,
-        "score_risco": 2.36,
+        "score_risco": 2.37,
         "em_risco": true
       },
       {
@@ -1902,9 +1896,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 6497.61,
         "ultima_compra": "13/02/2026",
-        "dias_desde_ultima_compra": 201,
+        "dias_desde_ultima_compra": 202,
         "intervalo_medio_dias": 74.0,
-        "score_risco": 2.72,
+        "score_risco": 2.73,
         "em_risco": true
       }
     ],
@@ -1916,9 +1910,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1577.0,
         "ultima_compra": "28/04/2026",
-        "dias_desde_ultima_compra": 127,
+        "dias_desde_ultima_compra": 128,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 127.0,
+        "score_risco": 128.0,
         "em_risco": true
       },
       {
@@ -1928,9 +1922,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 810.5,
         "ultima_compra": "10/04/2026",
-        "dias_desde_ultima_compra": 145,
+        "dias_desde_ultima_compra": 146,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 145.0,
+        "score_risco": 146.0,
         "em_risco": true
       },
       {
@@ -1940,9 +1934,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 4366.07,
         "ultima_compra": "03/12/2025",
-        "dias_desde_ultima_compra": 273,
+        "dias_desde_ultima_compra": 274,
         "intervalo_medio_dias": 19.0,
-        "score_risco": 14.37,
+        "score_risco": 14.42,
         "em_risco": true
       },
       {
@@ -1952,9 +1946,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 1892.12,
         "ultima_compra": "23/06/2026",
-        "dias_desde_ultima_compra": 71,
+        "dias_desde_ultima_compra": 72,
         "intervalo_medio_dias": 2.5,
-        "score_risco": 28.4,
+        "score_risco": 28.8,
         "em_risco": true
       },
       {
@@ -1964,9 +1958,9 @@
         "qtd_compras_historico": 19,
         "valor_total_historico": 21680.0,
         "ultima_compra": "20/02/2026",
-        "dias_desde_ultima_compra": 194,
+        "dias_desde_ultima_compra": 195,
         "intervalo_medio_dias": 83.8,
-        "score_risco": 2.31,
+        "score_risco": 2.33,
         "em_risco": true
       },
       {
@@ -1976,9 +1970,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 15060.0,
         "ultima_compra": "15/01/2026",
-        "dias_desde_ultima_compra": 230,
+        "dias_desde_ultima_compra": 231,
         "intervalo_medio_dias": 84.0,
-        "score_risco": 2.74,
+        "score_risco": 2.75,
         "em_risco": true
       },
       {
@@ -1988,9 +1982,9 @@
         "qtd_compras_historico": 4,
         "valor_total_historico": 13049.0,
         "ultima_compra": "17/04/2026",
-        "dias_desde_ultima_compra": 138,
+        "dias_desde_ultima_compra": 139,
         "intervalo_medio_dias": 51.3,
-        "score_risco": 2.69,
+        "score_risco": 2.71,
         "em_risco": true
       },
       {
@@ -2000,9 +1994,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 4936.0,
         "ultima_compra": "20/02/2026",
-        "dias_desde_ultima_compra": 194,
+        "dias_desde_ultima_compra": 195,
         "intervalo_medio_dias": 30.0,
-        "score_risco": 6.47,
+        "score_risco": 6.5,
         "em_risco": true
       },
       {
@@ -2012,9 +2006,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 8273.72,
         "ultima_compra": "18/02/2026",
-        "dias_desde_ultima_compra": 196,
+        "dias_desde_ultima_compra": 197,
         "intervalo_medio_dias": 56.0,
-        "score_risco": 3.5,
+        "score_risco": 3.52,
         "em_risco": true
       },
       {
@@ -2024,7 +2018,7 @@
         "qtd_compras_historico": 6,
         "valor_total_historico": 21634.5,
         "ultima_compra": "06/03/2026",
-        "dias_desde_ultima_compra": 180,
+        "dias_desde_ultima_compra": 181,
         "intervalo_medio_dias": 154.4,
         "score_risco": 1.17,
         "em_risco": true
@@ -2036,9 +2030,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 6497.61,
         "ultima_compra": "13/02/2026",
-        "dias_desde_ultima_compra": 201,
+        "dias_desde_ultima_compra": 202,
         "intervalo_medio_dias": 74.0,
-        "score_risco": 2.72,
+        "score_risco": 2.73,
         "em_risco": true
       },
       {
@@ -2048,9 +2042,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 6184.0,
         "ultima_compra": "07/05/2026",
-        "dias_desde_ultima_compra": 118,
+        "dias_desde_ultima_compra": 119,
         "intervalo_medio_dias": 45.0,
-        "score_risco": 2.62,
+        "score_risco": 2.64,
         "em_risco": true
       },
       {
@@ -2060,9 +2054,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 6734.0,
         "ultima_compra": "18/02/2026",
-        "dias_desde_ultima_compra": 196,
+        "dias_desde_ultima_compra": 197,
         "intervalo_medio_dias": 83.0,
-        "score_risco": 2.36,
+        "score_risco": 2.37,
         "em_risco": true
       },
       {
@@ -2072,7 +2066,7 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 9721.39,
         "ultima_compra": "03/02/2026",
-        "dias_desde_ultima_compra": 211,
+        "dias_desde_ultima_compra": 212,
         "intervalo_medio_dias": 136.5,
         "score_risco": 1.55,
         "em_risco": true
@@ -2084,9 +2078,9 @@
         "qtd_compras_historico": 5,
         "valor_total_historico": 6964.5,
         "ultima_compra": "15/01/2026",
-        "dias_desde_ultima_compra": 230,
+        "dias_desde_ultima_compra": 231,
         "intervalo_medio_dias": 110.2,
-        "score_risco": 2.09,
+        "score_risco": 2.1,
         "em_risco": true
       },
       {
@@ -2096,9 +2090,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 2730.0,
         "ultima_compra": "04/03/2026",
-        "dias_desde_ultima_compra": 182,
+        "dias_desde_ultima_compra": 183,
         "intervalo_medio_dias": 48.0,
-        "score_risco": 3.79,
+        "score_risco": 3.81,
         "em_risco": true
       },
       {
@@ -2108,9 +2102,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 6160.0,
         "ultima_compra": "10/12/2025",
-        "dias_desde_ultima_compra": 266,
+        "dias_desde_ultima_compra": 267,
         "intervalo_medio_dias": 170.0,
-        "score_risco": 1.56,
+        "score_risco": 1.57,
         "em_risco": true
       },
       {
@@ -2120,9 +2114,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 5894.39,
         "ultima_compra": "06/04/2026",
-        "dias_desde_ultima_compra": 149,
+        "dias_desde_ultima_compra": 150,
         "intervalo_medio_dias": 107.5,
-        "score_risco": 1.39,
+        "score_risco": 1.4,
         "em_risco": true
       },
       {
@@ -2132,9 +2126,9 @@
         "qtd_compras_historico": 4,
         "valor_total_historico": 4234.5,
         "ultima_compra": "01/06/2026",
-        "dias_desde_ultima_compra": 93,
+        "dias_desde_ultima_compra": 94,
         "intervalo_medio_dias": 54.7,
-        "score_risco": 1.7,
+        "score_risco": 1.72,
         "em_risco": true
       },
       {
@@ -2144,9 +2138,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 2535.0,
         "ultima_compra": "28/04/2026",
-        "dias_desde_ultima_compra": 127,
+        "dias_desde_ultima_compra": 128,
         "intervalo_medio_dias": 48.0,
-        "score_risco": 2.65,
+        "score_risco": 2.67,
         "em_risco": true
       }
     ]
@@ -2194,8 +2188,8 @@
     },
     {
       "mes": "2026-09",
-      "faturamento_canal": 12064.0,
-      "gratificacao": 24.13
+      "faturamento_canal": 23204.5,
+      "gratificacao": 46.41
     }
   ],
   "omie_erros_empresa": [],
@@ -2325,8 +2319,8 @@
       "diferenca_frete": 164276.86,
       "total_linhas_processadas": 9556,
       "linhas_sem_data_valida": [],
-      "planilha_comissao_atualizada_em_utc": "2026-09-02T09:22:30.450569Z",
-      "planilha_frete_atualizada_em_utc": "2026-09-02T09:22:30.456569Z"
+      "planilha_comissao_atualizada_em_utc": "2026-09-03T09:32:29.403357Z",
+      "planilha_frete_atualizada_em_utc": "2026-09-03T09:32:29.406357Z"
     }
   }
 }
