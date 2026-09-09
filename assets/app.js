@@ -401,11 +401,17 @@ function abaComissao(container) {
   // filtro (so reseta ao recarregar a pagina) e e responsivo aos mesmos
   // filtros de mes/vendedor que ja alimentam `linhas`/`linhasBonus` acima.
   if (!ESTADO.extratoView) ESTADO.extratoView = "comissao";
+  const detalheComissaoFiltrado = (CONSOLIDADO.comissao.detalhe || []).filter(d => {
+    if (ESTADO.vendedor && d.vendedor !== ESTADO.vendedor) return false;
+    if (ESTADO.mes && d.mes !== ESTADO.mes) return false;
+    return true;
+  });
   const toggle = document.createElement("div");
   toggle.className = "toggle-extrato";
   toggle.innerHTML = `
     <button type="button" data-view="comissao" class="${ESTADO.extratoView === "comissao" ? "ativa" : ""}">Extrato de comissão</button>
     <button type="button" data-view="bonificacao" class="${ESTADO.extratoView === "bonificacao" ? "ativa" : ""}">Extrato de bonificação</button>
+    <button type="button" data-view="detalhe" class="${ESTADO.extratoView === "detalhe" ? "ativa" : ""}">Detalhe por nota fiscal</button>
   `;
   container.appendChild(toggle);
   toggle.querySelectorAll("[data-view]").forEach(btn => {
@@ -434,7 +440,7 @@ function abaComissao(container) {
       colunas: colunasComissao,
       linhas,
     });
-  } else {
+  } else if (ESTADO.extratoView === "bonificacao") {
     renderTabela(container, {
       id: "bonus-clientes-novos", titulo: `Extrato de bonificação por mês (clientes novos + seladora) (${rotuloPeriodo(linhasBonus)})`,
       colunas: [
@@ -448,6 +454,27 @@ function abaComissao(container) {
       ],
       linhas: linhasBonus,
     });
+  } else {
+    renderTabela(container, {
+      id: "comissao-detalhe", titulo: `Detalhe por nota fiscal (${rotuloPeriodo(detalheComissaoFiltrado)})`,
+      colunas: [
+        ...(window.AREA_CONFIG.vendedorFiltro ? [] : [{ chave: "vendedor", rotulo: "Vendedor" }]),
+        { chave: "mes", rotulo: "Mês" },
+        { chave: "nota_fiscal", rotulo: "Nota Fiscal" },
+        { chave: "pedido", rotulo: "Pedido" },
+        { chave: "tipo_cliente", rotulo: "Tipo cliente" },
+        { chave: "valor_bruto", rotulo: "Valor bruto", render: r => fmtMoeda(r.valor_bruto) },
+        { chave: "frete_corrigido", rotulo: "Frete corrigido", render: r => fmtMoeda(r.frete_corrigido) },
+        { chave: "liquido_corrigido", rotulo: "Valor líquido (base)", render: r => fmtMoeda(r.liquido_corrigido) },
+      ],
+      linhas: detalheComissaoFiltrado,
+    });
+    if (!detalheComissaoFiltrado.length) {
+      const aviso = document.createElement("p");
+      aviso.className = "aviso-detalhe";
+      aviso.textContent = "Sem detalhe por nota fiscal disponível para este período (meses cobertos pela planilha histórica de comissão ainda não têm detalhamento nota a nota).";
+      container.appendChild(aviso);
+    }
   }
 
   // Auditoria "cliente marcado como novo mas é recorrente" (secao 4.3(a)
@@ -908,15 +935,49 @@ function abaGratificacao(container) {
       { rotulo: `Gratificação (${periodo})`, valor: fmtMoeda(somaCampo(linhas, "gratificacao")), classe: somaCampo(linhas, "gratificacao") ? "ok" : "" },
     ]);
   }
-  renderTabela(container, {
-    id: "gratificacao", titulo: "Gratificação por mês (canal online)",
-    colunas: [
-      { chave: "mes", rotulo: "Mês" },
-      { chave: "faturamento_canal", rotulo: "Faturamento do canal (base)", render: r => fmtMoeda(r.faturamento_canal) },
-      { chave: "gratificacao", rotulo: "Gratificação", render: r => fmtMoeda(r.gratificacao) },
-    ],
-    linhas,
+  // Extrato detalhado com toggle (pedido do usuario, 09/09/2026: "o
+  // extrato da comissao e gratificacao deve ser detalhado e nao apenas
+  // um resumo") - mesmo padrao ja usado na aba Comissao (13/08/2026).
+  if (!ESTADO.extratoViewGrat) ESTADO.extratoViewGrat = "resumo";
+  const detalheGratFiltrado = (CONSOLIDADO.gratificacao_detalhe || []).filter(d => !ESTADO.mes || d.mes === ESTADO.mes);
+  const toggleGrat = document.createElement("div");
+  toggleGrat.className = "toggle-extrato";
+  toggleGrat.innerHTML = `
+    <button type="button" data-view="resumo" class="${ESTADO.extratoViewGrat === "resumo" ? "ativa" : ""}">Resumo mensal</button>
+    <button type="button" data-view="detalhe" class="${ESTADO.extratoViewGrat === "detalhe" ? "ativa" : ""}">Detalhe por nota/OS</button>
+  `;
+  container.appendChild(toggleGrat);
+  toggleGrat.querySelectorAll("[data-view]").forEach(btn => {
+    btn.addEventListener("click", () => { ESTADO.extratoViewGrat = btn.dataset.view; renderAbaAtiva(); });
   });
+
+  if (ESTADO.extratoViewGrat === "resumo") {
+    renderTabela(container, {
+      id: "gratificacao", titulo: "Gratificação por mês (canal online)",
+      colunas: [
+        { chave: "mes", rotulo: "Mês" },
+        { chave: "faturamento_canal", rotulo: "Faturamento do canal (base)", render: r => fmtMoeda(r.faturamento_canal) },
+        { chave: "gratificacao", rotulo: "Gratificação", render: r => fmtMoeda(r.gratificacao) },
+      ],
+      linhas,
+    });
+  } else {
+    renderTabela(container, {
+      id: "gratificacao-detalhe", titulo: `Detalhe por nota/OS (${rotuloPeriodo(detalheGratFiltrado)})`,
+      colunas: [
+        { chave: "mes", rotulo: "Mês" },
+        { chave: "data_emissao", rotulo: "Data" },
+        { chave: "empresa", rotulo: "Empresa" },
+        { chave: "numero_nf", rotulo: "Nota Fiscal" },
+        { chave: "pedido", rotulo: "Pedido" },
+        { chave: "razao_social_cliente", rotulo: "Cliente" },
+        { chave: "valor_total_nf", rotulo: "Valor da nota", render: r => fmtMoeda(r.valor_total_nf) },
+        { chave: "valor_frete", rotulo: "Frete", render: r => fmtMoeda(r.valor_frete) },
+        { chave: "faturamento_real", rotulo: "Faturamento líquido (base)", render: r => fmtMoeda(r.faturamento_real) },
+      ],
+      linhas: detalheGratFiltrado,
+    });
+  }
 
   const itensAnalise = [];
   if (linhas.length) {
