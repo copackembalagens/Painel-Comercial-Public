@@ -1,5 +1,5 @@
 {
-  "gerado_em_utc": "2026-10-14T10:22:56.454941Z",
+  "gerado_em_utc": "2026-10-15T10:04:28.236443Z",
   "metas": [
     {
       "mes": "2026-01",
@@ -157,19 +157,19 @@
     {
       "mes": "2026-10",
       "meta_canal": 500000.0,
-      "realizado_canal": 210625.58,
-      "atingimento_pct": 42.1,
-      "realizado_novos": 35288.63,
-      "realizado_recorrentes": 144336.95,
+      "realizado_canal": 239694.28,
+      "atingimento_pct": 47.9,
+      "realizado_novos": 47638.43,
+      "realizado_recorrentes": 161055.85,
       "realizado_nao_auditado": 31000.0,
-      "mix_novos_pct": 16.8,
+      "mix_novos_pct": 19.9,
       "meta_novos": 125000.0,
       "meta_recorrentes": 375000.0,
-      "atingimento_novos_pct": 28.2,
-      "atingimento_recorrentes_pct": 38.5,
-      "valor_frete": 12808.77,
-      "faturamento_bruto": 223434.35,
-      "pct_frete_sobre_faturamento": 5.7
+      "atingimento_novos_pct": 38.1,
+      "atingimento_recorrentes_pct": 42.9,
+      "valor_frete": 15408.22,
+      "faturamento_bruto": 255102.5,
+      "pct_frete_sobre_faturamento": 6.0
     }
   ],
   "performance_kommo": {
@@ -177,38 +177,38 @@
       {
         "funil": "Funil Atendimento",
         "ganhas": 89,
-        "perdidas": 40,
-        "em_aberto": 53,
+        "perdidas": 41,
+        "em_aberto": 52,
         "valor_ganho": 69001.0,
         "valor_perdido": 516.0,
-        "taxa_conversao_pct": 69.0
+        "taxa_conversao_pct": 68.5
       },
       {
         "funil": "Funil Eduardo",
-        "ganhas": 822,
-        "perdidas": 6643,
-        "em_aberto": 542,
-        "valor_ganho": 1245331.0,
-        "valor_perdido": 6996078.0,
-        "taxa_conversao_pct": 11.0
+        "ganhas": 826,
+        "perdidas": 6130,
+        "em_aberto": 597,
+        "valor_ganho": 1258552.0,
+        "valor_perdido": 6912370.0,
+        "taxa_conversao_pct": 11.9
       },
       {
         "funil": "Funil Joice",
-        "ganhas": 646,
-        "perdidas": 6662,
-        "em_aberto": 337,
-        "valor_ganho": 1049633.0,
-        "valor_perdido": 983932.0,
-        "taxa_conversao_pct": 8.8
+        "ganhas": 645,
+        "perdidas": 6496,
+        "em_aberto": 334,
+        "valor_ganho": 1047293.0,
+        "valor_perdido": 926187.0,
+        "taxa_conversao_pct": 9.0
       },
       {
         "funil": "Funil Rubs",
-        "ganhas": 507,
-        "perdidas": 8050,
-        "em_aberto": 422,
-        "valor_ganho": 624270.0,
-        "valor_perdido": 1782036.0,
-        "taxa_conversao_pct": 5.9
+        "ganhas": 508,
+        "perdidas": 7857,
+        "em_aberto": 488,
+        "valor_ganho": 632970.0,
+        "valor_perdido": 1407388.0,
+        "taxa_conversao_pct": 6.1
       },
       {
         "funil": "Supervisão",
@@ -223,53 +223,53 @@
     "motivos_perda": [
       {
         "motivo": "Não tem interesse",
-        "qtd": 13343,
-        "valor": 9066339.0
+        "qtd": 12480,
+        "valor": 8552763.0
       },
       {
         "motivo": "Não responde - antes proposta",
-        "qtd": 3401,
-        "valor": 194969.0
+        "qtd": 3399,
+        "valor": 194239.0
       },
       {
         "motivo": "Lead Duplicado",
-        "qtd": 2142,
+        "qtd": 2151,
         "valor": 1970.0
       },
       {
         "motivo": "Contato Não Comercial",
-        "qtd": 1162,
+        "qtd": 1164,
         "valor": 55078.0
       },
       {
         "motivo": "O produto não é a necessidade",
-        "qtd": 532,
+        "qtd": 535,
         "valor": 6895.0
       },
       {
         "motivo": "Quantidade mínima",
-        "qtd": 172,
+        "qtd": 170,
         "valor": 390.0
       },
       {
         "motivo": "Não responde -pós proposta",
         "qtd": 141,
-        "valor": 359080.0
-      },
-      {
-        "motivo": "Prazo de produção",
-        "qtd": 127,
-        "valor": 34793.0
+        "valor": 357130.0
       },
       {
         "motivo": "Volumetria específica",
-        "qtd": 124,
+        "qtd": 121,
         "valor": 830.0
       },
       {
+        "motivo": "Prazo de produção",
+        "qtd": 119,
+        "valor": 34793.0
+      },
+      {
         "motivo": "Sem motivo registrado",
-        "qtd": 86,
-        "valor": 4381.0
+        "qtd": 84,
+        "valor": 3926.0
       },
       {
         "motivo": "Logística",
@@ -278,7 +278,7 @@
       },
       {
         "motivo": "Tempo de Atendimento",
-        "qtd": 62,
+        "qtd": 58,
         "valor": 0.0
       },
       {
@@ -288,8 +288,8 @@
       },
       {
         "motivo": "Comprado do concorrente",
-        "qtd": 22,
-        "valor": 12474.0
+        "qtd": 23,
+        "valor": 15504.0
       },
       {
         "motivo": "Seladora - Investimento",
@@ -298,8 +298,8 @@
       },
       {
         "motivo": "Condições de pagamento",
-        "qtd": 4,
-        "valor": 4960.0
+        "qtd": 2,
+        "valor": 2540.0
       },
       {
         "motivo": "Frete",
@@ -307,20 +307,20 @@
         "valor": 0.0
       }
     ],
-    "total_leads": 24930,
+    "total_leads": 24180,
     "total_pipelines": 5,
     "resumo": {
-      "total_leads": 24930,
-      "taxa_conversao_pct": 8.5,
-      "total_ganho": 2076,
-      "total_perdido": 21430,
-      "valor_ganho": 3060997.0,
-      "valor_perdido": 9777789.0,
+      "total_leads": 24180,
+      "taxa_conversao_pct": 8.8,
+      "total_ganho": 2080,
+      "total_perdido": 20559,
+      "valor_ganho": 3080578.0,
+      "valor_perdido": 9261688.0,
       "leads_em_aberto": {
-        "quantidade": 1424,
-        "valor": 1419265.0,
-        "pct_quantidade_sobre_total": 5.7,
-        "pct_valor_sobre_total": 10.0
+        "quantidade": 1541,
+        "valor": 1422079.0,
+        "pct_quantidade_sobre_total": 6.4,
+        "pct_valor_sobre_total": 10.3
       }
     },
     "por_etapa": [
@@ -333,7 +333,7 @@
       {
         "funil": "Funil Atendimento",
         "etapa": "CLIENTES DIRETORIA",
-        "quantidade": 52,
+        "quantidade": 51,
         "valor": 55390.0
       },
       {
@@ -345,116 +345,128 @@
       {
         "funil": "Funil Atendimento",
         "etapa": "VENDA PERDIDA",
-        "quantidade": 40,
+        "quantidade": 41,
         "valor": 516.0
       },
       {
         "funil": "Funil Eduardo",
         "etapa": "VENDA PERDIDA",
-        "quantidade": 6643,
-        "valor": 6996078.0
+        "quantidade": 6130,
+        "valor": 6912370.0
       },
       {
         "funil": "Funil Eduardo",
         "etapa": "VENDA GANHA",
-        "quantidade": 822,
-        "valor": 1245331.0
+        "quantidade": 826,
+        "valor": 1258552.0
       },
       {
         "funil": "Funil Eduardo",
         "etapa": "CLIENTES RECORRENTES",
-        "quantidade": 263,
-        "valor": 343151.0
+        "quantidade": 261,
+        "valor": 339511.0
       },
       {
         "funil": "Funil Eduardo",
         "etapa": "ACOMPANHAMENTO",
-        "quantidade": 6,
-        "valor": 21320.0
-      },
-      {
-        "funil": "Funil Eduardo",
-        "etapa": "QUALIFICAÇÃO",
-        "quantidade": 263,
-        "valor": 10217.0
-      },
-      {
-        "funil": "Funil Eduardo",
-        "etapa": "PROPOSTA ENVIADA",
-        "quantidade": 6,
-        "valor": 5590.0
+        "quantidade": 5,
+        "valor": 12215.0
       },
       {
         "funil": "Funil Eduardo",
         "etapa": "GERAÇÃO DE PEDIDO",
-        "quantidade": 1,
-        "valor": 500.0
+        "quantidade": 6,
+        "valor": 11920.0
+      },
+      {
+        "funil": "Funil Eduardo",
+        "etapa": "QUALIFICAÇÃO",
+        "quantidade": 286,
+        "valor": 10816.0
+      },
+      {
+        "funil": "Funil Eduardo",
+        "etapa": "PROPOSTA ENVIADA",
+        "quantidade": 7,
+        "valor": 6710.0
       },
       {
         "funil": "Funil Eduardo",
         "etapa": "SEM ATENDIMENTO",
-        "quantidade": 3,
-        "valor": 310.0
+        "quantidade": 32,
+        "valor": 390.0
       },
       {
         "funil": "Funil Joice",
         "etapa": "VENDA GANHA",
-        "quantidade": 646,
-        "valor": 1049633.0
+        "quantidade": 645,
+        "valor": 1047293.0
       },
       {
         "funil": "Funil Joice",
         "etapa": "VENDA PERDIDA",
-        "quantidade": 6662,
-        "valor": 983932.0
+        "quantidade": 6496,
+        "valor": 926187.0
       },
       {
         "funil": "Funil Joice",
         "etapa": "ACOMPANHAMENTO",
-        "quantidade": 62,
+        "quantidade": 61,
         "valor": 413161.0
       },
       {
         "funil": "Funil Joice",
         "etapa": "CLIENTES RECORRENTES",
-        "quantidade": 275,
-        "valor": 241867.0
+        "quantidade": 272,
+        "valor": 238287.0
+      },
+      {
+        "funil": "Funil Joice",
+        "etapa": "QUALIFICAÇÃO",
+        "quantidade": 1,
+        "valor": 2960.0
       },
       {
         "funil": "Funil Rubs",
         "etapa": "VENDA PERDIDA",
-        "quantidade": 8050,
-        "valor": 1782036.0
+        "quantidade": 7857,
+        "valor": 1407388.0
       },
       {
         "funil": "Funil Rubs",
         "etapa": "VENDA GANHA",
-        "quantidade": 507,
-        "valor": 624270.0
-      },
-      {
-        "funil": "Funil Rubs",
-        "etapa": "ACOMPANHAMENTO",
-        "quantidade": 39,
-        "valor": 60555.0
+        "quantidade": 508,
+        "valor": 632970.0
       },
       {
         "funil": "Funil Rubs",
         "etapa": "PROPOSTA ENVIADA",
-        "quantidade": 3,
-        "valor": 59360.0
+        "quantidade": 4,
+        "valor": 59920.0
+      },
+      {
+        "funil": "Funil Rubs",
+        "etapa": "ACOMPANHAMENTO",
+        "quantidade": 40,
+        "valor": 52055.0
       },
       {
         "funil": "Funil Rubs",
         "etapa": "CLIENTES RECORRENTES",
-        "quantidade": 137,
-        "valor": 47044.0
+        "quantidade": 140,
+        "valor": 48874.0
       },
       {
         "funil": "Funil Rubs",
         "etapa": "QUALIFICAÇÃO",
-        "quantidade": 241,
-        "valor": 10010.0
+        "quantidade": 272,
+        "valor": 14550.0
+      },
+      {
+        "funil": "Funil Rubs",
+        "etapa": "SEM ATENDIMENTO",
+        "quantidade": 30,
+        "valor": 4530.0
       },
       {
         "funil": "Funil Rubs",
@@ -502,27 +514,27 @@
     "por_produto": [
       {
         "produto": "Sem produto informado",
-        "ganhas": 2044,
-        "perdidas": 17325,
-        "valor_ganho": 3013496.0,
-        "valor_perdido": 9681715.0,
-        "taxa_conversao_pct": 10.6
+        "ganhas": 2048,
+        "perdidas": 16755,
+        "valor_ganho": 3033077.0,
+        "valor_perdido": 9194883.0,
+        "taxa_conversao_pct": 10.9
       },
       {
         "produto": "copo_personalizado",
         "ganhas": 23,
-        "perdidas": 2491,
+        "perdidas": 2308,
         "valor_ganho": 27633.0,
-        "valor_perdido": 42042.0,
-        "taxa_conversao_pct": 0.9
+        "valor_perdido": 30211.0,
+        "taxa_conversao_pct": 1.0
       },
       {
         "produto": "pote",
         "ganhas": 7,
-        "perdidas": 1316,
+        "perdidas": 1220,
         "valor_ganho": 11822.0,
-        "valor_perdido": 46142.0,
-        "taxa_conversao_pct": 0.5
+        "valor_perdido": 36594.0,
+        "taxa_conversao_pct": 0.6
       },
       {
         "produto": "copo",
@@ -533,17 +545,17 @@
         "taxa_conversao_pct": 100.0
       },
       {
-        "produto": "marmita",
+        "produto": "seladora",
         "ganhas": 0,
-        "perdidas": 223,
+        "perdidas": 74,
         "valor_ganho": 0.0,
-        "valor_perdido": 7890.0,
+        "valor_perdido": 0.0,
         "taxa_conversao_pct": 0.0
       },
       {
-        "produto": "seladora",
+        "produto": "marmita",
         "ganhas": 0,
-        "perdidas": 75,
+        "perdidas": 202,
         "valor_ganho": 0.0,
         "valor_perdido": 0.0,
         "taxa_conversao_pct": 0.0
@@ -564,7 +576,7 @@
           {
             "funil": "Funil Eduardo",
             "ganhas": 87,
-            "perdidas": 638,
+            "perdidas": 637,
             "em_aberto": 85,
             "valor_ganho": 153953.0,
             "valor_perdido": 87929.0,
@@ -574,7 +586,7 @@
             "funil": "Funil Joice",
             "ganhas": 78,
             "perdidas": 782,
-            "em_aberto": 35,
+            "em_aberto": 34,
             "valor_ganho": 152588.0,
             "valor_perdido": 170588.0,
             "taxa_conversao_pct": 9.1
@@ -601,7 +613,7 @@
         "motivos_perda": [
           {
             "motivo": "Não tem interesse",
-            "qtd": 1368,
+            "qtd": 1367,
             "valor": 367956.0
           },
           {
@@ -665,20 +677,20 @@
             "valor": 3950.0
           }
         ],
-        "total_leads": 2710,
+        "total_leads": 2708,
         "total_pipelines": 5,
         "resumo": {
-          "total_leads": 2710,
+          "total_leads": 2708,
           "taxa_conversao_pct": 8.7,
           "total_ganho": 234,
-          "total_perdido": 2327,
+          "total_perdido": 2326,
           "valor_ganho": 405760.0,
           "valor_perdido": 521545.0,
           "leads_em_aberto": {
-            "quantidade": 149,
-            "valor": 238702.0,
+            "quantidade": 148,
+            "valor": 237462.0,
             "pct_quantidade_sobre_total": 5.5,
-            "pct_valor_sobre_total": 20.5
+            "pct_valor_sobre_total": 20.4
           }
         },
         "por_etapa": [
@@ -709,7 +721,7 @@
           {
             "funil": "Funil Eduardo",
             "etapa": "VENDA PERDIDA",
-            "quantidade": 638,
+            "quantidade": 637,
             "valor": 87929.0
           },
           {
@@ -745,8 +757,8 @@
           {
             "funil": "Funil Joice",
             "etapa": "CLIENTES RECORRENTES",
-            "quantidade": 30,
-            "valor": 24255.0
+            "quantidade": 29,
+            "valor": 23015.0
           },
           {
             "funil": "Funil Rubs",
@@ -789,7 +801,7 @@
           {
             "produto": "Sem produto informado",
             "ganhas": 234,
-            "perdidas": 2320,
+            "perdidas": 2319,
             "valor_ganho": 405760.0,
             "valor_perdido": 521545.0,
             "taxa_conversao_pct": 9.2
@@ -835,7 +847,7 @@
             "funil": "Funil Eduardo",
             "ganhas": 79,
             "perdidas": 855,
-            "em_aberto": 35,
+            "em_aberto": 36,
             "valor_ganho": 97569.0,
             "valor_perdido": 159457.0,
             "taxa_conversao_pct": 8.5
@@ -844,7 +856,7 @@
             "funil": "Funil Joice",
             "ganhas": 45,
             "perdidas": 620,
-            "em_aberto": 46,
+            "em_aberto": 44,
             "valor_ganho": 60593.0,
             "valor_perdido": 118910.0,
             "taxa_conversao_pct": 6.8
@@ -853,7 +865,7 @@
             "funil": "Funil Rubs",
             "ganhas": 38,
             "perdidas": 874,
-            "em_aberto": 16,
+            "em_aberto": 17,
             "valor_ganho": 37448.0,
             "valor_perdido": 173870.0,
             "taxa_conversao_pct": 4.2
@@ -951,9 +963,9 @@
           "valor_perdido": 452237.0,
           "leads_em_aberto": {
             "quantidade": 119,
-            "valor": 110089.0,
+            "valor": 110629.0,
             "pct_quantidade_sobre_total": 4.5,
-            "pct_valor_sobre_total": 14.4
+            "pct_valor_sobre_total": 14.5
           }
         },
         "por_etapa": [
@@ -1006,6 +1018,12 @@
             "valor": 1500.0
           },
           {
+            "funil": "Funil Eduardo",
+            "etapa": "GERAÇÃO DE PEDIDO",
+            "quantidade": 1,
+            "valor": 480.0
+          },
+          {
             "funil": "Funil Joice",
             "etapa": "VENDA PERDIDA",
             "quantidade": 620,
@@ -1020,8 +1038,8 @@
           {
             "funil": "Funil Joice",
             "etapa": "CLIENTES RECORRENTES",
-            "quantidade": 44,
-            "valor": 40718.0
+            "quantidade": 42,
+            "valor": 38378.0
           },
           {
             "funil": "Funil Joice",
@@ -1050,8 +1068,8 @@
           {
             "funil": "Funil Rubs",
             "etapa": "ACOMPANHAMENTO",
-            "quantidade": 1,
-            "valor": 1220.0
+            "quantidade": 2,
+            "valor": 3620.0
           },
           {
             "funil": "Supervisão",
@@ -1273,9 +1291,15 @@
           },
           {
             "funil": "Funil Eduardo",
+            "etapa": "GERAÇÃO DE PEDIDO",
+            "quantidade": 1,
+            "valor": 7100.0
+          },
+          {
+            "funil": "Funil Eduardo",
             "etapa": "ACOMPANHAMENTO",
-            "quantidade": 2,
-            "valor": 9100.0
+            "quantidade": 1,
+            "valor": 2000.0
           },
           {
             "funil": "Funil Eduardo",
@@ -1414,7 +1438,7 @@
             "funil": "Funil Eduardo",
             "ganhas": 54,
             "perdidas": 677,
-            "em_aberto": 41,
+            "em_aberto": 40,
             "valor_ganho": 109903.0,
             "valor_perdido": 232427.0,
             "taxa_conversao_pct": 7.4
@@ -1432,7 +1456,7 @@
             "funil": "Funil Rubs",
             "ganhas": 65,
             "perdidas": 962,
-            "em_aberto": 21,
+            "em_aberto": 24,
             "valor_ganho": 70110.0,
             "valor_perdido": 115810.0,
             "taxa_conversao_pct": 6.3
@@ -1519,19 +1543,19 @@
             "valor": 0.0
           }
         ],
-        "total_leads": 2991,
+        "total_leads": 2993,
         "total_pipelines": 5,
         "resumo": {
-          "total_leads": 2991,
+          "total_leads": 2993,
           "taxa_conversao_pct": 6.6,
           "total_ganho": 196,
           "total_perdido": 2668,
           "valor_ganho": 293190.0,
           "valor_perdido": 452644.0,
           "leads_em_aberto": {
-            "quantidade": 127,
-            "valor": 361640.0,
-            "pct_quantidade_sobre_total": 4.2,
+            "quantidade": 129,
+            "valor": 362640.0,
+            "pct_quantidade_sobre_total": 4.3,
             "pct_valor_sobre_total": 32.7
           }
         },
@@ -1575,8 +1599,8 @@
           {
             "funil": "Funil Eduardo",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 4,
-            "valor": 3161.0
+            "quantidade": 3,
+            "valor": 2721.0
           },
           {
             "funil": "Funil Joice",
@@ -1617,8 +1641,8 @@
           {
             "funil": "Funil Rubs",
             "etapa": "CLIENTES RECORRENTES",
-            "quantidade": 14,
-            "valor": 3273.0
+            "quantidade": 16,
+            "valor": 4713.0
           },
           {
             "funil": "Funil Rubs",
@@ -1635,7 +1659,7 @@
           {
             "funil": "Funil Rubs",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 3,
+            "quantidade": 4,
             "valor": 0.0
           },
           {
@@ -1698,18 +1722,18 @@
           },
           {
             "funil": "Funil Joice",
-            "ganhas": 77,
+            "ganhas": 76,
             "perdidas": 669,
             "em_aberto": 59,
-            "valor_ganho": 86430.0,
+            "valor_ganho": 84090.0,
             "valor_perdido": 83856.0,
-            "taxa_conversao_pct": 10.3
+            "taxa_conversao_pct": 10.2
           },
           {
             "funil": "Funil Rubs",
             "ganhas": 50,
             "perdidas": 804,
-            "em_aberto": 29,
+            "em_aberto": 31,
             "valor_ganho": 45592.0,
             "valor_perdido": 116499.0,
             "taxa_conversao_pct": 5.9
@@ -1796,20 +1820,20 @@
             "valor": 0.0
           }
         ],
-        "total_leads": 2257,
+        "total_leads": 2258,
         "total_pipelines": 5,
         "resumo": {
-          "total_leads": 2257,
+          "total_leads": 2258,
           "taxa_conversao_pct": 10.4,
-          "total_ganho": 229,
+          "total_ganho": 228,
           "total_perdido": 1867,
-          "valor_ganho": 244780.0,
+          "valor_ganho": 242440.0,
           "valor_perdido": 302876.0,
           "leads_em_aberto": {
-            "quantidade": 161,
-            "valor": 151830.0,
-            "pct_quantidade_sobre_total": 7.1,
-            "pct_valor_sobre_total": 21.7
+            "quantidade": 163,
+            "valor": 152220.0,
+            "pct_quantidade_sobre_total": 7.2,
+            "pct_valor_sobre_total": 21.8
           }
         },
         "por_etapa": [
@@ -1870,8 +1894,8 @@
           {
             "funil": "Funil Joice",
             "etapa": "VENDA GANHA",
-            "quantidade": 77,
-            "valor": 86430.0
+            "quantidade": 76,
+            "valor": 84090.0
           },
           {
             "funil": "Funil Joice",
@@ -1906,14 +1930,14 @@
           {
             "funil": "Funil Rubs",
             "etapa": "ACOMPANHAMENTO",
-            "quantidade": 5,
+            "quantidade": 6,
             "valor": 8480.0
           },
           {
             "funil": "Funil Rubs",
             "etapa": "CLIENTES RECORRENTES",
-            "quantidade": 22,
-            "valor": 3756.0
+            "quantidade": 23,
+            "valor": 4146.0
           },
           {
             "funil": "Funil Rubs",
@@ -1949,11 +1973,11 @@
         "por_produto": [
           {
             "produto": "Sem produto informado",
-            "ganhas": 229,
+            "ganhas": 228,
             "perdidas": 1861,
-            "valor_ganho": 244780.0,
+            "valor_ganho": 242440.0,
             "valor_perdido": 302876.0,
-            "taxa_conversao_pct": 11.0
+            "taxa_conversao_pct": 10.9
           },
           {
             "produto": "pote",
@@ -1979,7 +2003,7 @@
             "funil": "Funil Atendimento",
             "ganhas": 12,
             "perdidas": 6,
-            "em_aberto": 8,
+            "em_aberto": 7,
             "valor_ganho": 5446.0,
             "valor_perdido": 0.0,
             "taxa_conversao_pct": 66.7
@@ -1988,7 +2012,7 @@
             "funil": "Funil Eduardo",
             "ganhas": 76,
             "perdidas": 627,
-            "em_aberto": 37,
+            "em_aberto": 36,
             "valor_ganho": 154863.0,
             "valor_perdido": 213915.0,
             "taxa_conversao_pct": 10.8
@@ -2005,8 +2029,8 @@
           {
             "funil": "Funil Rubs",
             "ganhas": 75,
-            "perdidas": 914,
-            "em_aberto": 35,
+            "perdidas": 913,
+            "em_aberto": 37,
             "valor_ganho": 72250.0,
             "valor_perdido": 280145.0,
             "taxa_conversao_pct": 7.6
@@ -2024,7 +2048,7 @@
         "motivos_perda": [
           {
             "motivo": "Não tem interesse",
-            "qtd": 1863,
+            "qtd": 1862,
             "valor": 560474.0
           },
           {
@@ -2098,27 +2122,27 @@
             "valor": 440.0
           }
         ],
-        "total_leads": 2797,
+        "total_leads": 2796,
         "total_pipelines": 5,
         "resumo": {
-          "total_leads": 2797,
+          "total_leads": 2796,
           "taxa_conversao_pct": 7.2,
           "total_ganho": 211,
-          "total_perdido": 2468,
+          "total_perdido": 2467,
           "valor_ganho": 349077.0,
           "valor_perdido": 626640.0,
           "leads_em_aberto": {
             "quantidade": 118,
-            "valor": 249589.0,
+            "valor": 243409.0,
             "pct_quantidade_sobre_total": 4.2,
-            "pct_valor_sobre_total": 20.4
+            "pct_valor_sobre_total": 20.0
           }
         },
         "por_etapa": [
           {
             "funil": "Funil Atendimento",
             "etapa": "CLIENTES DIRETORIA",
-            "quantidade": 8,
+            "quantidade": 7,
             "valor": 14310.0
           },
           {
@@ -2148,14 +2172,20 @@
           {
             "funil": "Funil Eduardo",
             "etapa": "CLIENTES RECORRENTES",
-            "quantidade": 25,
-            "valor": 50099.0
+            "quantidade": 23,
+            "valor": 46149.0
           },
           {
             "funil": "Funil Eduardo",
-            "etapa": "ACOMPANHAMENTO",
+            "etapa": "GERAÇÃO DE PEDIDO",
             "quantidade": 1,
-            "valor": 5300.0
+            "valor": 2880.0
+          },
+          {
+            "funil": "Funil Eduardo",
+            "etapa": "PROPOSTA ENVIADA",
+            "quantidade": 1,
+            "valor": 1120.0
           },
           {
             "funil": "Funil Eduardo",
@@ -2190,7 +2220,7 @@
           {
             "funil": "Funil Rubs",
             "etapa": "VENDA PERDIDA",
-            "quantidade": 914,
+            "quantidade": 913,
             "valor": 280145.0
           },
           {
@@ -2209,13 +2239,13 @@
             "funil": "Funil Rubs",
             "etapa": "ACOMPANHAMENTO",
             "quantidade": 6,
-            "valor": 2900.0
+            "valor": 1580.0
           },
           {
             "funil": "Funil Rubs",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 1,
-            "valor": 0.0
+            "quantidade": 3,
+            "valor": 390.0
           },
           {
             "funil": "Supervisão",
@@ -2246,7 +2276,7 @@
           {
             "produto": "Sem produto informado",
             "ganhas": 210,
-            "perdidas": 2438,
+            "perdidas": 2437,
             "valor_ganho": 347127.0,
             "valor_perdido": 626640.0,
             "taxa_conversao_pct": 7.9
@@ -2308,7 +2338,7 @@
             "funil": "Funil Eduardo",
             "ganhas": 118,
             "perdidas": 1058,
-            "em_aberto": 51,
+            "em_aberto": 53,
             "valor_ganho": 154836.0,
             "valor_perdido": 83972.0,
             "taxa_conversao_pct": 10.0
@@ -2316,17 +2346,17 @@
           {
             "funil": "Funil Joice",
             "ganhas": 64,
-            "perdidas": 703,
+            "perdidas": 702,
             "em_aberto": 36,
             "valor_ganho": 65950.0,
             "valor_perdido": 122622.0,
-            "taxa_conversao_pct": 8.3
+            "taxa_conversao_pct": 8.4
           },
           {
             "funil": "Funil Rubs",
             "ganhas": 69,
-            "perdidas": 1264,
-            "em_aberto": 41,
+            "perdidas": 1262,
+            "em_aberto": 46,
             "valor_ganho": 105592.0,
             "valor_perdido": 199220.0,
             "taxa_conversao_pct": 5.2
@@ -2344,7 +2374,7 @@
         "motivos_perda": [
           {
             "motivo": "Não tem interesse",
-            "qtd": 2055,
+            "qtd": 2052,
             "valor": 375490.0
           },
           {
@@ -2428,20 +2458,20 @@
             "valor": 0.0
           }
         ],
-        "total_leads": 3460,
+        "total_leads": 3464,
         "total_pipelines": 5,
         "resumo": {
-          "total_leads": 3460,
+          "total_leads": 3464,
           "taxa_conversao_pct": 7.7,
           "total_ganho": 262,
-          "total_perdido": 3055,
+          "total_perdido": 3052,
           "valor_ganho": 378709.0,
           "valor_perdido": 421041.0,
           "leads_em_aberto": {
-            "quantidade": 143,
-            "valor": 51547.0,
-            "pct_quantidade_sobre_total": 4.1,
-            "pct_valor_sobre_total": 6.1
+            "quantidade": 150,
+            "valor": 53197.0,
+            "pct_quantidade_sobre_total": 4.3,
+            "pct_valor_sobre_total": 6.2
           }
         },
         "por_etapa": [
@@ -2490,7 +2520,7 @@
           {
             "funil": "Funil Eduardo",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 18,
+            "quantidade": 20,
             "valor": 562.0
           },
           {
@@ -2502,7 +2532,7 @@
           {
             "funil": "Funil Joice",
             "etapa": "VENDA PERDIDA",
-            "quantidade": 703,
+            "quantidade": 702,
             "valor": 122622.0
           },
           {
@@ -2519,14 +2549,20 @@
           },
           {
             "funil": "Funil Joice",
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 1,
+            "valor": 2960.0
+          },
+          {
+            "funil": "Funil Joice",
             "etapa": "ACOMPANHAMENTO",
-            "quantidade": 11,
+            "quantidade": 10,
             "valor": 1732.0
           },
           {
             "funil": "Funil Rubs",
             "etapa": "VENDA PERDIDA",
-            "quantidade": 1264,
+            "quantidade": 1262,
             "valor": 199220.0
           },
           {
@@ -2539,7 +2575,7 @@
             "funil": "Funil Rubs",
             "etapa": "ACOMPANHAMENTO",
             "quantidade": 4,
-            "valor": 7210.0
+            "valor": 4240.0
           },
           {
             "funil": "Funil Rubs",
@@ -2556,8 +2592,8 @@
           {
             "funil": "Funil Rubs",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 22,
-            "valor": 440.0
+            "quantidade": 27,
+            "valor": 2100.0
           },
           {
             "funil": "Supervisão",
@@ -2594,7 +2630,7 @@
           {
             "produto": "Sem produto informado",
             "ganhas": 258,
-            "perdidas": 1299,
+            "perdidas": 1296,
             "valor_ganho": 374818.0,
             "valor_perdido": 375886.0,
             "taxa_conversao_pct": 16.6
@@ -2647,11 +2683,11 @@
           {
             "funil": "Funil Eduardo",
             "ganhas": 87,
-            "perdidas": 359,
-            "em_aberto": 39,
+            "perdidas": 357,
+            "em_aberto": 51,
             "valor_ganho": 107638.0,
             "valor_perdido": 0.0,
-            "taxa_conversao_pct": 19.5
+            "taxa_conversao_pct": 19.6
           },
           {
             "funil": "Funil Joice",
@@ -2665,11 +2701,11 @@
           {
             "funil": "Funil Rubs",
             "ganhas": 64,
-            "perdidas": 312,
-            "em_aberto": 62,
+            "perdidas": 311,
+            "em_aberto": 72,
             "valor_ganho": 109681.0,
             "valor_perdido": 0.0,
-            "taxa_conversao_pct": 17.0
+            "taxa_conversao_pct": 17.1
           },
           {
             "funil": "Supervisão",
@@ -2684,7 +2720,7 @@
         "motivos_perda": [
           {
             "motivo": "Lead Duplicado",
-            "qtd": 889,
+            "qtd": 886,
             "valor": 1580.0
           },
           {
@@ -2708,20 +2744,20 @@
             "valor": 516.0
           }
         ],
-        "total_leads": 1442,
+        "total_leads": 1461,
         "total_pipelines": 5,
         "resumo": {
-          "total_leads": 1442,
+          "total_leads": 1461,
           "taxa_conversao_pct": 19.0,
           "total_ganho": 256,
-          "total_perdido": 1063,
+          "total_perdido": 1060,
           "valor_ganho": 441967.0,
           "valor_perdido": 2096.0,
           "leads_em_aberto": {
-            "quantidade": 123,
-            "valor": 24254.0,
-            "pct_quantidade_sobre_total": 8.5,
-            "pct_valor_sobre_total": 5.2
+            "quantidade": 145,
+            "valor": 28304.0,
+            "pct_quantidade_sobre_total": 9.9,
+            "pct_valor_sobre_total": 6.0
           }
         },
         "por_etapa": [
@@ -2764,7 +2800,7 @@
           {
             "funil": "Funil Eduardo",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 27,
+            "quantidade": 30,
             "valor": 780.0
           },
           {
@@ -2775,14 +2811,14 @@
           },
           {
             "funil": "Funil Eduardo",
-            "etapa": "VENDA PERDIDA",
-            "quantidade": 359,
-            "valor": 0.0
+            "etapa": "SEM ATENDIMENTO",
+            "quantidade": 10,
+            "valor": 390.0
           },
           {
             "funil": "Funil Eduardo",
-            "etapa": "SEM ATENDIMENTO",
-            "quantidade": 1,
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 357,
             "valor": 0.0
           },
           {
@@ -2817,15 +2853,21 @@
           },
           {
             "funil": "Funil Rubs",
-            "etapa": "ACOMPANHAMENTO",
-            "quantidade": 3,
-            "valor": 5810.0
+            "etapa": "QUALIFICAÇÃO",
+            "quantidade": 56,
+            "valor": 5570.0
           },
           {
             "funil": "Funil Rubs",
-            "etapa": "QUALIFICAÇÃO",
-            "quantidade": 53,
-            "valor": 2900.0
+            "etapa": "SEM ATENDIMENTO",
+            "quantidade": 7,
+            "valor": 4530.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 3,
+            "valor": 2270.0
           },
           {
             "funil": "Funil Rubs",
@@ -2842,7 +2884,7 @@
           {
             "funil": "Funil Rubs",
             "etapa": "VENDA PERDIDA",
-            "quantidade": 312,
+            "quantidade": 311,
             "valor": 0.0
           },
           {
@@ -2882,7 +2924,7 @@
           {
             "produto": "pote",
             "ganhas": 3,
-            "perdidas": 291,
+            "perdidas": 290,
             "valor_ganho": 5308.0,
             "valor_perdido": 0.0,
             "taxa_conversao_pct": 1.0
@@ -2890,7 +2932,7 @@
           {
             "produto": "copo_personalizado",
             "ganhas": 9,
-            "perdidas": 548,
+            "perdidas": 546,
             "valor_ganho": 4295.0,
             "valor_perdido": 0.0,
             "taxa_conversao_pct": 1.6
@@ -2927,29 +2969,29 @@
           {
             "funil": "Funil Eduardo",
             "ganhas": 121,
-            "perdidas": 734,
-            "em_aberto": 26,
+            "perdidas": 219,
+            "em_aberto": 44,
             "valor_ganho": 205699.0,
-            "valor_perdido": 83708.0,
-            "taxa_conversao_pct": 14.2
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 35.6
           },
           {
             "funil": "Funil Joice",
             "ganhas": 93,
-            "perdidas": 463,
+            "perdidas": 298,
             "em_aberto": 4,
             "valor_ganho": 144829.0,
-            "valor_perdido": 58735.0,
-            "taxa_conversao_pct": 16.7
+            "valor_perdido": 990.0,
+            "taxa_conversao_pct": 23.8
           },
           {
             "funil": "Funil Rubs",
             "ganhas": 24,
-            "perdidas": 738,
-            "em_aberto": 24,
+            "perdidas": 538,
+            "em_aberto": 41,
             "valor_ganho": 32888.0,
-            "valor_perdido": 416705.0,
-            "taxa_conversao_pct": 3.1
+            "valor_perdido": 40147.0,
+            "taxa_conversao_pct": 4.3
           },
           {
             "funil": "Supervisão",
@@ -2963,14 +3005,14 @@
         ],
         "motivos_perda": [
           {
-            "motivo": "Não tem interesse",
-            "qtd": 1298,
-            "valor": 553773.0
+            "motivo": "Lead Duplicado",
+            "qtd": 510,
+            "valor": 0.0
           },
           {
-            "motivo": "Lead Duplicado",
-            "qtd": 511,
-            "valor": 0.0
+            "motivo": "Não tem interesse",
+            "qtd": 445,
+            "valor": 39367.0
           },
           {
             "motivo": "O produto não é a necessidade",
@@ -2984,38 +3026,18 @@
           },
           {
             "motivo": "Volumetria específica",
-            "qtd": 13,
+            "qtd": 9,
             "valor": 0.0
-          },
-          {
-            "motivo": "Prazo de produção",
-            "qtd": 10,
-            "valor": 390.0
           },
           {
             "motivo": "Não responde - antes proposta",
-            "qtd": 8,
-            "valor": 730.0
+            "qtd": 5,
+            "valor": 0.0
           },
           {
             "motivo": "Sem motivo registrado",
-            "qtd": 4,
-            "valor": 455.0
-          },
-          {
-            "motivo": "Tempo de Atendimento",
-            "qtd": 4,
-            "valor": 0.0
-          },
-          {
-            "motivo": "Quantidade mínima",
-            "qtd": 3,
-            "valor": 0.0
-          },
-          {
-            "motivo": "Condições de pagamento",
             "qtd": 2,
-            "valor": 2420.0
+            "valor": 0.0
           },
           {
             "motivo": "Logística",
@@ -3028,25 +3050,35 @@
             "valor": 390.0
           },
           {
+            "motivo": "Quantidade mínima",
+            "qtd": 1,
+            "valor": 0.0
+          },
+          {
             "motivo": "Preço",
             "qtd": 1,
             "valor": 0.0
+          },
+          {
+            "motivo": "Prazo de produção",
+            "qtd": 1,
+            "valor": 390.0
           }
         ],
-        "total_leads": 2241,
+        "total_leads": 1396,
         "total_pipelines": 5,
         "resumo": {
-          "total_leads": 2241,
-          "taxa_conversao_pct": 11.0,
+          "total_leads": 1396,
+          "taxa_conversao_pct": 18.4,
           "total_ganho": 245,
-          "total_perdido": 1936,
+          "total_perdido": 1056,
           "valor_ganho": 387156.0,
-          "valor_perdido": 559148.0,
+          "valor_perdido": 41137.0,
           "leads_em_aberto": {
-            "quantidade": 60,
-            "valor": 32805.0,
-            "pct_quantidade_sobre_total": 2.7,
-            "pct_valor_sobre_total": 3.4
+            "quantidade": 95,
+            "valor": 25965.0,
+            "pct_quantidade_sobre_total": 6.8,
+            "pct_valor_sobre_total": 5.7
           }
         },
         "por_etapa": [
@@ -3070,26 +3102,26 @@
           },
           {
             "funil": "Funil Eduardo",
-            "etapa": "VENDA PERDIDA",
-            "quantidade": 734,
-            "valor": 83708.0
-          },
-          {
-            "funil": "Funil Eduardo",
             "etapa": "CLIENTES RECORRENTES",
-            "quantidade": 4,
-            "valor": 1010.0
+            "quantidade": 5,
+            "valor": 1320.0
           },
           {
             "funil": "Funil Eduardo",
-            "etapa": "SEM ATENDIMENTO",
-            "quantidade": 1,
-            "valor": 310.0
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 219,
+            "valor": 0.0
           },
           {
             "funil": "Funil Eduardo",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 21,
+            "quantidade": 34,
+            "valor": 0.0
+          },
+          {
+            "funil": "Funil Eduardo",
+            "etapa": "SEM ATENDIMENTO",
+            "quantidade": 5,
             "valor": 0.0
           },
           {
@@ -3101,8 +3133,8 @@
           {
             "funil": "Funil Joice",
             "etapa": "VENDA PERDIDA",
-            "quantidade": 463,
-            "valor": 58735.0
+            "quantidade": 298,
+            "valor": 990.0
           },
           {
             "funil": "Funil Joice",
@@ -3119,8 +3151,8 @@
           {
             "funil": "Funil Rubs",
             "etapa": "VENDA PERDIDA",
-            "quantidade": 738,
-            "valor": 416705.0
+            "quantidade": 538,
+            "valor": 40147.0
           },
           {
             "funil": "Funil Rubs",
@@ -3131,20 +3163,32 @@
           {
             "funil": "Funil Rubs",
             "etapa": "ACOMPANHAMENTO",
-            "quantidade": 11,
-            "valor": 26335.0
+            "quantidade": 9,
+            "valor": 22475.0
           },
           {
             "funil": "Funil Rubs",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 10,
-            "valor": 4270.0
+            "quantidade": 21,
+            "valor": 730.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "PROPOSTA ENVIADA",
+            "quantidade": 1,
+            "valor": 560.0
           },
           {
             "funil": "Funil Rubs",
             "etapa": "CLIENTES RECORRENTES",
             "quantidade": 3,
             "valor": 440.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "SEM ATENDIMENTO",
+            "quantidade": 7,
+            "valor": 0.0
           },
           {
             "funil": "Supervisão",
@@ -3169,34 +3213,18 @@
           {
             "produto": "Sem produto informado",
             "ganhas": 234,
-            "perdidas": 927,
+            "perdidas": 355,
             "valor_ganho": 361845.0,
-            "valor_perdido": 519835.0,
-            "taxa_conversao_pct": 20.2
+            "valor_perdido": 34123.0,
+            "taxa_conversao_pct": 39.7
           },
           {
             "produto": "copo_personalizado",
             "ganhas": 8,
-            "perdidas": 619,
+            "perdidas": 434,
             "valor_ganho": 15831.0,
-            "valor_perdido": 18845.0,
-            "taxa_conversao_pct": 1.3
-          },
-          {
-            "produto": "pote",
-            "ganhas": 2,
-            "perdidas": 310,
-            "valor_ganho": 3384.0,
-            "valor_perdido": 12578.0,
-            "taxa_conversao_pct": 0.6
-          },
-          {
-            "produto": "marmita",
-            "ganhas": 0,
-            "perdidas": 58,
-            "valor_ganho": 0.0,
-            "valor_perdido": 7890.0,
-            "taxa_conversao_pct": 0.0
+            "valor_perdido": 7014.0,
+            "taxa_conversao_pct": 1.8
           },
           {
             "produto": "copo",
@@ -3207,9 +3235,25 @@
             "taxa_conversao_pct": 100.0
           },
           {
+            "produto": "pote",
+            "ganhas": 2,
+            "perdidas": 211,
+            "valor_ganho": 3384.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.9
+          },
+          {
             "produto": "seladora",
             "ganhas": 0,
-            "perdidas": 22,
+            "perdidas": 20,
+            "valor_ganho": 0.0,
+            "valor_perdido": 0.0,
+            "taxa_conversao_pct": 0.0
+          },
+          {
+            "produto": "marmita",
+            "ganhas": 0,
+            "perdidas": 36,
             "valor_ganho": 0.0,
             "valor_perdido": 0.0,
             "taxa_conversao_pct": 0.0
@@ -3221,20 +3265,20 @@
           {
             "funil": "Funil Atendimento",
             "ganhas": 3,
-            "perdidas": 2,
+            "perdidas": 3,
             "em_aberto": 0,
             "valor_ganho": 1815.0,
             "valor_perdido": 0.0,
-            "taxa_conversao_pct": 60.0
+            "taxa_conversao_pct": 50.0
           },
           {
             "funil": "Funil Eduardo",
-            "ganhas": 33,
-            "perdidas": 294,
-            "em_aberto": 113,
-            "valor_ganho": 45853.0,
+            "ganhas": 37,
+            "perdidas": 299,
+            "em_aberto": 137,
+            "valor_ganho": 59074.0,
             "valor_perdido": 278624.0,
-            "taxa_conversao_pct": 10.1
+            "taxa_conversao_pct": 11.0
           },
           {
             "funil": "Funil Joice",
@@ -3247,12 +3291,12 @@
           },
           {
             "funil": "Funil Rubs",
-            "ganhas": 17,
-            "perdidas": 311,
-            "em_aberto": 155,
-            "valor_ganho": 25562.0,
-            "valor_perdido": 30486.0,
-            "taxa_conversao_pct": 5.2
+            "ganhas": 18,
+            "perdidas": 322,
+            "em_aberto": 181,
+            "valor_ganho": 34262.0,
+            "valor_perdido": 32396.0,
+            "taxa_conversao_pct": 5.3
           },
           {
             "funil": "Supervisão",
@@ -3267,41 +3311,41 @@
         "motivos_perda": [
           {
             "motivo": "Não tem interesse",
-            "qtd": 516,
-            "valor": 325015.0
+            "qtd": 511,
+            "valor": 325845.0
           },
           {
             "motivo": "Lead Duplicado",
-            "qtd": 114,
+            "qtd": 127,
             "valor": 390.0
           },
           {
             "motivo": "O produto não é a necessidade",
-            "qtd": 17,
+            "qtd": 20,
             "valor": 0.0
           },
           {
             "motivo": "Contato Não Comercial",
-            "qtd": 12,
+            "qtd": 14,
             "valor": 1.0
           },
           {
             "motivo": "Não responde -pós proposta",
             "qtd": 9,
-            "valor": 15225.0
+            "valor": 13275.0
           },
           {
             "motivo": "Volumetria específica",
-            "qtd": 4,
-            "valor": 0.0
-          },
-          {
-            "motivo": "Quantidade mínima",
-            "qtd": 4,
+            "qtd": 5,
             "valor": 0.0
           },
           {
             "motivo": "Não responde - antes proposta",
+            "qtd": 5,
+            "valor": 0.0
+          },
+          {
+            "motivo": "Quantidade mínima",
             "qtd": 4,
             "valor": 0.0
           },
@@ -3317,24 +3361,29 @@
           },
           {
             "motivo": "Prazo de produção",
-            "qtd": 2,
+            "qtd": 3,
             "valor": 1219.0
+          },
+          {
+            "motivo": "Comprado do concorrente",
+            "qtd": 1,
+            "valor": 3030.0
           }
         ],
-        "total_leads": 1013,
+        "total_leads": 1085,
         "total_pipelines": 5,
         "resumo": {
-          "total_leads": 1013,
-          "taxa_conversao_pct": 7.0,
-          "total_ganho": 55,
-          "total_perdido": 690,
-          "valor_ganho": 74581.0,
-          "valor_perdido": 341850.0,
+          "total_leads": 1085,
+          "taxa_conversao_pct": 7.5,
+          "total_ganho": 60,
+          "total_perdido": 707,
+          "valor_ganho": 96502.0,
+          "valor_perdido": 343760.0,
           "leads_em_aberto": {
-            "quantidade": 268,
-            "valor": 70930.0,
-            "pct_quantidade_sobre_total": 26.5,
-            "pct_valor_sobre_total": 14.6
+            "quantidade": 318,
+            "valor": 80374.0,
+            "pct_quantidade_sobre_total": 29.3,
+            "pct_valor_sobre_total": 15.4
           }
         },
         "por_etapa": [
@@ -3347,26 +3396,38 @@
           {
             "funil": "Funil Atendimento",
             "etapa": "VENDA PERDIDA",
-            "quantidade": 2,
+            "quantidade": 3,
             "valor": 0.0
           },
           {
             "funil": "Funil Eduardo",
             "etapa": "VENDA PERDIDA",
-            "quantidade": 294,
+            "quantidade": 299,
             "valor": 278624.0
           },
           {
             "funil": "Funil Eduardo",
             "etapa": "VENDA GANHA",
-            "quantidade": 33,
-            "valor": 45853.0
+            "quantidade": 37,
+            "valor": 59074.0
           },
           {
             "funil": "Funil Eduardo",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 104,
-            "valor": 3190.0
+            "quantidade": 110,
+            "valor": 4229.0
+          },
+          {
+            "funil": "Funil Eduardo",
+            "etapa": "ACOMPANHAMENTO",
+            "quantidade": 1,
+            "valor": 3295.0
+          },
+          {
+            "funil": "Funil Eduardo",
+            "etapa": "GERAÇÃO DE PEDIDO",
+            "quantidade": 3,
+            "valor": 1460.0
           },
           {
             "funil": "Funil Eduardo",
@@ -3376,20 +3437,14 @@
           },
           {
             "funil": "Funil Eduardo",
-            "etapa": "GERAÇÃO DE PEDIDO",
-            "quantidade": 1,
-            "valor": 500.0
-          },
-          {
-            "funil": "Funil Eduardo",
             "etapa": "CLIENTES RECORRENTES",
-            "quantidade": 5,
+            "quantidade": 4,
             "valor": 0.0
           },
           {
             "funil": "Funil Eduardo",
             "etapa": "SEM ATENDIMENTO",
-            "quantidade": 1,
+            "quantidade": 17,
             "valor": 0.0
           },
           {
@@ -3412,27 +3467,33 @@
           },
           {
             "funil": "Funil Rubs",
-            "etapa": "VENDA PERDIDA",
-            "quantidade": 311,
-            "valor": 30486.0
+            "etapa": "VENDA GANHA",
+            "quantidade": 18,
+            "valor": 34262.0
           },
           {
             "funil": "Funil Rubs",
-            "etapa": "VENDA GANHA",
-            "quantidade": 17,
-            "valor": 25562.0
+            "etapa": "VENDA PERDIDA",
+            "quantidade": 322,
+            "valor": 32396.0
           },
           {
             "funil": "Funil Rubs",
             "etapa": "ACOMPANHAMENTO",
-            "quantidade": 4,
-            "valor": 6660.0
+            "quantidade": 5,
+            "valor": 7450.0
           },
           {
             "funil": "Funil Rubs",
             "etapa": "QUALIFICAÇÃO",
-            "quantidade": 149,
-            "valor": 2400.0
+            "quantidade": 158,
+            "valor": 5760.0
+          },
+          {
+            "funil": "Funil Rubs",
+            "etapa": "SEM ATENDIMENTO",
+            "quantidade": 16,
+            "valor": 0.0
           },
           {
             "funil": "Supervisão",
@@ -3444,16 +3505,16 @@
         "por_produto": [
           {
             "produto": "Sem produto informado",
-            "ganhas": 51,
-            "perdidas": 320,
-            "valor_ganho": 67835.0,
-            "valor_perdido": 330244.0,
-            "taxa_conversao_pct": 13.7
+            "ganhas": 56,
+            "perdidas": 327,
+            "valor_ganho": 89756.0,
+            "valor_perdido": 329124.0,
+            "taxa_conversao_pct": 14.6
           },
           {
             "produto": "copo_personalizado",
             "ganhas": 4,
-            "perdidas": 220,
+            "perdidas": 224,
             "valor_ganho": 6746.0,
             "valor_perdido": 8118.0,
             "taxa_conversao_pct": 1.8
@@ -3461,15 +3522,15 @@
           {
             "produto": "pote",
             "ganhas": 0,
-            "perdidas": 120,
+            "perdidas": 124,
             "valor_ganho": 0.0,
-            "valor_perdido": 3488.0,
+            "valor_perdido": 6518.0,
             "taxa_conversao_pct": 0.0
           },
           {
             "produto": "marmita",
             "ganhas": 0,
-            "perdidas": 19,
+            "perdidas": 20,
             "valor_ganho": 0.0,
             "valor_perdido": 0.0,
             "taxa_conversao_pct": 0.0
@@ -3477,7 +3538,7 @@
           {
             "produto": "seladora",
             "ganhas": 0,
-            "perdidas": 11,
+            "perdidas": 12,
             "valor_ganho": 0.0,
             "valor_perdido": 0.0,
             "taxa_conversao_pct": 0.0
@@ -3487,21 +3548,21 @@
     },
     "leads_novos_mes_atual": {
       "mes": "2026-10",
-      "quantidade": 471,
-      "valor": 84175.0,
-      "pct_quantidade_sobre_total": 1.9,
-      "pct_valor_sobre_total": 0.6,
+      "quantidade": 535,
+      "valor": 93619.0,
+      "pct_quantidade_sobre_total": 2.2,
+      "pct_valor_sobre_total": 0.7,
       "ganhas": 7,
-      "perdidas": 196,
-      "em_aberto": 268,
-      "taxa_conversao_pct": 3.0
+      "perdidas": 210,
+      "em_aberto": 318,
+      "taxa_conversao_pct": 2.8
     }
   },
   "auditoria_cliente_novo": {
     "status": "ok",
     "ano_calculo": "2026",
     "meta_individual_mensal": 166666.67,
-    "registros_sem_cnpj_nao_auditados": 3652,
+    "registros_sem_cnpj_nao_auditados": 3657,
     "nota": "Ordens de Servico normalmente nao tem CNPJ do cliente na API do OMIE - essas entram no faturamento total mas ficam de fora da classificacao novo/recorrente (aparecem como 'nao_auditado' nas metas).",
     "casos_tomada_cliente": [
       {
@@ -4296,11 +4357,11 @@
       },
       {
         "mes": "2026-10",
-        "faturamento_clientes_novos": 12011.2,
-        "bonus_clientes_novos": 0.0,
+        "faturamento_clientes_novos": 20942.0,
+        "bonus_clientes_novos": 100.0,
         "qtd_seladoras": 0,
         "bonus_seladora": 0.0,
-        "bonus_total": 0.0
+        "bonus_total": 100.0
       }
     ],
     "Joice": [
@@ -4494,7 +4555,7 @@
       },
       {
         "mes": "2026-10",
-        "faturamento_clientes_novos": 13477.43,
+        "faturamento_clientes_novos": 16896.43,
         "bonus_clientes_novos": 0.0,
         "qtd_seladoras": 0,
         "bonus_seladora": 0.0,
@@ -4755,7 +4816,7 @@
       },
       {
         "mes": "2026-10",
-        "faturamento_clientes_novos": 35288.63,
+        "faturamento_clientes_novos": 47638.43,
         "bonus_clientes_novos": 0.0,
         "qtd_seladoras": 0,
         "bonus_seladora": 0.0,
@@ -5258,19 +5319,19 @@
     {
       "mes": "2026-10",
       "meta_canal": 500000.0,
-      "realizado_canal": 210625.58,
-      "atingimento_pct": 42.1,
-      "realizado_novos": 35288.63,
-      "realizado_recorrentes": 144336.95,
+      "realizado_canal": 239694.28,
+      "atingimento_pct": 47.9,
+      "realizado_novos": 47638.43,
+      "realizado_recorrentes": 161055.85,
       "realizado_nao_auditado": 31000.0,
-      "mix_novos_pct": 16.8,
+      "mix_novos_pct": 19.9,
       "meta_novos": 125000.0,
       "meta_recorrentes": 375000.0,
-      "atingimento_novos_pct": 28.2,
-      "atingimento_recorrentes_pct": 38.5,
-      "valor_frete": 12808.77,
-      "faturamento_bruto": 223434.35,
-      "pct_frete_sobre_faturamento": 5.7
+      "atingimento_novos_pct": 38.1,
+      "atingimento_recorrentes_pct": 42.9,
+      "valor_frete": 15408.22,
+      "faturamento_bruto": 255102.5,
+      "pct_frete_sobre_faturamento": 6.0
     }
   ],
   "canal_empresa": [
@@ -5375,23 +5436,23 @@
     },
     {
       "mes": "2026-10",
-      "realizado_online": 210625.58,
-      "realizado_offline": 202996.87,
-      "realizado_total": 413622.45,
+      "realizado_online": 239694.28,
+      "realizado_offline": 241997.07,
+      "realizado_total": 481691.35,
       "por_empresa": {
-        "ecommerce": 203771.0,
-        "centroeste": 176682.9,
+        "ecommerce": 233569.7,
+        "centroeste": 214953.1,
         "canudos": 33168.55
       }
     }
   ],
   "retencao": {
-    "carteira_tamanho": 3649,
-    "clientes_avaliados": 1467,
-    "clientes_sem_historico_suficiente": 2182,
-    "qtd_clientes_em_risco": 780,
-    "valor_total_em_risco": 5747690.05,
-    "comissao_projetada": 57476.9,
+    "carteira_tamanho": 3653,
+    "clientes_avaliados": 1469,
+    "clientes_sem_historico_suficiente": 2184,
+    "qtd_clientes_em_risco": 784,
+    "valor_total_em_risco": 5727528.19,
+    "comissao_projetada": 57275.28,
     "taxa_reativacao_pct": 53.3,
     "clientes_a_reativar": [
       {
@@ -5401,9 +5462,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 3520.0,
         "ultima_compra": "12/04/2022",
-        "dias_desde_ultima_compra": 1646,
+        "dias_desde_ultima_compra": 1647,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 1646.0,
+        "score_risco": 1647.0,
         "em_risco": true
       },
       {
@@ -5413,9 +5474,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 6200.0,
         "ultima_compra": "21/09/2023",
-        "dias_desde_ultima_compra": 1119,
+        "dias_desde_ultima_compra": 1120,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 1119.0,
+        "score_risco": 1120.0,
         "em_risco": true
       },
       {
@@ -5425,9 +5486,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 6690.01,
         "ultima_compra": "13/08/2024",
-        "dias_desde_ultima_compra": 792,
+        "dias_desde_ultima_compra": 793,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 792.0,
+        "score_risco": 793.0,
         "em_risco": true
       },
       {
@@ -5437,9 +5498,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 3861.0,
         "ultima_compra": "19/03/2025",
-        "dias_desde_ultima_compra": 574,
+        "dias_desde_ultima_compra": 575,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 574.0,
+        "score_risco": 575.0,
         "em_risco": true
       },
       {
@@ -5449,9 +5510,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 3508.0,
         "ultima_compra": "29/09/2023",
-        "dias_desde_ultima_compra": 1111,
+        "dias_desde_ultima_compra": 1112,
         "intervalo_medio_dias": 3.5,
-        "score_risco": 317.43,
+        "score_risco": 317.71,
         "em_risco": true
       },
       {
@@ -5461,9 +5522,9 @@
         "qtd_compras_historico": 6,
         "valor_total_historico": 5040.0,
         "ultima_compra": "22/05/2023",
-        "dias_desde_ultima_compra": 1241,
+        "dias_desde_ultima_compra": 1242,
         "intervalo_medio_dias": 5.2,
-        "score_risco": 238.65,
+        "score_risco": 238.85,
         "em_risco": true
       },
       {
@@ -5473,9 +5534,9 @@
         "qtd_compras_historico": 6,
         "valor_total_historico": 3002.0,
         "ultima_compra": "23/02/2023",
-        "dias_desde_ultima_compra": 1329,
+        "dias_desde_ultima_compra": 1330,
         "intervalo_medio_dias": 5.6,
-        "score_risco": 237.32,
+        "score_risco": 237.5,
         "em_risco": true
       },
       {
@@ -5485,9 +5546,9 @@
         "qtd_compras_historico": 27,
         "valor_total_historico": 18916.0,
         "ultima_compra": "25/09/2023",
-        "dias_desde_ultima_compra": 1115,
+        "dias_desde_ultima_compra": 1116,
         "intervalo_medio_dias": 4.8,
-        "score_risco": 233.79,
+        "score_risco": 234.0,
         "em_risco": true
       },
       {
@@ -5497,9 +5558,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 5833.31,
         "ultima_compra": "24/10/2023",
-        "dias_desde_ultima_compra": 1086,
+        "dias_desde_ultima_compra": 1087,
         "intervalo_medio_dias": 5.0,
-        "score_risco": 217.2,
+        "score_risco": 217.4,
         "em_risco": true
       },
       {
@@ -5509,9 +5570,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 810.5,
         "ultima_compra": "10/04/2026",
-        "dias_desde_ultima_compra": 187,
+        "dias_desde_ultima_compra": 188,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 187.0,
+        "score_risco": 188.0,
         "em_risco": true
       },
       {
@@ -5521,9 +5582,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 4040.0,
         "ultima_compra": "15/03/2023",
-        "dias_desde_ultima_compra": 1309,
+        "dias_desde_ultima_compra": 1310,
         "intervalo_medio_dias": 7.0,
-        "score_risco": 187.0,
+        "score_risco": 187.14,
         "em_risco": true
       },
       {
@@ -5533,9 +5594,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1577.0,
         "ultima_compra": "28/04/2026",
-        "dias_desde_ultima_compra": 169,
+        "dias_desde_ultima_compra": 170,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 169.0,
+        "score_risco": 170.0,
         "em_risco": true
       },
       {
@@ -5545,9 +5606,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1220.0,
         "ultima_compra": "28/08/2025",
-        "dias_desde_ultima_compra": 412,
+        "dias_desde_ultima_compra": 413,
         "intervalo_medio_dias": 3.0,
-        "score_risco": 137.33,
+        "score_risco": 137.67,
         "em_risco": true
       },
       {
@@ -5557,9 +5618,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 18900.0,
         "ultima_compra": "12/06/2026",
-        "dias_desde_ultima_compra": 124,
+        "dias_desde_ultima_compra": 125,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 124.0,
+        "score_risco": 125.0,
         "em_risco": true
       },
       {
@@ -5569,9 +5630,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 589.0,
         "ultima_compra": "23/10/2024",
-        "dias_desde_ultima_compra": 721,
+        "dias_desde_ultima_compra": 722,
         "intervalo_medio_dias": 6.0,
-        "score_risco": 120.17,
+        "score_risco": 120.33,
         "em_risco": true
       },
       {
@@ -5581,9 +5642,9 @@
         "qtd_compras_historico": 6,
         "valor_total_historico": 6058.0,
         "ultima_compra": "31/08/2023",
-        "dias_desde_ultima_compra": 1140,
+        "dias_desde_ultima_compra": 1141,
         "intervalo_medio_dias": 13.0,
-        "score_risco": 87.69,
+        "score_risco": 87.77,
         "em_risco": true
       },
       {
@@ -5593,9 +5654,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1209.0,
         "ultima_compra": "30/04/2026",
-        "dias_desde_ultima_compra": 167,
+        "dias_desde_ultima_compra": 168,
         "intervalo_medio_dias": 2.0,
-        "score_risco": 83.5,
+        "score_risco": 84.0,
         "em_risco": true
       },
       {
@@ -5605,9 +5666,9 @@
         "qtd_compras_historico": 16,
         "valor_total_historico": 10105.0,
         "ultima_compra": "18/10/2023",
-        "dias_desde_ultima_compra": 1092,
+        "dias_desde_ultima_compra": 1093,
         "intervalo_medio_dias": 13.9,
-        "score_risco": 78.75,
+        "score_risco": 78.82,
         "em_risco": true
       },
       {
@@ -5617,9 +5678,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 980.0,
         "ultima_compra": "12/12/2024",
-        "dias_desde_ultima_compra": 671,
+        "dias_desde_ultima_compra": 672,
         "intervalo_medio_dias": 9.0,
-        "score_risco": 74.56,
+        "score_risco": 74.67,
         "em_risco": true
       },
       {
@@ -5629,9 +5690,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 11370.04,
         "ultima_compra": "15/04/2024",
-        "dias_desde_ultima_compra": 912,
+        "dias_desde_ultima_compra": 913,
         "intervalo_medio_dias": 12.5,
-        "score_risco": 72.96,
+        "score_risco": 73.04,
         "em_risco": true
       },
       {
@@ -5641,9 +5702,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 982.0,
         "ultima_compra": "08/02/2024",
-        "dias_desde_ultima_compra": 979,
+        "dias_desde_ultima_compra": 980,
         "intervalo_medio_dias": 16.0,
-        "score_risco": 61.19,
+        "score_risco": 61.25,
         "em_risco": true
       },
       {
@@ -5653,9 +5714,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1280.0,
         "ultima_compra": "27/10/2022",
-        "dias_desde_ultima_compra": 1448,
+        "dias_desde_ultima_compra": 1449,
         "intervalo_medio_dias": 24.0,
-        "score_risco": 60.33,
+        "score_risco": 60.38,
         "em_risco": true
       },
       {
@@ -5665,9 +5726,9 @@
         "qtd_compras_historico": 4,
         "valor_total_historico": 2921.5,
         "ultima_compra": "10/11/2023",
-        "dias_desde_ultima_compra": 1069,
+        "dias_desde_ultima_compra": 1070,
         "intervalo_medio_dias": 18.7,
-        "score_risco": 57.27,
+        "score_risco": 57.32,
         "em_risco": true
       },
       {
@@ -5677,9 +5738,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 3503.0,
         "ultima_compra": "04/07/2022",
-        "dias_desde_ultima_compra": 1563,
+        "dias_desde_ultima_compra": 1564,
         "intervalo_medio_dias": 31.0,
-        "score_risco": 50.42,
+        "score_risco": 50.45,
         "em_risco": true
       },
       {
@@ -5689,21 +5750,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 7675.15,
         "ultima_compra": "20/01/2025",
-        "dias_desde_ultima_compra": 632,
+        "dias_desde_ultima_compra": 633,
         "intervalo_medio_dias": 13.0,
-        "score_risco": 48.62,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "094.758.407-29",
-        "razao_social_cliente": "EDUARDO DANTAS GOMES",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 2,
-        "valor_total_historico": 3100.0,
-        "ultima_compra": "02/06/2025",
-        "dias_desde_ultima_compra": 499,
-        "intervalo_medio_dias": 11.0,
-        "score_risco": 45.36,
+        "score_risco": 48.69,
         "em_risco": true
       },
       {
@@ -5713,9 +5762,21 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 1892.12,
         "ultima_compra": "23/06/2026",
-        "dias_desde_ultima_compra": 113,
+        "dias_desde_ultima_compra": 114,
         "intervalo_medio_dias": 2.5,
-        "score_risco": 45.2,
+        "score_risco": 45.6,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "094.758.407-29",
+        "razao_social_cliente": "EDUARDO DANTAS GOMES",
+        "vendedor": "Joice",
+        "qtd_compras_historico": 2,
+        "valor_total_historico": 3100.0,
+        "ultima_compra": "02/06/2025",
+        "dias_desde_ultima_compra": 500,
+        "intervalo_medio_dias": 11.0,
+        "score_risco": 45.45,
         "em_risco": true
       },
       {
@@ -5725,9 +5786,9 @@
         "qtd_compras_historico": 16,
         "valor_total_historico": 82250.0,
         "ultima_compra": "28/03/2023",
-        "dias_desde_ultima_compra": 1296,
+        "dias_desde_ultima_compra": 1297,
         "intervalo_medio_dias": 29.9,
-        "score_risco": 43.41,
+        "score_risco": 43.44,
         "em_risco": true
       },
       {
@@ -5737,9 +5798,9 @@
         "qtd_compras_historico": 7,
         "valor_total_historico": 7070.0,
         "ultima_compra": "05/09/2023",
-        "dias_desde_ultima_compra": 1135,
+        "dias_desde_ultima_compra": 1136,
         "intervalo_medio_dias": 26.4,
-        "score_risco": 42.99,
+        "score_risco": 43.03,
         "em_risco": true
       },
       {
@@ -5749,9 +5810,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 2777.0,
         "ultima_compra": "04/09/2023",
-        "dias_desde_ultima_compra": 1136,
+        "dias_desde_ultima_compra": 1137,
         "intervalo_medio_dias": 27.0,
-        "score_risco": 42.07,
+        "score_risco": 42.11,
         "em_risco": true
       },
       {
@@ -5761,9 +5822,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 5070.0,
         "ultima_compra": "06/03/2024",
-        "dias_desde_ultima_compra": 952,
+        "dias_desde_ultima_compra": 953,
         "intervalo_medio_dias": 23.5,
-        "score_risco": 40.51,
+        "score_risco": 40.55,
         "em_risco": true
       },
       {
@@ -5773,9 +5834,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 3117.5,
         "ultima_compra": "06/09/2024",
-        "dias_desde_ultima_compra": 768,
+        "dias_desde_ultima_compra": 769,
         "intervalo_medio_dias": 19.0,
-        "score_risco": 40.42,
+        "score_risco": 40.47,
         "em_risco": true
       },
       {
@@ -5785,9 +5846,9 @@
         "qtd_compras_historico": 7,
         "valor_total_historico": 60053.38,
         "ultima_compra": "29/04/2025",
-        "dias_desde_ultima_compra": 533,
+        "dias_desde_ultima_compra": 534,
         "intervalo_medio_dias": 13.2,
-        "score_risco": 40.23,
+        "score_risco": 40.3,
         "em_risco": true
       },
       {
@@ -5797,9 +5858,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1174.25,
         "ultima_compra": "06/03/2025",
-        "dias_desde_ultima_compra": 587,
+        "dias_desde_ultima_compra": 588,
         "intervalo_medio_dias": 15.0,
-        "score_risco": 39.13,
+        "score_risco": 39.2,
         "em_risco": true
       },
       {
@@ -5809,9 +5870,9 @@
         "qtd_compras_historico": 5,
         "valor_total_historico": 5250.0,
         "ultima_compra": "26/09/2022",
-        "dias_desde_ultima_compra": 1479,
+        "dias_desde_ultima_compra": 1480,
         "intervalo_medio_dias": 38.5,
-        "score_risco": 38.42,
+        "score_risco": 38.44,
         "em_risco": true
       },
       {
@@ -5821,9 +5882,9 @@
         "qtd_compras_historico": 27,
         "valor_total_historico": 52685.0,
         "ultima_compra": "21/02/2024",
-        "dias_desde_ultima_compra": 966,
+        "dias_desde_ultima_compra": 967,
         "intervalo_medio_dias": 26.2,
-        "score_risco": 36.92,
+        "score_risco": 36.96,
         "em_risco": true
       },
       {
@@ -5833,9 +5894,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 947.0,
         "ultima_compra": "01/04/2024",
-        "dias_desde_ultima_compra": 926,
+        "dias_desde_ultima_compra": 927,
         "intervalo_medio_dias": 26.0,
-        "score_risco": 35.62,
+        "score_risco": 35.65,
         "em_risco": true
       },
       {
@@ -5845,9 +5906,9 @@
         "qtd_compras_historico": 4,
         "valor_total_historico": 14400.0,
         "ultima_compra": "15/05/2024",
-        "dias_desde_ultima_compra": 882,
+        "dias_desde_ultima_compra": 883,
         "intervalo_medio_dias": 25.3,
-        "score_risco": 34.82,
+        "score_risco": 34.86,
         "em_risco": true
       },
       {
@@ -5857,9 +5918,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 563.3,
         "ultima_compra": "29/02/2024",
-        "dias_desde_ultima_compra": 958,
+        "dias_desde_ultima_compra": 959,
         "intervalo_medio_dias": 28.0,
-        "score_risco": 34.21,
+        "score_risco": 34.25,
         "em_risco": true
       },
       {
@@ -5869,9 +5930,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1276.55,
         "ultima_compra": "08/04/2024",
-        "dias_desde_ultima_compra": 919,
+        "dias_desde_ultima_compra": 920,
         "intervalo_medio_dias": 27.0,
-        "score_risco": 34.04,
+        "score_risco": 34.07,
         "em_risco": true
       },
       {
@@ -5881,9 +5942,9 @@
         "qtd_compras_historico": 5,
         "valor_total_historico": 31520.0,
         "ultima_compra": "25/06/2025",
-        "dias_desde_ultima_compra": 476,
+        "dias_desde_ultima_compra": 477,
         "intervalo_medio_dias": 14.0,
-        "score_risco": 34.0,
+        "score_risco": 34.07,
         "em_risco": true
       },
       {
@@ -5893,9 +5954,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 4927.58,
         "ultima_compra": "27/03/2025",
-        "dias_desde_ultima_compra": 566,
+        "dias_desde_ultima_compra": 567,
         "intervalo_medio_dias": 17.0,
-        "score_risco": 33.29,
+        "score_risco": 33.35,
         "em_risco": true
       },
       {
@@ -5905,9 +5966,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1698.5,
         "ultima_compra": "08/07/2024",
-        "dias_desde_ultima_compra": 828,
+        "dias_desde_ultima_compra": 829,
         "intervalo_medio_dias": 25.0,
-        "score_risco": 33.12,
+        "score_risco": 33.16,
         "em_risco": true
       },
       {
@@ -5917,9 +5978,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1177.0,
         "ultima_compra": "13/07/2023",
-        "dias_desde_ultima_compra": 1189,
+        "dias_desde_ultima_compra": 1190,
         "intervalo_medio_dias": 36.0,
-        "score_risco": 33.03,
+        "score_risco": 33.06,
         "em_risco": true
       },
       {
@@ -5929,9 +5990,9 @@
         "qtd_compras_historico": 6,
         "valor_total_historico": 4045.0,
         "ultima_compra": "23/11/2022",
-        "dias_desde_ultima_compra": 1421,
+        "dias_desde_ultima_compra": 1422,
         "intervalo_medio_dias": 43.2,
-        "score_risco": 32.86,
+        "score_risco": 32.88,
         "em_risco": true
       },
       {
@@ -5941,9 +6002,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 417.93,
         "ultima_compra": "16/09/2025",
-        "dias_desde_ultima_compra": 393,
+        "dias_desde_ultima_compra": 394,
         "intervalo_medio_dias": 12.0,
-        "score_risco": 32.75,
+        "score_risco": 32.83,
         "em_risco": true
       },
       {
@@ -5953,9 +6014,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 2441.7,
         "ultima_compra": "27/06/2024",
-        "dias_desde_ultima_compra": 839,
+        "dias_desde_ultima_compra": 840,
         "intervalo_medio_dias": 27.0,
-        "score_risco": 31.07,
+        "score_risco": 31.11,
         "em_risco": true
       },
       {
@@ -5965,9 +6026,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 7037.0,
         "ultima_compra": "13/12/2024",
-        "dias_desde_ultima_compra": 670,
+        "dias_desde_ultima_compra": 671,
         "intervalo_medio_dias": 22.0,
-        "score_risco": 30.45,
+        "score_risco": 30.5,
         "em_risco": true
       },
       {
@@ -5977,9 +6038,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1180.0,
         "ultima_compra": "04/03/2022",
-        "dias_desde_ultima_compra": 1685,
+        "dias_desde_ultima_compra": 1686,
         "intervalo_medio_dias": 56.0,
-        "score_risco": 30.09,
+        "score_risco": 30.11,
         "em_risco": true
       },
       {
@@ -5989,9 +6050,9 @@
         "qtd_compras_historico": 140,
         "valor_total_historico": 85958.13,
         "ultima_compra": "13/01/2026",
-        "dias_desde_ultima_compra": 274,
+        "dias_desde_ultima_compra": 275,
         "intervalo_medio_dias": 9.1,
-        "score_risco": 29.99,
+        "score_risco": 30.1,
         "em_risco": true
       }
     ],
@@ -6003,9 +6064,9 @@
         "qtd_compras_historico": 13,
         "valor_total_historico": 341735.0,
         "ultima_compra": "05/08/2026",
-        "dias_desde_ultima_compra": 70,
+        "dias_desde_ultima_compra": 71,
         "intervalo_medio_dias": 58.4,
-        "score_risco": 1.2,
+        "score_risco": 1.22,
         "em_risco": true
       },
       {
@@ -6015,9 +6076,9 @@
         "qtd_compras_historico": 14,
         "valor_total_historico": 337347.0,
         "ultima_compra": "10/03/2026",
-        "dias_desde_ultima_compra": 218,
+        "dias_desde_ultima_compra": 219,
         "intervalo_medio_dias": 18.6,
-        "score_risco": 11.73,
+        "score_risco": 11.78,
         "em_risco": true
       },
       {
@@ -6027,9 +6088,9 @@
         "qtd_compras_historico": 14,
         "valor_total_historico": 183492.9,
         "ultima_compra": "03/06/2026",
-        "dias_desde_ultima_compra": 133,
+        "dias_desde_ultima_compra": 134,
         "intervalo_medio_dias": 98.7,
-        "score_risco": 1.35,
+        "score_risco": 1.36,
         "em_risco": true
       },
       {
@@ -6039,9 +6100,9 @@
         "qtd_compras_historico": 28,
         "valor_total_historico": 144889.55,
         "ultima_compra": "04/08/2026",
-        "dias_desde_ultima_compra": 71,
+        "dias_desde_ultima_compra": 72,
         "intervalo_medio_dias": 47.8,
-        "score_risco": 1.48,
+        "score_risco": 1.51,
         "em_risco": true
       },
       {
@@ -6051,7 +6112,7 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 101200.0,
         "ultima_compra": "17/02/2025",
-        "dias_desde_ultima_compra": 604,
+        "dias_desde_ultima_compra": 605,
         "intervalo_medio_dias": 381.0,
         "score_risco": 1.59,
         "em_risco": true
@@ -6063,9 +6124,9 @@
         "qtd_compras_historico": 140,
         "valor_total_historico": 85958.13,
         "ultima_compra": "13/01/2026",
-        "dias_desde_ultima_compra": 274,
+        "dias_desde_ultima_compra": 275,
         "intervalo_medio_dias": 9.1,
-        "score_risco": 29.99,
+        "score_risco": 30.1,
         "em_risco": true
       },
       {
@@ -6075,9 +6136,9 @@
         "qtd_compras_historico": 16,
         "valor_total_historico": 82250.0,
         "ultima_compra": "28/03/2023",
-        "dias_desde_ultima_compra": 1296,
+        "dias_desde_ultima_compra": 1297,
         "intervalo_medio_dias": 29.9,
-        "score_risco": 43.41,
+        "score_risco": 43.44,
         "em_risco": true
       },
       {
@@ -6087,9 +6148,9 @@
         "qtd_compras_historico": 15,
         "valor_total_historico": 67385.5,
         "ultima_compra": "30/09/2025",
-        "dias_desde_ultima_compra": 379,
+        "dias_desde_ultima_compra": 380,
         "intervalo_medio_dias": 46.8,
-        "score_risco": 8.1,
+        "score_risco": 8.12,
         "em_risco": true
       },
       {
@@ -6099,9 +6160,9 @@
         "qtd_compras_historico": 6,
         "valor_total_historico": 65420.0,
         "ultima_compra": "26/01/2024",
-        "dias_desde_ultima_compra": 992,
+        "dias_desde_ultima_compra": 993,
         "intervalo_medio_dias": 122.6,
-        "score_risco": 8.09,
+        "score_risco": 8.1,
         "em_risco": true
       },
       {
@@ -6111,9 +6172,9 @@
         "qtd_compras_historico": 7,
         "valor_total_historico": 60053.38,
         "ultima_compra": "29/04/2025",
-        "dias_desde_ultima_compra": 533,
+        "dias_desde_ultima_compra": 534,
         "intervalo_medio_dias": 13.2,
-        "score_risco": 40.23,
+        "score_risco": 40.3,
         "em_risco": true
       }
     ],
@@ -6125,9 +6186,9 @@
         "qtd_compras_historico": 14,
         "valor_total_historico": 337347.0,
         "ultima_compra": "10/03/2026",
-        "dias_desde_ultima_compra": 218,
+        "dias_desde_ultima_compra": 219,
         "intervalo_medio_dias": 18.6,
-        "score_risco": 11.73,
+        "score_risco": 11.78,
         "em_risco": true
       },
       {
@@ -6137,9 +6198,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 18900.0,
         "ultima_compra": "12/06/2026",
-        "dias_desde_ultima_compra": 124,
+        "dias_desde_ultima_compra": 125,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 124.0,
+        "score_risco": 125.0,
         "em_risco": true
       },
       {
@@ -6149,9 +6210,9 @@
         "qtd_compras_historico": 93,
         "valor_total_historico": 53962.5,
         "ultima_compra": "13/02/2026",
-        "dias_desde_ultima_compra": 243,
+        "dias_desde_ultima_compra": 244,
         "intervalo_medio_dias": 9.6,
-        "score_risco": 25.27,
+        "score_risco": 25.37,
         "em_risco": true
       },
       {
@@ -6161,9 +6222,9 @@
         "qtd_compras_historico": 13,
         "valor_total_historico": 341735.0,
         "ultima_compra": "05/08/2026",
-        "dias_desde_ultima_compra": 70,
+        "dias_desde_ultima_compra": 71,
         "intervalo_medio_dias": 58.4,
-        "score_risco": 1.2,
+        "score_risco": 1.22,
         "em_risco": true
       },
       {
@@ -6173,9 +6234,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1577.0,
         "ultima_compra": "28/04/2026",
-        "dias_desde_ultima_compra": 169,
+        "dias_desde_ultima_compra": 170,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 169.0,
+        "score_risco": 170.0,
         "em_risco": true
       },
       {
@@ -6185,9 +6246,9 @@
         "qtd_compras_historico": 14,
         "valor_total_historico": 183492.9,
         "ultima_compra": "03/06/2026",
-        "dias_desde_ultima_compra": 133,
+        "dias_desde_ultima_compra": 134,
         "intervalo_medio_dias": 98.7,
-        "score_risco": 1.35,
+        "score_risco": 1.36,
         "em_risco": true
       },
       {
@@ -6197,9 +6258,9 @@
         "qtd_compras_historico": 28,
         "valor_total_historico": 144889.55,
         "ultima_compra": "04/08/2026",
-        "dias_desde_ultima_compra": 71,
+        "dias_desde_ultima_compra": 72,
         "intervalo_medio_dias": 47.8,
-        "score_risco": 1.48,
+        "score_risco": 1.51,
         "em_risco": true
       },
       {
@@ -6209,9 +6270,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 810.5,
         "ultima_compra": "10/04/2026",
-        "dias_desde_ultima_compra": 187,
+        "dias_desde_ultima_compra": 188,
         "intervalo_medio_dias": 1.0,
-        "score_risco": 187.0,
+        "score_risco": 188.0,
         "em_risco": true
       },
       {
@@ -6221,9 +6282,9 @@
         "qtd_compras_historico": 29,
         "valor_total_historico": 32802.0,
         "ultima_compra": "08/04/2026",
-        "dias_desde_ultima_compra": 189,
+        "dias_desde_ultima_compra": 190,
         "intervalo_medio_dias": 44.3,
-        "score_risco": 4.27,
+        "score_risco": 4.29,
         "em_risco": true
       },
       {
@@ -6233,9 +6294,9 @@
         "qtd_compras_historico": 7,
         "valor_total_historico": 25960.89,
         "ultima_compra": "20/02/2026",
-        "dias_desde_ultima_compra": 236,
+        "dias_desde_ultima_compra": 237,
         "intervalo_medio_dias": 45.8,
-        "score_risco": 5.15,
+        "score_risco": 5.17,
         "em_risco": true
       },
       {
@@ -6245,9 +6306,9 @@
         "qtd_compras_historico": 11,
         "valor_total_historico": 45215.06,
         "ultima_compra": "06/05/2026",
-        "dias_desde_ultima_compra": 161,
+        "dias_desde_ultima_compra": 162,
         "intervalo_medio_dias": 66.3,
-        "score_risco": 2.43,
+        "score_risco": 2.44,
         "em_risco": true
       },
       {
@@ -6257,9 +6318,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 1209.0,
         "ultima_compra": "30/04/2026",
-        "dias_desde_ultima_compra": 167,
+        "dias_desde_ultima_compra": 168,
         "intervalo_medio_dias": 2.0,
-        "score_risco": 83.5,
+        "score_risco": 84.0,
         "em_risco": true
       },
       {
@@ -6269,9 +6330,9 @@
         "qtd_compras_historico": 5,
         "valor_total_historico": 49216.1,
         "ultima_compra": "15/04/2026",
-        "dias_desde_ultima_compra": 182,
+        "dias_desde_ultima_compra": 183,
         "intervalo_medio_dias": 99.2,
-        "score_risco": 1.83,
+        "score_risco": 1.84,
         "em_risco": true
       },
       {
@@ -6281,9 +6342,9 @@
         "qtd_compras_historico": 3,
         "valor_total_historico": 1892.12,
         "ultima_compra": "23/06/2026",
-        "dias_desde_ultima_compra": 113,
+        "dias_desde_ultima_compra": 114,
         "intervalo_medio_dias": 2.5,
-        "score_risco": 45.2,
+        "score_risco": 45.6,
         "em_risco": true
       },
       {
@@ -6293,21 +6354,9 @@
         "qtd_compras_historico": 2,
         "valor_total_historico": 5273.1,
         "ultima_compra": "23/06/2026",
-        "dias_desde_ultima_compra": 113,
+        "dias_desde_ultima_compra": 114,
         "intervalo_medio_dias": 7.0,
-        "score_risco": 16.14,
-        "em_risco": true
-      },
-      {
-        "cnpj_cliente": "07.474.287/0003-00",
-        "razao_social_cliente": "RENOVAR ENGENHARIA",
-        "vendedor": "Eduardo Santiago",
-        "qtd_compras_historico": 4,
-        "valor_total_historico": 4077.5,
-        "ultima_compra": "13/03/2026",
-        "dias_desde_ultima_compra": 215,
-        "intervalo_medio_dias": 13.0,
-        "score_risco": 16.54,
+        "score_risco": 16.29,
         "em_risco": true
       },
       {
@@ -6317,9 +6366,9 @@
         "qtd_compras_historico": 20,
         "valor_total_historico": 48192.56,
         "ultima_compra": "06/08/2026",
-        "dias_desde_ultima_compra": 69,
+        "dias_desde_ultima_compra": 70,
         "intervalo_medio_dias": 49.7,
-        "score_risco": 1.39,
+        "score_risco": 1.41,
         "em_risco": true
       },
       {
@@ -6329,21 +6378,21 @@
         "qtd_compras_historico": 17,
         "valor_total_historico": 35000.0,
         "ultima_compra": "20/07/2026",
-        "dias_desde_ultima_compra": 86,
+        "dias_desde_ultima_compra": 87,
         "intervalo_medio_dias": 44.9,
-        "score_risco": 1.91,
+        "score_risco": 1.94,
         "em_risco": true
       },
       {
-        "cnpj_cliente": "59.075.532/0001-30",
-        "razao_social_cliente": "KNOOR E PROCOPIO ALIMENTACAO SAUDAVEL LTDA",
-        "vendedor": "Joice",
-        "qtd_compras_historico": 8,
-        "valor_total_historico": 39656.56,
-        "ultima_compra": "08/07/2026",
-        "dias_desde_ultima_compra": 98,
-        "intervalo_medio_dias": 59.3,
-        "score_risco": 1.65,
+        "cnpj_cliente": "07.474.287/0003-00",
+        "razao_social_cliente": "RENOVAR ENGENHARIA",
+        "vendedor": "Eduardo Santiago",
+        "qtd_compras_historico": 4,
+        "valor_total_historico": 4077.5,
+        "ultima_compra": "13/03/2026",
+        "dias_desde_ultima_compra": 216,
+        "intervalo_medio_dias": 13.0,
+        "score_risco": 16.62,
         "em_risco": true
       },
       {
@@ -6353,9 +6402,21 @@
         "qtd_compras_historico": 19,
         "valor_total_historico": 21680.0,
         "ultima_compra": "20/02/2026",
-        "dias_desde_ultima_compra": 236,
+        "dias_desde_ultima_compra": 237,
         "intervalo_medio_dias": 83.8,
-        "score_risco": 2.82,
+        "score_risco": 2.83,
+        "em_risco": true
+      },
+      {
+        "cnpj_cliente": "60.007.134/0001-66",
+        "razao_social_cliente": "VARVAZORE ALIMENTOS",
+        "vendedor": "Eduardo Santiago",
+        "qtd_compras_historico": 5,
+        "valor_total_historico": 22348.68,
+        "ultima_compra": "24/06/2026",
+        "dias_desde_ultima_compra": 113,
+        "intervalo_medio_dias": 45.8,
+        "score_risco": 2.47,
         "em_risco": true
       }
     ]
@@ -6408,8 +6469,8 @@
     },
     {
       "mes": "2026-10",
-      "faturamento_canal": 210625.58,
-      "gratificacao": 421.25
+      "faturamento_canal": 239694.28,
+      "gratificacao": 479.39
     }
   ],
   "gratificacao_detalhe": [
@@ -21716,6 +21777,160 @@
       "faturamento_real": 1064.5
     },
     {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011471",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Joice",
+      "razao_social_cliente": "HF ENSINO DE ESPORTES LTDA",
+      "cnpj_cliente": "62.432.884/0001-00",
+      "valor_total_nf": 415.3,
+      "valor_frete": 44.8,
+      "faturamento_real": 370.5
+    },
+    {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011474",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Joice",
+      "razao_social_cliente": "GEAN PEREIRA DE ARAUJO 04813050506",
+      "cnpj_cliente": "46.839.575/0001-01",
+      "valor_total_nf": 2887.78,
+      "valor_frete": 467.78,
+      "faturamento_real": 2420.0
+    },
+    {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011475",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Rubs",
+      "razao_social_cliente": "BRUNO FERREIRA DE LIRA",
+      "cnpj_cliente": "396.027.808-00",
+      "valor_total_nf": 5165.56,
+      "valor_frete": 305.56,
+      "faturamento_real": 4860.0
+    },
+    {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011476",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Joice",
+      "razao_social_cliente": "55.054.856 MARINA OLIVEIRA BELMINDO",
+      "cnpj_cliente": "55.054.856/0001-31",
+      "valor_total_nf": 1136.2,
+      "valor_frete": 137.2,
+      "faturamento_real": 999.0
+    },
+    {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011477",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Joice",
+      "razao_social_cliente": "KNOOR E PROCOPIO ALIMENTACAO SAUDAVEL LTDA",
+      "cnpj_cliente": "59.075.532/0001-30",
+      "valor_total_nf": 4150.03,
+      "valor_frete": 179.03,
+      "faturamento_real": 3971.0
+    },
+    {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011478",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Eduardo Santiago",
+      "razao_social_cliente": "CAO LOBINHO ALIMENTACAO NATURAL BIOAPROPRIADA LTDA",
+      "cnpj_cliente": "50.080.168/0001-22",
+      "valor_total_nf": 2986.42,
+      "valor_frete": 156.42,
+      "faturamento_real": 2830.0
+    },
+    {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011479",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Joice",
+      "razao_social_cliente": "60.008.433 MAIKELLEN MARIANNE CARVALHO",
+      "cnpj_cliente": "60.008.433/0001-15",
+      "valor_total_nf": 1418.63,
+      "valor_frete": 441.23,
+      "faturamento_real": 977.4
+    },
+    {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011480",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Rubs",
+      "razao_social_cliente": "RAI PEREIRA DA SILVA",
+      "cnpj_cliente": "428.618.118-97",
+      "valor_total_nf": 4555.61,
+      "valor_frete": 484.81,
+      "faturamento_real": 4070.8
+    },
+    {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011481",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Eduardo Santiago",
+      "razao_social_cliente": "MARILIA DA ROSA RIBEIRO",
+      "cnpj_cliente": "49.695.838/0001-36",
+      "valor_total_nf": 796.56,
+      "valor_frete": 148.56,
+      "faturamento_real": 648.0
+    },
+    {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011483",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Eduardo Santiago",
+      "razao_social_cliente": "CAROLINE CAMILO TOBELEM",
+      "cnpj_cliente": "989.147.903-04",
+      "valor_total_nf": 1624.06,
+      "valor_frete": 234.06,
+      "faturamento_real": 1390.0
+    },
+    {
+      "mes": "2026-10",
+      "data_emissao": "14/10/2026",
+      "empresa": "ecommerce",
+      "numero_nf": "00011484",
+      "pedido": null,
+      "tipo_documento": "nfe_venda",
+      "vendedor": "Eduardo Santiago",
+      "razao_social_cliente": "THE UNION HOTEL LTDA",
+      "cnpj_cliente": "18.098.062/0001-43",
+      "valor_total_nf": 6532.0,
+      "valor_frete": 0.0,
+      "faturamento_real": 6532.0
+    },
+    {
       "mes": "2026-01",
       "data_emissao": "15/01/2026",
       "empresa": "ecommerce",
@@ -28471,7 +28686,7 @@
       "pedido": null,
       "tipo_documento": "nfe_venda",
       "vendedor": "Eduardo Santiago",
-      "razao_social_cliente": "PERSISTENCIA &amp; PROGRESSO EMPREENDIMENTOS LTDA",
+      "razao_social_cliente": "SILVA GYM HUMAITA",
       "cnpj_cliente": "65.057.220/0001-05",
       "valor_total_nf": 2296.6,
       "valor_frete": 143.8,
@@ -38189,8 +38404,8 @@
           "nota_fiscal": ""
         }
       ],
-      "planilha_comissao_atualizada_em_utc": "2026-10-14T09:59:20.021214Z",
-      "planilha_frete_atualizada_em_utc": "2026-10-14T09:59:20.022214Z"
+      "planilha_comissao_atualizada_em_utc": "2026-10-15T09:41:17.330054Z",
+      "planilha_frete_atualizada_em_utc": "2026-10-15T09:41:17.331054Z"
     },
     "detalhe": []
   }
